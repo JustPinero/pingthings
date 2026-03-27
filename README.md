@@ -1,18 +1,35 @@
 # pingthings
 
-A Claude Code notification hook that plays random soldier acknowledgement sounds from **Seven Kingdoms: Ancient Adversaries** when Claude finishes a response.
+Notification sounds for Claude Code and other CLI tools. Like text tones for your terminal.
 
-Like having your own little army of peons confirming "job's done!"
+Pick a sound pack, and pingthings plays a random sound whenever Claude Code needs your attention.
 
-## Setup
-
-### 1. Clone this repo
+## Install
 
 ```bash
-git clone https://github.com/JustPinero/pingthings.git ~/pingthings
+npm install -g pingthings
 ```
 
-### 2. Configure Claude Code hook
+## Quick start
+
+```bash
+# Play a random sound from the active pack
+pingthings play
+
+# See available packs
+pingthings list
+
+# Switch packs
+pingthings use 7kaa-soldiers
+
+# Preview a pack
+pingthings preview 7kaa-soldiers
+
+# Play a specific sound
+pingthings play READY
+```
+
+## Claude Code setup
 
 Add this to your `~/.claude/settings.json`:
 
@@ -25,7 +42,7 @@ Add this to your `~/.claude/settings.json`:
         "hooks": [
           {
             "type": "command",
-            "command": "~/pingthings/play-peon.sh"
+            "command": "pingthings play"
           }
         ]
       }
@@ -34,34 +51,77 @@ Add this to your `~/.claude/settings.json`:
 }
 ```
 
-This plays a random soldier sound whenever Claude Code sends a notification (waiting for input, permission, etc.).
+Now you'll hear a sound whenever Claude Code sends a notification (waiting for input, permission prompts, etc.).
 
-### 3. Test it
+## Commands
 
-```bash
-./play-peon.sh
+| Command | Description |
+|---------|-------------|
+| `pingthings play [sound]` | Play a sound (random by default, or specify a name) |
+| `pingthings list` | Show available sound packs |
+| `pingthings use <pack>` | Set the active sound pack |
+| `pingthings preview <pack>` | Preview a random sound from a pack |
+| `pingthings config [key] [val]` | Show or update configuration |
+| `pingthings install <pack>` | Install a sound pack (coming soon) |
+
+## Configuration
+
+Config lives at `~/.config/pingthings/config.json`:
+
+```json
+{
+  "activePack": "7kaa-soldiers",
+  "mode": "random",
+  "specificSound": null
+}
 ```
 
-You should hear a random Seven Kingdoms soldier voice line.
+- **activePack** — which sound pack to use
+- **mode** — `"random"` (default) or `"specific"`
+- **specificSound** — sound name to always play when mode is `"specific"`
 
-## How it works
+Set values via CLI:
 
-- `play-peon.sh` picks a random `.wav` file from `sounds/soldiers/` and plays it with `afplay` (macOS)
-- The sound plays in the background so it doesn't block Claude Code
-- Claude Code's `Notification` hook triggers the script when Claude needs your attention
+```bash
+pingthings config mode specific
+pingthings config specificSound READY
+```
 
-## Sound files
+## Built-in packs
 
-All audio is extracted from [Seven Kingdoms: Ancient Adversaries](https://github.com/the3dfxdude/7kaa), which is fully open source under **GPL v2** (both code and game data).
+### 7kaa-soldiers
+Soldier acknowledgement voice lines from **Seven Kingdoms: Ancient Adversaries** — 53 sounds from all 10 civilizations (Norman, Maya, Greek, Viking, Persian, Chinese, Japanese, Egyptian, Indian, Zulu).
 
-The sounds include soldier acknowledgement voice lines from all 10 civilizations:
-Norman, Maya, Greek, Viking, Persian, Chinese, Japanese, Egyptian, Indian, and Zulu.
+## Custom packs
+
+Place packs in `~/.config/pingthings/packs/<pack-name>/`:
+
+```
+my-pack/
+  manifest.json
+  sounds/
+    sound1.wav
+    sound2.wav
+```
+
+Minimal `manifest.json`:
+
+```json
+{
+  "name": "my-pack",
+  "description": "My custom sound pack",
+  "license": "MIT",
+  "credits": "Your Name"
+}
+```
+
+The `sounds` field in the manifest is optional — if omitted, all `.wav`, `.mp3`, `.ogg`, and `.flac` files in the `sounds/` directory are used.
 
 ## Requirements
 
-- macOS (uses `afplay`)
-- Claude Code CLI
+- Node.js >= 18
+- macOS (`afplay`) or Linux (`paplay` / `aplay`)
 
 ## License
 
-GPL v2 — same as the original Seven Kingdoms: Ancient Adversaries game assets.
+GPL v2 — includes audio from [Seven Kingdoms: Ancient Adversaries](https://github.com/the3dfxdude/7kaa) (GPL v2).

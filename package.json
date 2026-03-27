@@ -1,0 +1,33 @@
+{
+  "name": "pingthings",
+  "version": "0.1.0",
+  "description": "Notification sounds for Claude Code and other CLI tools",
+  "type": "module",
+  "license": "GPL-2.0",
+  "bin": {
+    "pingthings": "./bin/pingthings.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "packs/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "claude-code",
+    "notification",
+    "sound",
+    "cli",
+    "hook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JustPinero/pingthings.git"
+  },
+  "homepage": "https://github.com/JustPinero/pingthings"
+}
