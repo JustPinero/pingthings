@@ -1,0 +1,27 @@
+{
+  "name": "openarena-announcer",
+  "description": "Arena FPS announcer voice lines from OpenArena",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "credits": "OpenArena contributors (http://openarena.ws)",
+  "sounds": [
+    "sounds/accuracy.wav",
+    "sounds/assist.wav",
+    "sounds/defense.wav",
+    "sounds/denied.wav",
+    "sounds/excellent.wav",
+    "sounds/fight.wav",
+    "sounds/gauntlet.wav",
+    "sounds/humiliation.wav",
+    "sounds/impressive.wav",
+    "sounds/one.wav",
+    "sounds/perfect.wav",
+    "sounds/prepare.wav",
+    "sounds/sudden_death.wav",
+    "sounds/takenlead.wav",
+    "sounds/three.wav",
+    "sounds/two.wav",
+    "sounds/voc_holyshit.wav",
+    "sounds/youwin.wav"
+  ]
+}

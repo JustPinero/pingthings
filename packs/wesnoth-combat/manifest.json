@@ -1,0 +1,28 @@
+{
+  "name": "wesnoth-combat",
+  "description": "Fantasy combat and magic sounds from Battle for Wesnoth",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "credits": "Battle for Wesnoth contributors (https://github.com/wesnoth/wesnoth) — licensed under GPL v2+",
+  "sounds": [
+    "sounds/axe.wav",
+    "sounds/bow.wav",
+    "sounds/crossbow.wav",
+    "sounds/dwarf-laugh.wav",
+    "sounds/explosion.wav",
+    "sounds/fanfare-short.wav",
+    "sounds/flame-big.wav",
+    "sounds/gold.wav",
+    "sounds/gryphon-shriek-1.wav",
+    "sounds/hatchet.wav",
+    "sounds/heal.wav",
+    "sounds/lightning.wav",
+    "sounds/magic-dark.wav",
+    "sounds/magic-holy-1.wav",
+    "sounds/magic-missile-1.wav",
+    "sounds/open-chest.wav",
+    "sounds/potion.wav",
+    "sounds/sword-1.wav",
+    "sounds/wolf-growl-1.wav"
+  ]
+}

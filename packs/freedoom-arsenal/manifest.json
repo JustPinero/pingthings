@@ -1,0 +1,28 @@
+{
+  "name": "freedoom-arsenal",
+  "description": "Retro FPS weapon and pickup sounds from Freedoom",
+  "version": "1.0.0",
+  "license": "BSD-3-Clause",
+  "credits": "Freedoom contributors (https://github.com/freedoom/freedoom)",
+  "sounds": [
+    "sounds/dsbarexp.wav",
+    "sounds/dsbfg.wav",
+    "sounds/dsdoropn.wav",
+    "sounds/dsdshtgn.wav",
+    "sounds/dsgetpow.wav",
+    "sounds/dsitemup.wav",
+    "sounds/dsoof.wav",
+    "sounds/dspistol.wav",
+    "sounds/dsplasma.wav",
+    "sounds/dspldeth.wav",
+    "sounds/dspunch.wav",
+    "sounds/dsrlaunc.wav",
+    "sounds/dsrxplod.wav",
+    "sounds/dssawup.wav",
+    "sounds/dssgcock.wav",
+    "sounds/dsshotgn.wav",
+    "sounds/dsswtchn.wav",
+    "sounds/dstelept.wav",
+    "sounds/dswpnup.wav"
+  ]
+}
