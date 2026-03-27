@@ -2,7 +2,7 @@
 
 Notification sounds for Claude Code and other CLI tools. Like text tones for your terminal.
 
-Pick a sound pack, and pingthings plays a random sound whenever Claude Code needs your attention.
+Pick a sound pack, and pingthings plays a random sound whenever Claude Code needs your attention. Or use **informational mode** to hear different sounds for different events — know if a task is done, if something went wrong, or if Claude needs your input, all by ear.
 
 ## Install
 
@@ -27,9 +27,16 @@ pingthings preview 7kaa-soldiers
 
 # Play a specific sound
 pingthings play READY
+
+# Play event-based sounds (informational mode)
+pingthings play --event done
+pingthings play --event error
+pingthings play -e complete
 ```
 
 ## Claude Code setup
+
+### Basic (random sounds)
 
 Add this to your `~/.claude/settings.json`:
 
@@ -51,13 +58,46 @@ Add this to your `~/.claude/settings.json`:
 }
 ```
 
-Now you'll hear a sound whenever Claude Code sends a notification (waiting for input, permission prompts, etc.).
+### Informational (event-based sounds)
+
+For different sounds based on what Claude is doing, set up multiple hooks:
+
+```json
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pingthings play --event done"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pingthings play --event complete"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Now you'll hear distinct sounds for different Claude Code events.
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `pingthings play [sound]` | Play a sound (random by default, or specify a name) |
+| `pingthings play [sound] [--event type]` | Play a sound (random, specific, or event-based) |
 | `pingthings list` | Show available sound packs |
 | `pingthings use <pack>` | Set the active sound pack |
 | `pingthings preview <pack>` | Preview a random sound from a pack |
@@ -77,15 +117,48 @@ Config lives at `~/.config/pingthings/config.json`:
 ```
 
 - **activePack** — which sound pack to use
-- **mode** — `"random"` (default) or `"specific"`
+- **mode** — `"random"` (default), `"specific"`, or `"informational"`
 - **specificSound** — sound name to always play when mode is `"specific"`
 
 Set values via CLI:
 
 ```bash
-pingthings config mode specific
-pingthings config specificSound READY
+pingthings config mode random          # any random sound
+pingthings config mode specific        # always the same sound
+pingthings config mode informational   # event-based sounds
+pingthings config specificSound READY  # set the sound for specific mode
 ```
+
+## Modes
+
+### Random (default)
+Plays any random sound from the active pack. Great for variety.
+
+### Specific
+Always plays the same configured sound. Set it with `pingthings config specificSound <name>`.
+
+### Informational
+Plays different sounds based on what's happening. Use the `--event` flag to tell pingthings what type of event occurred:
+
+| Event | Meaning | Example trigger |
+|-------|---------|----------------|
+| `done` | Task/step finished | Claude completed a request |
+| `permission` | Needs approval | Claude needs tool permission |
+| `complete` | Major milestone done | Project or phase finished |
+| `error` | Something went wrong | Build failed, test failed |
+| `blocked` | User action needed | Need to update a dashboard, grant access |
+
+```bash
+pingthings play --event done       # "task finished" sound
+pingthings play --event error      # "something broke" sound
+pingthings play -e permission      # "need your approval" sound
+```
+
+Each pack maps its sounds to events thematically:
+- **7kaa-soldiers**: voice acknowledgements for done, "READY" for permission, attack grunts for errors
+- **openarena-announcer**: "excellent!" for done, "prepare!" for permission, "denied!" for errors
+- **wesnoth-combat**: gold collect for done, chest open for permission, explosions for errors
+- **freedoom-arsenal**: item pickup for done, shotgun cock for permission, barrel explosion for errors
 
 ## Built-in packs
 
@@ -125,6 +198,24 @@ Minimal `manifest.json`:
 ```
 
 The `sounds` field in the manifest is optional — if omitted, all `.wav`, `.mp3`, `.ogg`, and `.flac` files in the `sounds/` directory are used.
+
+To support informational mode, add an `events` field mapping event types to sounds:
+
+```json
+{
+  "name": "my-pack",
+  "description": "My custom sound pack",
+  "license": "MIT",
+  "credits": "Your Name",
+  "events": {
+    "done": ["sounds/success.wav", "sounds/complete.wav"],
+    "permission": ["sounds/question.wav"],
+    "complete": ["sounds/fanfare.wav"],
+    "error": ["sounds/alarm.wav", "sounds/buzz.wav"],
+    "blocked": ["sounds/warning.wav"]
+  }
+}
+```
 
 ## Requirements
 

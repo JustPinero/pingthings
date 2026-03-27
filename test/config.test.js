@@ -8,7 +8,7 @@ import { tmpdir } from 'node:os';
 const tmpDir = mkdtempSync(join(tmpdir(), 'pingthings-test-'));
 process.env.XDG_CONFIG_HOME = tmpDir;
 
-const { readConfig, writeConfig, getConfigDir, getDefaults, VALID_MODES } = await import('../src/config.js');
+const { readConfig, writeConfig, getConfigDir, getDefaults, VALID_MODES, VALID_EVENTS } = await import('../src/config.js');
 
 describe('config', () => {
   beforeEach(() => {
@@ -57,6 +57,16 @@ describe('config', () => {
   it('has valid modes defined', () => {
     assert.ok(VALID_MODES.includes('random'));
     assert.ok(VALID_MODES.includes('specific'));
-    assert.equal(VALID_MODES.length, 2);
+    assert.ok(VALID_MODES.includes('informational'));
+    assert.equal(VALID_MODES.length, 3);
+  });
+
+  it('has valid events defined', () => {
+    assert.ok(VALID_EVENTS.includes('done'));
+    assert.ok(VALID_EVENTS.includes('permission'));
+    assert.ok(VALID_EVENTS.includes('complete'));
+    assert.ok(VALID_EVENTS.includes('error'));
+    assert.ok(VALID_EVENTS.includes('blocked'));
+    assert.equal(VALID_EVENTS.length, 5);
   });
 });

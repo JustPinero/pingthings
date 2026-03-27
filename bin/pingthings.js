@@ -37,12 +37,19 @@ Options:
   --help, -h         Show this help message
   --version, -v      Show version number
 
+Modes:
+  random             Play any random sound (default)
+  specific           Always play the same configured sound
+  informational      Play sounds mapped to event types
+
 Examples:
   pingthings play                  Play a random sound
   pingthings play 00083-READY     Play a specific sound
+  pingthings play --event done    Play a "task done" sound
+  pingthings play -e error        Play an "error" sound
   pingthings list                  List all available packs
   pingthings use 7kaa-soldiers    Switch to a pack
-  pingthings preview freedoom     Preview a pack
+  pingthings config mode informational   Enable event-based sounds
 `);
 }
 

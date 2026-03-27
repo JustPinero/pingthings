@@ -102,4 +102,47 @@ describe('CLI', () => {
     const { exitCode } = run(['preview']);
     assert.equal(exitCode, 1);
   });
+
+  it('play --event done works', () => {
+    const { exitCode } = run(['play', '--event', 'done']);
+    assert.equal(exitCode, 0);
+  });
+
+  it('play -e error works', () => {
+    const { exitCode } = run(['play', '-e', 'error']);
+    assert.equal(exitCode, 0);
+  });
+
+  it('play --event with all event types works', () => {
+    const events = ['done', 'permission', 'complete', 'error', 'blocked'];
+    for (const event of events) {
+      const { exitCode } = run(['play', '--event', event]);
+      assert.equal(exitCode, 0, `Event "${event}" should play without error`);
+    }
+  });
+
+  it('play --event with invalid event fails', () => {
+    const { exitCode, stderr } = run(['play', '--event', 'bogus']);
+    assert.equal(exitCode, 1);
+    assert.ok(stderr.includes('Unknown event type'));
+  });
+
+  it('play --help shows event documentation', () => {
+    const { stdout } = run(['play', '--help']);
+    assert.ok(stdout.includes('--event'));
+    assert.ok(stdout.includes('done'));
+    assert.ok(stdout.includes('informational'));
+  });
+
+  it('config accepts informational mode', () => {
+    const { exitCode, stdout } = run(['config', 'mode', 'informational']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('mode set to'));
+  });
+
+  it('--help shows modes section', () => {
+    const { stdout } = run(['--help']);
+    assert.ok(stdout.includes('informational'));
+    assert.ok(stdout.includes('--event'));
+  });
 });

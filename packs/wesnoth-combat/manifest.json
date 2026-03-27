@@ -24,5 +24,35 @@
     "sounds/potion.wav",
     "sounds/sword-1.wav",
     "sounds/wolf-growl-1.wav"
-  ]
+  ],
+  "events": {
+    "done": [
+      "sounds/gold.wav",
+      "sounds/sword-1.wav",
+      "sounds/bow.wav",
+      "sounds/crossbow.wav",
+      "sounds/hatchet.wav"
+    ],
+    "permission": [
+      "sounds/open-chest.wav",
+      "sounds/potion.wav",
+      "sounds/magic-holy-1.wav"
+    ],
+    "complete": [
+      "sounds/fanfare-short.wav",
+      "sounds/heal.wav",
+      "sounds/dwarf-laugh.wav"
+    ],
+    "error": [
+      "sounds/explosion.wav",
+      "sounds/flame-big.wav",
+      "sounds/lightning.wav",
+      "sounds/magic-dark.wav"
+    ],
+    "blocked": [
+      "sounds/wolf-growl-1.wav",
+      "sounds/gryphon-shriek-1.wav",
+      "sounds/magic-missile-1.wav"
+    ]
+  }
 }

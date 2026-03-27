@@ -102,6 +102,28 @@ export function getPackSounds(name) {
   return discoverSounds(pack.dir);
 }
 
+export function getEventSounds(name, event) {
+  const pack = resolvePack(name);
+  if (!pack) return [];
+
+  const eventSounds = pack.manifest?.events?.[event];
+  if (!eventSounds?.length) return [];
+
+  return eventSounds
+    .map(s => join(pack.dir, s))
+    .filter(f => existsSync(f));
+}
+
+export function getPackEvents(name) {
+  const pack = resolvePack(name);
+  if (!pack) return [];
+
+  const events = pack.manifest?.events;
+  if (!events) return [];
+
+  return Object.keys(events);
+}
+
 export function pickRandom(sounds) {
   if (sounds.length === 0) return null;
   return sounds[Math.floor(Math.random() * sounds.length)];

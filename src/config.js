@@ -43,4 +43,6 @@ export function getDefaults() {
   return { ...DEFAULTS };
 }
 
-export const VALID_MODES = ['random', 'specific'];
+export const VALID_MODES = ['random', 'specific', 'informational'];
+
+export const VALID_EVENTS = ['done', 'permission', 'complete', 'error', 'blocked'];

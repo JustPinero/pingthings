@@ -24,5 +24,34 @@
     "sounds/dsswtchn.wav",
     "sounds/dstelept.wav",
     "sounds/dswpnup.wav"
-  ]
+  ],
+  "events": {
+    "done": [
+      "sounds/dsitemup.wav",
+      "sounds/dsswtchn.wav",
+      "sounds/dspistol.wav",
+      "sounds/dspunch.wav"
+    ],
+    "permission": [
+      "sounds/dssgcock.wav",
+      "sounds/dssawup.wav",
+      "sounds/dsdoropn.wav"
+    ],
+    "complete": [
+      "sounds/dsgetpow.wav",
+      "sounds/dswpnup.wav",
+      "sounds/dstelept.wav"
+    ],
+    "error": [
+      "sounds/dsoof.wav",
+      "sounds/dsbarexp.wav",
+      "sounds/dsrxplod.wav",
+      "sounds/dspldeth.wav"
+    ],
+    "blocked": [
+      "sounds/dsbfg.wav",
+      "sounds/dsrlaunc.wav",
+      "sounds/dsdshtgn.wav"
+    ]
+  }
 }

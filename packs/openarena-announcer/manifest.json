@@ -23,5 +23,32 @@
     "sounds/two.wav",
     "sounds/voc_holyshit.wav",
     "sounds/youwin.wav"
-  ]
+  ],
+  "events": {
+    "done": [
+      "sounds/excellent.wav",
+      "sounds/impressive.wav",
+      "sounds/accuracy.wav",
+      "sounds/assist.wav"
+    ],
+    "permission": [
+      "sounds/prepare.wav",
+      "sounds/fight.wav",
+      "sounds/defense.wav"
+    ],
+    "complete": [
+      "sounds/youwin.wav",
+      "sounds/perfect.wav",
+      "sounds/takenlead.wav"
+    ],
+    "error": [
+      "sounds/denied.wav",
+      "sounds/humiliation.wav",
+      "sounds/sudden_death.wav"
+    ],
+    "blocked": [
+      "sounds/voc_holyshit.wav",
+      "sounds/gauntlet.wav"
+    ]
+  }
 }
