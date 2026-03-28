@@ -2,7 +2,7 @@
   "name": "wesnoth-combat",
   "description": "Fantasy combat and magic sounds from Battle for Wesnoth",
   "version": "1.0.0",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "credits": "Battle for Wesnoth contributors (https://github.com/wesnoth/wesnoth) — licensed under GPL v2+",
   "category": "fantasy",
   "sounds": [

@@ -291,6 +291,9 @@ pingthings theme reset        # back to defaults
 | `arena` | Arena announcer with FPS weapons for errors |
 | `fantasy` | Medieval fantasy — Wesnoth + 0 A.D. civilizations |
 | `ancient` | Ancient world — 7kaa soldiers + 0 A.D. voices |
+| `professional` | Clean and minimal — Kenney UI sounds for everything |
+| `8bit` | Pure retro — 8-bit chiptune for everything |
+| `space` | Space station — Warzone 2100 + Kenney sci-fi |
 | `chaos` | Different pack for every event — maximum variety |
 
 ## Tools

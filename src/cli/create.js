@@ -24,7 +24,7 @@ Examples:
 `);
 }
 
-export default async function create(args) {
+export default function create(args) {
   if (args.includes('--help') || args.includes('-h')) {
     showHelp();
     return;

@@ -45,37 +45,41 @@ export default async function select(args) {
     output: process.stdout,
   });
 
-  const ask = () => {
-    rl.question('> ', (answer) => {
-      const trimmed = answer.trim().toLowerCase();
+  await new Promise((resolve) => {
+    const ask = () => {
+      rl.question('> ', (answer) => {
+        const trimmed = answer.trim().toLowerCase();
 
-      if (trimmed === 'q' || trimmed === 'quit' || trimmed === '') {
+        if (trimmed === 'q' || trimmed === 'quit' || trimmed === '') {
+          rl.close();
+          resolve();
+          return;
+        }
+
+        const num = parseInt(trimmed, 10);
+        if (isNaN(num) || num < 1 || num > packs.length) {
+          console.log(`Enter 1-${packs.length} or q to quit.`);
+          ask();
+          return;
+        }
+
+        const chosen = packs[num - 1];
+        config.activePack = chosen.name;
+        writeConfig(config);
+
+        // Preview a sound from the chosen pack
+        const sounds = getPackSounds(chosen.name);
+        if (sounds.length > 0) {
+          const sample = sounds[Math.floor(Math.random() * sounds.length)];
+          playSound(sample, config.volume);
+        }
+
+        console.log(`\nActive pack set to: ${chosen.name}`);
         rl.close();
-        return;
-      }
+        resolve();
+      });
+    };
 
-      const num = parseInt(trimmed, 10);
-      if (isNaN(num) || num < 1 || num > packs.length) {
-        console.log(`Enter 1-${packs.length} or q to quit.`);
-        ask();
-        return;
-      }
-
-      const chosen = packs[num - 1];
-      config.activePack = chosen.name;
-      writeConfig(config);
-
-      // Preview a sound from the chosen pack
-      const sounds = getPackSounds(chosen.name);
-      if (sounds.length > 0) {
-        const sample = sounds[Math.floor(Math.random() * sounds.length)];
-        playSound(sample, config.volume);
-      }
-
-      console.log(`\nActive pack set to: ${chosen.name}`);
-      rl.close();
-    });
-  };
-
-  ask();
+    ask();
+  });
 }

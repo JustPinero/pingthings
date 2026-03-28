@@ -113,13 +113,16 @@ export default async function init(args) {
     output: process.stdout,
   });
 
-  rl.question('Choose (1 or 2): ', (answer) => {
-    const choice = answer.trim();
-    if (choice === '2') {
-      applyHooks('informational');
-    } else {
-      applyHooks('basic');
-    }
-    rl.close();
+  await new Promise((resolve) => {
+    rl.question('Choose (1 or 2): ', (answer) => {
+      const choice = answer.trim();
+      if (choice === '2') {
+        applyHooks('informational');
+      } else {
+        applyHooks('basic');
+      }
+      rl.close();
+      resolve();
+    });
   });
 }

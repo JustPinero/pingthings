@@ -25,6 +25,11 @@ export default function uninstall(args) {
     return;
   }
 
+  if (packName.includes('..') || packName.includes('/') || packName.includes('\\')) {
+    console.error('Invalid pack name.');
+    process.exit(1);
+  }
+
   const userPackDir = join(getConfigDir(), 'packs', packName);
 
   if (!existsSync(userPackDir)) {
