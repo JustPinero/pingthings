@@ -2,17 +2,23 @@ import { spawn, execFileSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
 import { platform } from 'node:os';
 
+function commandExists(cmd) {
+  try {
+    execFileSync('which', [cmd], { stdio: 'pipe' });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function getPlayerCommand() {
   switch (platform()) {
     case 'darwin':
       return 'afplay';
     case 'linux': {
-      try {
-        execFileSync('which', ['paplay'], { stdio: 'pipe' });
-        return 'paplay';
-      } catch {
-        return 'aplay';
-      }
+      if (commandExists('paplay')) return 'paplay';
+      if (commandExists('aplay')) return 'aplay';
+      return null;
     }
     case 'win32':
       return 'powershell';
@@ -26,20 +32,16 @@ function buildArgs(cmd, filePath, volume) {
 
   switch (cmd) {
     case 'afplay': {
-      // afplay volume: 0.0 to 1.0
       const afplayVol = (vol / 100).toFixed(2);
       return ['-v', afplayVol, filePath];
     }
     case 'paplay': {
-      // paplay volume: 0 to 65536 (100% = 65536)
       const paplayVol = Math.round((vol / 100) * 65536).toString();
       return ['--volume', paplayVol, filePath];
     }
     case 'aplay':
-      // aplay doesn't support volume natively
       return [filePath];
     case 'powershell': {
-      // PowerShell SoundPlayer doesn't support volume, but it plays the file
       const script = `(New-Object System.Media.SoundPlayer '${filePath.replace(/'/g, "''")}').PlaySync()`;
       return ['-NoProfile', '-Command', script];
     }
@@ -55,7 +57,8 @@ export function playSound(filePath, volume) {
 
   const cmd = getPlayerCommand();
   if (!cmd) {
-    throw new Error(`Unsupported platform: ${platform()}. Supported: macOS, Linux, Windows.`);
+    // No audio player available — skip silently (e.g. CI environments)
+    return;
   }
 
   const args = buildArgs(cmd, filePath, volume);
@@ -65,6 +68,8 @@ export function playSound(filePath, volume) {
     stdio: 'ignore',
   });
 
+  // Handle spawn errors gracefully (command not found, permission denied)
+  child.on('error', () => {});
   child.unref();
 }
 
@@ -75,7 +80,7 @@ export function playSoundSync(filePath, volume) {
 
   const cmd = getPlayerCommand();
   if (!cmd) {
-    throw new Error(`Unsupported platform: ${platform()}. Supported: macOS, Linux, Windows.`);
+    return;
   }
 
   const args = buildArgs(cmd, filePath, volume);
