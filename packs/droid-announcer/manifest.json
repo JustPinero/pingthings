@@ -1,0 +1,52 @@
+{
+  "name": "droid-announcer",
+  "description": "Robotic AI announcer — objective complete, action required, mission complete",
+  "version": "1.0.0",
+  "license": "CC-BY-SA-4.0",
+  "credits": "VoiceBosch (https://opengameart.org/content/droid-video-game-announcer)",
+  "category": "sci-fi",
+  "sounds": [
+    "sounds/achievement-unlocked.ogg",
+    "sounds/action-required.ogg",
+    "sounds/critical-damage.ogg",
+    "sounds/enemy-forces-detected.ogg",
+    "sounds/epic.ogg",
+    "sounds/hostile-units-inbound.ogg",
+    "sounds/ineffective-strategy.ogg",
+    "sounds/instruction-unclear.ogg",
+    "sounds/mission-complete.ogg",
+    "sounds/new-upgrades-available.ogg",
+    "sounds/objective-complete.ogg",
+    "sounds/self-repair.ogg",
+    "sounds/shields-activated.ogg",
+    "sounds/system-optimal.ogg",
+    "sounds/target-neutralized.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/objective-complete.ogg",
+      "sounds/target-neutralized.ogg",
+      "sounds/system-optimal.ogg"
+    ],
+    "permission": [
+      "sounds/action-required.ogg",
+      "sounds/instruction-unclear.ogg",
+      "sounds/new-upgrades-available.ogg"
+    ],
+    "complete": [
+      "sounds/mission-complete.ogg",
+      "sounds/achievement-unlocked.ogg",
+      "sounds/epic.ogg"
+    ],
+    "error": [
+      "sounds/critical-damage.ogg",
+      "sounds/ineffective-strategy.ogg",
+      "sounds/shields-activated.ogg",
+      "sounds/self-repair.ogg"
+    ],
+    "blocked": [
+      "sounds/hostile-units-inbound.ogg",
+      "sounds/enemy-forces-detected.ogg"
+    ]
+  }
+}

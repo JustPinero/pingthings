@@ -1,0 +1,60 @@
+{
+  "name": "kenney-voiceover",
+  "description": "Human voice notifications — mission completed, objective achieved, game over",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "ui",
+  "sounds": [
+    "sounds/congratulations.ogg",
+    "sounds/correct.ogg",
+    "sounds/final-round.ogg",
+    "sounds/game-over.ogg",
+    "sounds/go.ogg",
+    "sounds/hurry-up.ogg",
+    "sounds/level-up.ogg",
+    "sounds/look-out.ogg",
+    "sounds/mission-completed.ogg",
+    "sounds/mission-failed.ogg",
+    "sounds/new-highscore.ogg",
+    "sounds/objective-achieved.ogg",
+    "sounds/power-up.ogg",
+    "sounds/ready.ogg",
+    "sounds/set.ogg",
+    "sounds/time-over.ogg",
+    "sounds/wrong.ogg",
+    "sounds/you-lose.ogg",
+    "sounds/you-win.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/mission-completed.ogg",
+      "sounds/objective-achieved.ogg",
+      "sounds/correct.ogg",
+      "sounds/level-up.ogg"
+    ],
+    "permission": [
+      "sounds/ready.ogg",
+      "sounds/set.ogg",
+      "sounds/go.ogg",
+      "sounds/hurry-up.ogg"
+    ],
+    "complete": [
+      "sounds/congratulations.ogg",
+      "sounds/you-win.ogg",
+      "sounds/new-highscore.ogg",
+      "sounds/power-up.ogg"
+    ],
+    "error": [
+      "sounds/mission-failed.ogg",
+      "sounds/game-over.ogg",
+      "sounds/wrong.ogg",
+      "sounds/you-lose.ogg"
+    ],
+    "blocked": [
+      "sounds/time-over.ogg",
+      "sounds/final-round.ogg",
+      "sounds/look-out.ogg"
+    ]
+  }
+}
