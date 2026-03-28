@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0
+
+### Added
+- 2 new sound packs:
+  - `kenney-voiceover` — 19 human voice notifications (CC0): "mission completed", "objective achieved", "game over"
+  - `droid-announcer` — 15 robotic AI voice lines (CC-BY-SA 4.0): "objective complete", "action required", "instruction unclear"
+- Total: 13 packs, 281 sounds
+
 ## 0.6.0
 
 ### Added
