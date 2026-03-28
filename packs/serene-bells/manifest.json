@@ -1,0 +1,49 @@
+{
+  "name": "serene-bells",
+  "description": "Temple bells, gongs, and crystal chimes",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "category": "bells",
+  "sounds": [
+    "sounds/crystal-1.ogg",
+    "sounds/crystal-2.ogg",
+    "sounds/crystal-3.ogg",
+    "sounds/crystal-4.ogg",
+    "sounds/crystal-5.ogg",
+    "sounds/gong-1.ogg",
+    "sounds/gong-2.ogg",
+    "sounds/temple-bell-1.ogg",
+    "sounds/temple-bell-2.ogg",
+    "sounds/temple-bell-3.ogg",
+    "sounds/wind-chime-1.ogg",
+    "sounds/wind-chime-2.ogg",
+    "sounds/wind-chime-3.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/crystal-1.ogg",
+      "sounds/crystal-2.ogg",
+      "sounds/crystal-3.ogg",
+      "sounds/crystal-4.ogg"
+    ],
+    "permission": [
+      "sounds/crystal-5.ogg",
+      "sounds/gong-1.ogg",
+      "sounds/gong-2.ogg"
+    ],
+    "complete": [
+      "sounds/temple-bell-1.ogg",
+      "sounds/temple-bell-2.ogg",
+      "sounds/temple-bell-3.ogg"
+    ],
+    "error": [
+      "sounds/wind-chime-1.ogg",
+      "sounds/wind-chime-2.ogg",
+      "sounds/wind-chime-3.ogg"
+    ],
+    "blocked": [
+      "sounds/crystal-1.ogg"
+    ]
+  }
+}

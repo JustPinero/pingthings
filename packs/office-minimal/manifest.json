@@ -1,0 +1,52 @@
+{
+  "name": "office-minimal",
+  "description": "Subtle clicks, ticks, and toggles",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "minimal",
+  "sounds": [
+    "sounds/drop-1.ogg",
+    "sounds/drop-2.ogg",
+    "sounds/scroll-1.ogg",
+    "sounds/scroll-2.ogg",
+    "sounds/select-1.ogg",
+    "sounds/select-2.ogg",
+    "sounds/select-3.ogg",
+    "sounds/switch-1.ogg",
+    "sounds/switch-2.ogg",
+    "sounds/tick-1.ogg",
+    "sounds/tick-2.ogg",
+    "sounds/tick-3.ogg",
+    "sounds/toggle-1.ogg",
+    "sounds/toggle-2.ogg",
+    "sounds/toggle-3.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/drop-1.ogg",
+      "sounds/drop-2.ogg",
+      "sounds/scroll-1.ogg",
+      "sounds/scroll-2.ogg"
+    ],
+    "permission": [
+      "sounds/select-1.ogg",
+      "sounds/select-2.ogg",
+      "sounds/select-3.ogg"
+    ],
+    "complete": [
+      "sounds/switch-1.ogg",
+      "sounds/switch-2.ogg",
+      "sounds/tick-1.ogg"
+    ],
+    "error": [
+      "sounds/tick-2.ogg",
+      "sounds/tick-3.ogg",
+      "sounds/toggle-1.ogg"
+    ],
+    "blocked": [
+      "sounds/toggle-2.ogg",
+      "sounds/toggle-3.ogg"
+    ]
+  }
+}

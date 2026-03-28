@@ -466,6 +466,285 @@
     }
   },
   {
+    "name": "nature-animals",
+    "description": "Barks, chirps, howls, and creature calls",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/80-cc0-creature-sfx)",
+    "category": "animals",
+    "soundCount": 15,
+    "sounds": [
+      "bark-1.ogg",
+      "bark-2.ogg",
+      "chirp-1.ogg",
+      "chirp-2.ogg",
+      "chirp-3.ogg",
+      "coo.ogg",
+      "cricket-1.ogg",
+      "cricket-2.ogg",
+      "howl.ogg",
+      "insect-1.ogg",
+      "insect-2.ogg",
+      "owl-hoot.ogg",
+      "peep-1.ogg",
+      "peep-2.ogg",
+      "snort.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 2
+    }
+  },
+  {
+    "name": "nature-forest",
+    "description": "Twigs snapping, birds singing, streams babbling",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org)",
+    "category": "forest",
+    "soundCount": 14,
+    "sounds": [
+      "bird-1.ogg",
+      "bird-2.ogg",
+      "bird-3.ogg",
+      "branch-crack.ogg",
+      "critter-1.ogg",
+      "critter-2.ogg",
+      "leaf-rustle-1.ogg",
+      "leaf-rustle-2.ogg",
+      "leaf-rustle-3.ogg",
+      "songbird.ogg",
+      "stream-splash-1.ogg",
+      "stream-splash-2.ogg",
+      "twig-snap-1.ogg",
+      "twig-snap-2.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 1
+    }
+  },
+  {
+    "name": "nature-night",
+    "description": "Nocturnal sounds — owls, crickets, distant calls",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/80-cc0-creature-sfx)",
+    "category": "night",
+    "soundCount": 14,
+    "sounds": [
+      "distant-animal-1.ogg",
+      "distant-animal-2.ogg",
+      "eerie-1.ogg",
+      "eerie-2.ogg",
+      "night-call-1.ogg",
+      "night-call-2.ogg",
+      "night-cricket-1.ogg",
+      "night-cricket-2.ogg",
+      "night-owl.ogg",
+      "rustle-1.ogg",
+      "rustle-2.ogg",
+      "rustle-3.ogg",
+      "sleeping-creature.ogg",
+      "wolf-howl.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 1
+    }
+  },
+  {
+    "name": "nature-ocean",
+    "description": "Waves, bubbles, and ocean currents",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+    "category": "ocean",
+    "soundCount": 11,
+    "sounds": [
+      "bubble-1.ogg",
+      "bubble-2.ogg",
+      "current.ogg",
+      "deep-1.ogg",
+      "deep-2.ogg",
+      "shore-1.ogg",
+      "shore-2.ogg",
+      "wave-1.ogg",
+      "wave-2.ogg",
+      "wind-1.ogg",
+      "wind-2.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 1,
+      "blocked": 1
+    }
+  },
+  {
+    "name": "nature-weather",
+    "description": "Thunder, wind gusts, rain drops, and storms",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+    "category": "weather",
+    "soundCount": 12,
+    "sounds": [
+      "distant-thunder.ogg",
+      "lightning-crack.ogg",
+      "rain-drop-1.ogg",
+      "rain-drop-2.ogg",
+      "storm-1.ogg",
+      "storm-2.ogg",
+      "thunder-1.ogg",
+      "thunder-2.ogg",
+      "thunder-3.ogg",
+      "thunder-rumble.ogg",
+      "wind-gust-1.ogg",
+      "wind-gust-2.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 2,
+      "blocked": 1
+    }
+  },
+  {
+    "name": "office-classic",
+    "description": "Keys, switches, paper, and desk sounds",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+    "category": "classic",
+    "soundCount": 15,
+    "sounds": [
+      "desk-knock.ogg",
+      "door-close-1.ogg",
+      "door-close-2.ogg",
+      "door-open.ogg",
+      "drawer-open.ogg",
+      "key-turn-1.ogg",
+      "key-turn-2.ogg",
+      "paper-1.ogg",
+      "paper-2.ogg",
+      "paper-3.ogg",
+      "paper-4.ogg",
+      "pen-click.ogg",
+      "stapler.ogg",
+      "switch-1.ogg",
+      "switch-2.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 2
+    }
+  },
+  {
+    "name": "office-digital",
+    "description": "Digital pings, alerts, and chimes",
+    "license": "CC0-1.0",
+    "credits": "Kenney (https://kenney.nl)",
+    "category": "digital",
+    "soundCount": 15,
+    "sounds": [
+      "alert-1.ogg",
+      "alert-2.ogg",
+      "ascend-1.ogg",
+      "ascend-2.ogg",
+      "ascend-3.ogg",
+      "chime.ogg",
+      "descend.ogg",
+      "down-tone.ogg",
+      "low-alert.ogg",
+      "ping-1.ogg",
+      "ping-2.ogg",
+      "ping-3.ogg",
+      "random-tone.ogg",
+      "up-tone.ogg",
+      "zap-tone.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 2
+    }
+  },
+  {
+    "name": "office-mechanical",
+    "description": "Machines, stamps, taps, and tools",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+    "category": "mechanical",
+    "soundCount": 15,
+    "sounds": [
+      "clamp.ogg",
+      "hum-1.ogg",
+      "hum-2.ogg",
+      "machine-1.ogg",
+      "machine-2.ogg",
+      "machine-3.ogg",
+      "ratchet.ogg",
+      "stamp-1.ogg",
+      "stamp-2.ogg",
+      "stamp-3.ogg",
+      "tap-1.ogg",
+      "tap-2.ogg",
+      "tap-3.ogg",
+      "tap-4.ogg",
+      "wrench.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 2
+    }
+  },
+  {
+    "name": "office-minimal",
+    "description": "Subtle clicks, ticks, and toggles",
+    "license": "CC0-1.0",
+    "credits": "Kenney (https://kenney.nl)",
+    "category": "minimal",
+    "soundCount": 15,
+    "sounds": [
+      "drop-1.ogg",
+      "drop-2.ogg",
+      "scroll-1.ogg",
+      "scroll-2.ogg",
+      "select-1.ogg",
+      "select-2.ogg",
+      "select-3.ogg",
+      "switch-1.ogg",
+      "switch-2.ogg",
+      "tick-1.ogg",
+      "tick-2.ogg",
+      "tick-3.ogg",
+      "toggle-1.ogg",
+      "toggle-2.ogg",
+      "toggle-3.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 2
+    }
+  },
+  {
     "name": "openarena-announcer",
     "description": "Arena FPS announcer voice lines from OpenArena",
     "license": "GPL-2.0",
@@ -603,6 +882,94 @@
       "complete": 3,
       "error": 4,
       "blocked": 3
+    }
+  },
+  {
+    "name": "serene-bells",
+    "description": "Temple bells, gongs, and crystal chimes",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+    "category": "bells",
+    "soundCount": 13,
+    "sounds": [
+      "crystal-1.ogg",
+      "crystal-2.ogg",
+      "crystal-3.ogg",
+      "crystal-4.ogg",
+      "crystal-5.ogg",
+      "gong-1.ogg",
+      "gong-2.ogg",
+      "temple-bell-1.ogg",
+      "temple-bell-2.ogg",
+      "temple-bell-3.ogg",
+      "wind-chime-1.ogg",
+      "wind-chime-2.ogg",
+      "wind-chime-3.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 1
+    }
+  },
+  {
+    "name": "serene-tones",
+    "description": "Soft metallic tones, chimes, and resonances",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+    "category": "tones",
+    "soundCount": 12,
+    "sounds": [
+      "chime-1.ogg",
+      "chime-2.ogg",
+      "chime-3.ogg",
+      "resonance-1.ogg",
+      "resonance-2.ogg",
+      "resonance-3.ogg",
+      "resonance-4.ogg",
+      "tone-1.ogg",
+      "tone-2.ogg",
+      "tone-3.ogg",
+      "tone-4.ogg",
+      "tone-5.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 2,
+      "blocked": 1
+    }
+  },
+  {
+    "name": "serene-water",
+    "description": "Water drops, drips, and gentle splashes",
+    "license": "CC0-1.0",
+    "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+    "category": "water",
+    "soundCount": 12,
+    "sounds": [
+      "bamboo-1.ogg",
+      "bamboo-2.ogg",
+      "bowl-1.ogg",
+      "bowl-2.ogg",
+      "bowl-3.ogg",
+      "bowl-4.ogg",
+      "drip-1.ogg",
+      "drip-2.ogg",
+      "vessel-1.ogg",
+      "vessel-2.ogg",
+      "water-drop-1.ogg",
+      "water-drop-2.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 2,
+      "blocked": 1
     }
   },
   {

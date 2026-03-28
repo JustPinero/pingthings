@@ -1,0 +1,47 @@
+{
+  "name": "nature-weather",
+  "description": "Thunder, wind gusts, rain drops, and storms",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "category": "weather",
+  "sounds": [
+    "sounds/distant-thunder.ogg",
+    "sounds/lightning-crack.ogg",
+    "sounds/rain-drop-1.ogg",
+    "sounds/rain-drop-2.ogg",
+    "sounds/storm-1.ogg",
+    "sounds/storm-2.ogg",
+    "sounds/thunder-1.ogg",
+    "sounds/thunder-2.ogg",
+    "sounds/thunder-3.ogg",
+    "sounds/thunder-rumble.ogg",
+    "sounds/wind-gust-1.ogg",
+    "sounds/wind-gust-2.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/distant-thunder.ogg",
+      "sounds/lightning-crack.ogg",
+      "sounds/rain-drop-1.ogg",
+      "sounds/rain-drop-2.ogg"
+    ],
+    "permission": [
+      "sounds/storm-1.ogg",
+      "sounds/storm-2.ogg",
+      "sounds/thunder-1.ogg"
+    ],
+    "complete": [
+      "sounds/thunder-2.ogg",
+      "sounds/thunder-3.ogg",
+      "sounds/thunder-rumble.ogg"
+    ],
+    "error": [
+      "sounds/wind-gust-1.ogg",
+      "sounds/wind-gust-2.ogg"
+    ],
+    "blocked": [
+      "sounds/distant-thunder.ogg"
+    ]
+  }
+}

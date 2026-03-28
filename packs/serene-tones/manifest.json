@@ -1,0 +1,47 @@
+{
+  "name": "serene-tones",
+  "description": "Soft metallic tones, chimes, and resonances",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "category": "tones",
+  "sounds": [
+    "sounds/chime-1.ogg",
+    "sounds/chime-2.ogg",
+    "sounds/chime-3.ogg",
+    "sounds/resonance-1.ogg",
+    "sounds/resonance-2.ogg",
+    "sounds/resonance-3.ogg",
+    "sounds/resonance-4.ogg",
+    "sounds/tone-1.ogg",
+    "sounds/tone-2.ogg",
+    "sounds/tone-3.ogg",
+    "sounds/tone-4.ogg",
+    "sounds/tone-5.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/chime-1.ogg",
+      "sounds/chime-2.ogg",
+      "sounds/chime-3.ogg",
+      "sounds/resonance-1.ogg"
+    ],
+    "permission": [
+      "sounds/resonance-2.ogg",
+      "sounds/resonance-3.ogg",
+      "sounds/resonance-4.ogg"
+    ],
+    "complete": [
+      "sounds/tone-1.ogg",
+      "sounds/tone-2.ogg",
+      "sounds/tone-3.ogg"
+    ],
+    "error": [
+      "sounds/tone-4.ogg",
+      "sounds/tone-5.ogg"
+    ],
+    "blocked": [
+      "sounds/chime-1.ogg"
+    ]
+  }
+}

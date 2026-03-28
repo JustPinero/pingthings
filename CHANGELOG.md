@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.1.0
+
+### Added
+- 3 new sound sections beyond retro gaming:
+  - **Serene** (3 packs): temple bells, water drops, soft tones
+  - **Office** (4 packs): minimal clicks, mechanical, digital pings, classic desk sounds
+  - **Nature** (5 packs): animals, ocean, night, weather, forest
+- 12 new sound packs (31 total, 522 sounds)
+- Redesigned React site with 4 themed sections:
+  - Landing page with section tiles
+  - /retro — CRT scanlines, neon glow
+  - /serene — soft gradients, zen aesthetic
+  - /office — clean white/gray, minimal corporate
+  - /nature — earthy greens, organic textures
+- React Router for page navigation
+- 20 sound categories
+
 ## 1.0.0
 
 ### Stable release

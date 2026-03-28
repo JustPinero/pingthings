@@ -1,0 +1,52 @@
+{
+  "name": "office-digital",
+  "description": "Digital pings, alerts, and chimes",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "digital",
+  "sounds": [
+    "sounds/alert-1.ogg",
+    "sounds/alert-2.ogg",
+    "sounds/ascend-1.ogg",
+    "sounds/ascend-2.ogg",
+    "sounds/ascend-3.ogg",
+    "sounds/chime.ogg",
+    "sounds/descend.ogg",
+    "sounds/down-tone.ogg",
+    "sounds/low-alert.ogg",
+    "sounds/ping-1.ogg",
+    "sounds/ping-2.ogg",
+    "sounds/ping-3.ogg",
+    "sounds/random-tone.ogg",
+    "sounds/up-tone.ogg",
+    "sounds/zap-tone.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/alert-1.ogg",
+      "sounds/alert-2.ogg",
+      "sounds/ascend-1.ogg",
+      "sounds/ascend-2.ogg"
+    ],
+    "permission": [
+      "sounds/ascend-3.ogg",
+      "sounds/chime.ogg",
+      "sounds/descend.ogg"
+    ],
+    "complete": [
+      "sounds/down-tone.ogg",
+      "sounds/low-alert.ogg",
+      "sounds/ping-1.ogg"
+    ],
+    "error": [
+      "sounds/ping-2.ogg",
+      "sounds/ping-3.ogg",
+      "sounds/random-tone.ogg"
+    ],
+    "blocked": [
+      "sounds/up-tone.ogg",
+      "sounds/zap-tone.ogg"
+    ]
+  }
+}

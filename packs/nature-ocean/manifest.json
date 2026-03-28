@@ -1,0 +1,45 @@
+{
+  "name": "nature-ocean",
+  "description": "Waves, bubbles, and ocean currents",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "category": "ocean",
+  "sounds": [
+    "sounds/bubble-1.ogg",
+    "sounds/bubble-2.ogg",
+    "sounds/current.ogg",
+    "sounds/deep-1.ogg",
+    "sounds/deep-2.ogg",
+    "sounds/shore-1.ogg",
+    "sounds/shore-2.ogg",
+    "sounds/wave-1.ogg",
+    "sounds/wave-2.ogg",
+    "sounds/wind-1.ogg",
+    "sounds/wind-2.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/bubble-1.ogg",
+      "sounds/bubble-2.ogg",
+      "sounds/current.ogg",
+      "sounds/deep-1.ogg"
+    ],
+    "permission": [
+      "sounds/deep-2.ogg",
+      "sounds/shore-1.ogg",
+      "sounds/shore-2.ogg"
+    ],
+    "complete": [
+      "sounds/wave-1.ogg",
+      "sounds/wave-2.ogg",
+      "sounds/wind-1.ogg"
+    ],
+    "error": [
+      "sounds/wind-2.ogg"
+    ],
+    "blocked": [
+      "sounds/bubble-1.ogg"
+    ]
+  }
+}

@@ -4,10 +4,13 @@ import assert from 'node:assert/strict';
 const { listPacks, resolvePack, getPackSounds, getEventSounds, getPackEvents, pickRandom } = await import('../src/packs.js');
 
 const ALL_PACKS = [
-  '7kaa-soldiers', 'wesnoth-combat', 'openarena-announcer', 'freedoom-arsenal',
-  'warzone2100-command', '0ad-civilizations', 'retro-8bit', 'kenney-interface', 'kenney-scifi',
-  'xonotic-announcer', 'fighting-announcer', 'kenney-voiceover', 'droid-announcer',
-  'kenney-digital', 'kenney-rpg', 'kenney-impacts', 'kenney-fighter', 'retro-weapons', 'retro-movement',
+  '0ad-civilizations', '7kaa-soldiers', 'droid-announcer', 'fighting-announcer', 'freedoom-arsenal',
+  'kenney-digital', 'kenney-fighter', 'kenney-impacts', 'kenney-interface', 'kenney-rpg',
+  'kenney-scifi', 'kenney-voiceover', 'nature-animals', 'nature-forest', 'nature-night',
+  'nature-ocean', 'nature-weather', 'office-classic', 'office-digital', 'office-mechanical',
+  'office-minimal', 'openarena-announcer', 'retro-8bit', 'retro-movement', 'retro-weapons',
+  'serene-bells', 'serene-tones', 'serene-water', 'warzone2100-command', 'wesnoth-combat',
+  'xonotic-announcer',
 ];
 
 describe('packs', () => {

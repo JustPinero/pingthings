@@ -1,0 +1,52 @@
+{
+  "name": "office-classic",
+  "description": "Keys, switches, paper, and desk sounds",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "category": "classic",
+  "sounds": [
+    "sounds/desk-knock.ogg",
+    "sounds/door-close-1.ogg",
+    "sounds/door-close-2.ogg",
+    "sounds/door-open.ogg",
+    "sounds/drawer-open.ogg",
+    "sounds/key-turn-1.ogg",
+    "sounds/key-turn-2.ogg",
+    "sounds/paper-1.ogg",
+    "sounds/paper-2.ogg",
+    "sounds/paper-3.ogg",
+    "sounds/paper-4.ogg",
+    "sounds/pen-click.ogg",
+    "sounds/stapler.ogg",
+    "sounds/switch-1.ogg",
+    "sounds/switch-2.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/desk-knock.ogg",
+      "sounds/door-close-1.ogg",
+      "sounds/door-close-2.ogg",
+      "sounds/door-open.ogg"
+    ],
+    "permission": [
+      "sounds/drawer-open.ogg",
+      "sounds/key-turn-1.ogg",
+      "sounds/key-turn-2.ogg"
+    ],
+    "complete": [
+      "sounds/paper-1.ogg",
+      "sounds/paper-2.ogg",
+      "sounds/paper-3.ogg"
+    ],
+    "error": [
+      "sounds/paper-4.ogg",
+      "sounds/pen-click.ogg",
+      "sounds/stapler.ogg"
+    ],
+    "blocked": [
+      "sounds/switch-1.ogg",
+      "sounds/switch-2.ogg"
+    ]
+  }
+}

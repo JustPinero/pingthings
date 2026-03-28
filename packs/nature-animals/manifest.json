@@ -1,0 +1,52 @@
+{
+  "name": "nature-animals",
+  "description": "Barks, chirps, howls, and creature calls",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "rubberduck (https://opengameart.org/content/80-cc0-creature-sfx)",
+  "category": "animals",
+  "sounds": [
+    "sounds/bark-1.ogg",
+    "sounds/bark-2.ogg",
+    "sounds/chirp-1.ogg",
+    "sounds/chirp-2.ogg",
+    "sounds/chirp-3.ogg",
+    "sounds/coo.ogg",
+    "sounds/cricket-1.ogg",
+    "sounds/cricket-2.ogg",
+    "sounds/howl.ogg",
+    "sounds/insect-1.ogg",
+    "sounds/insect-2.ogg",
+    "sounds/owl-hoot.ogg",
+    "sounds/peep-1.ogg",
+    "sounds/peep-2.ogg",
+    "sounds/snort.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/bark-1.ogg",
+      "sounds/bark-2.ogg",
+      "sounds/chirp-1.ogg",
+      "sounds/chirp-2.ogg"
+    ],
+    "permission": [
+      "sounds/chirp-3.ogg",
+      "sounds/coo.ogg",
+      "sounds/cricket-1.ogg"
+    ],
+    "complete": [
+      "sounds/cricket-2.ogg",
+      "sounds/howl.ogg",
+      "sounds/insect-1.ogg"
+    ],
+    "error": [
+      "sounds/insect-2.ogg",
+      "sounds/owl-hoot.ogg",
+      "sounds/peep-1.ogg"
+    ],
+    "blocked": [
+      "sounds/peep-2.ogg",
+      "sounds/snort.ogg"
+    ]
+  }
+}
