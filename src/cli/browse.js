@@ -10,7 +10,10 @@ Browse packs by category.
 With no arguments, shows all categories with pack counts.
 With a category, shows packs in that category.
 
-Categories: military, arena, fantasy, sci-fi, fps, retro, ui, transport, spooky, racing
+Gaming: military, arena, fantasy, sci-fi, fps, retro, ui
+Serene: bells, water, tones
+Office: minimal, digital, classic, mechanical
+Nature: animals, ocean, night, weather, forest
 
 Examples:
   pingthings browse              List all categories

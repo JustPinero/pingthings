@@ -7,7 +7,7 @@ const SECTIONS = [
   {
     id: 'retro',
     title: 'RETRO GAMING',
-    subtitle: '19 packs from open source games',
+    subtitle: '19 packs · soldiers, announcers, chiptune',
     description: 'Soldiers, announcers, explosions, chiptune bleeps. If it beeped in a 90s game, we got it.',
     emoji: null,
     image: `${BASE}images/pingthings-hero.jpg`,
@@ -15,7 +15,7 @@ const SECTIONS = [
   {
     id: 'serene',
     title: 'SERENE',
-    subtitle: 'Meditation & zen sounds',
+    subtitle: '3 packs · bells, water, tones',
     description: 'Singing bowls, gentle chimes, water drops, soft tones. For when you want calm, not chaos.',
     emoji: null,
     image: null,
@@ -23,7 +23,7 @@ const SECTIONS = [
   {
     id: 'office',
     title: 'OFFICE',
-    subtitle: 'Professional & clean sounds',
+    subtitle: '4 packs · clicks, pings, paper',
     description: 'Subtle dings, keyboard clicks, email pings. The sounds your workplace won\'t judge you for.',
     emoji: null,
     image: null,
@@ -31,7 +31,7 @@ const SECTIONS = [
   {
     id: 'nature',
     title: 'NATURE',
-    subtitle: 'Animals, oceans & weather',
+    subtitle: '5 packs · birds, waves, thunder',
     description: 'Bird chirps, ocean waves, thunder cracks, wolf howls. Bring the outside to your terminal.',
     emoji: null,
     image: null,
@@ -74,7 +74,7 @@ export default function Landing() {
           <a href="https://www.npmjs.com/package/pingthings">npm</a>
         </p>
         <p className="landing-stats">
-          19+ sound packs · 369+ sounds · 13 themes · 6 IDE adapters · Free forever
+          31 sound packs · 522 sounds · 17 themes · 6 IDE adapters · Free forever
         </p>
       </footer>
     </div>
