@@ -1,0 +1,142 @@
+/* SHARED PAGE STYLES — used by all section pages */
+
+.page-wrapper {
+  min-height: 100vh;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+}
+
+.page-nav {
+  padding: 1rem 1.5rem;
+}
+
+.back-link {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.back-link:hover { opacity: 1; }
+
+.page-header {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+}
+
+.page-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.page-stats {
+  opacity: 0.5;
+  font-size: 1.1rem;
+}
+
+.page-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.pack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .pack-grid { grid-template-columns: 1fr; }
+}
+
+.pack-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.pack-card:hover { transform: translateY(-2px); }
+
+.pack-name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.pack-meta {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.pack-category {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+}
+
+.pack-description {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.event-buttons {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.event-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  border: 2px solid;
+  transition: all 0.15s;
+  border-radius: 3px;
+}
+
+.event-btn:hover { transform: scale(1.05); }
+
+.event-btn.playing { animation: pulse 0.3s ease-in-out; }
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 3rem;
+  opacity: 0.5;
+  font-size: 1.2rem;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.4;
+  font-size: 0.9rem;
+}
+
+.page-footer a {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.page-footer a:hover { opacity: 1; }

@@ -1,0 +1,169 @@
+/* LANDING PAGE — Neutral, clean, welcoming */
+.landing {
+  min-height: 100vh;
+  background: #0a0a12;
+  color: #e0e0ee;
+  font-family: 'VT323', monospace;
+}
+
+.landing-header {
+  text-align: center;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.landing-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  background: linear-gradient(135deg, #39ff14, #00d4ff, #ff2d95, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.8rem;
+}
+
+.landing-tagline {
+  font-size: 1.8rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.landing-sub {
+  font-size: 1.2rem;
+  color: #777;
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.landing-sub em {
+  color: #39ff14;
+  font-style: normal;
+}
+
+.landing-install {
+  display: inline-block;
+  background: #111;
+  border: 1px solid #333;
+  padding: 0.6rem 1.5rem;
+  color: #39ff14;
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+/* TILE GRID */
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+@media (max-width: 650px) {
+  .tile-grid { grid-template-columns: 1fr; }
+}
+
+.tile {
+  position: relative;
+  display: block;
+  min-height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.tile-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.tile:hover .tile-bg {
+  opacity: 0.55;
+}
+
+.tile-content {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 220px;
+}
+
+.tile-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.tile-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.tile-desc {
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.4;
+}
+
+/* TILE THEMES */
+.tile-retro {
+  background: linear-gradient(135deg, #0a1a0a, #1a0a2a);
+  border: 2px solid #39ff14;
+}
+.tile-retro .tile-title { color: #39ff14; }
+
+.tile-serene {
+  background: linear-gradient(135deg, #0a1520, #0a2030);
+  border: 2px solid #7ecadb;
+}
+.tile-serene .tile-title { color: #7ecadb; }
+
+.tile-office {
+  background: linear-gradient(135deg, #151518, #1a1a20);
+  border: 2px solid #8888aa;
+}
+.tile-office .tile-title { color: #8888aa; }
+
+.tile-nature {
+  background: linear-gradient(135deg, #0a1a0a, #1a2a10);
+  border: 2px solid #6abf4b;
+}
+.tile-nature .tile-title { color: #6abf4b; }
+
+/* FOOTER */
+.landing-footer {
+  text-align: center;
+  padding: 2rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.landing-footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.landing-footer a:hover { color: #39ff14; }
+
+.landing-stats {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #444;
+}

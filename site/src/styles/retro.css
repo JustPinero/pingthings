@@ -1,0 +1,46 @@
+@import './shared.css';
+
+/* RETRO GAMING — CRT scanlines, neon glow, pixel art */
+.theme-retro {
+  background: #0a0a1a;
+  color: #e0e0ff;
+}
+
+.theme-retro::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15) 0px, rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+  z-index: 9999;
+}
+
+.theme-retro .back-link { color: #39ff14; }
+.theme-retro .page-title { color: #39ff14; text-shadow: 0 0 10px #39ff14, 0 0 40px rgba(57,255,20,0.3); }
+.theme-retro .page-stats { color: #8080aa; }
+
+.theme-retro .category-tab {
+  background: #12122a;
+  border: 2px solid #2a2a5a;
+  color: #8080aa;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+.theme-retro .category-tab:hover { border-color: #00d4ff; color: #00d4ff; }
+.theme-retro .category-tab.active { border-color: #39ff14; color: #39ff14; }
+
+.theme-retro .pack-card { background: #12122a; border: 3px solid #2a2a5a; }
+.theme-retro .pack-card:hover { border-color: #00d4ff; box-shadow: 0 0 20px rgba(0,212,255,0.1); }
+.theme-retro .pack-name { color: #39ff14; }
+.theme-retro .pack-category { background: rgba(180,77,255,0.15); color: #b44dff; }
+
+.theme-retro .event-btn { background: rgba(0,0,0,0.3); }
+.theme-retro .event-btn.done { border-color: #39ff14; color: #39ff14; }
+.theme-retro .event-btn.permission { border-color: #ffe600; color: #ffe600; }
+.theme-retro .event-btn.complete { border-color: #00d4ff; color: #00d4ff; }
+.theme-retro .event-btn.error { border-color: #ff2d95; color: #ff2d95; }
+.theme-retro .event-btn.blocked { border-color: #ff6b2b; color: #ff6b2b; }
+
+.theme-retro .page-footer a { color: #00d4ff; }

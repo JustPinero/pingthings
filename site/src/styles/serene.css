@@ -1,0 +1,47 @@
+@import './shared.css';
+
+/* SERENE — Soft gradients, muted tones, zen garden */
+.theme-serene {
+  background: linear-gradient(180deg, #0a1520, #0e1e2d, #0a1520);
+  color: #c0d0dd;
+}
+
+.theme-serene .back-link { color: #7ecadb; }
+.theme-serene .page-title { color: #7ecadb; text-shadow: 0 0 20px rgba(126,202,219,0.3); }
+.theme-serene .page-stats { color: #5a8a9a; }
+
+.theme-serene .category-tab {
+  background: rgba(126,202,219,0.05);
+  border: 1px solid rgba(126,202,219,0.2);
+  color: #5a8a9a;
+  font-family: 'VT323', monospace;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.theme-serene .category-tab:hover { border-color: #7ecadb; color: #7ecadb; }
+.theme-serene .category-tab.active { border-color: #7ecadb; color: #7ecadb; background: rgba(126,202,219,0.1); }
+
+.theme-serene .pack-card {
+  background: rgba(126,202,219,0.04);
+  border: 1px solid rgba(126,202,219,0.12);
+  border-radius: 12px;
+}
+.theme-serene .pack-card:hover { border-color: rgba(126,202,219,0.3); }
+.theme-serene .pack-name { color: #7ecadb; font-size: 0.6rem; }
+.theme-serene .pack-category { background: rgba(126,202,219,0.1); color: #7ecadb; border-radius: 10px; }
+
+.theme-serene .event-btn {
+  background: rgba(126,202,219,0.05);
+  border-radius: 12px;
+  font-family: 'VT323', monospace;
+  font-size: 0.7rem;
+}
+.theme-serene .event-btn.done { border-color: #7ecadb; color: #7ecadb; }
+.theme-serene .event-btn.permission { border-color: #a8c8d8; color: #a8c8d8; }
+.theme-serene .event-btn.complete { border-color: #98d8c8; color: #98d8c8; }
+.theme-serene .event-btn.error { border-color: #c89898; color: #c89898; }
+.theme-serene .event-btn.blocked { border-color: #c8a888; color: #c8a888; }
+
+.theme-serene .page-footer a { color: #7ecadb; }

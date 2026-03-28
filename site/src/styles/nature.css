@@ -1,0 +1,47 @@
+@import './shared.css';
+
+/* NATURE — Earthy greens, organic textures, forest vibes */
+.theme-nature {
+  background: linear-gradient(180deg, #0a150a, #0f1f0f, #0a150a);
+  color: #c0d8b0;
+}
+
+.theme-nature .back-link { color: #6abf4b; }
+.theme-nature .page-title { color: #6abf4b; text-shadow: 0 0 15px rgba(106,191,75,0.3); }
+.theme-nature .page-stats { color: #5a8a4a; }
+
+.theme-nature .category-tab {
+  background: rgba(106,191,75,0.05);
+  border: 1px solid rgba(106,191,75,0.2);
+  color: #5a8a4a;
+  font-family: 'VT323', monospace;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.theme-nature .category-tab:hover { border-color: #6abf4b; color: #6abf4b; }
+.theme-nature .category-tab.active { border-color: #6abf4b; color: #6abf4b; background: rgba(106,191,75,0.1); }
+
+.theme-nature .pack-card {
+  background: rgba(106,191,75,0.04);
+  border: 1px solid rgba(106,191,75,0.12);
+  border-radius: 10px;
+}
+.theme-nature .pack-card:hover { border-color: rgba(106,191,75,0.3); }
+.theme-nature .pack-name { color: #6abf4b; font-size: 0.6rem; }
+.theme-nature .pack-category { background: rgba(106,191,75,0.1); color: #6abf4b; border-radius: 6px; }
+
+.theme-nature .event-btn {
+  background: rgba(106,191,75,0.05);
+  border-radius: 6px;
+  font-family: 'VT323', monospace;
+  font-size: 0.7rem;
+}
+.theme-nature .event-btn.done { border-color: #6abf4b; color: #6abf4b; }
+.theme-nature .event-btn.permission { border-color: #b8a44b; color: #b8a44b; }
+.theme-nature .event-btn.complete { border-color: #4bb8a4; color: #4bb8a4; }
+.theme-nature .event-btn.error { border-color: #bf6a4b; color: #bf6a4b; }
+.theme-nature .event-btn.blocked { border-color: #8a5a4a; color: #8a5a4a; }
+
+.theme-nature .page-footer a { color: #6abf4b; }
