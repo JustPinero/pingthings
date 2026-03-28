@@ -595,3 +595,100 @@ describe('init', () => {
     assert.ok(stdout.includes('--informational'));
   });
 });
+
+describe('random-pack', () => {
+  it('switches to a different pack', () => {
+    const { exitCode, stdout } = run(['random-pack']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('Switched to:'));
+  });
+
+  it('--help shows usage', () => {
+    const { stdout } = run(['random-pack', '--help']);
+    assert.ok(stdout.includes('random'));
+  });
+});
+
+describe('doctor', () => {
+  it('runs diagnostic without error', () => {
+    const { exitCode, stdout } = run(['doctor']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('Platform:'));
+    assert.ok(stdout.includes('Audio player:'));
+    assert.ok(stdout.includes('Packs:'));
+  });
+
+  it('--help shows usage', () => {
+    const { stdout } = run(['doctor', '--help']);
+    assert.ok(stdout.includes('Diagnose'));
+  });
+});
+
+describe('completions', () => {
+  it('generates bash completions', () => {
+    const { exitCode, stdout } = run(['completions', 'bash']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('_pingthings'));
+    assert.ok(stdout.includes('complete'));
+  });
+
+  it('generates zsh completions', () => {
+    const { exitCode, stdout } = run(['completions', 'zsh']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('compdef'));
+  });
+
+  it('generates fish completions', () => {
+    const { exitCode, stdout } = run(['completions', 'fish']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('complete -c pingthings'));
+  });
+
+  it('rejects unknown shell', () => {
+    const { exitCode } = run(['completions', 'powershell']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('--help shows usage', () => {
+    const { stdout } = run(['completions', '--help']);
+    assert.ok(stdout.includes('bash'));
+    assert.ok(stdout.includes('zsh'));
+    assert.ok(stdout.includes('fish'));
+  });
+});
+
+describe('config new keys', () => {
+  it('sets cooldown', () => {
+    const { exitCode, stdout } = run(['config', 'cooldown', 'false']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('cooldown'));
+  });
+
+  it('rejects invalid cooldown', () => {
+    const { exitCode } = run(['config', 'cooldown', 'maybe']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('sets quietHours', () => {
+    const { exitCode, stdout } = run(['config', 'quietHours', '22-7']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('22-7'));
+  });
+
+  it('disables quietHours with null', () => {
+    const { exitCode, stdout } = run(['config', 'quietHours', 'null']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('disabled'));
+  });
+
+  it('rejects invalid quietHours format', () => {
+    const { exitCode } = run(['config', 'quietHours', 'midnight']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('uninstall rejects path traversal', () => {
+    const { exitCode, stderr } = run(['uninstall', '../../etc']);
+    assert.equal(exitCode, 1);
+    assert.ok(stderr.includes('Invalid'));
+  });
+});

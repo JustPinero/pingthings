@@ -6,6 +6,7 @@ const { listPacks, resolvePack, getPackSounds, getEventSounds, getPackEvents, pi
 const ALL_PACKS = [
   '7kaa-soldiers', 'wesnoth-combat', 'openarena-announcer', 'freedoom-arsenal',
   'warzone2100-command', '0ad-civilizations', 'retro-8bit', 'kenney-interface', 'kenney-scifi',
+  'xonotic-announcer', 'fighting-announcer',
 ];
 
 describe('packs', () => {

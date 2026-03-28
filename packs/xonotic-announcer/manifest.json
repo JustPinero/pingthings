@@ -1,0 +1,52 @@
+{
+  "name": "xonotic-announcer",
+  "description": "Arena FPS announcer voice lines from Xonotic",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "credits": "Xonotic Project (https://github.com/xonotic/xonotic-data.pk3dir)",
+  "category": "arena",
+  "sounds": [
+    "sounds/1fragleft.wav",
+    "sounds/airshot.wav",
+    "sounds/amazing.wav",
+    "sounds/awesome.wav",
+    "sounds/begin.wav",
+    "sounds/botlike.wav",
+    "sounds/electrobitch.wav",
+    "sounds/headshot.wav",
+    "sounds/impressive.wav",
+    "sounds/lastsecond.wav",
+    "sounds/leadgained.wav",
+    "sounds/narrowly.wav",
+    "sounds/prepareforbattle.wav",
+    "sounds/terminated.wav",
+    "sounds/yoda.wav"
+  ],
+  "events": {
+    "done": [
+      "sounds/awesome.wav",
+      "sounds/amazing.wav",
+      "sounds/impressive.wav",
+      "sounds/airshot.wav"
+    ],
+    "permission": [
+      "sounds/prepareforbattle.wav",
+      "sounds/begin.wav",
+      "sounds/1fragleft.wav"
+    ],
+    "complete": [
+      "sounds/yoda.wav",
+      "sounds/botlike.wav",
+      "sounds/leadgained.wav"
+    ],
+    "error": [
+      "sounds/terminated.wav",
+      "sounds/headshot.wav",
+      "sounds/electrobitch.wav"
+    ],
+    "blocked": [
+      "sounds/lastsecond.wav",
+      "sounds/narrowly.wav"
+    ]
+  }
+}

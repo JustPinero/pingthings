@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.5.0
+
+### Added
+- 2 new sound packs:
+  - `xonotic-announcer` — 15 arena FPS voice lines (GPL v2+)
+  - `fighting-announcer` — 20 fighting game announcer clips (CC-BY 4.0)
+- `random-pack` command — switch to a random pack for variety
+- `doctor` command — diagnose audio setup, verify packs, check Claude Code hooks
+- `completions` command — generate bash/zsh/fish shell completions
+- Sound cooldown — prevents playing the same sound twice in a row (configurable)
+- Quiet hours — mute during specified hours, e.g. `config quietHours 22-7`
+- Path traversal protection in `uninstall` command
+
+### Changed
+- Total: 11 packs, 247 sounds
+
 ## 0.4.0
 
 ### Added

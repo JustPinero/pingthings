@@ -8,6 +8,8 @@ const DEFAULTS = {
   specificSound: null,
   volume: 100,
   eventPacks: {},
+  cooldown: true,
+  quietHours: null,
 };
 
 export function getConfigDir() {
@@ -43,6 +45,34 @@ export function writeConfig(config) {
 
 export function getDefaults() {
   return { ...DEFAULTS };
+}
+
+export function getLastPlayed() {
+  const path = join(getConfigDir(), '.last-played');
+  try {
+    return readFileSync(path, 'utf8').trim();
+  } catch {
+    return null;
+  }
+}
+
+export function setLastPlayed(soundPath) {
+  const path = join(getConfigDir(), '.last-played');
+  try {
+    writeFileSync(path, soundPath, 'utf8');
+  } catch {}
+}
+
+export function isQuietHours(config) {
+  if (!config.quietHours) return false;
+  const [start, end] = config.quietHours.split('-').map(Number);
+  if (isNaN(start) || isNaN(end)) return false;
+  const hour = new Date().getHours();
+  if (start < end) {
+    return hour >= start && hour < end;
+  }
+  // Wraps midnight (e.g., 22-7)
+  return hour >= start || hour < end;
 }
 
 export const VALID_MODES = ['random', 'specific', 'informational'];

@@ -1,0 +1,62 @@
+{
+  "name": "fighting-announcer",
+  "description": "Fighting game announcer voice lines",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "credits": "Alba MacKenna (https://opengameart.org/content/voice-pack%E2%94%82fighting-game-announcer)",
+  "category": "arena",
+  "sounds": [
+    "sounds/begin.wav",
+    "sounds/complete.wav",
+    "sounds/congratulations.wav",
+    "sounds/defeat.wav",
+    "sounds/failure.wav",
+    "sounds/fight.wav",
+    "sounds/final-round.wav",
+    "sounds/finish.wav",
+    "sounds/game-over.wav",
+    "sounds/get-set.wav",
+    "sounds/go.wav",
+    "sounds/great.wav",
+    "sounds/high-score.wav",
+    "sounds/new-record.wav",
+    "sounds/no-contest.wav",
+    "sounds/ready.wav",
+    "sounds/sudden-death.wav",
+    "sounds/victory.wav",
+    "sounds/you-lose.wav",
+    "sounds/you-win.wav"
+  ],
+  "events": {
+    "done": [
+      "sounds/complete.wav",
+      "sounds/great.wav",
+      "sounds/finish.wav",
+      "sounds/new-record.wav"
+    ],
+    "permission": [
+      "sounds/fight.wav",
+      "sounds/ready.wav",
+      "sounds/get-set.wav",
+      "sounds/begin.wav",
+      "sounds/go.wav"
+    ],
+    "complete": [
+      "sounds/victory.wav",
+      "sounds/you-win.wav",
+      "sounds/congratulations.wav",
+      "sounds/high-score.wav"
+    ],
+    "error": [
+      "sounds/game-over.wav",
+      "sounds/defeat.wav",
+      "sounds/you-lose.wav",
+      "sounds/failure.wav"
+    ],
+    "blocked": [
+      "sounds/sudden-death.wav",
+      "sounds/final-round.wav",
+      "sounds/no-contest.wav"
+    ]
+  }
+}

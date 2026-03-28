@@ -1,6 +1,6 @@
 import { readConfig, writeConfig, VALID_MODES, VALID_EVENTS } from '../config.js';
 
-const VALID_KEYS = ['activePack', 'mode', 'specificSound', 'volume', 'eventPacks'];
+const VALID_KEYS = ['activePack', 'mode', 'specificSound', 'volume', 'eventPacks', 'cooldown', 'quietHours'];
 
 function showHelp() {
   console.log(`
@@ -17,13 +17,16 @@ Keys:
   mode            random, specific, or informational
   specificSound   Sound name for specific mode
   volume          Playback volume (0-100)
+  cooldown        Avoid repeating the same sound (true/false)
+  quietHours      Mute during hours, e.g. "22-7" (10pm-7am)
   eventPacks      Per-event pack overrides (use "pingthings config eventPacks.<event> <pack>")
 
 Examples:
   pingthings config                          Show full config
-  pingthings config volume                   Show current volume
   pingthings config volume 50               Set volume to 50%
-  pingthings config mode informational      Enable event-based sounds
+  pingthings config cooldown false          Disable cooldown
+  pingthings config quietHours 22-7         Mute 10pm to 7am
+  pingthings config quietHours null         Disable quiet hours
   pingthings config eventPacks.error openarena-announcer
 `);
 }
@@ -106,6 +109,32 @@ export default function config(args) {
     cfg.volume = vol;
     writeConfig(cfg);
     console.log(`volume set to: ${vol}`);
+    return;
+  }
+
+  // Validate cooldown
+  if (key === 'cooldown') {
+    if (value !== 'true' && value !== 'false') {
+      console.error('Cooldown must be true or false.');
+      process.exit(1);
+    }
+    const cfg = readConfig();
+    cfg.cooldown = value === 'true';
+    writeConfig(cfg);
+    console.log(`cooldown set to: ${cfg.cooldown}`);
+    return;
+  }
+
+  // Validate quietHours
+  if (key === 'quietHours') {
+    if (value !== 'null' && !/^\d{1,2}-\d{1,2}$/.test(value)) {
+      console.error('Quiet hours must be in format "HH-HH" (e.g., "22-7") or "null" to disable.');
+      process.exit(1);
+    }
+    const cfg = readConfig();
+    cfg.quietHours = value === 'null' ? null : value;
+    writeConfig(cfg);
+    console.log(`quietHours set to: ${cfg.quietHours ?? '(disabled)'}`);
     return;
   }
 

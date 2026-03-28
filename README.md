@@ -137,8 +137,11 @@ For different sounds based on what Claude is doing, set up multiple hooks:
 | `pingthings browse [category]` | Browse packs by category |
 | `pingthings search <term>` | Search packs and sounds |
 | `pingthings sounds [pack]` | List individual sounds in a pack |
+| `pingthings random-pack` | Switch to a random pack |
 | `pingthings install <source>` | Install a pack from GitHub or local path |
 | `pingthings uninstall <pack>` | Remove a user-installed pack |
+| `pingthings doctor` | Diagnose audio setup and configuration |
+| `pingthings completions <shell>` | Generate shell completions (bash/zsh/fish) |
 
 ## Configuration
 
@@ -230,6 +233,12 @@ Clean modern UI notification sounds by **Kenney** — 18 sounds including confir
 
 ### kenney-scifi
 Futuristic sci-fi notification sounds by **Kenney** — 18 sounds including computer noises, force fields, lasers, explosions, and thrusters. License: CC0.
+
+### xonotic-announcer
+Arena FPS announcer voice lines from **Xonotic** — 15 sounds including "awesome!", "amazing!", "impressive!", "prepare for battle!", "terminated!". License: GPL v2+.
+
+### fighting-announcer
+Fighting game announcer voice lines — 20 sounds including "Fight!", "Victory!", "K.O!", "Game Over!", "Ready?", "You Win!". License: CC-BY 4.0.
 
 ## Custom packs
 

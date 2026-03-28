@@ -26,6 +26,9 @@ const commands = {
   create: () => import('../src/cli/create.js'),
   theme: () => import('../src/cli/theme.js'),
   'test-events': () => import('../src/cli/test-events.js'),
+  'random-pack': () => import('../src/cli/random-pack.js'),
+  doctor: () => import('../src/cli/doctor.js'),
+  completions: () => import('../src/cli/completions.js'),
 };
 
 function showHelp() {
@@ -47,9 +50,12 @@ Commands:
   theme [name]       Apply a sound theme (maps events across packs)
   config [key] [val] Show or update configuration
   init               Set up Claude Code hooks automatically
+  random-pack        Switch to a random pack
   create <dir>       Create a new pack from a folder of audio files
   install <source>   Install a pack from GitHub or URL
   uninstall <pack>   Remove a user-installed pack
+  doctor             Diagnose audio setup and configuration
+  completions <shell> Generate shell completions (bash/zsh/fish)
 
 Options:
   --help, -h         Show this help message

@@ -1,4 +1,4 @@
-import { readConfig, VALID_EVENTS } from '../config.js';
+import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours } from '../config.js';
 import { getPackSounds, getEventSounds, pickRandom, resolvePack } from '../packs.js';
 import { playSound } from '../player.js';
 import { basename } from 'node:path';
@@ -133,5 +133,26 @@ export default function play(args) {
     process.exit(1);
   }
 
+  // Quiet hours check
+  if (isQuietHours(config)) {
+    return;
+  }
+
+  // Cooldown: avoid playing the same sound twice in a row
+  if (config.cooldown && !parsed.sound) {
+    const lastPlayed = getLastPlayed();
+    if (soundFile === lastPlayed) {
+      // Pick a different sound from the same pool
+      const pool = parsed.event
+        ? getEventSounds(config.eventPacks?.[parsed.event] || packName, parsed.event)
+        : getPackSounds(packName);
+      if (pool.length > 1) {
+        const alternatives = pool.filter(s => s !== lastPlayed);
+        soundFile = pickRandom(alternatives);
+      }
+    }
+  }
+
+  setLastPlayed(soundFile);
   playSound(soundFile, config.volume);
 }
