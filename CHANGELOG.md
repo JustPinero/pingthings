@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.9.0
+
+### Added
+- Multi-IDE adapter system via `setup` command:
+  - `pingthings setup cursor` — Cursor AI editor
+  - `pingthings setup copilot` — GitHub Copilot CLI
+  - `pingthings setup codex` — OpenAI Codex CLI
+  - `pingthings setup windsurf` — Windsurf (Cascade)
+  - `pingthings setup gemini` — Gemini CLI
+  - `pingthings setup claude-code` — Claude Code (same as init)
+- `demo` command — plays one sound from every pack in sequence
+- `stats` command — usage statistics (total plays, most-played pack, daily count)
+- `--silent` flag on play — run hooks without audio (for scripts/CI)
+- Play history tracking (stats.json in config dir)
+- 4 new themes: developer, arcade, tabletop, tournament (13 total)
+
 ## 0.8.0
 
 ### Added

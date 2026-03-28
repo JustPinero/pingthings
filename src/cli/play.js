@@ -2,10 +2,11 @@ import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours } 
 import { getPackSounds, getEventSounds, pickRandom, resolvePack } from '../packs.js';
 import { playSound } from '../player.js';
 import { sendNotification } from '../notify.js';
+import { recordPlay } from './stats.js';
 import { basename } from 'node:path';
 
 function parseArgs(args) {
-  const result = { sound: null, event: null, notify: false };
+  const result = { sound: null, event: null, notify: false, silent: false };
 
   for (let i = 0; i < args.length; i++) {
     if ((args[i] === '--event' || args[i] === '-e') && args[i + 1]) {
@@ -13,6 +14,8 @@ function parseArgs(args) {
       i++;
     } else if (args[i] === '--notify' || args[i] === '-n') {
       result.notify = true;
+    } else if (args[i] === '--silent' || args[i] === '-s') {
+      result.silent = true;
     } else if (args[i] === '--help' || args[i] === '-h') {
       showHelp();
       process.exit(0);
@@ -136,8 +139,9 @@ export default function play(args) {
     process.exit(1);
   }
 
-  // Quiet hours check
-  if (isQuietHours(config)) {
+  // Quiet hours or silent mode — skip playback
+  if (isQuietHours(config) || parsed.silent) {
+    recordPlay(packName, parsed.event);
     return;
   }
 
@@ -145,7 +149,6 @@ export default function play(args) {
   if (config.cooldown && !parsed.sound) {
     const lastPlayed = getLastPlayed();
     if (soundFile === lastPlayed) {
-      // Pick a different sound from the same pool
       const pool = parsed.event
         ? getEventSounds(config.eventPacks?.[parsed.event] || packName, parsed.event)
         : getPackSounds(packName);
@@ -158,6 +161,7 @@ export default function play(args) {
 
   setLastPlayed(soundFile);
   playSound(soundFile, config.volume);
+  recordPlay(packName, parsed.event);
 
   // Desktop notification
   if (parsed.notify || config.notifications) {

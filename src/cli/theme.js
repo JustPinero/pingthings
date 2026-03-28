@@ -90,6 +90,50 @@ const THEMES = {
       blocked: 'kenney-scifi',
     },
   },
+  'developer': {
+    description: 'AI assistant vibes — droid announcer + human voiceover',
+    activePack: 'droid-announcer',
+    eventPacks: {
+      done: 'droid-announcer',
+      permission: 'droid-announcer',
+      complete: 'kenney-voiceover',
+      error: 'droid-announcer',
+      blocked: 'kenney-voiceover',
+    },
+  },
+  'arcade': {
+    description: 'Full arcade experience — 8-bit everything',
+    activePack: 'retro-8bit',
+    eventPacks: {
+      done: 'retro-8bit',
+      permission: 'retro-movement',
+      complete: 'retro-8bit',
+      error: 'retro-weapons',
+      blocked: 'retro-weapons',
+    },
+  },
+  'tabletop': {
+    description: 'Tavern sounds — RPG foley meets material impacts',
+    activePack: 'kenney-rpg',
+    eventPacks: {
+      done: 'kenney-rpg',
+      permission: 'kenney-rpg',
+      complete: 'kenney-impacts',
+      error: 'kenney-impacts',
+      blocked: 'kenney-impacts',
+    },
+  },
+  'tournament': {
+    description: 'Fighting game tournament — multiple announcers',
+    activePack: 'kenney-fighter',
+    eventPacks: {
+      done: 'fighting-announcer',
+      permission: 'kenney-fighter',
+      complete: 'kenney-fighter',
+      error: 'fighting-announcer',
+      blocked: 'xonotic-announcer',
+    },
+  },
   'chaos': {
     description: 'Random pack for every event — maximum variety',
     activePack: '7kaa-soldiers',

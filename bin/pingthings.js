@@ -23,6 +23,9 @@ const commands = {
   install: () => import('../src/cli/install.js'),
   uninstall: () => import('../src/cli/uninstall.js'),
   init: () => import('../src/cli/init.js'),
+  setup: () => import('../src/cli/setup.js'),
+  demo: () => import('../src/cli/demo.js'),
+  stats: () => import('../src/cli/stats.js'),
   create: () => import('../src/cli/create.js'),
   theme: () => import('../src/cli/theme.js'),
   'test-events': () => import('../src/cli/test-events.js'),
@@ -51,7 +54,10 @@ Commands:
   test-events [pack] Play all event sounds to hear what each one sounds like
   theme [name]       Apply a sound theme (maps events across packs)
   config [key] [val] Show or update configuration
+  demo               Play one sound from every pack — showroom tour
+  stats              Show usage statistics
   init               Set up Claude Code hooks automatically
+  setup <ide>        Configure hooks for any IDE (cursor, copilot, codex, etc.)
   random-pack        Switch to a random pack
   create <dir>       Create a new pack from a folder of audio files
   install <source>   Install a pack from GitHub or URL
