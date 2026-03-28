@@ -1,0 +1,97 @@
+{
+  "cesp_version": "1.0",
+  "name": "serene-tones",
+  "display_name": "Soft metallic tones, chimes, and resonances",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/100-cc0-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/chime-1.ogg",
+          "label": "chime 1",
+          "sha256": "d96f0989a9a0195f89e6edd7a4aff82afc06208ac09d4ffed346bfe7d73cf72e"
+        },
+        {
+          "file": "sounds/chime-2.ogg",
+          "label": "chime 2",
+          "sha256": "274b5f054a4114bc450a93c19d6910de66dc5400845b93e86303ec3d9bf89f0b"
+        },
+        {
+          "file": "sounds/chime-3.ogg",
+          "label": "chime 3",
+          "sha256": "0b1509913c81c66f38b4caac082f35ba84f35f986923c9c5a4657fd1a3903473"
+        },
+        {
+          "file": "sounds/resonance-1.ogg",
+          "label": "resonance 1",
+          "sha256": "b1e239b5c3c2fc961b2ea2f2f065b18578fab6a0526c968a4d6aa51a1b29c970"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/resonance-2.ogg",
+          "label": "resonance 2",
+          "sha256": "be059b1317d6439c95be0298b35b5a3e26709bb99101a8872ee69a3aa005ae75"
+        },
+        {
+          "file": "sounds/resonance-3.ogg",
+          "label": "resonance 3",
+          "sha256": "c92f2fb602d3ce126ab1d5d960cb374ae64ec0f59323cb33dbace4f29752c675"
+        },
+        {
+          "file": "sounds/resonance-4.ogg",
+          "label": "resonance 4",
+          "sha256": "9785e14cb4c9b9e67f8eb90f7f7432050de56aff568bdd019b0d8ac6fd2febb2"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/tone-1.ogg",
+          "label": "tone 1",
+          "sha256": "7429854e121d59b179aa112d92bdf408d414d53548808bd13e8214b33a6572ea"
+        },
+        {
+          "file": "sounds/tone-2.ogg",
+          "label": "tone 2",
+          "sha256": "acd35999e7ca9d2a977eff0843ce9911efbc482e64e66edc67f2875342d005f3"
+        },
+        {
+          "file": "sounds/tone-3.ogg",
+          "label": "tone 3",
+          "sha256": "535be3d3e6e06b5008cc181edb0747a5a00cc8e46973eb3f0efe0c9a59b11821"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/tone-4.ogg",
+          "label": "tone 4",
+          "sha256": "438107b84d47a02c851c787a993dc787d560bc2eff58d62ca5dd14b25e146767"
+        },
+        {
+          "file": "sounds/tone-5.ogg",
+          "label": "tone 5",
+          "sha256": "122c78198d381aef1dbea904432e75057bcb025f469905310cc2a1847d08136e"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/chime-1.ogg",
+          "label": "chime 1",
+          "sha256": "d96f0989a9a0195f89e6edd7a4aff82afc06208ac09d4ffed346bfe7d73cf72e"
+        }
+      ]
+    }
+  }
+}

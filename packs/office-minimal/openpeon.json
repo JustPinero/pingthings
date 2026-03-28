@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "office-minimal",
+  "display_name": "Subtle clicks, ticks, and toggles",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/drop-1.ogg",
+          "label": "drop 1",
+          "sha256": "df37bf03f56f6581c16b56398d0f78b38be260a339763b6ebd930c5e46ddfa42"
+        },
+        {
+          "file": "sounds/drop-2.ogg",
+          "label": "drop 2",
+          "sha256": "b18e591a77c726d8bfd538511f7e11fa344f1ee5cc7c4bb23c612560e9cb575e"
+        },
+        {
+          "file": "sounds/scroll-1.ogg",
+          "label": "scroll 1",
+          "sha256": "2b4145846cc0543957ddef00611d63852bf147c472e5e8fd2de4e6e94fcec5f3"
+        },
+        {
+          "file": "sounds/scroll-2.ogg",
+          "label": "scroll 2",
+          "sha256": "f88f4c48e8818e6ba0cf07a6f86473c0f6b034776db6b7dfb0336133900cc88f"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/select-1.ogg",
+          "label": "select 1",
+          "sha256": "8a5806afe8f79199fbd72e586d064fe6c16864a86ceb6cef96d29c59126d1775"
+        },
+        {
+          "file": "sounds/select-2.ogg",
+          "label": "select 2",
+          "sha256": "4428cb1daa538dd4db8f8f9674b44cc3178688eb1e91a51804d32508cec80906"
+        },
+        {
+          "file": "sounds/select-3.ogg",
+          "label": "select 3",
+          "sha256": "2bbd59cb219d17ebcffa0972b3fb0ce427dc846a706c6ef85fe0cd3848885c39"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/switch-1.ogg",
+          "label": "switch 1",
+          "sha256": "e1ab9aa0120080581ec2d21ac7521afd8603fd7f809317369ea52e79221b8d02"
+        },
+        {
+          "file": "sounds/switch-2.ogg",
+          "label": "switch 2",
+          "sha256": "7d58fe66b04b35fd8d5136cd0ff4bfd9690dedbb5076babbc4a1b96b44c53846"
+        },
+        {
+          "file": "sounds/tick-1.ogg",
+          "label": "tick 1",
+          "sha256": "775fe098287a69bbc095f938b8067898292147507916cea507574287c427315a"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/tick-2.ogg",
+          "label": "tick 2",
+          "sha256": "17ad4e196e7ba39ed3197a6b184294f75ac654750f301cf457823860c5bc8e4d"
+        },
+        {
+          "file": "sounds/tick-3.ogg",
+          "label": "tick 3",
+          "sha256": "c3648e458d722e2c25feddf2983871fabbede95649b326d89e11b799cbb9cd3e"
+        },
+        {
+          "file": "sounds/toggle-1.ogg",
+          "label": "toggle 1",
+          "sha256": "5b22ff679a3a4fc31a3074f8d77e7b38f95a43cccc4f24c53429176fc1b8b253"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/toggle-2.ogg",
+          "label": "toggle 2",
+          "sha256": "5260584d86ce6eed3fb544e6743410d4e12c90cbf7a9aa3c0a349ece62aad965"
+        },
+        {
+          "file": "sounds/toggle-3.ogg",
+          "label": "toggle 3",
+          "sha256": "bbab97582711baacd5b53383b9df210744783c35da70f5e0cd55099aa34aa494"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "cesp_version": "1.0",
+  "name": "serene-water",
+  "display_name": "Water drops, drips, and gentle splashes",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/100-cc0-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/bamboo-1.ogg",
+          "label": "bamboo 1",
+          "sha256": "37258414f552ff42613355f85a02c56645b22ad0cfabe6e645a53c7fdcc0c34e"
+        },
+        {
+          "file": "sounds/bamboo-2.ogg",
+          "label": "bamboo 2",
+          "sha256": "e44042cf1ac39052a34fffa7fc0e5f26d65c1045729398d51d2675cded4dcbf7"
+        },
+        {
+          "file": "sounds/bowl-1.ogg",
+          "label": "bowl 1",
+          "sha256": "370e8423d92170accb667559f9d57265e3f1137fcc02ea749a24926ad68ec611"
+        },
+        {
+          "file": "sounds/bowl-2.ogg",
+          "label": "bowl 2",
+          "sha256": "0e390821c41d91edcd12f6013f45d6a438d5a342f6b0467cbe573f65c5a69c31"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/bowl-3.ogg",
+          "label": "bowl 3",
+          "sha256": "8ef79f1240c68addb90fd9e92dc1be91cdb82dff37fba2038e80b303ba0eb486"
+        },
+        {
+          "file": "sounds/bowl-4.ogg",
+          "label": "bowl 4",
+          "sha256": "8cf85c5758ffc729f6ce3fd2cf9c00fc5bcc66c902b6a854aa8d60f416a10932"
+        },
+        {
+          "file": "sounds/drip-1.ogg",
+          "label": "drip 1",
+          "sha256": "46d21e06a3054e61ba5cb18215ef74db5ad0ce317b695697945bebd9e70a048d"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/drip-2.ogg",
+          "label": "drip 2",
+          "sha256": "4d2c911208981f31d985095a756c3fb512cae59c3c6fe438758de9d4a2d34a20"
+        },
+        {
+          "file": "sounds/vessel-1.ogg",
+          "label": "vessel 1",
+          "sha256": "48e5f10e729250fe6bd2bf8eef77cabc616e77895c7c94dfb5b1488ddc54d097"
+        },
+        {
+          "file": "sounds/vessel-2.ogg",
+          "label": "vessel 2",
+          "sha256": "21cb21aa19bd7262ca973d2bbd8488541795ffec1fb4dab741f47469a6833f6b"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/water-drop-1.ogg",
+          "label": "water drop 1",
+          "sha256": "4ef62d23b2b9fcb70d0fe2fcf0dfb95a496ca12917be396e9e5fc99ce17aa6bf"
+        },
+        {
+          "file": "sounds/water-drop-2.ogg",
+          "label": "water drop 2",
+          "sha256": "78c414eb1f73dc23c6a79bdafbfa24619ad87d56eac60bc19a42d4dec5a33222"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/bamboo-1.ogg",
+          "label": "bamboo 1",
+          "sha256": "37258414f552ff42613355f85a02c56645b22ad0cfabe6e645a53c7fdcc0c34e"
+        }
+      ]
+    }
+  }
+}

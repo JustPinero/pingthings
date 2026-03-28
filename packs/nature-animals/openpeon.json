@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "nature-animals",
+  "display_name": "Barks, chirps, howls, and creature calls",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/80-cc0-creature-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/bark-1.ogg",
+          "label": "bark 1",
+          "sha256": "688db74bc42482928d38d51d5371d5d72e5b9a3fa99b45f18a58eca8230d92ba"
+        },
+        {
+          "file": "sounds/bark-2.ogg",
+          "label": "bark 2",
+          "sha256": "02449e89169aaac8a38aaf4881a04313ba052d0b80a95845ff30a2208327bf63"
+        },
+        {
+          "file": "sounds/chirp-1.ogg",
+          "label": "chirp 1",
+          "sha256": "c2789e44b90fb432c9c28f2b67c45c3f87798473c03948648fb031dfe50664dc"
+        },
+        {
+          "file": "sounds/chirp-2.ogg",
+          "label": "chirp 2",
+          "sha256": "5e8b49d3d19d634db30da77fbdababfc8b5deeae7556c415cbb4c1342edc06c3"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/chirp-3.ogg",
+          "label": "chirp 3",
+          "sha256": "8dbc37bda5032a4ce19a7f41a28e4542fe86aa04f4f4a074031caf7dcef1db33"
+        },
+        {
+          "file": "sounds/coo.ogg",
+          "label": "coo",
+          "sha256": "3eba8963edf60b3ef5d81d5581cc2008b00fa7e48d41019ba99f6007f956bc1b"
+        },
+        {
+          "file": "sounds/cricket-1.ogg",
+          "label": "cricket 1",
+          "sha256": "d89731829ccfb3df1274ecbdff692f29a79f01a4aec2584b4cd052f6a594d7b5"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/cricket-2.ogg",
+          "label": "cricket 2",
+          "sha256": "4724797404fd0dff99bd4eaea8dd8b311b9d6909f027251f802a9a3e168ca5d9"
+        },
+        {
+          "file": "sounds/howl.ogg",
+          "label": "howl",
+          "sha256": "4f7119ffb4c8144edbb12b17459b643d44d485ae29ab67a996befce6932e65b6"
+        },
+        {
+          "file": "sounds/insect-1.ogg",
+          "label": "insect 1",
+          "sha256": "cb71a0e6b1a94e395a79f4a3b039113016939d1797cca057a0c2abd0342a6487"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/insect-2.ogg",
+          "label": "insect 2",
+          "sha256": "816988cb7abe1ca7ed2a156836d240523e1c0d62b96df8aba78a4e4d5acf4337"
+        },
+        {
+          "file": "sounds/owl-hoot.ogg",
+          "label": "owl hoot",
+          "sha256": "86d9125e32b6668e330aa94e78b6c6088fa4b30ac00d3f54959e5945b215e06a"
+        },
+        {
+          "file": "sounds/peep-1.ogg",
+          "label": "peep 1",
+          "sha256": "0d97b4fe83885f4234a70aaa3d9a67dddaf20f3404ef15db7e1b341ebdd5e0f2"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/peep-2.ogg",
+          "label": "peep 2",
+          "sha256": "49071b56e79008168ff95b75408b9e427da1b609d7cd898626f420665fe8d1e2"
+        },
+        {
+          "file": "sounds/snort.ogg",
+          "label": "snort",
+          "sha256": "9d6835065923ddfef498c452aa5ba0ead88d8870f311b0af4f1f09dc8e4703fd"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "cesp_version": "1.0",
+  "name": "nature-ocean",
+  "display_name": "Waves, bubbles, and ocean currents",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/100-cc0-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/bubble-1.ogg",
+          "label": "bubble 1",
+          "sha256": "9d0731e87659ef1b4cac8745b89d7c27cdc1afc4478c30d0010fe4249e3d5ec1"
+        },
+        {
+          "file": "sounds/bubble-2.ogg",
+          "label": "bubble 2",
+          "sha256": "fb22b9960a447fb71ba90f6d570505dd8110a8ff0fc9fac48518aff4e1aaa9b0"
+        },
+        {
+          "file": "sounds/current.ogg",
+          "label": "current",
+          "sha256": "6da132c6ca9c01c50e0604301cc9187accb214eceecced52738a865fd99379d0"
+        },
+        {
+          "file": "sounds/deep-1.ogg",
+          "label": "deep 1",
+          "sha256": "204f984f20bb115148c57614e197699d15bc4ad7505816f0aac8b80537cc01b6"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/deep-2.ogg",
+          "label": "deep 2",
+          "sha256": "c70c1ade35fb2eeb1b5c4f68c696d4f9ab4d86ddd22ced6d3629a1ee72644822"
+        },
+        {
+          "file": "sounds/shore-1.ogg",
+          "label": "shore 1",
+          "sha256": "1e110391907ac60f4a1aa2c0073c0f93bd9e417de61f5f2ff912009fd702bfec"
+        },
+        {
+          "file": "sounds/shore-2.ogg",
+          "label": "shore 2",
+          "sha256": "6c4a3f610c3ea505d2094d5ae841ce50c9ee661cfa544d0b7e7b40e3b10daf62"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/wave-1.ogg",
+          "label": "wave 1",
+          "sha256": "ef213fe00eca987db8c8a2fa07fcdb1c8aa4af76a4d3397f3d04c9cbceb90e73"
+        },
+        {
+          "file": "sounds/wave-2.ogg",
+          "label": "wave 2",
+          "sha256": "63cc032639cb0d4e59785550bd1b7e7c6f878b4f01a0bfeea3bd9a0265e45d74"
+        },
+        {
+          "file": "sounds/wind-1.ogg",
+          "label": "wind 1",
+          "sha256": "775f095332abf33a6b0211e7a8df0c8802c5420dddd91ad5768a9acdca1a2072"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/wind-2.ogg",
+          "label": "wind 2",
+          "sha256": "abdbd06e6afc8dd71876566e1a2e42fcfbba94a05f322911aeff51e0bceee383"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/bubble-1.ogg",
+          "label": "bubble 1",
+          "sha256": "9d0731e87659ef1b4cac8745b89d7c27cdc1afc4478c30d0010fe4249e3d5ec1"
+        }
+      ]
+    }
+  }
+}

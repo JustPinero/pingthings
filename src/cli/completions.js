@@ -24,7 +24,8 @@ const COMMANDS = [
 const THEMES = [
   'retro', 'sci-fi', 'arena', 'fantasy', 'ancient',
   'professional', '8bit', 'space', 'developer', 'arcade',
-  'tabletop', 'tournament', 'chaos', 'reset',
+  'tabletop', 'tournament', 'zen', 'corporate', 'outdoors',
+  'nightshift', 'chaos', 'reset',
 ];
 
 const EVENTS = ['done', 'permission', 'complete', 'error', 'blocked'];

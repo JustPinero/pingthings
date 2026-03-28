@@ -275,6 +275,42 @@ Female fighting game announcer by **Kenney** — 18 sounds including "flawless v
 ### retro-movement
 8-bit portals, doors, jumps, and bleeps — 18 sounds from the SubspaceAudio collection. License: CC0.
 
+### serene-bells
+Temple bells, gongs, and crystal chimes — 13 peaceful sounds for zen notifications. License: CC0.
+
+### serene-water
+Water drops, drips, and gentle splashes — 12 calming water sounds. License: CC0.
+
+### serene-tones
+Soft metallic tones, chimes, and resonances — 12 meditative notification sounds. License: CC0.
+
+### office-minimal
+Subtle clicks, ticks, and toggles — 15 workplace-appropriate notification sounds. License: CC0.
+
+### office-digital
+Digital pings, alerts, and ascending chimes — 15 modern notification tones. License: CC0.
+
+### office-classic
+Keys, switches, paper, and desk sounds — 15 classic office foley. License: CC0.
+
+### office-mechanical
+Machines, stamps, taps, and tools — 15 satisfying mechanical sounds. License: CC0.
+
+### nature-animals
+Barks, chirps, howls, and creature calls — 15 animal notification sounds. License: CC0.
+
+### nature-night
+Nocturnal sounds — owls, crickets, distant calls — 14 night-time notifications. License: CC0.
+
+### nature-forest
+Twigs snapping, birds singing, streams babbling — 14 forest sounds. License: CC0.
+
+### nature-ocean
+Waves, bubbles, and ocean currents — 11 coastal notification sounds. License: CC0.
+
+### nature-weather
+Thunder, wind gusts, rain drops, and storms — 12 dramatic weather sounds. License: CC0.
+
 ## Custom packs
 
 Place packs in `~/.config/pingthings/packs/<pack-name>/`:
@@ -342,6 +378,10 @@ pingthings theme reset        # back to defaults
 | `arcade` | Full 8-bit arcade experience |
 | `tabletop` | Tavern sounds — RPG foley + material impacts |
 | `tournament` | Fighting game tournament — multiple announcers |
+| `zen` | Calm and centered — bells, water, soft tones |
+| `corporate` | Workplace appropriate — clean clicks and subtle pings |
+| `outdoors` | Bring nature inside — birds, waves, weather |
+| `nightshift` | Late night coding — crickets, owls, soft tones |
 | `chaos` | Different pack for every event — maximum variety |
 
 ## Tools

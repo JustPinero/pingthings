@@ -1,0 +1,102 @@
+{
+  "cesp_version": "1.0",
+  "name": "nature-night",
+  "display_name": "Nocturnal sounds — owls, crickets, distant calls",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/80-cc0-creature-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/distant-animal-1.ogg",
+          "label": "distant animal 1",
+          "sha256": "efdd216241b56090bb8a73a5bb0fa9af70a6924f367b81e77271d1ec1b2b8e39"
+        },
+        {
+          "file": "sounds/distant-animal-2.ogg",
+          "label": "distant animal 2",
+          "sha256": "5410a6ccadd8e304b4f64953dc0a41bc71600078547f570154485cbf629a9ac3"
+        },
+        {
+          "file": "sounds/eerie-1.ogg",
+          "label": "eerie 1",
+          "sha256": "5a968585a6c4e35a76b16455bf74e2ec05fae646b383c8b80775249b67a069e1"
+        },
+        {
+          "file": "sounds/eerie-2.ogg",
+          "label": "eerie 2",
+          "sha256": "edbae4da03a23f88455b39909238805bee777a2124e335c56bcfeb8651519158"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/night-call-1.ogg",
+          "label": "night call 1",
+          "sha256": "4259b22f3679da8998dc317eb742d5da8a8c96ad2558339eccde33e6ead9f35b"
+        },
+        {
+          "file": "sounds/night-call-2.ogg",
+          "label": "night call 2",
+          "sha256": "dcfef61112d39ecc8d86c7692b050b370764c936cadcdbc9115b5a21d15cf899"
+        },
+        {
+          "file": "sounds/night-cricket-1.ogg",
+          "label": "night cricket 1",
+          "sha256": "1f78d3f1071eb13f59cafe0d7ee2c60ad0710c1fa21479d33d2e5b34f5c09b39"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/night-cricket-2.ogg",
+          "label": "night cricket 2",
+          "sha256": "718eeb36fc9788392bbc9131057070ae4db336d95c43c5e7337f30262ebffa87"
+        },
+        {
+          "file": "sounds/night-owl.ogg",
+          "label": "night owl",
+          "sha256": "c0e633bb245d07d13babf651cb49fa719f6da0a92c5487ee3b289c7935cc30fb"
+        },
+        {
+          "file": "sounds/rustle-1.ogg",
+          "label": "rustle 1",
+          "sha256": "815fb853fc45d84b75033f64deb86377843834742cb9642bd91a15b8bcfc5309"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/rustle-2.ogg",
+          "label": "rustle 2",
+          "sha256": "465b4939377ea6beaaf97c9828f9fe961ac56a913844bc9253ad68602e05fed5"
+        },
+        {
+          "file": "sounds/rustle-3.ogg",
+          "label": "rustle 3",
+          "sha256": "f31c3ea35299b4b27b1ad72bdb70c46b047d4d0ba2b8da71fa1251a3f8652ab2"
+        },
+        {
+          "file": "sounds/sleeping-creature.ogg",
+          "label": "sleeping creature",
+          "sha256": "3d7e8af212ca1c7c249ea6ea122f84f160f9ee24ceab227a53d312d7566737eb"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/wolf-howl.ogg",
+          "label": "wolf howl",
+          "sha256": "7ec448bd2cf38664ab95cfdafb7fe7372f9596b08cb77151fdb53e03b848618d"
+        }
+      ]
+    }
+  }
+}

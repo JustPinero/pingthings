@@ -1,0 +1,97 @@
+{
+  "cesp_version": "1.0",
+  "name": "nature-weather",
+  "display_name": "Thunder, wind gusts, rain drops, and storms",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/100-cc0-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/distant-thunder.ogg",
+          "label": "distant thunder",
+          "sha256": "6bc4d819fa3ad9b28b5df93ade2a6b1bf35b833020975533baf44bfac753c5ef"
+        },
+        {
+          "file": "sounds/lightning-crack.ogg",
+          "label": "lightning crack",
+          "sha256": "0c37e10c8e873ffc704a0a6d4896cd5a6ce3fc6d2096ab6ef94aea5b0f67cb88"
+        },
+        {
+          "file": "sounds/rain-drop-1.ogg",
+          "label": "rain drop 1",
+          "sha256": "e153192fe4b54588b380bf519c103c1760f91fc60db1f2c8651d7be33fd47d3d"
+        },
+        {
+          "file": "sounds/rain-drop-2.ogg",
+          "label": "rain drop 2",
+          "sha256": "fb35050a82382be9ea6f4cbb3463aa659bb1fa9ae3840c6ccac2cad4003a20a0"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/storm-1.ogg",
+          "label": "storm 1",
+          "sha256": "ffd2bf2cf5cf1345ac3821982024c610a4ccfcec62f2881a356582f9eb794fb6"
+        },
+        {
+          "file": "sounds/storm-2.ogg",
+          "label": "storm 2",
+          "sha256": "32df54f27057e0834401249d3161b18a44e57ac5e643fe10e3ac276eef3ca95c"
+        },
+        {
+          "file": "sounds/thunder-1.ogg",
+          "label": "thunder 1",
+          "sha256": "411f16c26d1055e51f429038074a2b5e68abc872ea6b58b74a2b0b119336b12e"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/thunder-2.ogg",
+          "label": "thunder 2",
+          "sha256": "721d6a4bbd95bddb544daa444ef9fde8fad9415eeefc0d5b93de7d47869ee59e"
+        },
+        {
+          "file": "sounds/thunder-3.ogg",
+          "label": "thunder 3",
+          "sha256": "6f62141e9344f614e2c34c2d1545b840f2a68de93777e70d676c2fbc284d53ed"
+        },
+        {
+          "file": "sounds/thunder-rumble.ogg",
+          "label": "thunder rumble",
+          "sha256": "3df5563c72cd6f558900e103157ad587557d3605aa7cfc1f728c4081a97acbe7"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/wind-gust-1.ogg",
+          "label": "wind gust 1",
+          "sha256": "7d5435ba69cd3b3d5b210965b34ea3306a622625266ace16e70d0a83dad07767"
+        },
+        {
+          "file": "sounds/wind-gust-2.ogg",
+          "label": "wind gust 2",
+          "sha256": "9548017130ae715e20d521494c15f30bb3144f533f0dc31b7e0cdca39de044ed"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/distant-thunder.ogg",
+          "label": "distant thunder",
+          "sha256": "6bc4d819fa3ad9b28b5df93ade2a6b1bf35b833020975533baf44bfac753c5ef"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "office-mechanical",
+  "display_name": "Machines, stamps, taps, and tools",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/100-cc0-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/clamp.ogg",
+          "label": "clamp",
+          "sha256": "f09ce3b53a20836fb6dcba11591c76d3450c980d7e503e7aa3d93db8c741f755"
+        },
+        {
+          "file": "sounds/hum-1.ogg",
+          "label": "hum 1",
+          "sha256": "83558bfa45019ba66da11c1e33a06caf1458e672f03ea46f47967b0ff348ebee"
+        },
+        {
+          "file": "sounds/hum-2.ogg",
+          "label": "hum 2",
+          "sha256": "1b9d69841840aca2f162f96de5e065b3a0977018b1888e59d4b25967b81450c1"
+        },
+        {
+          "file": "sounds/machine-1.ogg",
+          "label": "machine 1",
+          "sha256": "76760c370851da59af3c1edbd61d8a076d3113210d2690f838175426fd3b417e"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/machine-2.ogg",
+          "label": "machine 2",
+          "sha256": "f39e15f0e937a0dba6783a3ee51240b593b9fa9ab401fe4a7d3920ae5455ba01"
+        },
+        {
+          "file": "sounds/machine-3.ogg",
+          "label": "machine 3",
+          "sha256": "14c1431e8f725b963570252c028998fd07a55f93f31264135cd1fe051606c674"
+        },
+        {
+          "file": "sounds/ratchet.ogg",
+          "label": "ratchet",
+          "sha256": "f4a05107ae3e95e0f2b448203ee2a20f98691fe588cca9a5da717c0bc8b09d75"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/stamp-1.ogg",
+          "label": "stamp 1",
+          "sha256": "a55ba3d21101331a889ad4bb7e443e8638d3c9d4f1f9d0c92f7312bb2f7267df"
+        },
+        {
+          "file": "sounds/stamp-2.ogg",
+          "label": "stamp 2",
+          "sha256": "37025f2e17839e84865a10bd08a80ef7f903450a057879f6dc7c42a47e97d586"
+        },
+        {
+          "file": "sounds/stamp-3.ogg",
+          "label": "stamp 3",
+          "sha256": "345ab0103534e8bf5c30bf572db01388592271c6f7caec9af709d098f4b10fd6"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/tap-1.ogg",
+          "label": "tap 1",
+          "sha256": "dcdb2bdd58042473289487371d2a8ee08a222de1d2048746142c54db3733116b"
+        },
+        {
+          "file": "sounds/tap-2.ogg",
+          "label": "tap 2",
+          "sha256": "d32fd73560b20bcf3616b0205d34796e3ff08b4714b5ccec8c3ae2da4e196f11"
+        },
+        {
+          "file": "sounds/tap-3.ogg",
+          "label": "tap 3",
+          "sha256": "2f27f2748690b16721577f9b8e2984574632e73e2cee8ca9eb39913a8176bebc"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/tap-4.ogg",
+          "label": "tap 4",
+          "sha256": "abbf88d18737781496974013272ee7fad62a36594ee025be01feb5290c4d4b0e"
+        },
+        {
+          "file": "sounds/wrench.ogg",
+          "label": "wrench",
+          "sha256": "db920af36bb99f29f17dbcc4a17b0549b767ed7caaeb22ed008217ea890a66f8"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "office-digital",
+  "display_name": "Digital pings, alerts, and chimes",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/alert-1.ogg",
+          "label": "alert 1",
+          "sha256": "e2cdc8ee1c52e31c85d65a6a4ea33a8b25d588cafab6c00cb7ec8f95994ef6b4"
+        },
+        {
+          "file": "sounds/alert-2.ogg",
+          "label": "alert 2",
+          "sha256": "6620d85e1b4f02b776c051230cb40f6e11f711e56394665263c955a1c6aceeca"
+        },
+        {
+          "file": "sounds/ascend-1.ogg",
+          "label": "ascend 1",
+          "sha256": "a1dca632a9a443f5b887693ae3c520888d2613e236e1158f4c58b0cc631fcf4c"
+        },
+        {
+          "file": "sounds/ascend-2.ogg",
+          "label": "ascend 2",
+          "sha256": "8c1614b7a97224ca1165762a16b466851ab9dcc9d6a59020d8ec972058b10f58"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/ascend-3.ogg",
+          "label": "ascend 3",
+          "sha256": "6400c1c909d1cf68820cdf6fb33e865672e6c272baeeb8291ce0b3b1d56ac9cd"
+        },
+        {
+          "file": "sounds/chime.ogg",
+          "label": "chime",
+          "sha256": "17c263fc4d9fce1044b000f8c1ac3b727e66e13ad25ea56d27bf31eb35849e0d"
+        },
+        {
+          "file": "sounds/descend.ogg",
+          "label": "descend",
+          "sha256": "c99925e6fa6344a8e58658b31704970b166cded95c15ef935b8c23e009d63c13"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/down-tone.ogg",
+          "label": "down tone",
+          "sha256": "730b8942e458981dbd0595d79b8852b1cd41c76618a50dae649c0da8d05fd89d"
+        },
+        {
+          "file": "sounds/low-alert.ogg",
+          "label": "low alert",
+          "sha256": "435c948b0d95aa145776d54ade7be21536f0f36548a0f195dfe30fc1288d42cb"
+        },
+        {
+          "file": "sounds/ping-1.ogg",
+          "label": "ping 1",
+          "sha256": "18f049df95d4e9051665477e0b83c677dcd108a66163cdc2876b75d1908a2817"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/ping-2.ogg",
+          "label": "ping 2",
+          "sha256": "25c1d1fee09b0147bcba5d66e5813cbd4b7c38cb315755422ace8c1854cf1e09"
+        },
+        {
+          "file": "sounds/ping-3.ogg",
+          "label": "ping 3",
+          "sha256": "234d7d42efcafb203fa3d11c9be10b20bc32e5b143811cfef15e3c8a72f65742"
+        },
+        {
+          "file": "sounds/random-tone.ogg",
+          "label": "random tone",
+          "sha256": "60132d90f71e6b0cf167cade533010ac592dbc4ff7e19d85fd77694eef712767"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/up-tone.ogg",
+          "label": "up tone",
+          "sha256": "9199739274ccd9eb6e738fe39fd5da35b22fa81c29d07ff9536248915a38c779"
+        },
+        {
+          "file": "sounds/zap-tone.ogg",
+          "label": "zap tone",
+          "sha256": "46c227d13dd5f77b0ef5bbe4bf7c6751e55a941138c0a9b4aa2e76900d8cd2a3"
+        }
+      ]
+    }
+  }
+}

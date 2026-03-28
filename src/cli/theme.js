@@ -134,6 +134,50 @@ const THEMES = {
       blocked: 'xonotic-announcer',
     },
   },
+  'zen': {
+    description: 'Calm and centered — bells, water, and soft tones',
+    activePack: 'serene-bells',
+    eventPacks: {
+      done: 'serene-bells',
+      permission: 'serene-tones',
+      complete: 'serene-bells',
+      error: 'serene-water',
+      blocked: 'serene-tones',
+    },
+  },
+  'corporate': {
+    description: 'Workplace appropriate — clean clicks and subtle pings',
+    activePack: 'office-minimal',
+    eventPacks: {
+      done: 'office-minimal',
+      permission: 'office-digital',
+      complete: 'office-digital',
+      error: 'office-minimal',
+      blocked: 'office-classic',
+    },
+  },
+  'outdoors': {
+    description: 'Bring nature inside — birds, waves, and weather',
+    activePack: 'nature-forest',
+    eventPacks: {
+      done: 'nature-forest',
+      permission: 'nature-animals',
+      complete: 'nature-ocean',
+      error: 'nature-weather',
+      blocked: 'nature-night',
+    },
+  },
+  'nightshift': {
+    description: 'Late night coding — crickets, owls, and soft tones',
+    activePack: 'nature-night',
+    eventPacks: {
+      done: 'serene-tones',
+      permission: 'nature-night',
+      complete: 'serene-bells',
+      error: 'nature-weather',
+      blocked: 'nature-night',
+    },
+  },
   'chaos': {
     description: 'Random pack for every event — maximum variety',
     activePack: '7kaa-soldiers',
@@ -142,7 +186,7 @@ const THEMES = {
       permission: 'openarena-announcer',
       complete: 'warzone2100-command',
       error: 'freedoom-arsenal',
-      blocked: 'wesnoth-combat',
+      blocked: 'nature-weather',
     },
   },
 };

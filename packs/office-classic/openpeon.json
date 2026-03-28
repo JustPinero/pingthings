@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "office-classic",
+  "display_name": "Keys, switches, paper, and desk sounds",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/100-cc0-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/desk-knock.ogg",
+          "label": "desk knock",
+          "sha256": "230bca385c5b827d78675c19c2187ed41c371b4a467fada86bf940b1f79bffd7"
+        },
+        {
+          "file": "sounds/door-close-1.ogg",
+          "label": "door close 1",
+          "sha256": "b85c6779bcea9ed3a428f81b18c1ac77c5eef1c52b46c000577b52380a681b7c"
+        },
+        {
+          "file": "sounds/door-close-2.ogg",
+          "label": "door close 2",
+          "sha256": "5b8e845d5a05de4d6d8a37c046c7a74245587a12913c4345e179136ac3e74691"
+        },
+        {
+          "file": "sounds/door-open.ogg",
+          "label": "door open",
+          "sha256": "9e86110bc284d5067ed5236e362b29b7dee6634ab66b4257519f25d9c5db4ecd"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/drawer-open.ogg",
+          "label": "drawer open",
+          "sha256": "35a306f1f9a30335ae4c74b9c913847f8d3c03dd1bc4ee149945d0b3c645756a"
+        },
+        {
+          "file": "sounds/key-turn-1.ogg",
+          "label": "key turn 1",
+          "sha256": "9b861cdc838014c97599cd87e9e3ef44827e762924523de02183825521a8185e"
+        },
+        {
+          "file": "sounds/key-turn-2.ogg",
+          "label": "key turn 2",
+          "sha256": "4e733a54413bb3e6e86f2fff964c7cfdf5f11fc8e96c4a0c34e115c7a04c1ea3"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/paper-1.ogg",
+          "label": "paper 1",
+          "sha256": "5af52b83ded58bae9f4a85844bafd50fa7171cf5782ef370e02ea385e1208912"
+        },
+        {
+          "file": "sounds/paper-2.ogg",
+          "label": "paper 2",
+          "sha256": "1cf78115b04b80a9aabbb4913f86d5ac8b7e86c40014f9cb7332099ea9a5881f"
+        },
+        {
+          "file": "sounds/paper-3.ogg",
+          "label": "paper 3",
+          "sha256": "166d99557b8660da14374dcf6a8d5409758948700a4c38466a04fb33206bbc59"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/paper-4.ogg",
+          "label": "paper 4",
+          "sha256": "0bb5dd43cfd09305110d47da1f86acc2d9768b43e66bf13455db542bec895a24"
+        },
+        {
+          "file": "sounds/pen-click.ogg",
+          "label": "pen click",
+          "sha256": "84e90a1997d233a48fdf897906ae0d800d04be0414862ada9ea0a27da4f0b6f3"
+        },
+        {
+          "file": "sounds/stapler.ogg",
+          "label": "stapler",
+          "sha256": "dd0baa0a8dfec32e59dbc1f6f5268783b6852e16970a9579d0c7b3c191025d03"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/switch-1.ogg",
+          "label": "switch 1",
+          "sha256": "f9e600c2fb0f88fd9cc45fbb1a9ae80a099b71e5a5ae2bc0abeeacfde13880d9"
+        },
+        {
+          "file": "sounds/switch-2.ogg",
+          "label": "switch 2",
+          "sha256": "aa92e425fb2c27e968805ad8be669ec6e7cdaceaaa8f5a2a2408225c20c541de"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "cesp_version": "1.0",
+  "name": "serene-bells",
+  "display_name": "Temple bells, gongs, and crystal chimes",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org/content/100-cc0-sfx)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/crystal-1.ogg",
+          "label": "crystal 1",
+          "sha256": "76472d04fd226ed4085e2311579f06743058c6d2e84b58f98f8411a1df6f59da"
+        },
+        {
+          "file": "sounds/crystal-2.ogg",
+          "label": "crystal 2",
+          "sha256": "6a5298598dccc8d3e9bcbb796592e2faf8a2466fb44e30e49e16c9efdb88d4d1"
+        },
+        {
+          "file": "sounds/crystal-3.ogg",
+          "label": "crystal 3",
+          "sha256": "36101e663a3632b3250d31a2a8126503522949d8f0f9c71e972395e8fa730240"
+        },
+        {
+          "file": "sounds/crystal-4.ogg",
+          "label": "crystal 4",
+          "sha256": "5b5d3cc2fbc28641ac43edb5aa35d71454e94bae3dfd602651f8534489025ec8"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/crystal-5.ogg",
+          "label": "crystal 5",
+          "sha256": "2208e1672bcf978b4017dce7d5c041baaf54783eff0b7fcefd19f50b696b71cb"
+        },
+        {
+          "file": "sounds/gong-1.ogg",
+          "label": "gong 1",
+          "sha256": "2a342c131b799b50a37aa3042d0e17df4681e7e6b236490304fbb858f4b2bdc9"
+        },
+        {
+          "file": "sounds/gong-2.ogg",
+          "label": "gong 2",
+          "sha256": "7243bed6531923f645a2174930d78590f74dee7a4293029a5bcdffdd950d917c"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/temple-bell-1.ogg",
+          "label": "temple bell 1",
+          "sha256": "58f691e86643830a9e1b3b98a89663c630557516d80884414b92e6e104a59088"
+        },
+        {
+          "file": "sounds/temple-bell-2.ogg",
+          "label": "temple bell 2",
+          "sha256": "98873698998affe3b148cf07e94ac34d9bf926efde21599811bfa6e4a9b39852"
+        },
+        {
+          "file": "sounds/temple-bell-3.ogg",
+          "label": "temple bell 3",
+          "sha256": "8d9527e50779b225c1f156b79a799d16b95f8b7888d213b5deb8df0b6b90df4b"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/wind-chime-1.ogg",
+          "label": "wind chime 1",
+          "sha256": "169a111dd165ca9f7888da4960a9741299cff9ae67b96db78cc91389c06f1388"
+        },
+        {
+          "file": "sounds/wind-chime-2.ogg",
+          "label": "wind chime 2",
+          "sha256": "793c1c9f3b294456aacf1ec6b9177d57c1b003c6f6119f6468471d9841c4d884"
+        },
+        {
+          "file": "sounds/wind-chime-3.ogg",
+          "label": "wind chime 3",
+          "sha256": "34cc9a8d84b5896a6d8320d389359e61cc6d767dc008e5b6f08d92d3325adc48"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/crystal-1.ogg",
+          "label": "crystal 1",
+          "sha256": "76472d04fd226ed4085e2311579f06743058c6d2e84b58f98f8411a1df6f59da"
+        }
+      ]
+    }
+  }
+}

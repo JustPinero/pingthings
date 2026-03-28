@@ -1,0 +1,102 @@
+{
+  "cesp_version": "1.0",
+  "name": "nature-forest",
+  "display_name": "Twigs snapping, birds singing, streams babbling",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "rubberduck (https://opengameart.org)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/bird-1.ogg",
+          "label": "bird 1",
+          "sha256": "2307f1c474553d2e4df3bbcb33d639ba07151a20f4ec0a1318e123adfeaf978a"
+        },
+        {
+          "file": "sounds/bird-2.ogg",
+          "label": "bird 2",
+          "sha256": "259e66edd549cdd9f854f8773f0c80bba134d8dc5cd958e88a3ac138b0e1c2b5"
+        },
+        {
+          "file": "sounds/bird-3.ogg",
+          "label": "bird 3",
+          "sha256": "bf5fdb97f8e50d0b21589f90a3c012d58317a3b6c9d48b10df39d8ef6295714c"
+        },
+        {
+          "file": "sounds/branch-crack.ogg",
+          "label": "branch crack",
+          "sha256": "a92620a05a9024a0a037039551d611664d5787ac2b1aeab860217900ddd8f21b"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/critter-1.ogg",
+          "label": "critter 1",
+          "sha256": "3eb76fe26451b35f331b512fdcbb94283b2ebcb91ee82b99ebc7968dd625fa85"
+        },
+        {
+          "file": "sounds/critter-2.ogg",
+          "label": "critter 2",
+          "sha256": "dc44dbb83c6a29568a8e47e67e2ad50569097296c7f9b2aace72d9fa340720d7"
+        },
+        {
+          "file": "sounds/leaf-rustle-1.ogg",
+          "label": "leaf rustle 1",
+          "sha256": "4903171ea0798ea43966c3307c37f604f84cc385ee533686221a31ff1397914c"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/leaf-rustle-2.ogg",
+          "label": "leaf rustle 2",
+          "sha256": "c58d89c21f0f1ded6ff89daa77efbbdcaf9fc9fbe8bb5e269f9d39837e0016a8"
+        },
+        {
+          "file": "sounds/leaf-rustle-3.ogg",
+          "label": "leaf rustle 3",
+          "sha256": "05d99d989748493195ddbcf24f239bed13390440444813fa62f54ccb751a10a1"
+        },
+        {
+          "file": "sounds/songbird.ogg",
+          "label": "songbird",
+          "sha256": "4b8516ec59eb813e524b1ab08828557be999981757185f6bf302713368ab44fd"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/stream-splash-1.ogg",
+          "label": "stream splash 1",
+          "sha256": "352eb6257d3a6068df145350c62feec989f80e0d52d3b30d7375c700fabda6fa"
+        },
+        {
+          "file": "sounds/stream-splash-2.ogg",
+          "label": "stream splash 2",
+          "sha256": "11e4f94e58223f7d98eff8db2db7bd17d75054c2b7771e6d879fb55fd7f52a91"
+        },
+        {
+          "file": "sounds/twig-snap-1.ogg",
+          "label": "twig snap 1",
+          "sha256": "f544971c6a8d01bceb270004c8e228a78c90ca14545fc38691ffcc43ce149cba"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/twig-snap-2.ogg",
+          "label": "twig snap 2",
+          "sha256": "786952cae782a131ea1e6c9ee3a881d0ce0ca9da3bc75e7cfac27ddeeb275d87"
+        }
+      ]
+    }
+  }
+}
