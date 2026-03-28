@@ -6,6 +6,7 @@
   "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
   "category": "classic",
   "sounds": [
+    "sounds/clock-tick.ogg",
     "sounds/desk-knock.ogg",
     "sounds/door-close-1.ogg",
     "sounds/door-close-2.ogg",
@@ -36,7 +37,8 @@
       "sounds/drawer-open.ogg",
       "sounds/heavy-door.ogg",
       "sounds/item-place.ogg",
-      "sounds/key-turn-1.ogg"
+      "sounds/key-turn-1.ogg",
+      "sounds/clock-tick.ogg"
     ],
     "complete": [
       "sounds/key-turn-2.ogg",

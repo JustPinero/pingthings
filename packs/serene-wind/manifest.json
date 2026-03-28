@@ -1,0 +1,52 @@
+{
+  "name": "serene-wind",
+  "description": "Wind chimes and gentle breezes — peaceful air sounds",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "pmiller (https://opengameart.org/content/wind-chimes) and rubberduck (https://opengameart.org)",
+  "category": "wind",
+  "sounds": [
+    "sounds/breeze-soft-1.ogg",
+    "sounds/breeze-soft-2.ogg",
+    "sounds/breeze-soft-3.ogg",
+    "sounds/wind-chime-1-20s.ogg",
+    "sounds/wind-chime-1-45s.ogg",
+    "sounds/wind-chime-1-5s.ogg",
+    "sounds/wind-chime-1-70s.ogg",
+    "sounds/wind-chime-2-20s.ogg",
+    "sounds/wind-chime-2-45s.ogg",
+    "sounds/wind-chime-2-5s.ogg",
+    "sounds/wind-chime-2-70s.ogg",
+    "sounds/wind-chime-3-20s.ogg",
+    "sounds/wind-chime-3-45s.ogg",
+    "sounds/wind-chime-3-5s.ogg",
+    "sounds/wind-chime-3-70s.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/wind-chime-1-5s.ogg",
+      "sounds/wind-chime-2-5s.ogg",
+      "sounds/wind-chime-3-5s.ogg"
+    ],
+    "permission": [
+      "sounds/wind-chime-1-20s.ogg",
+      "sounds/wind-chime-2-20s.ogg",
+      "sounds/wind-chime-3-20s.ogg"
+    ],
+    "complete": [
+      "sounds/wind-chime-1-45s.ogg",
+      "sounds/wind-chime-2-45s.ogg",
+      "sounds/wind-chime-3-45s.ogg"
+    ],
+    "error": [
+      "sounds/breeze-soft-1.ogg",
+      "sounds/breeze-soft-2.ogg",
+      "sounds/breeze-soft-3.ogg"
+    ],
+    "blocked": [
+      "sounds/wind-chime-1-70s.ogg",
+      "sounds/wind-chime-2-70s.ogg",
+      "sounds/wind-chime-3-70s.ogg"
+    ]
+  }
+}

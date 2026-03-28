@@ -466,6 +466,41 @@
     }
   },
   {
+    "name": "mduel-retro",
+    "description": "Marshmallow Duel — retro combat, pickups, explosions, and teleports",
+    "license": "GPL-2.0",
+    "credits": "Liam Alexander / pospi (https://github.com/pospi/mduel-ds) — Marshmallow Duel DS",
+    "category": "retro",
+    "soundCount": 18,
+    "sounds": [
+      "boots.ogg",
+      "bullet-reflect.ogg",
+      "explosion.ogg",
+      "hook-hit.ogg",
+      "lightning.ogg",
+      "menu-cancel.ogg",
+      "menu-move.ogg",
+      "menu-ok.ogg",
+      "mine-drop.ogg",
+      "pickup.ogg",
+      "platform-explode.ogg",
+      "skull-pickup.ogg",
+      "skull.ogg",
+      "spawn.ogg",
+      "splash-big.ogg",
+      "splash-small.ogg",
+      "teleport.ogg",
+      "throw.ogg"
+    ],
+    "events": {
+      "done": 4,
+      "permission": 3,
+      "complete": 3,
+      "error": 4,
+      "blocked": 4
+    }
+  },
+  {
     "name": "nature-animals",
     "description": "Barks, chirps, howls, and creature calls",
     "license": "CC0-1.0",
@@ -634,8 +669,9 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "classic",
-    "soundCount": 18,
+    "soundCount": 19,
     "sounds": [
+      "clock-tick.ogg",
       "desk-knock.ogg",
       "door-close-1.ogg",
       "door-close-2.ogg",
@@ -657,7 +693,7 @@
     ],
     "events": {
       "done": 4,
-      "permission": 4,
+      "permission": 5,
       "complete": 4,
       "error": 4,
       "blocked": 2
@@ -1001,6 +1037,38 @@
       "vessel-2.ogg",
       "water-drop-1.ogg",
       "water-drop-2.ogg"
+    ],
+    "events": {
+      "done": 3,
+      "permission": 3,
+      "complete": 3,
+      "error": 3,
+      "blocked": 3
+    }
+  },
+  {
+    "name": "serene-wind",
+    "description": "Wind chimes and gentle breezes — peaceful air sounds",
+    "license": "CC0-1.0",
+    "credits": "pmiller (https://opengameart.org/content/wind-chimes) and rubberduck (https://opengameart.org)",
+    "category": "wind",
+    "soundCount": 15,
+    "sounds": [
+      "breeze-soft-1.ogg",
+      "breeze-soft-2.ogg",
+      "breeze-soft-3.ogg",
+      "wind-chime-1-20s.ogg",
+      "wind-chime-1-45s.ogg",
+      "wind-chime-1-5s.ogg",
+      "wind-chime-1-70s.ogg",
+      "wind-chime-2-20s.ogg",
+      "wind-chime-2-45s.ogg",
+      "wind-chime-2-5s.ogg",
+      "wind-chime-2-70s.ogg",
+      "wind-chime-3-20s.ogg",
+      "wind-chime-3-45s.ogg",
+      "wind-chime-3-5s.ogg",
+      "wind-chime-3-70s.ogg"
     ],
     "events": {
       "done": 3,

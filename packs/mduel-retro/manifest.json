@@ -1,0 +1,58 @@
+{
+  "name": "mduel-retro",
+  "description": "Marshmallow Duel — retro combat, pickups, explosions, and teleports",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "credits": "Liam Alexander / pospi (https://github.com/pospi/mduel-ds) — Marshmallow Duel DS",
+  "category": "retro",
+  "sounds": [
+    "sounds/boots.ogg",
+    "sounds/bullet-reflect.ogg",
+    "sounds/explosion.ogg",
+    "sounds/hook-hit.ogg",
+    "sounds/lightning.ogg",
+    "sounds/menu-cancel.ogg",
+    "sounds/menu-move.ogg",
+    "sounds/menu-ok.ogg",
+    "sounds/mine-drop.ogg",
+    "sounds/pickup.ogg",
+    "sounds/platform-explode.ogg",
+    "sounds/skull-pickup.ogg",
+    "sounds/skull.ogg",
+    "sounds/spawn.ogg",
+    "sounds/splash-big.ogg",
+    "sounds/splash-small.ogg",
+    "sounds/teleport.ogg",
+    "sounds/throw.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/pickup.ogg",
+      "sounds/menu-ok.ogg",
+      "sounds/skull-pickup.ogg",
+      "sounds/boots.ogg"
+    ],
+    "permission": [
+      "sounds/menu-move.ogg",
+      "sounds/spawn.ogg",
+      "sounds/teleport.ogg"
+    ],
+    "complete": [
+      "sounds/lightning.ogg",
+      "sounds/splash-big.ogg",
+      "sounds/platform-explode.ogg"
+    ],
+    "error": [
+      "sounds/explosion.ogg",
+      "sounds/mine-drop.ogg",
+      "sounds/skull.ogg",
+      "sounds/menu-cancel.ogg"
+    ],
+    "blocked": [
+      "sounds/bullet-reflect.ogg",
+      "sounds/hook-hit.ogg",
+      "sounds/throw.ogg",
+      "sounds/splash-small.ogg"
+    ]
+  }
+}
