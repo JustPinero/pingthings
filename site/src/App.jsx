@@ -2,6 +2,15 @@ import { useState, useEffect, useRef } from 'react'
 
 const BASE = import.meta.env.BASE_URL
 const EVENTS = ['done', 'permission', 'complete', 'error', 'blocked']
+const CAT_ICONS = {
+  military: 'pingthings-cat-military.jpg',
+  arena: 'pingthings-cat-arena.jpg',
+  fantasy: 'pingthings-cat-fantasy.jpg',
+  'sci-fi': 'pingthings-cat-scifi.jpg',
+  fps: 'pingthings-cat-fps.jpg',
+  retro: 'pingthings-cat-retro.jpg',
+  ui: 'pingthings-cat-ui.jpg',
+}
 
 function App() {
   const [packs, setPacks] = useState([])
@@ -43,6 +52,10 @@ function App() {
 
   return (
     <>
+      <div className="hero-image">
+        <img src={`${BASE}images/pingthings-hero.jpg`} alt="pingthings - pixel art terminal with sound waves" />
+      </div>
+
       <header className="header">
         <h1>PINGTHINGS</h1>
         <p className="tagline">
@@ -94,6 +107,7 @@ function App() {
               className={`category-tab ${category === cat ? 'active' : ''}`}
               onClick={() => setCategory(cat)}
             >
+              {CAT_ICONS[cat] && <img src={`${BASE}images/${CAT_ICONS[cat]}`} alt="" className="cat-icon" />}
               {cat.toUpperCase()}
             </button>
           ))}

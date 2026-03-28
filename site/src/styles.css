@@ -25,6 +25,40 @@ body {
   overflow-x: hidden;
 }
 
+/* HERO IMAGE */
+.hero-image {
+  width: 100%;
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  image-rendering: auto;
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(transparent, var(--bg));
+}
+
+/* CATEGORY ICON */
+.cat-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 /* CRT scanline overlay */
 body::after {
   content: '';
