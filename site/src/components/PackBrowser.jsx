@@ -3,6 +3,18 @@ import { Link } from 'react-router-dom'
 
 const BASE = import.meta.env.BASE_URL
 const EVENTS = ['done', 'permission', 'complete', 'error', 'blocked']
+const CAT_ICONS = {
+  military: 'pingthings-cat-military.jpg', arena: 'pingthings-cat-arena.jpg',
+  fantasy: 'pingthings-cat-fantasy.jpg', 'sci-fi': 'pingthings-cat-scifi.jpg',
+  fps: 'pingthings-cat-fps.jpg', retro: 'pingthings-cat-retro.jpg',
+  ui: 'pingthings-cat-ui.jpg', bells: 'pingthings-cat-bells.jpg',
+  water: 'pingthings-cat-water.jpg', tones: 'pingthings-cat-tones.jpg',
+  minimal: 'pingthings-cat-minimal.jpg', digital: 'pingthings-cat-digital.jpg',
+  classic: 'pingthings-cat-classic.jpg', mechanical: 'pingthings-cat-mechanical.jpg',
+  animals: 'pingthings-cat-animals.jpg', ocean: 'pingthings-cat-ocean.jpg',
+  night: 'pingthings-cat-night.jpg', weather: 'pingthings-cat-weather.jpg',
+  forest: 'pingthings-cat-forest.jpg',
+}
 
 export default function PackBrowser({ section, sectionTitle, categories, themeClass }) {
   const [packs, setPacks] = useState([])
@@ -52,6 +64,7 @@ export default function PackBrowser({ section, sectionTitle, categories, themeCl
               className={`category-tab ${category === cat ? 'active' : ''}`}
               onClick={() => setCategory(cat)}
             >
+              {CAT_ICONS[cat] && <img src={`${BASE}images/${CAT_ICONS[cat]}`} alt="" className="cat-icon" />}
               {cat.toUpperCase()}
             </button>
           ))}

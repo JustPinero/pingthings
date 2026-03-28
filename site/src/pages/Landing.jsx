@@ -18,7 +18,7 @@ const SECTIONS = [
     subtitle: '3 packs · bells, water, tones',
     description: 'Singing bowls, gentle chimes, water drops, soft tones. For when you want calm, not chaos.',
     emoji: null,
-    image: null,
+    image: `${BASE}images/pingthings-hero-serene.jpg`,
   },
   {
     id: 'office',
@@ -26,7 +26,7 @@ const SECTIONS = [
     subtitle: '4 packs · clicks, pings, paper',
     description: 'Subtle dings, keyboard clicks, email pings. The sounds your workplace won\'t judge you for.',
     emoji: null,
-    image: null,
+    image: `${BASE}images/pingthings-hero-office.jpg`,
   },
   {
     id: 'nature',
@@ -34,7 +34,7 @@ const SECTIONS = [
     subtitle: '5 packs · birds, waves, thunder',
     description: 'Bird chirps, ocean waves, thunder cracks, wolf howls. Bring the outside to your terminal.',
     emoji: null,
-    image: null,
+    image: `${BASE}images/pingthings-hero-nature.jpg`,
   },
 ]
 
