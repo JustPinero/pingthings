@@ -135,6 +135,7 @@ For different sounds based on what Claude is doing, set up multiple hooks:
 | `pingthings init` | Set up Claude Code hooks automatically |
 | `pingthings create <dir>` | Create a pack from audio files |
 | `pingthings install <source>` | Install a pack from GitHub or local path |
+| `pingthings uninstall <pack>` | Remove a user-installed pack |
 
 ## Configuration
 

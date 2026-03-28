@@ -248,4 +248,19 @@ describe('CLI', () => {
     const { stdout } = run(['test-events', '--help']);
     assert.ok(stdout.includes('event'));
   });
+
+  it('uninstall --help shows usage', () => {
+    const { stdout } = run(['uninstall', '--help']);
+    assert.ok(stdout.includes('Remove'));
+  });
+
+  it('uninstall nonexistent pack fails', () => {
+    const { exitCode } = run(['uninstall', 'fake-pack-xyz']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('--help shows uninstall command', () => {
+    const { stdout } = run(['--help']);
+    assert.ok(stdout.includes('uninstall'));
+  });
 });

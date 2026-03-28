@@ -16,8 +16,13 @@ function readManifest(packDir) {
   const manifestPath = join(packDir, 'manifest.json');
   if (!existsSync(manifestPath)) return null;
   try {
-    return JSON.parse(readFileSync(manifestPath, 'utf8'));
-  } catch {
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+    if (!manifest.name) {
+      console.error(`Warning: manifest.json in ${packDir} is missing "name" field`);
+    }
+    return manifest;
+  } catch (err) {
+    console.error(`Warning: Failed to parse ${manifestPath}: ${err.message}`);
     return null;
   }
 }

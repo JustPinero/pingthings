@@ -18,6 +18,7 @@ const commands = {
   preview: () => import('../src/cli/preview.js'),
   config: () => import('../src/cli/config.js'),
   install: () => import('../src/cli/install.js'),
+  uninstall: () => import('../src/cli/uninstall.js'),
   init: () => import('../src/cli/init.js'),
   create: () => import('../src/cli/create.js'),
   theme: () => import('../src/cli/theme.js'),
@@ -42,6 +43,7 @@ Commands:
   init               Set up Claude Code hooks automatically
   create <dir>       Create a new pack from a folder of audio files
   install <source>   Install a pack from GitHub or URL
+  uninstall <pack>   Remove a user-installed pack
 
 Options:
   --help, -h         Show this help message

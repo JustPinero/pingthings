@@ -81,8 +81,12 @@ export function playSoundSync(filePath, volume) {
   const args = buildArgs(cmd, filePath, volume);
 
   try {
-    execFileSync(cmd, args, { stdio: 'ignore', timeout: 10000 });
-  } catch {
-    // Timeout or error — don't crash
+    execFileSync(cmd, args, { stdio: ['ignore', 'ignore', 'pipe'], timeout: 5000 });
+  } catch (err) {
+    if (err.killed) {
+      console.error(`Warning: Sound playback timed out for ${filePath}`);
+    } else if (err.stderr?.length) {
+      console.error(`Warning: Playback error: ${err.stderr.toString().trim()}`);
+    }
   }
 }
