@@ -71,7 +71,7 @@ For different sounds based on what Claude is doing, set up multiple hooks:
         "hooks": [
           {
             "type": "command",
-            "command": "pingthings play --event done"
+            "command": "pingthings play --event permission"
           }
         ]
       }
@@ -86,12 +86,39 @@ For different sounds based on what Claude is doing, set up multiple hooks:
           }
         ]
       }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pingthings play --event error"
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pingthings play --event blocked"
+          }
+        ]
+      }
     ]
   }
 }
 ```
 
-Now you'll hear distinct sounds for different Claude Code events.
+| Claude Code Event | Sound Event | When it fires |
+|---|---|---|
+| `Notification` | `permission` | Claude needs your input or approval |
+| `Stop` | `complete` | Claude finishes a response |
+| `PostToolUseFailure` | `error` | A tool fails (bash error, etc.) |
+| `StopFailure` | `blocked` | API error, rate limit, auth issue |
 
 ## Commands
 
@@ -159,6 +186,8 @@ Each pack maps its sounds to events thematically:
 - **openarena-announcer**: "excellent!" for done, "prepare!" for permission, "denied!" for errors
 - **wesnoth-combat**: gold collect for done, chest open for permission, explosions for errors
 - **freedoom-arsenal**: item pickup for done, shotgun cock for permission, barrel explosion for errors
+- **warzone2100-command**: "research completed" for done, "incoming transmission" for permission, "mission failed" for errors
+- **0ad-civilizations**: Greek "as you wish" for done, "my lord?" for permission, alarm horns for errors
 
 ## Built-in packs
 
@@ -173,6 +202,12 @@ Arena FPS announcer voice lines from **OpenArena** — 18 sounds including "exce
 
 ### freedoom-arsenal
 Retro FPS weapon and pickup sounds from **Freedoom** — 19 sounds including shotgun, plasma rifle, BFG, rocket launcher, item pickups, and teleport. License: BSD-3-Clause.
+
+### warzone2100-command
+Sci-fi military commander voice lines from **Warzone 2100** — 21 sounds including "research completed", "mission successful", "incoming transmission", "enemy detected", and NEXUS AI laughs. License: GPL v2.
+
+### 0ad-civilizations
+Ancient civilization voice lines and alerts from **0 A.D.** — 28 sounds with Greek, Latin, and Persian voice acknowledgements ("my lord", "as you wish", "by your order") plus alarm sounds (victory, defeat, attack). License: CC-BY-SA 3.0.
 
 ## Custom packs
 

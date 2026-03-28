@@ -29,5 +29,6 @@
     "type": "git",
     "url": "https://github.com/JustPinero/pingthings.git"
   },
-  "homepage": "https://github.com/JustPinero/pingthings"
+  "homepage": "https://github.com/JustPinero/pingthings",
+  "author": "Justin Pinero"
 }

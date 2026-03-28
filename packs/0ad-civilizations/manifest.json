@@ -1,0 +1,77 @@
+{
+  "name": "0ad-civilizations",
+  "description": "Ancient civilization voice lines and alerts from 0 A.D.",
+  "version": "1.0.0",
+  "license": "CC-BY-SA-3.0",
+  "credits": "Wildfire Games / 0 A.D. (https://github.com/0ad/0ad) — audio licensed under CC-BY-SA 3.0",
+  "sounds": [
+    "sounds/alarm-alert.wav",
+    "sounds/alarm-attack.wav",
+    "sounds/alarm-defeat.wav",
+    "sounds/alarm-no-resource.wav",
+    "sounds/alarm-objective.wav",
+    "sounds/alarm-research-complete.wav",
+    "sounds/alarm-victory.wav",
+    "sounds/greek-as-you-wish.wav",
+    "sounds/greek-attack-1.wav",
+    "sounds/greek-build-1.wav",
+    "sounds/greek-heal-1.wav",
+    "sounds/greek-march-1.wav",
+    "sounds/greek-my-lord-1.wav",
+    "sounds/greek-my-lord-2.wav",
+    "sounds/greek-retreat-1.wav",
+    "sounds/greek-what-is-it-1.wav",
+    "sounds/greek-yes.wav",
+    "sounds/latin-attack-1.wav",
+    "sounds/latin-build-1.wav",
+    "sounds/latin-fight-1.wav",
+    "sounds/latin-heal-1.wav",
+    "sounds/latin-hello-1.wav",
+    "sounds/latin-my-lord-1.wav",
+    "sounds/latin-what-is-it.wav",
+    "sounds/persian-attack-1.wav",
+    "sounds/persian-by-your-order.wav",
+    "sounds/persian-forward-1.wav",
+    "sounds/persian-i-will-go.wav"
+  ],
+  "events": {
+    "done": [
+      "sounds/greek-as-you-wish.wav",
+      "sounds/greek-yes.wav",
+      "sounds/greek-build-1.wav",
+      "sounds/latin-build-1.wav",
+      "sounds/persian-by-your-order.wav",
+      "sounds/persian-i-will-go.wav",
+      "sounds/alarm-research-complete.wav"
+    ],
+    "permission": [
+      "sounds/greek-my-lord-1.wav",
+      "sounds/greek-my-lord-2.wav",
+      "sounds/greek-what-is-it-1.wav",
+      "sounds/latin-my-lord-1.wav",
+      "sounds/latin-what-is-it.wav",
+      "sounds/latin-hello-1.wav",
+      "sounds/alarm-objective.wav"
+    ],
+    "complete": [
+      "sounds/alarm-victory.wav",
+      "sounds/greek-march-1.wav",
+      "sounds/greek-heal-1.wav",
+      "sounds/latin-heal-1.wav",
+      "sounds/persian-forward-1.wav"
+    ],
+    "error": [
+      "sounds/alarm-attack.wav",
+      "sounds/alarm-defeat.wav",
+      "sounds/alarm-no-resource.wav",
+      "sounds/greek-attack-1.wav",
+      "sounds/latin-attack-1.wav",
+      "sounds/persian-attack-1.wav"
+    ],
+    "blocked": [
+      "sounds/alarm-alert.wav",
+      "sounds/greek-retreat-1.wav",
+      "sounds/latin-fight-1.wav"
+    ]
+  }
+}
