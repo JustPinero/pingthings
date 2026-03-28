@@ -20,6 +20,8 @@
     "sounds/owl-hoot.ogg",
     "sounds/peep-1.ogg",
     "sounds/peep-2.ogg",
+    "sounds/real-bird-call.ogg",
+    "sounds/real-bird-song.ogg",
     "sounds/snort.ogg"
   ],
   "events": {
@@ -32,20 +34,22 @@
     "permission": [
       "sounds/chirp-3.ogg",
       "sounds/coo.ogg",
-      "sounds/cricket-1.ogg"
+      "sounds/cricket-1.ogg",
+      "sounds/cricket-2.ogg"
     ],
     "complete": [
-      "sounds/cricket-2.ogg",
       "sounds/howl.ogg",
-      "sounds/insect-1.ogg"
+      "sounds/insect-1.ogg",
+      "sounds/insect-2.ogg",
+      "sounds/owl-hoot.ogg"
     ],
     "error": [
-      "sounds/insect-2.ogg",
-      "sounds/owl-hoot.ogg",
-      "sounds/peep-1.ogg"
+      "sounds/peep-1.ogg",
+      "sounds/peep-2.ogg",
+      "sounds/real-bird-call.ogg",
+      "sounds/real-bird-song.ogg"
     ],
     "blocked": [
-      "sounds/peep-2.ogg",
       "sounds/snort.ogg"
     ]
   }

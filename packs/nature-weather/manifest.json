@@ -2,8 +2,8 @@
   "name": "nature-weather",
   "description": "Thunder, wind gusts, rain drops, and storms",
   "version": "1.0.0",
-  "license": "CC0-1.0",
-  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "license": "CC0-1.0 / CC-BY-4.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx) + Antoine Goumain (https://opengameart.org/content/nature-sounds-pack, CC-BY 4.0)",
   "category": "weather",
   "sounds": [
     "sounds/breeze-1.ogg",
@@ -13,9 +13,16 @@
     "sounds/lightning-crack.ogg",
     "sounds/rain-drop-1.ogg",
     "sounds/rain-drop-2.ogg",
+    "sounds/rain-heavy.ogg",
+    "sounds/rain-light.ogg",
+    "sounds/rain-medium.ogg",
+    "sounds/rain-patter.ogg",
+    "sounds/rain-storm.ogg",
     "sounds/real-thunder.ogg",
     "sounds/storm-1.ogg",
     "sounds/storm-2.ogg",
+    "sounds/storm-ambient-2.ogg",
+    "sounds/storm-ambient.ogg",
     "sounds/thunder-1.ogg",
     "sounds/thunder-2.ogg",
     "sounds/thunder-3.ogg",
@@ -28,27 +35,33 @@
       "sounds/breeze-1.ogg",
       "sounds/breeze-2.ogg",
       "sounds/breeze-3.ogg",
-      "sounds/distant-thunder.ogg"
+      "sounds/distant-thunder.ogg",
+      "sounds/lightning-crack.ogg"
     ],
     "permission": [
-      "sounds/lightning-crack.ogg",
       "sounds/rain-drop-1.ogg",
       "sounds/rain-drop-2.ogg",
-      "sounds/real-thunder.ogg"
+      "sounds/rain-heavy.ogg",
+      "sounds/rain-light.ogg",
+      "sounds/rain-medium.ogg"
     ],
     "complete": [
+      "sounds/rain-patter.ogg",
+      "sounds/rain-storm.ogg",
+      "sounds/real-thunder.ogg",
       "sounds/storm-1.ogg",
-      "sounds/storm-2.ogg",
-      "sounds/thunder-1.ogg",
-      "sounds/thunder-2.ogg"
+      "sounds/storm-2.ogg"
     ],
     "error": [
-      "sounds/thunder-3.ogg",
-      "sounds/thunder-rumble.ogg",
-      "sounds/wind-gust-1.ogg",
-      "sounds/wind-gust-2.ogg"
+      "sounds/storm-ambient-2.ogg",
+      "sounds/storm-ambient.ogg",
+      "sounds/thunder-1.ogg",
+      "sounds/thunder-2.ogg",
+      "sounds/thunder-3.ogg"
     ],
     "blocked": [
+      "sounds/thunder-rumble.ogg",
+      "sounds/wind-gust-1.ogg",
       "sounds/wind-gust-2.ogg"
     ]
   }

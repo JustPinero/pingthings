@@ -2,8 +2,8 @@
   "name": "nature-forest",
   "description": "Twigs snapping, birds singing, streams babbling",
   "version": "1.0.0",
-  "license": "CC0-1.0",
-  "credits": "rubberduck (https://opengameart.org)",
+  "license": "CC0-1.0 / CC-BY-4.0",
+  "credits": "rubberduck (https://opengameart.org) + Antoine Goumain (https://opengameart.org/content/nature-sounds-pack, CC-BY 4.0)",
   "category": "forest",
   "sounds": [
     "sounds/bird-1.ogg",
@@ -12,12 +12,23 @@
     "sounds/branch-crack.ogg",
     "sounds/critter-1.ogg",
     "sounds/critter-2.ogg",
+    "sounds/foliage-rustle-1.ogg",
+    "sounds/foliage-rustle-2.ogg",
+    "sounds/foliage-rustle-3.ogg",
     "sounds/leaf-rustle-1.ogg",
     "sounds/leaf-rustle-2.ogg",
     "sounds/leaf-rustle-3.ogg",
     "sounds/pebbles-1.ogg",
     "sounds/pebbles-2.ogg",
     "sounds/pebbles-3.ogg",
+    "sounds/real-bird-1.ogg",
+    "sounds/real-bird-2.ogg",
+    "sounds/real-bird-3.ogg",
+    "sounds/real-bird-4.ogg",
+    "sounds/real-bird-5.ogg",
+    "sounds/real-bird-6.ogg",
+    "sounds/real-bird-7.ogg",
+    "sounds/real-bird-8.ogg",
     "sounds/songbird.ogg",
     "sounds/stream-splash-1.ogg",
     "sounds/stream-splash-2.ogg",
@@ -30,27 +41,38 @@
       "sounds/bird-1.ogg",
       "sounds/bird-2.ogg",
       "sounds/bird-3.ogg",
-      "sounds/branch-crack.ogg"
+      "sounds/branch-crack.ogg",
+      "sounds/critter-1.ogg",
+      "sounds/critter-2.ogg"
     ],
     "permission": [
-      "sounds/critter-1.ogg",
-      "sounds/critter-2.ogg",
+      "sounds/foliage-rustle-1.ogg",
+      "sounds/foliage-rustle-2.ogg",
+      "sounds/foliage-rustle-3.ogg",
       "sounds/leaf-rustle-1.ogg",
-      "sounds/leaf-rustle-2.ogg"
+      "sounds/leaf-rustle-2.ogg",
+      "sounds/leaf-rustle-3.ogg"
     ],
     "complete": [
-      "sounds/leaf-rustle-3.ogg",
       "sounds/pebbles-1.ogg",
       "sounds/pebbles-2.ogg",
-      "sounds/pebbles-3.ogg"
+      "sounds/pebbles-3.ogg",
+      "sounds/real-bird-1.ogg",
+      "sounds/real-bird-2.ogg",
+      "sounds/real-bird-3.ogg"
     ],
     "error": [
-      "sounds/songbird.ogg",
-      "sounds/stream-splash-1.ogg",
-      "sounds/stream-splash-2.ogg",
-      "sounds/twig-snap-1.ogg"
+      "sounds/real-bird-4.ogg",
+      "sounds/real-bird-5.ogg",
+      "sounds/real-bird-6.ogg",
+      "sounds/real-bird-7.ogg",
+      "sounds/real-bird-8.ogg",
+      "sounds/songbird.ogg"
     ],
     "blocked": [
+      "sounds/stream-splash-1.ogg",
+      "sounds/stream-splash-2.ogg",
+      "sounds/twig-snap-1.ogg",
       "sounds/twig-snap-2.ogg",
       "sounds/wood-creak-1.ogg"
     ]

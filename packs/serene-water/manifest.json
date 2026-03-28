@@ -2,8 +2,8 @@
   "name": "serene-water",
   "description": "Water drops, drips, and gentle splashes",
   "version": "1.0.0",
-  "license": "CC0-1.0",
-  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "license": "CC0-1.0 / CC-BY-4.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx) + Antoine Goumain (https://opengameart.org/content/nature-sounds-pack, CC-BY 4.0)",
   "category": "water",
   "sounds": [
     "sounds/bamboo-1.ogg",
@@ -12,11 +12,19 @@
     "sounds/bowl-2.ogg",
     "sounds/bowl-3.ogg",
     "sounds/bowl-4.ogg",
+    "sounds/bubble-gentle-1.ogg",
+    "sounds/bubble-gentle-2.ogg",
+    "sounds/bubble-gentle-3.ogg",
+    "sounds/clear-stream.ogg",
     "sounds/drip-1.ogg",
     "sounds/drip-2.ogg",
     "sounds/flowing-1.ogg",
     "sounds/flowing-2.ogg",
     "sounds/flowing-3.ogg",
+    "sounds/stream-birds-1.ogg",
+    "sounds/stream-birds-2.ogg",
+    "sounds/stream-gentle-1.ogg",
+    "sounds/stream-gentle-2.ogg",
     "sounds/vessel-1.ogg",
     "sounds/vessel-2.ogg",
     "sounds/water-drop-1.ogg",
@@ -26,21 +34,29 @@
     "done": [
       "sounds/bamboo-1.ogg",
       "sounds/bamboo-2.ogg",
-      "sounds/bowl-1.ogg"
+      "sounds/bowl-1.ogg",
+      "sounds/bowl-2.ogg",
+      "sounds/bowl-3.ogg"
     ],
     "permission": [
-      "sounds/bowl-2.ogg",
-      "sounds/bowl-3.ogg",
-      "sounds/bowl-4.ogg"
+      "sounds/bowl-4.ogg",
+      "sounds/bubble-gentle-1.ogg",
+      "sounds/bubble-gentle-2.ogg",
+      "sounds/bubble-gentle-3.ogg",
+      "sounds/clear-stream.ogg"
     ],
     "complete": [
       "sounds/drip-1.ogg",
       "sounds/drip-2.ogg",
-      "sounds/flowing-1.ogg"
+      "sounds/flowing-1.ogg",
+      "sounds/flowing-2.ogg",
+      "sounds/flowing-3.ogg"
     ],
     "error": [
-      "sounds/flowing-2.ogg",
-      "sounds/flowing-3.ogg",
+      "sounds/stream-birds-1.ogg",
+      "sounds/stream-birds-2.ogg",
+      "sounds/stream-gentle-1.ogg",
+      "sounds/stream-gentle-2.ogg",
       "sounds/vessel-1.ogg"
     ],
     "blocked": [

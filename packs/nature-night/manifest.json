@@ -2,19 +2,23 @@
   "name": "nature-night",
   "description": "Nocturnal sounds — owls, crickets, distant calls",
   "version": "1.0.0",
-  "license": "CC0-1.0",
-  "credits": "rubberduck (https://opengameart.org/content/80-cc0-creature-sfx)",
+  "license": "CC0-1.0 / CC-BY-4.0",
+  "credits": "rubberduck (https://opengameart.org/content/80-cc0-creature-sfx) + Antoine Goumain (https://opengameart.org/content/nature-sounds-pack, CC-BY 4.0)",
   "category": "night",
   "sounds": [
+    "sounds/dawn-birds.ogg",
     "sounds/distant-animal-1.ogg",
     "sounds/distant-animal-2.ogg",
     "sounds/eerie-1.ogg",
     "sounds/eerie-2.ogg",
+    "sounds/light-rain-night.ogg",
     "sounds/night-call-1.ogg",
     "sounds/night-call-2.ogg",
     "sounds/night-cricket-1.ogg",
     "sounds/night-cricket-2.ogg",
     "sounds/night-owl.ogg",
+    "sounds/night-stream.ogg",
+    "sounds/rainy-night-ambient.ogg",
     "sounds/rustle-1.ogg",
     "sounds/rustle-2.ogg",
     "sounds/rustle-3.ogg",
@@ -23,27 +27,31 @@
   ],
   "events": {
     "done": [
+      "sounds/dawn-birds.ogg",
       "sounds/distant-animal-1.ogg",
       "sounds/distant-animal-2.ogg",
-      "sounds/eerie-1.ogg",
-      "sounds/eerie-2.ogg"
+      "sounds/eerie-1.ogg"
     ],
     "permission": [
+      "sounds/eerie-2.ogg",
+      "sounds/light-rain-night.ogg",
       "sounds/night-call-1.ogg",
-      "sounds/night-call-2.ogg",
-      "sounds/night-cricket-1.ogg"
+      "sounds/night-call-2.ogg"
     ],
     "complete": [
+      "sounds/night-cricket-1.ogg",
       "sounds/night-cricket-2.ogg",
       "sounds/night-owl.ogg",
-      "sounds/rustle-1.ogg"
+      "sounds/night-stream.ogg"
     ],
     "error": [
+      "sounds/rainy-night-ambient.ogg",
+      "sounds/rustle-1.ogg",
       "sounds/rustle-2.ogg",
-      "sounds/rustle-3.ogg",
-      "sounds/sleeping-creature.ogg"
+      "sounds/rustle-3.ogg"
     ],
     "blocked": [
+      "sounds/sleeping-creature.ogg",
       "sounds/wolf-howl.ogg"
     ]
   }

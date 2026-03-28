@@ -2,18 +2,24 @@
   "name": "nature-ocean",
   "description": "Waves, bubbles, and ocean currents",
   "version": "1.0.0",
-  "license": "CC0-1.0",
-  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
+  "license": "CC0-1.0 / CC-BY-4.0",
+  "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx) + Antoine Goumain (https://opengameart.org/content/nature-sounds-pack, CC-BY 4.0)",
   "category": "ocean",
   "sounds": [
     "sounds/ambient-shore.ogg",
     "sounds/bubble-1.ogg",
     "sounds/bubble-2.ogg",
+    "sounds/bubbles-underwater.ogg",
+    "sounds/coastal-ambient.ogg",
     "sounds/current.ogg",
     "sounds/deep-1.ogg",
     "sounds/deep-2.ogg",
     "sounds/shore-1.ogg",
     "sounds/shore-2.ogg",
+    "sounds/splash-1.ogg",
+    "sounds/splash-2.ogg",
+    "sounds/splash-3.ogg",
+    "sounds/splash-big.ogg",
     "sounds/splash.ogg",
     "sounds/tide-1.ogg",
     "sounds/tide-2.ogg",
@@ -26,26 +32,32 @@
     "done": [
       "sounds/ambient-shore.ogg",
       "sounds/bubble-1.ogg",
-      "sounds/bubble-2.ogg"
+      "sounds/bubble-2.ogg",
+      "sounds/bubbles-underwater.ogg",
+      "sounds/coastal-ambient.ogg"
     ],
     "permission": [
       "sounds/current.ogg",
       "sounds/deep-1.ogg",
-      "sounds/deep-2.ogg"
+      "sounds/deep-2.ogg",
+      "sounds/shore-1.ogg",
+      "sounds/shore-2.ogg"
     ],
     "complete": [
-      "sounds/shore-1.ogg",
-      "sounds/shore-2.ogg",
+      "sounds/splash-1.ogg",
+      "sounds/splash-2.ogg",
+      "sounds/splash-3.ogg",
+      "sounds/splash-big.ogg",
       "sounds/splash.ogg"
     ],
     "error": [
       "sounds/tide-1.ogg",
       "sounds/tide-2.ogg",
-      "sounds/wave-1.ogg"
+      "sounds/wave-1.ogg",
+      "sounds/wave-2.ogg",
+      "sounds/wind-1.ogg"
     ],
     "blocked": [
-      "sounds/wave-2.ogg",
-      "sounds/wind-1.ogg",
       "sounds/wind-2.ogg"
     ]
   }
