@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.0
+
+### Stable release
+
+pingthings v1.0.0 — the first stable release.
+
+19 sound packs, 369 sounds, 25 commands, 13 themes, 130 tests.
+Supports Claude Code, Cursor, Copilot, Codex, Windsurf, and Gemini CLI.
+CESP-compatible for interoperability with the broader ecosystem.
+
+### Fixed (v1.0 audit)
+- LICENSE now attributes all 19 packs (was missing 13)
+- notify.js sanitizes osascript arguments (prevents injection)
+- stats.js uses atomic write (tmp+rename) for race condition safety
+- README fully updated: all 25 commands, all 19 packs, all 13 themes, all config keys
+- completions.js updated with all commands and themes
+- Windows `which` → `where` for cross-platform command detection
+- 130 tests covering all commands
+
 ## 0.9.0
 
 ### Added

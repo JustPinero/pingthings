@@ -1,6 +1,6 @@
 {
   "name": "pingthings",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Notification sounds for Claude Code and other CLI tools",
   "type": "module",
   "license": "GPL-2.0",

@@ -33,7 +33,8 @@ function check(label, fn) {
 
 function commandExists(cmd) {
   try {
-    execFileSync('which', [cmd], { stdio: 'pipe' });
+    const checker = platform() === 'win32' ? 'where' : 'which';
+    execFileSync(checker, [cmd], { stdio: 'pipe' });
     return true;
   } catch {
     return false;

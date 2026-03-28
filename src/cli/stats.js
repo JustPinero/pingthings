@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, renameSync } from 'node:fs';
 import { join } from 'node:path';
 import { readConfig, getConfigDir } from '../config.js';
 import { listPacks } from '../packs.js';
@@ -40,7 +40,9 @@ export function recordPlay(packName, event) {
   stats.dailyPlays[today] = (stats.dailyPlays[today] || 0) + 1;
 
   try {
-    writeFileSync(statsPath, JSON.stringify(stats, null, 2) + '\n', 'utf8');
+    const tmpPath = statsPath + '.tmp';
+    writeFileSync(tmpPath, JSON.stringify(stats, null, 2) + '\n', 'utf8');
+    renameSync(tmpPath, statsPath);
   } catch {}
 }
 

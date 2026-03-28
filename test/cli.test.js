@@ -691,4 +691,75 @@ describe('config new keys', () => {
     assert.equal(exitCode, 1);
     assert.ok(stderr.includes('Invalid'));
   });
+
+  it('sets notifications', () => {
+    const { exitCode, stdout } = run(['config', 'notifications', 'true']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('notifications'));
+  });
+});
+
+describe('setup', () => {
+  it('--help shows supported IDEs', () => {
+    const { stdout } = run(['setup', '--help']);
+    assert.ok(stdout.includes('cursor'));
+    assert.ok(stdout.includes('copilot'));
+    assert.ok(stdout.includes('codex'));
+    assert.ok(stdout.includes('windsurf'));
+    assert.ok(stdout.includes('gemini'));
+  });
+
+  it('rejects unknown IDE', () => {
+    const { exitCode, stderr } = run(['setup', 'notepad']);
+    assert.equal(exitCode, 1);
+    assert.ok(stderr.includes('Unknown IDE'));
+  });
+});
+
+describe('demo', () => {
+  it('--help shows usage', () => {
+    const { stdout } = run(['demo', '--help']);
+    assert.ok(stdout.includes('showroom'));
+  });
+});
+
+describe('stats', () => {
+  it('shows stats without error', () => {
+    const { exitCode, stdout } = run(['stats']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('PINGTHINGS STATS'));
+    assert.ok(stdout.includes('Packs installed'));
+  });
+
+  it('--help shows usage', () => {
+    const { stdout } = run(['stats', '--help']);
+    assert.ok(stdout.includes('statistics'));
+  });
+});
+
+describe('cesp', () => {
+  it('--help shows usage', () => {
+    const { stdout } = run(['cesp', '--help']);
+    assert.ok(stdout.includes('CESP'));
+  });
+});
+
+describe('update', () => {
+  it('shows current version', () => {
+    const { exitCode, stdout } = run(['update']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('Current version'));
+  });
+});
+
+describe('play --silent', () => {
+  it('runs without playing audio', () => {
+    const { exitCode } = run(['play', '--silent']);
+    assert.equal(exitCode, 0);
+  });
+
+  it('works with --event', () => {
+    const { exitCode } = run(['play', '--silent', '--event', 'done']);
+    assert.equal(exitCode, 0);
+  });
 });

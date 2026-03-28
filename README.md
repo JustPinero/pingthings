@@ -140,7 +140,12 @@ For different sounds based on what Claude is doing, set up multiple hooks:
 | `pingthings random-pack` | Switch to a random pack |
 | `pingthings install <source>` | Install a pack from GitHub or local path |
 | `pingthings uninstall <pack>` | Remove a user-installed pack |
+| `pingthings demo` | Play one sound from every pack — showroom tour |
+| `pingthings stats` | Show usage statistics |
+| `pingthings setup <ide>` | Configure hooks for any IDE (cursor, copilot, codex, etc.) |
 | `pingthings doctor` | Diagnose audio setup and configuration |
+| `pingthings update` | Check for new versions on npm |
+| `pingthings cesp [pack\|--all]` | Generate CESP-compatible manifests |
 | `pingthings completions <shell>` | Generate shell completions (bash/zsh/fish) |
 
 ## Configuration
@@ -153,7 +158,10 @@ Config lives at `~/.config/pingthings/config.json`:
   "mode": "random",
   "specificSound": null,
   "volume": 100,
-  "eventPacks": {}
+  "eventPacks": {},
+  "cooldown": true,
+  "quietHours": null,
+  "notifications": false
 }
 ```
 
@@ -162,6 +170,9 @@ Config lives at `~/.config/pingthings/config.json`:
 - **specificSound** — sound name to always play when mode is `"specific"`
 - **volume** — playback volume, 0-100 (default: 100)
 - **eventPacks** — per-event pack overrides (e.g. `{"error": "freedoom-arsenal"}`)
+- **cooldown** — avoid repeating the same sound twice in a row (default: true)
+- **quietHours** — mute during hours, e.g. `"22-7"` for 10pm-7am (default: null)
+- **notifications** — show desktop notifications alongside sound (default: false)
 
 Set values via CLI:
 
@@ -240,6 +251,30 @@ Arena FPS announcer voice lines from **Xonotic** — 15 sounds including "awesom
 ### fighting-announcer
 Fighting game announcer voice lines — 20 sounds including "Fight!", "Victory!", "K.O!", "Game Over!", "Ready?", "You Win!". License: CC-BY 4.0.
 
+### kenney-voiceover
+Human voice notifications by **Kenney** — 19 sounds including "mission completed", "objective achieved", "game over", "congratulations". License: CC0.
+
+### droid-announcer
+Robotic AI voice lines — 15 sounds including "objective complete", "action required", "instruction unclear", "mission complete". Perfect for AI coding tools. License: CC-BY-SA 4.0.
+
+### kenney-digital
+Digital and space notification tones by **Kenney** — 18 sounds including power-ups, phasers, zaps, and bleeps. License: CC0.
+
+### kenney-rpg
+Fantasy RPG foley sounds by **Kenney** — 18 sounds including metal latches, book flips, sword draws, door creaks. License: CC0.
+
+### kenney-impacts
+Material impact sounds by **Kenney** — 18 sounds including metal plates, wood, glass, bells, and mining. License: CC0.
+
+### kenney-fighter
+Female fighting game announcer by **Kenney** — 18 sounds including "flawless victory!", "combo breaker!", "prepare yourself!". License: CC0.
+
+### retro-weapons
+8-bit weapons, explosions, and death screams — 18 sounds from the SubspaceAudio collection. License: CC0.
+
+### retro-movement
+8-bit portals, doors, jumps, and bleeps — 18 sounds from the SubspaceAudio collection. License: CC0.
+
 ## Custom packs
 
 Place packs in `~/.config/pingthings/packs/<pack-name>/`:
@@ -303,6 +338,10 @@ pingthings theme reset        # back to defaults
 | `professional` | Clean and minimal — Kenney UI sounds for everything |
 | `8bit` | Pure retro — 8-bit chiptune for everything |
 | `space` | Space station — Warzone 2100 + Kenney sci-fi |
+| `developer` | AI assistant vibes — droid announcer + human voiceover |
+| `arcade` | Full 8-bit arcade experience |
+| `tabletop` | Tavern sounds — RPG foley + material impacts |
+| `tournament` | Fighting game tournament — multiple announcers |
 | `chaos` | Different pack for every event — maximum variety |
 
 ## Tools

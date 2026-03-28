@@ -17,12 +17,14 @@ Install:
 const COMMANDS = [
   'play', 'list', 'select', 'browse', 'search', 'sounds',
   'use', 'preview', 'test-events', 'theme', 'config',
-  'init', 'create', 'install', 'uninstall', 'random-pack', 'doctor', 'completions',
+  'init', 'setup', 'demo', 'stats', 'create', 'install', 'uninstall',
+  'random-pack', 'doctor', 'update', 'cesp', 'completions',
 ];
 
 const THEMES = [
   'retro', 'sci-fi', 'arena', 'fantasy', 'ancient',
-  'professional', '8bit', 'space', 'chaos', 'reset',
+  'professional', '8bit', 'space', 'developer', 'arcade',
+  'tabletop', 'tournament', 'chaos', 'reset',
 ];
 
 const EVENTS = ['done', 'permission', 'complete', 'error', 'blocked'];
@@ -92,6 +94,11 @@ _pingthings() {
     'uninstall:Remove a user-installed pack'
     'random-pack:Switch to a random pack'
     'doctor:Diagnose audio setup'
+    'setup:Configure hooks for any IDE'
+    'demo:Play one sound from every pack'
+    'stats:Show usage statistics'
+    'update:Check for new versions'
+    'cesp:Generate CESP manifests'
     'completions:Generate shell completions'
   )
   themes=(${THEMES.join(' ')})
