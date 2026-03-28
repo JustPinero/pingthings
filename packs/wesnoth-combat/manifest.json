@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "license": "GPL-2.0",
   "credits": "Battle for Wesnoth contributors (https://github.com/wesnoth/wesnoth) — licensed under GPL v2+",
+  "category": "fantasy",
   "sounds": [
     "sounds/axe.wav",
     "sounds/bow.wav",

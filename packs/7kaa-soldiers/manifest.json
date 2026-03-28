@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "license": "GPL-2.0",
   "credits": "Enlight Software Ltd. / Seven Kingdoms: Ancient Adversaries (https://github.com/the3dfxdude/7kaa)",
+  "category": "military",
   "sounds": [
     "sounds/00001-CH_A2.wav",
     "sounds/00006-NO_V2.wav",

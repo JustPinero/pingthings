@@ -15,6 +15,9 @@ const commands = {
   list: () => import('../src/cli/list.js'),
   use: () => import('../src/cli/use.js'),
   select: () => import('../src/cli/select.js'),
+  browse: () => import('../src/cli/browse.js'),
+  search: () => import('../src/cli/search.js'),
+  sounds: () => import('../src/cli/sounds.js'),
   preview: () => import('../src/cli/preview.js'),
   config: () => import('../src/cli/config.js'),
   install: () => import('../src/cli/install.js'),
@@ -35,6 +38,9 @@ Commands:
   play [sound]       Play a sound from the active pack (random by default)
   list               Show available sound packs
   select             Interactive pack selector
+  browse [category]  Browse packs by category
+  search <term>      Search packs and sounds
+  sounds [pack]      List individual sounds in a pack
   use <pack>         Set the active sound pack
   preview <pack>     Preview a random sound from a pack
   test-events [pack] Play all event sounds to hear what each one sounds like

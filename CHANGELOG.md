@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.4.0
+
+### Added
+- 3 new CC0 sound packs:
+  - `retro-8bit` — 18 classic 8-bit chiptune sounds (coins, fanfares, power-ups, errors)
+  - `kenney-interface` — 18 clean modern UI sounds (confirmations, questions, errors)
+  - `kenney-scifi` — 18 futuristic sci-fi sounds (computers, force fields, explosions, lasers)
+- `browse` command — browse packs by category (military, arena, fantasy, sci-fi, fps, retro, ui)
+- `search` command — full-text search across pack names, descriptions, and sound filenames
+- `sounds` command — list individual sounds in a pack, with `--events` flag for event grouping
+- Category field in all pack manifests
+- 3 new themes: `professional` (Kenney UI), `8bit` (retro chiptune), `space` (Warzone + Kenney sci-fi)
+
+### Changed
+- Total: 9 packs, 212 sounds
+
 ## 0.3.0
 
 ### Added

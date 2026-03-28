@@ -1,0 +1,58 @@
+{
+  "name": "kenney-interface",
+  "description": "Clean modern UI notification sounds by Kenney",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "ui",
+  "sounds": [
+    "sounds/back-1.wav",
+    "sounds/bong.wav",
+    "sounds/click-1.wav",
+    "sounds/close-1.wav",
+    "sounds/confirmation-1.wav",
+    "sounds/confirmation-2.wav",
+    "sounds/confirmation-3.wav",
+    "sounds/error-1.wav",
+    "sounds/error-2.wav",
+    "sounds/error-3.wav",
+    "sounds/glitch-1.wav",
+    "sounds/maximize-1.wav",
+    "sounds/maximize-2.wav",
+    "sounds/open-1.wav",
+    "sounds/pluck-1.wav",
+    "sounds/question-1.wav",
+    "sounds/question-2.wav",
+    "sounds/question-3.wav"
+  ],
+  "events": {
+    "done": [
+      "sounds/confirmation-1.wav",
+      "sounds/confirmation-2.wav",
+      "sounds/confirmation-3.wav",
+      "sounds/click-1.wav"
+    ],
+    "permission": [
+      "sounds/question-1.wav",
+      "sounds/question-2.wav",
+      "sounds/question-3.wav",
+      "sounds/pluck-1.wav"
+    ],
+    "complete": [
+      "sounds/maximize-1.wav",
+      "sounds/maximize-2.wav",
+      "sounds/bong.wav",
+      "sounds/open-1.wav"
+    ],
+    "error": [
+      "sounds/error-1.wav",
+      "sounds/error-2.wav",
+      "sounds/error-3.wav",
+      "sounds/glitch-1.wav"
+    ],
+    "blocked": [
+      "sounds/close-1.wav",
+      "sounds/back-1.wav"
+    ]
+  }
+}

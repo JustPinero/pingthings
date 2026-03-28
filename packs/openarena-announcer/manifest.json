@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "license": "GPL-2.0",
   "credits": "OpenArena contributors (http://openarena.ws)",
+  "category": "arena",
   "sounds": [
     "sounds/accuracy.wav",
     "sounds/assist.wav",

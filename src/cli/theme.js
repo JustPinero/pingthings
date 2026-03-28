@@ -57,11 +57,44 @@ const THEMES = {
       blocked: '0ad-civilizations',
     },
   },
+  'professional': {
+    description: 'Clean and minimal — Kenney UI sounds for everything',
+    activePack: 'kenney-interface',
+    eventPacks: {
+      done: 'kenney-interface',
+      permission: 'kenney-interface',
+      complete: 'kenney-interface',
+      error: 'kenney-interface',
+      blocked: 'kenney-interface',
+    },
+  },
+  '8bit': {
+    description: 'Pure retro — 8-bit chiptune for everything',
+    activePack: 'retro-8bit',
+    eventPacks: {
+      done: 'retro-8bit',
+      permission: 'retro-8bit',
+      complete: 'retro-8bit',
+      error: 'retro-8bit',
+      blocked: 'retro-8bit',
+    },
+  },
+  'space': {
+    description: 'Space station — Warzone 2100 + Kenney sci-fi',
+    activePack: 'kenney-scifi',
+    eventPacks: {
+      done: 'kenney-scifi',
+      permission: 'warzone2100-command',
+      complete: 'warzone2100-command',
+      error: 'kenney-scifi',
+      blocked: 'kenney-scifi',
+    },
+  },
   'chaos': {
     description: 'Random pack for every event — maximum variety',
     activePack: '7kaa-soldiers',
     eventPacks: {
-      done: '7kaa-soldiers',
+      done: 'retro-8bit',
       permission: 'openarena-announcer',
       complete: 'warzone2100-command',
       error: 'freedoom-arsenal',

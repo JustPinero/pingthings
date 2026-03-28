@@ -134,6 +134,9 @@ For different sounds based on what Claude is doing, set up multiple hooks:
 | `pingthings config [key] [val]` | Show or update configuration |
 | `pingthings init` | Set up Claude Code hooks automatically |
 | `pingthings create <dir>` | Create a pack from audio files |
+| `pingthings browse [category]` | Browse packs by category |
+| `pingthings search <term>` | Search packs and sounds |
+| `pingthings sounds [pack]` | List individual sounds in a pack |
 | `pingthings install <source>` | Install a pack from GitHub or local path |
 | `pingthings uninstall <pack>` | Remove a user-installed pack |
 
@@ -218,6 +221,15 @@ Sci-fi military commander voice lines from **Warzone 2100** — 21 sounds includ
 
 ### 0ad-civilizations
 Ancient civilization voice lines and alerts from **0 A.D.** — 28 sounds with Greek, Latin, and Persian voice acknowledgements ("my lord", "as you wish", "by your order") plus alarm sounds (victory, defeat, attack). License: CC-BY-SA 3.0.
+
+### retro-8bit
+Classic 8-bit chiptune notification sounds — 18 sounds including coins, fanfares, power-ups, error buzzes, and button clicks. Perfect for that retro gaming feel. License: CC0.
+
+### kenney-interface
+Clean modern UI notification sounds by **Kenney** — 18 sounds including confirmations, questions, errors, glitches, and bongs. Professional and minimal. License: CC0.
+
+### kenney-scifi
+Futuristic sci-fi notification sounds by **Kenney** — 18 sounds including computer noises, force fields, lasers, explosions, and thrusters. License: CC0.
 
 ## Custom packs
 

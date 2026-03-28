@@ -57,6 +57,7 @@ function scanDirectory(dir, isBuiltIn) {
         description: manifest?.description || '',
         license: manifest?.license || 'Unknown',
         credits: manifest?.credits || '',
+        category: manifest?.category || 'other',
         location: packDir,
         soundCount: sounds.length,
         isBuiltIn,

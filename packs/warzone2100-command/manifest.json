@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "license": "GPL-2.0",
   "credits": "Warzone 2100 Project (https://github.com/Warzone2100/warzone2100)",
+  "category": "military",
   "sounds": [
     "sounds/construction-completed.wav",
     "sounds/design-completed.wav",

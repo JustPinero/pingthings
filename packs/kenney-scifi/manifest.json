@@ -1,0 +1,58 @@
+{
+  "name": "kenney-scifi",
+  "description": "Futuristic sci-fi notification sounds by Kenney",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "sci-fi",
+  "sounds": [
+    "sounds/computer-1.wav",
+    "sounds/computer-2.wav",
+    "sounds/computer-3.wav",
+    "sounds/door-close.wav",
+    "sounds/door-open.wav",
+    "sounds/engine-1.wav",
+    "sounds/explosion-1.wav",
+    "sounds/explosion-2.wav",
+    "sounds/forcefield-1.wav",
+    "sounds/forcefield-2.wav",
+    "sounds/impact-1.wav",
+    "sounds/impact-2.wav",
+    "sounds/laser-large.wav",
+    "sounds/laser-retro.wav",
+    "sounds/low-explosion.wav",
+    "sounds/slime.wav",
+    "sounds/thruster-1.wav",
+    "sounds/thruster-2.wav"
+  ],
+  "events": {
+    "done": [
+      "sounds/computer-1.wav",
+      "sounds/computer-2.wav",
+      "sounds/computer-3.wav",
+      "sounds/door-open.wav"
+    ],
+    "permission": [
+      "sounds/forcefield-1.wav",
+      "sounds/forcefield-2.wav",
+      "sounds/laser-retro.wav"
+    ],
+    "complete": [
+      "sounds/thruster-1.wav",
+      "sounds/thruster-2.wav",
+      "sounds/engine-1.wav"
+    ],
+    "error": [
+      "sounds/explosion-1.wav",
+      "sounds/explosion-2.wav",
+      "sounds/low-explosion.wav",
+      "sounds/impact-1.wav",
+      "sounds/impact-2.wav"
+    ],
+    "blocked": [
+      "sounds/door-close.wav",
+      "sounds/laser-large.wav",
+      "sounds/slime.wav"
+    ]
+  }
+}
