@@ -1,0 +1,101 @@
+{
+  "retro": {
+    "description": "Classic retro gaming — Freedoom weapons and 7kaa soldiers",
+    "activePack": "7kaa-soldiers",
+    "eventPacks": {
+      "done": "7kaa-soldiers",
+      "permission": "7kaa-soldiers",
+      "complete": "freedoom-arsenal",
+      "error": "freedoom-arsenal",
+      "blocked": "freedoom-arsenal"
+    }
+  },
+  "sci-fi": {
+    "description": "Sci-fi command center — Warzone 2100 commander voice",
+    "activePack": "warzone2100-command",
+    "eventPacks": {
+      "done": "warzone2100-command",
+      "permission": "warzone2100-command",
+      "complete": "warzone2100-command",
+      "error": "warzone2100-command",
+      "blocked": "warzone2100-command"
+    }
+  },
+  "arena": {
+    "description": "Arena announcer with FPS weapons for errors",
+    "activePack": "openarena-announcer",
+    "eventPacks": {
+      "done": "openarena-announcer",
+      "permission": "openarena-announcer",
+      "complete": "openarena-announcer",
+      "error": "freedoom-arsenal",
+      "blocked": "freedoom-arsenal"
+    }
+  },
+  "fantasy": {
+    "description": "Medieval fantasy — Wesnoth combat and 0 A.D. civilizations",
+    "activePack": "wesnoth-combat",
+    "eventPacks": {
+      "done": "wesnoth-combat",
+      "permission": "0ad-civilizations",
+      "complete": "wesnoth-combat",
+      "error": "wesnoth-combat",
+      "blocked": "0ad-civilizations"
+    }
+  },
+  "ancient": {
+    "description": "Ancient world — 7kaa soldiers and 0 A.D. civilizations",
+    "activePack": "7kaa-soldiers",
+    "eventPacks": {
+      "done": "7kaa-soldiers",
+      "permission": "0ad-civilizations",
+      "complete": "0ad-civilizations",
+      "error": "7kaa-soldiers",
+      "blocked": "0ad-civilizations"
+    }
+  },
+  "professional": {
+    "description": "Clean and minimal — Kenney UI sounds for everything",
+    "activePack": "kenney-interface",
+    "eventPacks": {
+      "done": "kenney-interface",
+      "permission": "kenney-interface",
+      "complete": "kenney-interface",
+      "error": "kenney-interface",
+      "blocked": "kenney-interface"
+    }
+  },
+  "8bit": {
+    "description": "Pure retro — 8-bit chiptune for everything",
+    "activePack": "retro-8bit",
+    "eventPacks": {
+      "done": "retro-8bit",
+      "permission": "retro-8bit",
+      "complete": "retro-8bit",
+      "error": "retro-8bit",
+      "blocked": "retro-8bit"
+    }
+  },
+  "space": {
+    "description": "Space station — Warzone 2100 + Kenney sci-fi",
+    "activePack": "kenney-scifi",
+    "eventPacks": {
+      "done": "kenney-scifi",
+      "permission": "warzone2100-command",
+      "complete": "warzone2100-command",
+      "error": "kenney-scifi",
+      "blocked": "kenney-scifi"
+    }
+  },
+  "chaos": {
+    "description": "Random pack for every event — maximum variety",
+    "activePack": "7kaa-soldiers",
+    "eventPacks": {
+      "done": "retro-8bit",
+      "permission": "openarena-announcer",
+      "complete": "warzone2100-command",
+      "error": "freedoom-arsenal",
+      "blocked": "wesnoth-combat"
+    }
+  }
+}
