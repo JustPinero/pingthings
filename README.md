@@ -252,11 +252,87 @@ To support informational mode, add an `events` field mapping event types to soun
 }
 ```
 
+## Themes
+
+Apply a pre-built theme that maps events to packs with one command:
+
+```bash
+pingthings theme              # list available themes
+pingthings theme sci-fi       # apply a theme
+pingthings theme reset        # back to defaults
+```
+
+| Theme | Description |
+|-------|-------------|
+| `retro` | Classic retro gaming — Freedoom weapons + 7kaa soldiers |
+| `sci-fi` | Sci-fi command center — Warzone 2100 commander voice |
+| `arena` | Arena announcer with FPS weapons for errors |
+| `fantasy` | Medieval fantasy — Wesnoth + 0 A.D. civilizations |
+| `ancient` | Ancient world — 7kaa soldiers + 0 A.D. voices |
+| `chaos` | Different pack for every event — maximum variety |
+
+## Tools
+
+### Create a pack
+```bash
+pingthings create ./my-sounds my-pack
+```
+Scaffolds a new pack from a folder of audio files with an auto-generated manifest.
+
+### Install from GitHub
+```bash
+pingthings install user/repo
+pingthings install https://github.com/user/pack-name
+```
+
+### Auto-setup Claude Code hooks
+```bash
+pingthings init                  # interactive wizard
+pingthings init --basic          # random sounds, no prompts
+pingthings init --informational  # event-based sounds, no prompts
+```
+
+## Use with other tools
+
+pingthings works anywhere you can run a shell command.
+
+### Git hooks
+```bash
+# .git/hooks/post-commit
+#!/bin/sh
+pingthings play --event done
+```
+
+### CI notifications (GitHub Actions)
+```yaml
+- name: Notify on failure
+  if: failure()
+  run: npx pingthings play --event error
+```
+
+### Shell aliases
+```bash
+# Add to ~/.zshrc or ~/.bashrc
+alias done='pingthings play --event complete'
+alias oops='pingthings play --event error'
+```
+
+### Pomodoro timer
+```bash
+sleep 1500 && pingthings play --event complete  # 25 minute focus
+```
+
 ## Requirements
 
 - Node.js >= 18
-- macOS (`afplay`) or Linux (`paplay` / `aplay`)
+- macOS (`afplay`), Linux (`paplay` / `aplay`), or Windows (PowerShell)
 
 ## License
 
-GPL v2 — includes audio from [Seven Kingdoms: Ancient Adversaries](https://github.com/the3dfxdude/7kaa) (GPL v2).
+GPL v2 — includes audio from open source games:
+- [Seven Kingdoms: Ancient Adversaries](https://github.com/the3dfxdude/7kaa) (GPL v2)
+- [Battle for Wesnoth](https://github.com/wesnoth/wesnoth) (GPL v2+)
+- [OpenArena](http://openarena.ws) (GPL v2)
+- [Freedoom](https://github.com/freedoom/freedoom) (BSD-3-Clause)
+- [Warzone 2100](https://github.com/Warzone2100/warzone2100) (GPL v2)
+- [0 A.D.](https://github.com/0ad/0ad) (CC-BY-SA 3.0)

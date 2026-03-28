@@ -1,7 +1,21 @@
 import { readConfig } from '../config.js';
 import { listPacks } from '../packs.js';
 
-export default function list() {
+function showHelp() {
+  console.log(`
+Usage: pingthings list
+
+Show all available sound packs with their sound count and source.
+The active pack is marked with *.
+`);
+}
+
+export default function list(args) {
+  if (args?.includes('--help') || args?.includes('-h')) {
+    showHelp();
+    return;
+  }
+
   const config = readConfig();
   const packs = listPacks();
 

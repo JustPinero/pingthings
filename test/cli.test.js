@@ -93,9 +93,9 @@ describe('CLI', () => {
     assert.equal(exitCode, 1);
   });
 
-  it('install shows future message', () => {
-    const { stdout } = run(['install', 'something']);
-    assert.ok(stdout.includes('coming in a future version'));
+  it('install with nonexistent local path fails', () => {
+    const { exitCode } = run(['install', '/tmp/nonexistent-pack-abc123']);
+    assert.equal(exitCode, 1);
   });
 
   it('preview with no pack shows usage', () => {
@@ -144,5 +144,108 @@ describe('CLI', () => {
     const { stdout } = run(['--help']);
     assert.ok(stdout.includes('informational'));
     assert.ok(stdout.includes('--event'));
+  });
+
+  // New feature tests
+
+  it('--help shows new commands', () => {
+    const { stdout } = run(['--help']);
+    assert.ok(stdout.includes('select'));
+    assert.ok(stdout.includes('test-events'));
+    assert.ok(stdout.includes('theme'));
+    assert.ok(stdout.includes('init'));
+    assert.ok(stdout.includes('create'));
+  });
+
+  it('theme with no args shows available themes', () => {
+    const { stdout } = run(['theme']);
+    assert.ok(stdout.includes('retro'));
+    assert.ok(stdout.includes('sci-fi'));
+    assert.ok(stdout.includes('arena'));
+    assert.ok(stdout.includes('fantasy'));
+  });
+
+  it('theme sci-fi applies correctly', () => {
+    const { exitCode, stdout } = run(['theme', 'sci-fi']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('Theme applied: sci-fi'));
+    assert.ok(stdout.includes('warzone2100-command'));
+  });
+
+  it('theme reset works', () => {
+    const { exitCode, stdout } = run(['theme', 'reset']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('reset'));
+  });
+
+  it('theme with invalid name fails', () => {
+    const { exitCode } = run(['theme', 'nonexistent']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('config volume sets and reads', () => {
+    const { exitCode, stdout } = run(['config', 'volume', '50']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('50'));
+  });
+
+  it('config volume rejects invalid values', () => {
+    const { exitCode } = run(['config', 'volume', 'abc']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('config volume rejects out of range', () => {
+    const { exitCode } = run(['config', 'volume', '150']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('config eventPacks.error sets per-event pack', () => {
+    const { exitCode, stdout } = run(['config', 'eventPacks.error', 'freedoom-arsenal']);
+    assert.equal(exitCode, 0);
+    assert.ok(stdout.includes('error'));
+  });
+
+  it('config eventPacks.bogus rejects invalid event', () => {
+    const { exitCode } = run(['config', 'eventPacks.bogus', 'some-pack']);
+    assert.equal(exitCode, 1);
+  });
+
+  it('init --help shows usage', () => {
+    const { stdout } = run(['init', '--help']);
+    assert.ok(stdout.includes('Claude Code'));
+    assert.ok(stdout.includes('--basic'));
+    assert.ok(stdout.includes('--informational'));
+  });
+
+  it('create --help shows usage', () => {
+    const { stdout } = run(['create', '--help']);
+    assert.ok(stdout.includes('source-dir'));
+    assert.ok(stdout.includes('manifest'));
+  });
+
+  it('install --help shows usage', () => {
+    const { stdout } = run(['install', '--help']);
+    assert.ok(stdout.includes('GitHub'));
+    assert.ok(stdout.includes('source'));
+  });
+
+  it('list --help shows usage', () => {
+    const { stdout } = run(['list', '--help']);
+    assert.ok(stdout.includes('available'));
+  });
+
+  it('use --help shows usage', () => {
+    const { stdout } = run(['use', '--help']);
+    assert.ok(stdout.includes('pack'));
+  });
+
+  it('preview --help shows usage', () => {
+    const { stdout } = run(['preview', '--help']);
+    assert.ok(stdout.includes('preview'));
+  });
+
+  it('test-events --help shows usage', () => {
+    const { stdout } = run(['test-events', '--help']);
+    assert.ok(stdout.includes('event'));
   });
 });

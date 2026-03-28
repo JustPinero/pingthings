@@ -29,10 +29,14 @@ describe('config', () => {
   });
 
   it('writes and reads config', () => {
-    const custom = { activePack: 'test-pack', mode: 'specific', specificSound: 'beep' };
+    const custom = { activePack: 'test-pack', mode: 'specific', specificSound: 'beep', volume: 80, eventPacks: { error: 'freedoom-arsenal' } };
     writeConfig(custom);
     const read = readConfig();
-    assert.deepEqual(read, custom);
+    assert.equal(read.activePack, 'test-pack');
+    assert.equal(read.mode, 'specific');
+    assert.equal(read.specificSound, 'beep');
+    assert.equal(read.volume, 80);
+    assert.equal(read.eventPacks.error, 'freedoom-arsenal');
   });
 
   it('merges defaults with partial config', () => {

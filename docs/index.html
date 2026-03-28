@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pingthings — Sound Packs</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 { color: #58a6ff; margin-bottom: 0.5rem; }
+    .tagline { color: #8b949e; margin-bottom: 2rem; }
+    .install {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      font-family: monospace;
+    }
+    .install code { color: #7ee787; }
+    .pack {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .pack h2 {
+      color: #58a6ff;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .pack .meta {
+      color: #8b949e;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+    .pack .description { margin-bottom: 0.75rem; }
+    .pack .events {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .event-tag {
+      background: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 4px;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    .event-tag.done { border-color: #3fb950; color: #3fb950; }
+    .event-tag.permission { border-color: #d29922; color: #d29922; }
+    .event-tag.complete { border-color: #58a6ff; color: #58a6ff; }
+    .event-tag.error { border-color: #f85149; color: #f85149; }
+    .event-tag.blocked { border-color: #bc8cff; color: #bc8cff; }
+    .license {
+      display: inline-block;
+      background: #21262d;
+      border-radius: 4px;
+      padding: 0.15rem 0.4rem;
+      font-size: 0.75rem;
+      color: #8b949e;
+    }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>pingthings</h1>
+  <p class="tagline">Notification sounds for Claude Code and other CLI tools. Like text tones for your terminal.</p>
+
+  <div class="install">
+    <code>npm install -g pingthings</code>
+  </div>
+
+  <h2 style="color: #c9d1d9; margin-bottom: 1rem;">Built-in Sound Packs</h2>
+
+  <div class="pack">
+    <h2>7kaa-soldiers</h2>
+    <div class="meta">53 sounds <span class="license">GPL-2.0</span></div>
+    <div class="description">Soldier acknowledgement voice lines from Seven Kingdoms: Ancient Adversaries. All 10 civilizations: Norman, Maya, Greek, Viking, Persian, Chinese, Japanese, Egyptian, Indian, Zulu.</div>
+    <div class="events">
+      <span class="event-tag done">done (11)</span>
+      <span class="event-tag permission">permission (6)</span>
+      <span class="event-tag complete">complete (8)</span>
+      <span class="event-tag error">error (9)</span>
+      <span class="event-tag blocked">blocked (3)</span>
+    </div>
+  </div>
+
+  <div class="pack">
+    <h2>warzone2100-command</h2>
+    <div class="meta">21 sounds <span class="license">GPL-2.0</span></div>
+    <div class="description">Sci-fi military commander voice lines from Warzone 2100. Female computer voice: "research completed", "incoming transmission", "mission successful". Plus NEXUS AI laughs.</div>
+    <div class="events">
+      <span class="event-tag done">done (5)</span>
+      <span class="event-tag permission">permission (4)</span>
+      <span class="event-tag complete">complete (3)</span>
+      <span class="event-tag error">error (4)</span>
+      <span class="event-tag blocked">blocked (5)</span>
+    </div>
+  </div>
+
+  <div class="pack">
+    <h2>0ad-civilizations</h2>
+    <div class="meta">28 sounds <span class="license">CC-BY-SA-3.0</span></div>
+    <div class="description">Ancient civilization voice lines and alerts from 0 A.D. Greek, Latin, and Persian voice acknowledgements plus alarm sounds.</div>
+    <div class="events">
+      <span class="event-tag done">done (7)</span>
+      <span class="event-tag permission">permission (7)</span>
+      <span class="event-tag complete">complete (5)</span>
+      <span class="event-tag error">error (6)</span>
+      <span class="event-tag blocked">blocked (3)</span>
+    </div>
+  </div>
+
+  <div class="pack">
+    <h2>openarena-announcer</h2>
+    <div class="meta">18 sounds <span class="license">GPL-2.0</span></div>
+    <div class="description">Arena FPS announcer voice lines from OpenArena. "Excellent!", "Impressive!", "Fight!", "Perfect!", "Denied!", and more.</div>
+    <div class="events">
+      <span class="event-tag done">done (4)</span>
+      <span class="event-tag permission">permission (3)</span>
+      <span class="event-tag complete">complete (3)</span>
+      <span class="event-tag error">error (3)</span>
+      <span class="event-tag blocked">blocked (2)</span>
+    </div>
+  </div>
+
+  <div class="pack">
+    <h2>wesnoth-combat</h2>
+    <div class="meta">19 sounds <span class="license">GPL-2.0</span></div>
+    <div class="description">Fantasy combat and magic sounds from Battle for Wesnoth. Swords, bows, spells, explosions, gold collection, healing, and a dwarf laugh.</div>
+    <div class="events">
+      <span class="event-tag done">done (5)</span>
+      <span class="event-tag permission">permission (3)</span>
+      <span class="event-tag complete">complete (3)</span>
+      <span class="event-tag error">error (4)</span>
+      <span class="event-tag blocked">blocked (3)</span>
+    </div>
+  </div>
+
+  <div class="pack">
+    <h2>freedoom-arsenal</h2>
+    <div class="meta">19 sounds <span class="license">BSD-3-Clause</span></div>
+    <div class="description">Retro FPS weapon and pickup sounds from Freedoom. Shotgun, plasma rifle, BFG, rocket launcher, item pickups, and teleport.</div>
+    <div class="events">
+      <span class="event-tag done">done (4)</span>
+      <span class="event-tag permission">permission (3)</span>
+      <span class="event-tag complete">complete (3)</span>
+      <span class="event-tag error">error (4)</span>
+      <span class="event-tag blocked">blocked (3)</span>
+    </div>
+  </div>
+
+  <footer>
+    <p><a href="https://github.com/JustPinero/pingthings">GitHub</a> &middot; <a href="https://www.npmjs.com/package/pingthings">npm</a></p>
+    <p style="margin-top: 0.5rem;">All audio sourced from open source games with GPL/BSD/CC-compatible licenses.</p>
+  </footer>
+</body>
+</html>

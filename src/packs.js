@@ -48,6 +48,7 @@ function scanDirectory(dir, isBuiltIn) {
 
       return {
         name: manifest?.name || d.name,
+        version: manifest?.version || '0.0.0',
         description: manifest?.description || '',
         license: manifest?.license || 'Unknown',
         credits: manifest?.credits || '',

@@ -78,10 +78,15 @@ export default function play(args) {
 
   // If --event flag is provided, use event mapping
   if (parsed.event) {
-    const eventSounds = getEventSounds(packName, parsed.event);
+    // Pack mixing: check if there's a per-event pack override
+    const eventPackName = config.eventPacks?.[parsed.event] || packName;
+    const eventPack = resolvePack(eventPackName);
+    const resolvedPack = eventPack ? eventPackName : packName;
+
+    const eventSounds = getEventSounds(resolvedPack, parsed.event);
     if (eventSounds.length === 0) {
       // Fall back to random if pack has no mapping for this event
-      const allSounds = getPackSounds(packName);
+      const allSounds = getPackSounds(resolvedPack);
       soundFile = pickRandom(allSounds);
     } else {
       soundFile = pickRandom(eventSounds);
@@ -123,5 +128,5 @@ export default function play(args) {
     soundFile = pickRandom(sounds);
   }
 
-  playSound(soundFile);
+  playSound(soundFile, config.volume);
 }

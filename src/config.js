@@ -6,6 +6,8 @@ const DEFAULTS = {
   activePack: '7kaa-soldiers',
   mode: 'random',
   specificSound: null,
+  volume: 100,
+  eventPacks: {},
 };
 
 export function getConfigDir() {

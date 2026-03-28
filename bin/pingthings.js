@@ -14,9 +14,14 @@ const commands = {
   play: () => import('../src/cli/play.js'),
   list: () => import('../src/cli/list.js'),
   use: () => import('../src/cli/use.js'),
+  select: () => import('../src/cli/select.js'),
   preview: () => import('../src/cli/preview.js'),
   config: () => import('../src/cli/config.js'),
   install: () => import('../src/cli/install.js'),
+  init: () => import('../src/cli/init.js'),
+  create: () => import('../src/cli/create.js'),
+  theme: () => import('../src/cli/theme.js'),
+  'test-events': () => import('../src/cli/test-events.js'),
 };
 
 function showHelp() {
@@ -28,10 +33,15 @@ Usage: pingthings <command> [options]
 Commands:
   play [sound]       Play a sound from the active pack (random by default)
   list               Show available sound packs
+  select             Interactive pack selector
   use <pack>         Set the active sound pack
   preview <pack>     Preview a random sound from a pack
+  test-events [pack] Play all event sounds to hear what each one sounds like
+  theme [name]       Apply a sound theme (maps events across packs)
   config [key] [val] Show or update configuration
-  install <pack>     Install a sound pack (coming soon)
+  init               Set up Claude Code hooks automatically
+  create <dir>       Create a new pack from a folder of audio files
+  install <source>   Install a pack from GitHub or URL
 
 Options:
   --help, -h         Show this help message
@@ -47,9 +57,11 @@ Examples:
   pingthings play 00083-READY     Play a specific sound
   pingthings play --event done    Play a "task done" sound
   pingthings play -e error        Play an "error" sound
-  pingthings list                  List all available packs
-  pingthings use 7kaa-soldiers    Switch to a pack
-  pingthings config mode informational   Enable event-based sounds
+  pingthings select               Choose a pack interactively
+  pingthings test-events           Hear all event sounds
+  pingthings theme retro           Apply the retro theme
+  pingthings init                  Set up Claude Code hooks
+  pingthings config volume 50     Set volume to 50%
 `);
 }
 
