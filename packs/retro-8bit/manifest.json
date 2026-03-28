@@ -6,53 +6,53 @@
   "credits": "Juhani Junkala / SubspaceAudio (https://opengameart.org/content/512-sound-effects-8-bit-style)",
   "category": "retro",
   "sounds": [
-    "sounds/button-1.wav",
-    "sounds/button-2.wav",
-    "sounds/button-3.wav",
-    "sounds/coin-1.wav",
-    "sounds/coin-2.wav",
-    "sounds/coin-cluster.wav",
-    "sounds/coin-double.wav",
-    "sounds/damage-1.wav",
-    "sounds/error-1.wav",
-    "sounds/error-2.wav",
-    "sounds/error-3.wav",
-    "sounds/fanfare-1.wav",
-    "sounds/fanfare-2.wav",
-    "sounds/fanfare-3.wav",
-    "sounds/negative-1.wav",
-    "sounds/negative-2.wav",
-    "sounds/powerup-1.wav",
-    "sounds/powerup-2.wav"
+    "sounds/button-1.ogg",
+    "sounds/button-2.ogg",
+    "sounds/button-3.ogg",
+    "sounds/coin-1.ogg",
+    "sounds/coin-2.ogg",
+    "sounds/coin-cluster.ogg",
+    "sounds/coin-double.ogg",
+    "sounds/damage-1.ogg",
+    "sounds/error-1.ogg",
+    "sounds/error-2.ogg",
+    "sounds/error-3.ogg",
+    "sounds/fanfare-1.ogg",
+    "sounds/fanfare-2.ogg",
+    "sounds/fanfare-3.ogg",
+    "sounds/negative-1.ogg",
+    "sounds/negative-2.ogg",
+    "sounds/powerup-1.ogg",
+    "sounds/powerup-2.ogg"
   ],
   "events": {
     "done": [
-      "sounds/coin-1.wav",
-      "sounds/coin-2.wav",
-      "sounds/coin-double.wav",
-      "sounds/coin-cluster.wav"
+      "sounds/coin-1.ogg",
+      "sounds/coin-2.ogg",
+      "sounds/coin-double.ogg",
+      "sounds/coin-cluster.ogg"
     ],
     "permission": [
-      "sounds/button-1.wav",
-      "sounds/button-2.wav",
-      "sounds/button-3.wav"
+      "sounds/button-1.ogg",
+      "sounds/button-2.ogg",
+      "sounds/button-3.ogg"
     ],
     "complete": [
-      "sounds/fanfare-1.wav",
-      "sounds/fanfare-2.wav",
-      "sounds/fanfare-3.wav",
-      "sounds/powerup-1.wav",
-      "sounds/powerup-2.wav"
+      "sounds/fanfare-1.ogg",
+      "sounds/fanfare-2.ogg",
+      "sounds/fanfare-3.ogg",
+      "sounds/powerup-1.ogg",
+      "sounds/powerup-2.ogg"
     ],
     "error": [
-      "sounds/error-1.wav",
-      "sounds/error-2.wav",
-      "sounds/error-3.wav",
-      "sounds/damage-1.wav"
+      "sounds/error-1.ogg",
+      "sounds/error-2.ogg",
+      "sounds/error-3.ogg",
+      "sounds/damage-1.ogg"
     ],
     "blocked": [
-      "sounds/negative-1.wav",
-      "sounds/negative-2.wav"
+      "sounds/negative-1.ogg",
+      "sounds/negative-2.ogg"
     ]
   }
 }

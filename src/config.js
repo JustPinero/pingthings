@@ -10,6 +10,7 @@ const DEFAULTS = {
   eventPacks: {},
   cooldown: true,
   quietHours: null,
+  notifications: false,
 };
 
 export function getConfigDir() {
@@ -21,6 +22,10 @@ export function getConfigDir() {
 
 export function getConfigPath() {
   return join(getConfigDir(), 'config.json');
+}
+
+export function isFirstRun() {
+  return !existsSync(getConfigPath());
 }
 
 export function readConfig() {

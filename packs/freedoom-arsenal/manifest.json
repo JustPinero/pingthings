@@ -6,53 +6,53 @@
   "credits": "Freedoom contributors (https://github.com/freedoom/freedoom)",
   "category": "fps",
   "sounds": [
-    "sounds/dsbarexp.wav",
-    "sounds/dsbfg.wav",
-    "sounds/dsdoropn.wav",
-    "sounds/dsdshtgn.wav",
-    "sounds/dsgetpow.wav",
-    "sounds/dsitemup.wav",
-    "sounds/dsoof.wav",
-    "sounds/dspistol.wav",
-    "sounds/dsplasma.wav",
-    "sounds/dspldeth.wav",
-    "sounds/dspunch.wav",
-    "sounds/dsrlaunc.wav",
-    "sounds/dsrxplod.wav",
-    "sounds/dssawup.wav",
-    "sounds/dssgcock.wav",
-    "sounds/dsshotgn.wav",
-    "sounds/dsswtchn.wav",
-    "sounds/dstelept.wav",
-    "sounds/dswpnup.wav"
+    "sounds/dsbarexp.ogg",
+    "sounds/dsbfg.ogg",
+    "sounds/dsdoropn.ogg",
+    "sounds/dsdshtgn.ogg",
+    "sounds/dsgetpow.ogg",
+    "sounds/dsitemup.ogg",
+    "sounds/dsoof.ogg",
+    "sounds/dspistol.ogg",
+    "sounds/dsplasma.ogg",
+    "sounds/dspldeth.ogg",
+    "sounds/dspunch.ogg",
+    "sounds/dsrlaunc.ogg",
+    "sounds/dsrxplod.ogg",
+    "sounds/dssawup.ogg",
+    "sounds/dssgcock.ogg",
+    "sounds/dsshotgn.ogg",
+    "sounds/dsswtchn.ogg",
+    "sounds/dstelept.ogg",
+    "sounds/dswpnup.ogg"
   ],
   "events": {
     "done": [
-      "sounds/dsitemup.wav",
-      "sounds/dsswtchn.wav",
-      "sounds/dspistol.wav",
-      "sounds/dspunch.wav"
+      "sounds/dsitemup.ogg",
+      "sounds/dsswtchn.ogg",
+      "sounds/dspistol.ogg",
+      "sounds/dspunch.ogg"
     ],
     "permission": [
-      "sounds/dssgcock.wav",
-      "sounds/dssawup.wav",
-      "sounds/dsdoropn.wav"
+      "sounds/dssgcock.ogg",
+      "sounds/dssawup.ogg",
+      "sounds/dsdoropn.ogg"
     ],
     "complete": [
-      "sounds/dsgetpow.wav",
-      "sounds/dswpnup.wav",
-      "sounds/dstelept.wav"
+      "sounds/dsgetpow.ogg",
+      "sounds/dswpnup.ogg",
+      "sounds/dstelept.ogg"
     ],
     "error": [
-      "sounds/dsoof.wav",
-      "sounds/dsbarexp.wav",
-      "sounds/dsrxplod.wav",
-      "sounds/dspldeth.wav"
+      "sounds/dsoof.ogg",
+      "sounds/dsbarexp.ogg",
+      "sounds/dsrxplod.ogg",
+      "sounds/dspldeth.ogg"
     ],
     "blocked": [
-      "sounds/dsbfg.wav",
-      "sounds/dsrlaunc.wav",
-      "sounds/dsdshtgn.wav"
+      "sounds/dsbfg.ogg",
+      "sounds/dsrlaunc.ogg",
+      "sounds/dsdshtgn.ogg"
     ]
   }
 }

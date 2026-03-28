@@ -1,6 +1,6 @@
 import { readConfig, writeConfig, VALID_MODES, VALID_EVENTS } from '../config.js';
 
-const VALID_KEYS = ['activePack', 'mode', 'specificSound', 'volume', 'eventPacks', 'cooldown', 'quietHours'];
+const VALID_KEYS = ['activePack', 'mode', 'specificSound', 'volume', 'eventPacks', 'cooldown', 'quietHours', 'notifications'];
 
 function showHelp() {
   console.log(`
@@ -112,16 +112,16 @@ export default function config(args) {
     return;
   }
 
-  // Validate cooldown
-  if (key === 'cooldown') {
+  // Validate boolean keys
+  if (key === 'notifications' || key === 'cooldown') {
     if (value !== 'true' && value !== 'false') {
-      console.error('Cooldown must be true or false.');
+      console.error(`${key} must be true or false.`);
       process.exit(1);
     }
     const cfg = readConfig();
-    cfg.cooldown = value === 'true';
+    cfg[key] = value === 'true';
     writeConfig(cfg);
-    console.log(`cooldown set to: ${cfg.cooldown}`);
+    console.log(`${key} set to: ${cfg[key]}`);
     return;
   }
 

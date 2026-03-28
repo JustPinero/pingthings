@@ -6,59 +6,59 @@
   "credits": "Warzone 2100 Project (https://github.com/Warzone2100/warzone2100)",
   "category": "military",
   "sounds": [
-    "sounds/construction-completed.wav",
-    "sounds/design-completed.wav",
-    "sounds/enemy-detected.wav",
-    "sounds/incoming-enemy-transport.wav",
-    "sounds/incoming-transmission.wav",
-    "sounds/major-research-completed.wav",
-    "sounds/mission-failed.wav",
-    "sounds/mission-objective.wav",
-    "sounds/mission-successful.wav",
-    "sounds/mission-update.wav",
-    "sounds/new-research-available.wav",
-    "sounds/nexus-laugh1.wav",
-    "sounds/nexus-laugh2.wav",
-    "sounds/power-low.wav",
-    "sounds/production-cancelled.wav",
-    "sounds/production-completed.wav",
-    "sounds/reinforcements-available.wav",
-    "sounds/research-completed.wav",
-    "sounds/retreat-heavy-damage.wav",
-    "sounds/structure-under-attack.wav",
-    "sounds/unit-repaired.wav"
+    "sounds/construction-completed.ogg",
+    "sounds/design-completed.ogg",
+    "sounds/enemy-detected.ogg",
+    "sounds/incoming-enemy-transport.ogg",
+    "sounds/incoming-transmission.ogg",
+    "sounds/major-research-completed.ogg",
+    "sounds/mission-failed.ogg",
+    "sounds/mission-objective.ogg",
+    "sounds/mission-successful.ogg",
+    "sounds/mission-update.ogg",
+    "sounds/new-research-available.ogg",
+    "sounds/nexus-laugh1.ogg",
+    "sounds/nexus-laugh2.ogg",
+    "sounds/power-low.ogg",
+    "sounds/production-cancelled.ogg",
+    "sounds/production-completed.ogg",
+    "sounds/reinforcements-available.ogg",
+    "sounds/research-completed.ogg",
+    "sounds/retreat-heavy-damage.ogg",
+    "sounds/structure-under-attack.ogg",
+    "sounds/unit-repaired.ogg"
   ],
   "events": {
     "done": [
-      "sounds/research-completed.wav",
-      "sounds/construction-completed.wav",
-      "sounds/production-completed.wav",
-      "sounds/design-completed.wav",
-      "sounds/unit-repaired.wav"
+      "sounds/research-completed.ogg",
+      "sounds/construction-completed.ogg",
+      "sounds/production-completed.ogg",
+      "sounds/design-completed.ogg",
+      "sounds/unit-repaired.ogg"
     ],
     "permission": [
-      "sounds/incoming-transmission.wav",
-      "sounds/mission-objective.wav",
-      "sounds/mission-update.wav",
-      "sounds/new-research-available.wav"
+      "sounds/incoming-transmission.ogg",
+      "sounds/mission-objective.ogg",
+      "sounds/mission-update.ogg",
+      "sounds/new-research-available.ogg"
     ],
     "complete": [
-      "sounds/mission-successful.wav",
-      "sounds/major-research-completed.wav",
-      "sounds/reinforcements-available.wav"
+      "sounds/mission-successful.ogg",
+      "sounds/major-research-completed.ogg",
+      "sounds/reinforcements-available.ogg"
     ],
     "error": [
-      "sounds/structure-under-attack.wav",
-      "sounds/power-low.wav",
-      "sounds/mission-failed.wav",
-      "sounds/production-cancelled.wav"
+      "sounds/structure-under-attack.ogg",
+      "sounds/power-low.ogg",
+      "sounds/mission-failed.ogg",
+      "sounds/production-cancelled.ogg"
     ],
     "blocked": [
-      "sounds/enemy-detected.wav",
-      "sounds/incoming-enemy-transport.wav",
-      "sounds/retreat-heavy-damage.wav",
-      "sounds/nexus-laugh1.wav",
-      "sounds/nexus-laugh2.wav"
+      "sounds/enemy-detected.ogg",
+      "sounds/incoming-enemy-transport.ogg",
+      "sounds/retreat-heavy-damage.ogg",
+      "sounds/nexus-laugh1.ogg",
+      "sounds/nexus-laugh2.ogg"
     ]
   }
 }

@@ -1,15 +1,18 @@
 import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours } from '../config.js';
 import { getPackSounds, getEventSounds, pickRandom, resolvePack } from '../packs.js';
 import { playSound } from '../player.js';
+import { sendNotification } from '../notify.js';
 import { basename } from 'node:path';
 
 function parseArgs(args) {
-  const result = { sound: null, event: null };
+  const result = { sound: null, event: null, notify: false };
 
   for (let i = 0; i < args.length; i++) {
     if ((args[i] === '--event' || args[i] === '-e') && args[i + 1]) {
       result.event = args[i + 1];
       i++;
+    } else if (args[i] === '--notify' || args[i] === '-n') {
+      result.notify = true;
     } else if (args[i] === '--help' || args[i] === '-h') {
       showHelp();
       process.exit(0);
@@ -155,4 +158,10 @@ export default function play(args) {
 
   setLastPlayed(soundFile);
   playSound(soundFile, config.volume);
+
+  // Desktop notification
+  if (parsed.notify || config.notifications) {
+    const event = parsed.event || 'notification';
+    sendNotification('pingthings', `${event}: ${basename(soundFile)}`);
+  }
 }

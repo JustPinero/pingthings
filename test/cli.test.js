@@ -245,7 +245,7 @@ describe('search', () => {
     const { exitCode, stdout } = run(['search', 'sword']);
     assert.equal(exitCode, 0);
     assert.ok(stdout.includes('wesnoth-combat'));
-    assert.ok(stdout.includes('sword-1.wav'));
+    assert.ok(stdout.includes('sword-1.ogg'));
   });
 
   it('shows no results message for unknown term', () => {
@@ -275,8 +275,8 @@ describe('sounds', () => {
   it('lists sounds in named pack', () => {
     const { exitCode, stdout } = run(['sounds', 'openarena-announcer']);
     assert.equal(exitCode, 0);
-    assert.ok(stdout.includes('excellent.wav'));
-    assert.ok(stdout.includes('fight.wav'));
+    assert.ok(stdout.includes('excellent.ogg'));
+    assert.ok(stdout.includes('fight.ogg'));
   });
 
   it('shows event grouping with --events', () => {

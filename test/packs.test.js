@@ -53,7 +53,7 @@ describe('packs', () => {
     for (const name of ALL_PACKS) {
       const sounds = getPackSounds(name);
       assert.ok(sounds.length > 0, `${name} should have sounds`);
-      assert.ok(sounds[0].endsWith('.wav'), `${name} sounds should be WAV`);
+      assert.ok(sounds[0].endsWith('.ogg') || sounds[0].endsWith('.wav'), `${name} sounds should be OGG or WAV`);
     }
   });
 

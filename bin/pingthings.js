@@ -28,6 +28,7 @@ const commands = {
   'test-events': () => import('../src/cli/test-events.js'),
   'random-pack': () => import('../src/cli/random-pack.js'),
   doctor: () => import('../src/cli/doctor.js'),
+  update: () => import('../src/cli/update.js'),
   completions: () => import('../src/cli/completions.js'),
 };
 
@@ -55,6 +56,7 @@ Commands:
   install <source>   Install a pack from GitHub or URL
   uninstall <pack>   Remove a user-installed pack
   doctor             Diagnose audio setup and configuration
+  update             Check for new versions
   completions <shell> Generate shell completions (bash/zsh/fish)
 
 Options:
@@ -93,6 +95,15 @@ if (!commands[command]) {
   console.error(`Unknown command: ${command}`);
   console.error('Run "pingthings --help" for usage.');
   process.exit(1);
+}
+
+// First-run setup — only on interactive TTY, not hooks/scripts/tests
+if (process.stdin.isTTY && command !== 'play' && command !== 'completions' && command !== 'doctor') {
+  const { isFirstRun } = await import('../src/config.js');
+  if (isFirstRun()) {
+    const { runFirstTimeSetup } = await import('../src/cli/first-run.js');
+    await runFirstTimeSetup();
+  }
 }
 
 try {

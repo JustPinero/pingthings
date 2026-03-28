@@ -6,53 +6,53 @@
   "credits": "Kenney (https://kenney.nl)",
   "category": "sci-fi",
   "sounds": [
-    "sounds/computer-1.wav",
-    "sounds/computer-2.wav",
-    "sounds/computer-3.wav",
-    "sounds/door-close.wav",
-    "sounds/door-open.wav",
-    "sounds/engine-1.wav",
-    "sounds/explosion-1.wav",
-    "sounds/explosion-2.wav",
-    "sounds/forcefield-1.wav",
-    "sounds/forcefield-2.wav",
-    "sounds/impact-1.wav",
-    "sounds/impact-2.wav",
-    "sounds/laser-large.wav",
-    "sounds/laser-retro.wav",
-    "sounds/low-explosion.wav",
-    "sounds/slime.wav",
-    "sounds/thruster-1.wav",
-    "sounds/thruster-2.wav"
+    "sounds/computer-1.ogg",
+    "sounds/computer-2.ogg",
+    "sounds/computer-3.ogg",
+    "sounds/door-close.ogg",
+    "sounds/door-open.ogg",
+    "sounds/engine-1.ogg",
+    "sounds/explosion-1.ogg",
+    "sounds/explosion-2.ogg",
+    "sounds/forcefield-1.ogg",
+    "sounds/forcefield-2.ogg",
+    "sounds/impact-1.ogg",
+    "sounds/impact-2.ogg",
+    "sounds/laser-large.ogg",
+    "sounds/laser-retro.ogg",
+    "sounds/low-explosion.ogg",
+    "sounds/slime.ogg",
+    "sounds/thruster-1.ogg",
+    "sounds/thruster-2.ogg"
   ],
   "events": {
     "done": [
-      "sounds/computer-1.wav",
-      "sounds/computer-2.wav",
-      "sounds/computer-3.wav",
-      "sounds/door-open.wav"
+      "sounds/computer-1.ogg",
+      "sounds/computer-2.ogg",
+      "sounds/computer-3.ogg",
+      "sounds/door-open.ogg"
     ],
     "permission": [
-      "sounds/forcefield-1.wav",
-      "sounds/forcefield-2.wav",
-      "sounds/laser-retro.wav"
+      "sounds/forcefield-1.ogg",
+      "sounds/forcefield-2.ogg",
+      "sounds/laser-retro.ogg"
     ],
     "complete": [
-      "sounds/thruster-1.wav",
-      "sounds/thruster-2.wav",
-      "sounds/engine-1.wav"
+      "sounds/thruster-1.ogg",
+      "sounds/thruster-2.ogg",
+      "sounds/engine-1.ogg"
     ],
     "error": [
-      "sounds/explosion-1.wav",
-      "sounds/explosion-2.wav",
-      "sounds/low-explosion.wav",
-      "sounds/impact-1.wav",
-      "sounds/impact-2.wav"
+      "sounds/explosion-1.ogg",
+      "sounds/explosion-2.ogg",
+      "sounds/low-explosion.ogg",
+      "sounds/impact-1.ogg",
+      "sounds/impact-2.ogg"
     ],
     "blocked": [
-      "sounds/door-close.wav",
-      "sounds/laser-large.wav",
-      "sounds/slime.wav"
+      "sounds/door-close.ogg",
+      "sounds/laser-large.ogg",
+      "sounds/slime.ogg"
     ]
   }
 }

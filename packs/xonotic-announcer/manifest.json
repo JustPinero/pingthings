@@ -6,47 +6,47 @@
   "credits": "Xonotic Project (https://github.com/xonotic/xonotic-data.pk3dir)",
   "category": "arena",
   "sounds": [
-    "sounds/1fragleft.wav",
-    "sounds/airshot.wav",
-    "sounds/amazing.wav",
-    "sounds/awesome.wav",
-    "sounds/begin.wav",
-    "sounds/botlike.wav",
-    "sounds/electrobitch.wav",
-    "sounds/headshot.wav",
-    "sounds/impressive.wav",
-    "sounds/lastsecond.wav",
-    "sounds/leadgained.wav",
-    "sounds/narrowly.wav",
-    "sounds/prepareforbattle.wav",
-    "sounds/terminated.wav",
-    "sounds/yoda.wav"
+    "sounds/1fragleft.ogg",
+    "sounds/airshot.ogg",
+    "sounds/amazing.ogg",
+    "sounds/awesome.ogg",
+    "sounds/begin.ogg",
+    "sounds/botlike.ogg",
+    "sounds/electrobitch.ogg",
+    "sounds/headshot.ogg",
+    "sounds/impressive.ogg",
+    "sounds/lastsecond.ogg",
+    "sounds/leadgained.ogg",
+    "sounds/narrowly.ogg",
+    "sounds/prepareforbattle.ogg",
+    "sounds/terminated.ogg",
+    "sounds/yoda.ogg"
   ],
   "events": {
     "done": [
-      "sounds/awesome.wav",
-      "sounds/amazing.wav",
-      "sounds/impressive.wav",
-      "sounds/airshot.wav"
+      "sounds/awesome.ogg",
+      "sounds/amazing.ogg",
+      "sounds/impressive.ogg",
+      "sounds/airshot.ogg"
     ],
     "permission": [
-      "sounds/prepareforbattle.wav",
-      "sounds/begin.wav",
-      "sounds/1fragleft.wav"
+      "sounds/prepareforbattle.ogg",
+      "sounds/begin.ogg",
+      "sounds/1fragleft.ogg"
     ],
     "complete": [
-      "sounds/yoda.wav",
-      "sounds/botlike.wav",
-      "sounds/leadgained.wav"
+      "sounds/yoda.ogg",
+      "sounds/botlike.ogg",
+      "sounds/leadgained.ogg"
     ],
     "error": [
-      "sounds/terminated.wav",
-      "sounds/headshot.wav",
-      "sounds/electrobitch.wav"
+      "sounds/terminated.ogg",
+      "sounds/headshot.ogg",
+      "sounds/electrobitch.ogg"
     ],
     "blocked": [
-      "sounds/lastsecond.wav",
-      "sounds/narrowly.wav"
+      "sounds/lastsecond.ogg",
+      "sounds/narrowly.ogg"
     ]
   }
 }

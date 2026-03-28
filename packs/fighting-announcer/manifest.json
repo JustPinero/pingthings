@@ -6,57 +6,57 @@
   "credits": "Alba MacKenna (https://opengameart.org/content/voice-pack%E2%94%82fighting-game-announcer)",
   "category": "arena",
   "sounds": [
-    "sounds/begin.wav",
-    "sounds/complete.wav",
-    "sounds/congratulations.wav",
-    "sounds/defeat.wav",
-    "sounds/failure.wav",
-    "sounds/fight.wav",
-    "sounds/final-round.wav",
-    "sounds/finish.wav",
-    "sounds/game-over.wav",
-    "sounds/get-set.wav",
-    "sounds/go.wav",
-    "sounds/great.wav",
-    "sounds/high-score.wav",
-    "sounds/new-record.wav",
-    "sounds/no-contest.wav",
-    "sounds/ready.wav",
-    "sounds/sudden-death.wav",
-    "sounds/victory.wav",
-    "sounds/you-lose.wav",
-    "sounds/you-win.wav"
+    "sounds/begin.ogg",
+    "sounds/complete.ogg",
+    "sounds/congratulations.ogg",
+    "sounds/defeat.ogg",
+    "sounds/failure.ogg",
+    "sounds/fight.ogg",
+    "sounds/final-round.ogg",
+    "sounds/finish.ogg",
+    "sounds/game-over.ogg",
+    "sounds/get-set.ogg",
+    "sounds/go.ogg",
+    "sounds/great.ogg",
+    "sounds/high-score.ogg",
+    "sounds/new-record.ogg",
+    "sounds/no-contest.ogg",
+    "sounds/ready.ogg",
+    "sounds/sudden-death.ogg",
+    "sounds/victory.ogg",
+    "sounds/you-lose.ogg",
+    "sounds/you-win.ogg"
   ],
   "events": {
     "done": [
-      "sounds/complete.wav",
-      "sounds/great.wav",
-      "sounds/finish.wav",
-      "sounds/new-record.wav"
+      "sounds/complete.ogg",
+      "sounds/great.ogg",
+      "sounds/finish.ogg",
+      "sounds/new-record.ogg"
     ],
     "permission": [
-      "sounds/fight.wav",
-      "sounds/ready.wav",
-      "sounds/get-set.wav",
-      "sounds/begin.wav",
-      "sounds/go.wav"
+      "sounds/fight.ogg",
+      "sounds/ready.ogg",
+      "sounds/get-set.ogg",
+      "sounds/begin.ogg",
+      "sounds/go.ogg"
     ],
     "complete": [
-      "sounds/victory.wav",
-      "sounds/you-win.wav",
-      "sounds/congratulations.wav",
-      "sounds/high-score.wav"
+      "sounds/victory.ogg",
+      "sounds/you-win.ogg",
+      "sounds/congratulations.ogg",
+      "sounds/high-score.ogg"
     ],
     "error": [
-      "sounds/game-over.wav",
-      "sounds/defeat.wav",
-      "sounds/you-lose.wav",
-      "sounds/failure.wav"
+      "sounds/game-over.ogg",
+      "sounds/defeat.ogg",
+      "sounds/you-lose.ogg",
+      "sounds/failure.ogg"
     ],
     "blocked": [
-      "sounds/sudden-death.wav",
-      "sounds/final-round.wav",
-      "sounds/no-contest.wav"
+      "sounds/sudden-death.ogg",
+      "sounds/final-round.ogg",
+      "sounds/no-contest.ogg"
     ]
   }
 }

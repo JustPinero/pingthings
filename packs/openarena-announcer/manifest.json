@@ -6,50 +6,50 @@
   "credits": "OpenArena contributors (http://openarena.ws)",
   "category": "arena",
   "sounds": [
-    "sounds/accuracy.wav",
-    "sounds/assist.wav",
-    "sounds/defense.wav",
-    "sounds/denied.wav",
-    "sounds/excellent.wav",
-    "sounds/fight.wav",
-    "sounds/gauntlet.wav",
-    "sounds/humiliation.wav",
-    "sounds/impressive.wav",
-    "sounds/one.wav",
-    "sounds/perfect.wav",
-    "sounds/prepare.wav",
-    "sounds/sudden_death.wav",
-    "sounds/takenlead.wav",
-    "sounds/three.wav",
-    "sounds/two.wav",
-    "sounds/voc_holyshit.wav",
-    "sounds/youwin.wav"
+    "sounds/accuracy.ogg",
+    "sounds/assist.ogg",
+    "sounds/defense.ogg",
+    "sounds/denied.ogg",
+    "sounds/excellent.ogg",
+    "sounds/fight.ogg",
+    "sounds/gauntlet.ogg",
+    "sounds/humiliation.ogg",
+    "sounds/impressive.ogg",
+    "sounds/one.ogg",
+    "sounds/perfect.ogg",
+    "sounds/prepare.ogg",
+    "sounds/sudden_death.ogg",
+    "sounds/takenlead.ogg",
+    "sounds/three.ogg",
+    "sounds/two.ogg",
+    "sounds/voc_holyshit.ogg",
+    "sounds/youwin.ogg"
   ],
   "events": {
     "done": [
-      "sounds/excellent.wav",
-      "sounds/impressive.wav",
-      "sounds/accuracy.wav",
-      "sounds/assist.wav"
+      "sounds/excellent.ogg",
+      "sounds/impressive.ogg",
+      "sounds/accuracy.ogg",
+      "sounds/assist.ogg"
     ],
     "permission": [
-      "sounds/prepare.wav",
-      "sounds/fight.wav",
-      "sounds/defense.wav"
+      "sounds/prepare.ogg",
+      "sounds/fight.ogg",
+      "sounds/defense.ogg"
     ],
     "complete": [
-      "sounds/youwin.wav",
-      "sounds/perfect.wav",
-      "sounds/takenlead.wav"
+      "sounds/youwin.ogg",
+      "sounds/perfect.ogg",
+      "sounds/takenlead.ogg"
     ],
     "error": [
-      "sounds/denied.wav",
-      "sounds/humiliation.wav",
-      "sounds/sudden_death.wav"
+      "sounds/denied.ogg",
+      "sounds/humiliation.ogg",
+      "sounds/sudden_death.ogg"
     ],
     "blocked": [
-      "sounds/voc_holyshit.wav",
-      "sounds/gauntlet.wav"
+      "sounds/voc_holyshit.ogg",
+      "sounds/gauntlet.ogg"
     ]
   }
 }

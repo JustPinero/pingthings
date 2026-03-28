@@ -6,54 +6,54 @@
   "credits": "Battle for Wesnoth contributors (https://github.com/wesnoth/wesnoth) — licensed under GPL v2+",
   "category": "fantasy",
   "sounds": [
-    "sounds/axe.wav",
-    "sounds/bow.wav",
-    "sounds/crossbow.wav",
-    "sounds/dwarf-laugh.wav",
-    "sounds/explosion.wav",
-    "sounds/fanfare-short.wav",
-    "sounds/flame-big.wav",
-    "sounds/gold.wav",
-    "sounds/gryphon-shriek-1.wav",
-    "sounds/hatchet.wav",
-    "sounds/heal.wav",
-    "sounds/lightning.wav",
-    "sounds/magic-dark.wav",
-    "sounds/magic-holy-1.wav",
-    "sounds/magic-missile-1.wav",
-    "sounds/open-chest.wav",
-    "sounds/potion.wav",
-    "sounds/sword-1.wav",
-    "sounds/wolf-growl-1.wav"
+    "sounds/axe.ogg",
+    "sounds/bow.ogg",
+    "sounds/crossbow.ogg",
+    "sounds/dwarf-laugh.ogg",
+    "sounds/explosion.ogg",
+    "sounds/fanfare-short.ogg",
+    "sounds/flame-big.ogg",
+    "sounds/gold.ogg",
+    "sounds/gryphon-shriek-1.ogg",
+    "sounds/hatchet.ogg",
+    "sounds/heal.ogg",
+    "sounds/lightning.ogg",
+    "sounds/magic-dark.ogg",
+    "sounds/magic-holy-1.ogg",
+    "sounds/magic-missile-1.ogg",
+    "sounds/open-chest.ogg",
+    "sounds/potion.ogg",
+    "sounds/sword-1.ogg",
+    "sounds/wolf-growl-1.ogg"
   ],
   "events": {
     "done": [
-      "sounds/gold.wav",
-      "sounds/sword-1.wav",
-      "sounds/bow.wav",
-      "sounds/crossbow.wav",
-      "sounds/hatchet.wav"
+      "sounds/gold.ogg",
+      "sounds/sword-1.ogg",
+      "sounds/bow.ogg",
+      "sounds/crossbow.ogg",
+      "sounds/hatchet.ogg"
     ],
     "permission": [
-      "sounds/open-chest.wav",
-      "sounds/potion.wav",
-      "sounds/magic-holy-1.wav"
+      "sounds/open-chest.ogg",
+      "sounds/potion.ogg",
+      "sounds/magic-holy-1.ogg"
     ],
     "complete": [
-      "sounds/fanfare-short.wav",
-      "sounds/heal.wav",
-      "sounds/dwarf-laugh.wav"
+      "sounds/fanfare-short.ogg",
+      "sounds/heal.ogg",
+      "sounds/dwarf-laugh.ogg"
     ],
     "error": [
-      "sounds/explosion.wav",
-      "sounds/flame-big.wav",
-      "sounds/lightning.wav",
-      "sounds/magic-dark.wav"
+      "sounds/explosion.ogg",
+      "sounds/flame-big.ogg",
+      "sounds/lightning.ogg",
+      "sounds/magic-dark.ogg"
     ],
     "blocked": [
-      "sounds/wolf-growl-1.wav",
-      "sounds/gryphon-shriek-1.wav",
-      "sounds/magic-missile-1.wav"
+      "sounds/wolf-growl-1.ogg",
+      "sounds/gryphon-shriek-1.ogg",
+      "sounds/magic-missile-1.ogg"
     ]
   }
 }

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const { playSound, playSoundSync } = await import('../src/player.js');
-const TEST_SOUND = join(__dirname, '..', 'packs', '7kaa-soldiers', 'sounds', '00083-READY.wav');
+const TEST_SOUND = join(__dirname, '..', 'packs', '7kaa-soldiers', 'sounds', '00083-READY.ogg');
 
 describe('player', () => {
   it('throws on nonexistent file (async)', () => {

@@ -6,53 +6,53 @@
   "credits": "Kenney (https://kenney.nl)",
   "category": "ui",
   "sounds": [
-    "sounds/back-1.wav",
-    "sounds/bong.wav",
-    "sounds/click-1.wav",
-    "sounds/close-1.wav",
-    "sounds/confirmation-1.wav",
-    "sounds/confirmation-2.wav",
-    "sounds/confirmation-3.wav",
-    "sounds/error-1.wav",
-    "sounds/error-2.wav",
-    "sounds/error-3.wav",
-    "sounds/glitch-1.wav",
-    "sounds/maximize-1.wav",
-    "sounds/maximize-2.wav",
-    "sounds/open-1.wav",
-    "sounds/pluck-1.wav",
-    "sounds/question-1.wav",
-    "sounds/question-2.wav",
-    "sounds/question-3.wav"
+    "sounds/back-1.ogg",
+    "sounds/bong.ogg",
+    "sounds/click-1.ogg",
+    "sounds/close-1.ogg",
+    "sounds/confirmation-1.ogg",
+    "sounds/confirmation-2.ogg",
+    "sounds/confirmation-3.ogg",
+    "sounds/error-1.ogg",
+    "sounds/error-2.ogg",
+    "sounds/error-3.ogg",
+    "sounds/glitch-1.ogg",
+    "sounds/maximize-1.ogg",
+    "sounds/maximize-2.ogg",
+    "sounds/open-1.ogg",
+    "sounds/pluck-1.ogg",
+    "sounds/question-1.ogg",
+    "sounds/question-2.ogg",
+    "sounds/question-3.ogg"
   ],
   "events": {
     "done": [
-      "sounds/confirmation-1.wav",
-      "sounds/confirmation-2.wav",
-      "sounds/confirmation-3.wav",
-      "sounds/click-1.wav"
+      "sounds/confirmation-1.ogg",
+      "sounds/confirmation-2.ogg",
+      "sounds/confirmation-3.ogg",
+      "sounds/click-1.ogg"
     ],
     "permission": [
-      "sounds/question-1.wav",
-      "sounds/question-2.wav",
-      "sounds/question-3.wav",
-      "sounds/pluck-1.wav"
+      "sounds/question-1.ogg",
+      "sounds/question-2.ogg",
+      "sounds/question-3.ogg",
+      "sounds/pluck-1.ogg"
     ],
     "complete": [
-      "sounds/maximize-1.wav",
-      "sounds/maximize-2.wav",
-      "sounds/bong.wav",
-      "sounds/open-1.wav"
+      "sounds/maximize-1.ogg",
+      "sounds/maximize-2.ogg",
+      "sounds/bong.ogg",
+      "sounds/open-1.ogg"
     ],
     "error": [
-      "sounds/error-1.wav",
-      "sounds/error-2.wav",
-      "sounds/error-3.wav",
-      "sounds/glitch-1.wav"
+      "sounds/error-1.ogg",
+      "sounds/error-2.ogg",
+      "sounds/error-3.ogg",
+      "sounds/glitch-1.ogg"
     ],
     "blocked": [
-      "sounds/close-1.wav",
-      "sounds/back-1.wav"
+      "sounds/close-1.ogg",
+      "sounds/back-1.ogg"
     ]
   }
 }

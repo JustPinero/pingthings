@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.6.0
+
+### Added
+- Desktop notifications alongside sound (`config notifications true` or `play --notify`)
+  - macOS: native notification via osascript
+  - Linux: notify-send
+- First-run wizard — interactive pack selection on first use (TTY only)
+- `update` command — check npm for new CLI versions
+- OGG audio format — all built-in packs converted from WAV to OGG (Opus codec)
+
+### Changed
+- Package size reduced from ~10MB to ~2.5MB (83% reduction via OGG conversion)
+- Boolean config keys (cooldown, notifications) share unified validation
+- First-run wizard only triggers on interactive TTY, not hooks/scripts
+
+### Added (site)
+- React showcase site with retro 16-bit pixel art theme
+- Interactive pack browser with click-to-play audio (55 MP3 samples)
+- Category filtering and theme previewer
+- GitHub Actions deploy workflow for GitHub Pages
+
 ## 0.5.0
 
 ### Added
