@@ -1,0 +1,117 @@
+{
+  "cesp_version": "1.0",
+  "name": "retro-weapons",
+  "display_name": "8-bit weapons, explosions, death screams, and impacts",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Juhani Junkala / SubspaceAudio (https://opengameart.org/content/512-sound-effects-8-bit-style)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/interact-1.ogg",
+          "label": "interact 1",
+          "sha256": "e44d5f728bcf3a14f9df6de95a4e14e46641a06b4e424bb55abe0c8931e437c8"
+        },
+        {
+          "file": "sounds/interact-2.ogg",
+          "label": "interact 2",
+          "sha256": "667c5819bedf71f8a3093c42a2c34f57f4e9374465467926c2ab9c19469b9455"
+        },
+        {
+          "file": "sounds/interact-3.ogg",
+          "label": "interact 3",
+          "sha256": "044eb499f95da40387fc8162e54e72d9b9187d91db4eb3a4e2250b89c19cf598"
+        },
+        {
+          "file": "sounds/shot-1.ogg",
+          "label": "shot 1",
+          "sha256": "20ab631115003f4a6b46a8e5c802ab8b9e119b8be941573d36ef54782c36507b"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/shot-2.ogg",
+          "label": "shot 2",
+          "sha256": "0632200d74c0516c54caf448320feb4320700e973ccfc48a97d199d2b6a2ce51"
+        },
+        {
+          "file": "sounds/shot-3.ogg",
+          "label": "shot 3",
+          "sha256": "7d5861ea07e3baf787845f58fb2bf91a9883c33b2b357fd35603cd3e4d94cf88"
+        },
+        {
+          "file": "sounds/impact-1.ogg",
+          "label": "impact 1",
+          "sha256": "a85433ec27b1236a47916b2c84606090d466edaacd6c373076a5bd199a293cf7"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/explosion-long.ogg",
+          "label": "explosion long",
+          "sha256": "bded1817168aa729166a262fa5bc6d48a15c4a1e43ea9eed101463617fc1d5b3"
+        },
+        {
+          "file": "sounds/explosion-soft.ogg",
+          "label": "explosion soft",
+          "sha256": "0c2e36a2d3d121aa47b901f9ad3c0b8346a0c899af0113784133d3581ec6dc92"
+        },
+        {
+          "file": "sounds/impact-2.ogg",
+          "label": "impact 2",
+          "sha256": "731fe4be43292ee6715a7de561f8a24fbdecfdec5c0999a7a457eb516c6833a0"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/explosion-1.ogg",
+          "label": "explosion 1",
+          "sha256": "2b0f21e6495f41dbbd29f4f72965a487d4556198d880be252ce7e23f05ccbd44"
+        },
+        {
+          "file": "sounds/explosion-2.ogg",
+          "label": "explosion 2",
+          "sha256": "dd87545859a82ba5259316b08e04567ed43739bd6582ff44ec16e337d5463ed3"
+        },
+        {
+          "file": "sounds/death-human-1.ogg",
+          "label": "death human 1",
+          "sha256": "d02ae1a3997d181d8267cbc97edb9aa78aa731f73df5c9c484ee38fc4f1c4970"
+        },
+        {
+          "file": "sounds/death-human-2.ogg",
+          "label": "death human 2",
+          "sha256": "3acf60a316cf4febf51b67e6611baeaeebc30fad1f660bc4c1cf5b601e34b12a"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/death-android.ogg",
+          "label": "death android",
+          "sha256": "5b62a245b4308d653717c8556f4218da94366b4e1b01bda3398ad9eccdf5d306"
+        },
+        {
+          "file": "sounds/death-robot.ogg",
+          "label": "death robot",
+          "sha256": "10c236cb275039e978416fb14d491c5108b33da43c6143a945c37417e2a815a1"
+        },
+        {
+          "file": "sounds/impact-3.ogg",
+          "label": "impact 3",
+          "sha256": "fab6953b8a809df9a86d679822c03c717f71f9fea1b56ac684565a823f2175c5"
+        }
+      ]
+    }
+  }
+}

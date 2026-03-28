@@ -1,0 +1,132 @@
+{
+  "cesp_version": "1.0",
+  "name": "fighting-announcer",
+  "display_name": "Fighting game announcer voice lines",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "author": {
+    "name": "Alba MacKenna (https://opengameart.org/content/voice-pack%E2%94%82fighting-game-announcer)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/complete.ogg",
+          "label": "complete",
+          "sha256": "5a40f6cbcd02ea99a29f9fae5de993f1403bd4fc24aafdd62aaa7cd214992214"
+        },
+        {
+          "file": "sounds/great.ogg",
+          "label": "great",
+          "sha256": "328264a6f1e4ba79bb6716fcfa9b05588e19d227bcade76007ca95a7d6687ec1"
+        },
+        {
+          "file": "sounds/finish.ogg",
+          "label": "finish",
+          "sha256": "818bfd3d1fc673ce8aea464072b85d3ca4fb0c93af4af0dd17683c0fedd53538"
+        },
+        {
+          "file": "sounds/new-record.ogg",
+          "label": "new record",
+          "sha256": "e12fe3f66a11e4893ed8fff92c562b719f11a1befa44529a792b1d36a0c0933a"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/fight.ogg",
+          "label": "fight",
+          "sha256": "7757f822e5636b47564e9b46c7c4a8863506d922da8ac5e5e63fb68355b05a4b"
+        },
+        {
+          "file": "sounds/ready.ogg",
+          "label": "ready",
+          "sha256": "d8d622bd658791870d769e4592e3d5f9fb6aa3d233f9c6ff18ee4f1bd8c3ee93"
+        },
+        {
+          "file": "sounds/get-set.ogg",
+          "label": "get set",
+          "sha256": "07f2a191169fcece6c9939c581fd0c6c69ad72db3fa6c40e3c2c45fe24d05ef6"
+        },
+        {
+          "file": "sounds/begin.ogg",
+          "label": "begin",
+          "sha256": "c2ab82831f76c6b26753af59337630d9a1fbce37e2ea2c0257cef4de730ab5c9"
+        },
+        {
+          "file": "sounds/go.ogg",
+          "label": "go",
+          "sha256": "33e98cd6790d5bd3a4e59e1e2764d28900f2f1119583a78e98d6f6f8ea1d5dc7"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/victory.ogg",
+          "label": "victory",
+          "sha256": "06784f66b9a910ea4ffe56c8f4fb0bc155833555ab094406b0deb3a3ac8c94c6"
+        },
+        {
+          "file": "sounds/you-win.ogg",
+          "label": "you win",
+          "sha256": "6feb46db8f02775f6a3bf060aa74e9bc78ae7aa0db3d169e0804159196209a75"
+        },
+        {
+          "file": "sounds/congratulations.ogg",
+          "label": "congratulations",
+          "sha256": "260ac82382db67d799d5560aeb413910eff75b9eb920682db79549b3f5d6fd3f"
+        },
+        {
+          "file": "sounds/high-score.ogg",
+          "label": "high score",
+          "sha256": "3a50a67fd5fb4cd679bc0eb220e24bbac80f87cf08628337393863eb1fa9eec6"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/game-over.ogg",
+          "label": "game over",
+          "sha256": "8670edfa742eedb43eac902b12db48a25416135805a0fd5acc48eb400d601bc3"
+        },
+        {
+          "file": "sounds/defeat.ogg",
+          "label": "defeat",
+          "sha256": "73782fcd0f50d392ade711adea591e28bbb09423b3940b5e87de396d5b83c260"
+        },
+        {
+          "file": "sounds/you-lose.ogg",
+          "label": "you lose",
+          "sha256": "137ac519fc863b70f4b86acd27787a5c183cf0c08003609a0426ed6eab7286c9"
+        },
+        {
+          "file": "sounds/failure.ogg",
+          "label": "failure",
+          "sha256": "98478875344d3d487fb7f6c4e212fb3bd08c16b20896008277411755267575db"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/sudden-death.ogg",
+          "label": "sudden death",
+          "sha256": "d7a2a72082c822d30a90500639e11f5d7d7e599359f406c7a42e027be0ec9d26"
+        },
+        {
+          "file": "sounds/final-round.ogg",
+          "label": "final round",
+          "sha256": "61c3f7ba5844b5328fedff585d0b53ba73c800d5400b15fc2cfa4b99c17e5754"
+        },
+        {
+          "file": "sounds/no-contest.ogg",
+          "label": "no contest",
+          "sha256": "41ffdb603f97f0e699c3fb7424431ef93f97eede4569a869e747568d06b69694"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "cesp_version": "1.0",
+  "name": "kenney-impacts",
+  "display_name": "Satisfying impact and material sounds — metal, wood, glass, bells",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/plate-light-1.ogg",
+          "label": "plate light 1",
+          "sha256": "77004de8bbcec89d86f4bcfd1362f5faf0b357686861221103404cbe9064cd54"
+        },
+        {
+          "file": "sounds/plate-light-2.ogg",
+          "label": "plate light 2",
+          "sha256": "231d20d56cc6751b758a78c3d4d0a296b4d5aff3bbbb57d45e4074a90ed91fc9"
+        },
+        {
+          "file": "sounds/soft-light.ogg",
+          "label": "soft light"
+        },
+        {
+          "file": "sounds/wood-light.ogg",
+          "label": "wood light",
+          "sha256": "0627deb011748739f255e3c6f9fcb02397388c0ae32f66d7a0f2f063cc2eede1"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/bell-heavy.ogg",
+          "label": "bell heavy",
+          "sha256": "97085e0740036d208b75b5c02d5eec127a0016843abaceee677f239676eaf8a4"
+        },
+        {
+          "file": "sounds/bell-heavy-2.ogg",
+          "label": "bell heavy 2",
+          "sha256": "ff485c3ecd8489c1e2bbf1ab988cc1b74cd33fa3d6911f43117e538a9f2deb0b"
+        },
+        {
+          "file": "sounds/tin-medium.ogg",
+          "label": "tin medium",
+          "sha256": "7b2856c478681263cfdb8f9d4c78a0cc8ab2cba3d5fcd79837865e352f3825a8"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/plate-medium.ogg",
+          "label": "plate medium",
+          "sha256": "ea5c912aae3772adfb0aef3c74b66078bd1ca09cb3ed73e77e1b9c84cd4b91b8"
+        },
+        {
+          "file": "sounds/mining-1.ogg",
+          "label": "mining 1",
+          "sha256": "d3e161bd5922a9089e19fa2e68c320aedc73bc75910b630691e18bd7f34bf549"
+        },
+        {
+          "file": "sounds/mining-2.ogg",
+          "label": "mining 2",
+          "sha256": "6beac69d57e2466458f2ffd74da12491f4de135f7000c0a9dd6f69fd2f479fd9"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/glass-heavy.ogg",
+          "label": "glass heavy",
+          "sha256": "6f97d81f6baf32918f020f9f888a0fbc8736d0251b446c1caa85af7e3a26834b"
+        },
+        {
+          "file": "sounds/glass-medium.ogg",
+          "label": "glass medium",
+          "sha256": "59a06fd8ff36c0e23a5500266ef27bd3353318869bf14908a80c0048c2074c78"
+        },
+        {
+          "file": "sounds/plate-heavy.ogg",
+          "label": "plate heavy",
+          "sha256": "779cc33c83c43164e7add9eff8d87a4df26af1bcbdb7158c90252f055edd0d1a"
+        },
+        {
+          "file": "sounds/plate-heavy-2.ogg",
+          "label": "plate heavy 2",
+          "sha256": "531232431b044013ff5887db554e98d358400059106ad3ffc929b11c8e4e4685"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/wood-heavy.ogg",
+          "label": "wood heavy",
+          "sha256": "f2ef5ccaa5f047f03760256701f4abb59737c7c1f804be0727d98a77df70c6a6"
+        },
+        {
+          "file": "sounds/soft-heavy.ogg",
+          "label": "soft heavy",
+          "sha256": "168ac289d89d9e875162cd9fbd35768bea7042ed7f44009e16fe9247a1992fed"
+        },
+        {
+          "file": "sounds/glass-light.ogg",
+          "label": "glass light",
+          "sha256": "b6ceb760097665ae33e80a05b9e9fbcfe3975fa88b2103ad7d88cb8c7a8350f5"
+        }
+      ]
+    }
+  }
+}

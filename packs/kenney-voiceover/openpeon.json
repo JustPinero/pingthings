@@ -1,0 +1,127 @@
+{
+  "cesp_version": "1.0",
+  "name": "kenney-voiceover",
+  "display_name": "Human voice notifications — mission completed, objective achieved, game over",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/mission-completed.ogg",
+          "label": "mission completed",
+          "sha256": "7e9c98d99bdb751611f1435ca208fe4d6df0b0266e9df6e59f98fe46b78f4857"
+        },
+        {
+          "file": "sounds/objective-achieved.ogg",
+          "label": "objective achieved",
+          "sha256": "93977d62e9f51ff9a21349ef914ef478b909642b1c9163782fd8058b925f1a55"
+        },
+        {
+          "file": "sounds/correct.ogg",
+          "label": "correct",
+          "sha256": "ae6afd0a13d41edcf7e75508417ce2e9e6d132a29d19241f17cb7ddfd4731f4f"
+        },
+        {
+          "file": "sounds/level-up.ogg",
+          "label": "level up",
+          "sha256": "9ab40e2f27c1635086cbac1eec58af107d9ec27d299d7765697105baea6d87e1"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/ready.ogg",
+          "label": "ready",
+          "sha256": "8b2e1bd7431f48e69f1c40da634dda795779068b15d9aeebdc600c6616aded1a"
+        },
+        {
+          "file": "sounds/set.ogg",
+          "label": "set",
+          "sha256": "8c67b7e97974249312fb650741ee382e72e01199e35855d7547f4064f35216b7"
+        },
+        {
+          "file": "sounds/go.ogg",
+          "label": "go",
+          "sha256": "bd478f1bb7e5471c79019fb7e68b1c088bb1b7625c45c2f4307364d1ba14cccb"
+        },
+        {
+          "file": "sounds/hurry-up.ogg",
+          "label": "hurry up",
+          "sha256": "a7fa6f2bd5fe110cd030160933cf860fba62975db1e23296b596449a169864b7"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/congratulations.ogg",
+          "label": "congratulations",
+          "sha256": "291a3a236a2428798f4fe9c42692422da18666ce16d3a2681be82fab284f8a5f"
+        },
+        {
+          "file": "sounds/you-win.ogg",
+          "label": "you win",
+          "sha256": "26e642b9857cf3f32412f64b295b01670a8dacff3b0c867136f3b4f955826c3c"
+        },
+        {
+          "file": "sounds/new-highscore.ogg",
+          "label": "new highscore",
+          "sha256": "75de1edd07fe21aad03bb24053ef9f5e45190c2fcf0a039b507e0a33c66fdc33"
+        },
+        {
+          "file": "sounds/power-up.ogg",
+          "label": "power up",
+          "sha256": "5702c916c9b28768742c4811a1329113b60e096aedafd187f64f3db561816a72"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/mission-failed.ogg",
+          "label": "mission failed",
+          "sha256": "c9e69369bc0a3b506f0ffd62fa1c5fbc232d38f7f856690d135c25af1d4f247e"
+        },
+        {
+          "file": "sounds/game-over.ogg",
+          "label": "game over",
+          "sha256": "d4eec136d08800d356a3781e2d36e7eedfab0131e3df9825889d8db1c2bdfa80"
+        },
+        {
+          "file": "sounds/wrong.ogg",
+          "label": "wrong",
+          "sha256": "0baef0a055d2cb15bebaf6225c173d36570ddf845858a228f6aa5de58732943b"
+        },
+        {
+          "file": "sounds/you-lose.ogg",
+          "label": "you lose",
+          "sha256": "94917c9371cc703629969ed1c33bd7ca86117cfafd5ce088c3a40681aa54d3ff"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/time-over.ogg",
+          "label": "time over",
+          "sha256": "12ed0de2319bd19ef0d5132a8f76d78ff564f0267ab34e2d134e829c036fe6e5"
+        },
+        {
+          "file": "sounds/final-round.ogg",
+          "label": "final round",
+          "sha256": "0f50b7b73bee06086bab084f41273a4b786f14353af95a3761b2f280e87665c9"
+        },
+        {
+          "file": "sounds/look-out.ogg",
+          "label": "look out",
+          "sha256": "86ae9ceb60f324f4a5074a600bed63864835dec2e74b5322b4ce04650561beb9"
+        }
+      ]
+    }
+  }
+}

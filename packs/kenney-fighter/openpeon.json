@@ -1,0 +1,122 @@
+{
+  "cesp_version": "1.0",
+  "name": "kenney-fighter",
+  "display_name": "Female fighting game announcer — flawless victory, combo breaker, fight!",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/combo.ogg",
+          "label": "combo",
+          "sha256": "3f1e1b6a79e6baed7c22ebb0941ae99b71e6db28e1dd8c4a2879b23f557aee29"
+        },
+        {
+          "file": "sounds/multi-kill.ogg",
+          "label": "multi kill",
+          "sha256": "db92e8cb6e0fc7916cb614f66c8d34f1a95195d257238e1f395440309ad4f60d"
+        },
+        {
+          "file": "sounds/winner.ogg",
+          "label": "winner",
+          "sha256": "303fae3fe33f3b8d8ccfba3dea17de179250a2745d42a9a59f9b73ed3c8902c1"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/fight.ogg",
+          "label": "fight",
+          "sha256": "7cf167117f8adee0d6417e7e50753c06c829868929e123bd7787b47ff18955e7"
+        },
+        {
+          "file": "sounds/ready.ogg",
+          "label": "ready",
+          "sha256": "0baa1217aafff8643ef33a7eaa2be194a9375578c2d5159939794f8b9fed36ea"
+        },
+        {
+          "file": "sounds/begin.ogg",
+          "label": "begin",
+          "sha256": "df8c4a0e84305441bd346534fdb111caa1e73d7596bffb3496e5973386231dd8"
+        },
+        {
+          "file": "sounds/prepare-yourself.ogg",
+          "label": "prepare yourself",
+          "sha256": "7283e65c6c260453b71b140cc0b25b4d202320e97959765d88a6582bd7c20081"
+        },
+        {
+          "file": "sounds/round-1.ogg",
+          "label": "round 1",
+          "sha256": "967801b25f31ced564dcbe9797f5ea3cb83169ae649382ad55bb3ed8ae98c6a7"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/flawless-victory.ogg",
+          "label": "flawless victory",
+          "sha256": "c205f48d9baa49e0e842912744aa1d858273e0b71f42f136348dbbc7a6c909ca"
+        },
+        {
+          "file": "sounds/you-win.ogg",
+          "label": "you win",
+          "sha256": "bd4a56ecf813efacb46564719d9954f07bc23d4be1fda354d02825bdc257db63"
+        },
+        {
+          "file": "sounds/combo-breaker.ogg",
+          "label": "combo breaker",
+          "sha256": "14a9c9ba92fcfef7a75e9b18682137282b39ca1319c4f147e97c430af3d5ec3e"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/game-over.ogg",
+          "label": "game over",
+          "sha256": "930723813675103e1aeb496101e0c29cee5fbe26f0283e5f7ed073e71f06d9fa"
+        },
+        {
+          "file": "sounds/you-lose.ogg",
+          "label": "you lose",
+          "sha256": "8880d2240c261333027a41733ecbe7d16b943a2b622ae88e82b0067ef04e6924"
+        },
+        {
+          "file": "sounds/loser.ogg",
+          "label": "loser",
+          "sha256": "ea780e4b19eec55a316b7d65967eea87f3b1a588a686928febfd17ee9d94bc4d"
+        },
+        {
+          "file": "sounds/time.ogg",
+          "label": "time",
+          "sha256": "3173d5e05f78004e4f57839afb9b90cbf36cd09bf9b03b3a21ff060d29e96a1d"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/sudden-death.ogg",
+          "label": "sudden death",
+          "sha256": "5bbdd30b535efa504d3046af4d9510c6f5588b9971912b4131d2acf51452ecc3"
+        },
+        {
+          "file": "sounds/final-round.ogg",
+          "label": "final round",
+          "sha256": "8ed44be1a127bfa18dfe764d8bb40ab9e2b54b57beeacc75da53583fe4328c1c"
+        },
+        {
+          "file": "sounds/tie-breaker.ogg",
+          "label": "tie breaker",
+          "sha256": "ddd9fdcef07e5b62583f276a1ec8756422245fc25cc713820c007762e4bca081"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "cesp_version": "1.0",
+  "name": "kenney-rpg",
+  "display_name": "Fantasy RPG foley sounds — latches, books, leather, swords",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/metal-click.ogg",
+          "label": "metal click",
+          "sha256": "694320a850dcfb645b85293d201e3e4acea08e7629fe8f0e47947a04995844be"
+        },
+        {
+          "file": "sounds/metal-latch.ogg",
+          "label": "metal latch",
+          "sha256": "1aa45fa19e9c3d0a676ce2f83d86108bfcb6c24c0ff711ba9e688afa5978d6c6"
+        },
+        {
+          "file": "sounds/book-close.ogg",
+          "label": "book close",
+          "sha256": "a289a1821c575167fe7bb3a1105213804d4cad7f7379d4fe28207f6438e4d48a"
+        },
+        {
+          "file": "sounds/leather-handle.ogg",
+          "label": "leather handle",
+          "sha256": "4831aea91e89f52e0141c70caf17aafa72f985728e400a6df8e794b0fb2954b2"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/book-open.ogg",
+          "label": "book open",
+          "sha256": "37806dc7b17fe277a19c25cc34b5c5e56dbc19bee51a6f4ebfd93d10d3458dae"
+        },
+        {
+          "file": "sounds/door-open.ogg",
+          "label": "door open",
+          "sha256": "83c73a4efb2f66c1393b147f025c8186a99769d76c860dfa4d5e04b92431c508"
+        },
+        {
+          "file": "sounds/creak.ogg",
+          "label": "creak",
+          "sha256": "66770238b9a8602565ba38ecc1ff5b0c7c7b36d12f0e672cfe782924d5a30951"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/sword-draw.ogg",
+          "label": "sword draw",
+          "sha256": "f4255268ebe136515a69ffb4eb2df69e24baa2750153579d59dc3f4fd31ddb43"
+        },
+        {
+          "file": "sounds/draw-knife.ogg",
+          "label": "draw knife",
+          "sha256": "e64c10caa2373cbe117772e670582faf2bf4c31df7f98b5af65ed82de197e947"
+        },
+        {
+          "file": "sounds/book-flip.ogg",
+          "label": "book flip",
+          "sha256": "e6c65cea11cab61e2da951584e62cbf9e63b4f6a578f265d843b7cf58b176ec1"
+        },
+        {
+          "file": "sounds/belt-handle.ogg",
+          "label": "belt handle",
+          "sha256": "88525c1a3e5b9687657cd6afd436df0b58593bbe0d74f0c3f88ff36c0018fda2"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/metal-pot.ogg",
+          "label": "metal pot",
+          "sha256": "f50f33540c0189cfb6c572f5f1798742a9f4a102fdf3d1192c291ad8c15de0a1"
+        },
+        {
+          "file": "sounds/metal-pot-2.ogg",
+          "label": "metal pot 2",
+          "sha256": "87ed3ca7c3e6ecbb5c04f18ac36a1795ceb80760a9fe2d9811cebc1a4652d174"
+        },
+        {
+          "file": "sounds/door-close.ogg",
+          "label": "door close",
+          "sha256": "bbcd1cc38b65b32a014059820f7bae5da81e42f8c7a31aa27154afeaaac297cc"
+        },
+        {
+          "file": "sounds/leather-drop.ogg",
+          "label": "leather drop",
+          "sha256": "d3633a40af4f3fd333a095f36931304031ddbbb6b71116300b6e6e0fa48818cf"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/cloth-belt.ogg",
+          "label": "cloth belt",
+          "sha256": "5ad89ef6552325fc7c2203cc8c431fbb55f6423ae457a24dd361d491fa9a7aa4"
+        },
+        {
+          "file": "sounds/book-place.ogg",
+          "label": "book place",
+          "sha256": "a3b2985ee271ca6a6bad542413320b45832768d8a52dfb5f3e2f14bc48d9a5bd"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "cesp_version": "1.0",
+  "name": "kenney-interface",
+  "display_name": "Clean modern UI notification sounds by Kenney",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/confirmation-1.ogg",
+          "label": "confirmation 1",
+          "sha256": "5388d5adae152cbb60cfeb27660ac0872ff6ff19333b295496fe7cc351493b2a"
+        },
+        {
+          "file": "sounds/confirmation-2.ogg",
+          "label": "confirmation 2",
+          "sha256": "1a06e7c2eb398e652f93796e55af596df6eaa349be342cc9a28cf4c64f15017d"
+        },
+        {
+          "file": "sounds/confirmation-3.ogg",
+          "label": "confirmation 3",
+          "sha256": "984200729cc6634187f0aaec2b51083d33734d688cac4a4847afa4b17cfc8eb6"
+        },
+        {
+          "file": "sounds/click-1.ogg",
+          "label": "click 1",
+          "sha256": "cc80643adc7e691403c90245325b0ce1262b588b7c91c34d838a7c040d387cae"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/question-1.ogg",
+          "label": "question 1",
+          "sha256": "97b890610ef46c6d71482211f06834d7f242859c11b2d316778d8d94976c01b9"
+        },
+        {
+          "file": "sounds/question-2.ogg",
+          "label": "question 2",
+          "sha256": "b69fab1cac335e621056bef983d3a61b6171a96a14dd11512f024e79f87aad4a"
+        },
+        {
+          "file": "sounds/question-3.ogg",
+          "label": "question 3",
+          "sha256": "c8c3238150bb9b5371adb39d66e9eb2190bfa1aa589d1360667691092ab91227"
+        },
+        {
+          "file": "sounds/pluck-1.ogg",
+          "label": "pluck 1",
+          "sha256": "72e1759fa34f0274a97ab260b9f3d216ee284c7e90270a45402c3a6dcb09d726"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/maximize-1.ogg",
+          "label": "maximize 1",
+          "sha256": "cc99cff8bfed634e161d8a6cd61d9eb8aa9fb4c76f7138ff2b48c1b51c9875d8"
+        },
+        {
+          "file": "sounds/maximize-2.ogg",
+          "label": "maximize 2",
+          "sha256": "9eee3a76706e0e7c5c32af48cee61b9452b814e7d72f150306b25ab174c41b02"
+        },
+        {
+          "file": "sounds/bong.ogg",
+          "label": "bong",
+          "sha256": "4a7b2bb49aa5c30c240c0e9bcb8ad4fd39d4b9b933c263720f64a5839ea22654"
+        },
+        {
+          "file": "sounds/open-1.ogg",
+          "label": "open 1",
+          "sha256": "e1a72c96c3ada6d74005a83e99ef12cefd0d16f2bf0d81c234b9f76e3ab054a6"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/error-1.ogg",
+          "label": "error 1",
+          "sha256": "e7923edb46ebb13e4ad37c5f081530b636bd48683ff932450b2660e82e71cb94"
+        },
+        {
+          "file": "sounds/error-2.ogg",
+          "label": "error 2",
+          "sha256": "5cc7446b10456367f7e70f566ff06f6101bc190f11767a9d7ae9aeb4ac21f1f2"
+        },
+        {
+          "file": "sounds/error-3.ogg",
+          "label": "error 3",
+          "sha256": "77252129ab7fdcb8302547eb695b16b7e5f72b039720475c03bb52ba0f4eace6"
+        },
+        {
+          "file": "sounds/glitch-1.ogg",
+          "label": "glitch 1",
+          "sha256": "19fa349b769530170b50e9557cea1b9cb1f37badd64dc28c56f1d5e0d33df56c"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/close-1.ogg",
+          "label": "close 1",
+          "sha256": "a976d174295b2d8121b82b5da7c46b40ddc4ce5e8201856c04d945973641c9e3"
+        },
+        {
+          "file": "sounds/back-1.ogg",
+          "label": "back 1",
+          "sha256": "41a7ebac2ed4ec12b43e2abc7cf44d42e161b9c2484e469a0deaa2ad08a9a44b"
+        }
+      ]
+    }
+  }
+}

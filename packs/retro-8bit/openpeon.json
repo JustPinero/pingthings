@@ -1,0 +1,122 @@
+{
+  "cesp_version": "1.0",
+  "name": "retro-8bit",
+  "display_name": "Classic 8-bit chiptune notification sounds",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Juhani Junkala / SubspaceAudio (https://opengameart.org/content/512-sound-effects-8-bit-style)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/coin-1.ogg",
+          "label": "coin 1",
+          "sha256": "48af4652d6499d696485e1576bbffba6c4a12f807a434815d8ab0c594e66e8f2"
+        },
+        {
+          "file": "sounds/coin-2.ogg",
+          "label": "coin 2",
+          "sha256": "8447b43c34a1a2f86248ead6a644dca40f0e245933fcf0eb980f9a7cc22d11a8"
+        },
+        {
+          "file": "sounds/coin-double.ogg",
+          "label": "coin double",
+          "sha256": "dfa6feca3a759b44695216becbed5bed3a7b356ca674703bf84b357f8ebc2507"
+        },
+        {
+          "file": "sounds/coin-cluster.ogg",
+          "label": "coin cluster",
+          "sha256": "eb3f02d6b2f814e85b2252f6830e6e10195d9c28544a440c9667d5ed7083a3b6"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/button-1.ogg",
+          "label": "button 1",
+          "sha256": "58e0fce5be194d9291144b85b8ca544bc1c5a42340e012d90e732eef7db8df0c"
+        },
+        {
+          "file": "sounds/button-2.ogg",
+          "label": "button 2",
+          "sha256": "0ce4a29f2bdf8e3a04cd0488014939fc0cf9bf03bed46edec400fabb1538ba2b"
+        },
+        {
+          "file": "sounds/button-3.ogg",
+          "label": "button 3",
+          "sha256": "935b96a8002a992c9f3872c83d0ad4659c00f1b0f9e288084e260985045f0408"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/fanfare-1.ogg",
+          "label": "fanfare 1",
+          "sha256": "83cf1ba314c53e22e2d938f7ed19b3e184c5bc896ab9642a650dd5501fdf56b7"
+        },
+        {
+          "file": "sounds/fanfare-2.ogg",
+          "label": "fanfare 2",
+          "sha256": "9815d04028a00336ef5dca750b5bc206d7ae6752e18671bdd625487e77cb95f0"
+        },
+        {
+          "file": "sounds/fanfare-3.ogg",
+          "label": "fanfare 3",
+          "sha256": "27fc72e82efab80cacac7ef2791fe02ad0d0ade8c913205051351b2e3a2181e1"
+        },
+        {
+          "file": "sounds/powerup-1.ogg",
+          "label": "powerup 1",
+          "sha256": "ed4853be072ccb40853f484df0ba0e8e39901d3ec817aaa77b9c2b650c22b1d2"
+        },
+        {
+          "file": "sounds/powerup-2.ogg",
+          "label": "powerup 2",
+          "sha256": "415394ffc81fd4128849c2fe669daefe2a43ddf696e407e185124f24519dc16d"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/error-1.ogg",
+          "label": "error 1",
+          "sha256": "12f6ad0bc01838c018f2023a1452b345e73fdfc9e227a377a11b380caa258e44"
+        },
+        {
+          "file": "sounds/error-2.ogg",
+          "label": "error 2",
+          "sha256": "4a71274530f640bf2a39110fcfae6f1e7fcc3a2c96f221bd3a723400906b5715"
+        },
+        {
+          "file": "sounds/error-3.ogg",
+          "label": "error 3",
+          "sha256": "4ae2eed1033a7998a42c6d4336021f1624dfee8221066a766b2e1ec05477cb72"
+        },
+        {
+          "file": "sounds/damage-1.ogg",
+          "label": "damage 1",
+          "sha256": "d73ea096f0c3bfd04436979c2ba2e1cd89085c4795673702b88d041bf20812a7"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/negative-1.ogg",
+          "label": "negative 1",
+          "sha256": "8fdc7a5caeb1bff624e1960239b0a478e35c13a572ecc4d7f8c56e19b27953a9"
+        },
+        {
+          "file": "sounds/negative-2.ogg",
+          "label": "negative 2",
+          "sha256": "e2c74ad44b1c206a80120bc43122b430a1f65558223796a7805aa08f22279669"
+        }
+      ]
+    }
+  }
+}

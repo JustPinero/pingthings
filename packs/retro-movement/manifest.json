@@ -1,0 +1,58 @@
+{
+  "name": "retro-movement",
+  "description": "8-bit portals, doors, jumps, menus, and bleeps",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Juhani Junkala / SubspaceAudio (https://opengameart.org/content/512-sound-effects-8-bit-style)",
+  "category": "retro",
+  "sounds": [
+    "sounds/blip-1.ogg",
+    "sounds/blip-2.ogg",
+    "sounds/door-open-1.ogg",
+    "sounds/door-open-2.ogg",
+    "sounds/door-open-3.ogg",
+    "sounds/jump-1.ogg",
+    "sounds/jump-2.ogg",
+    "sounds/jump-3.ogg",
+    "sounds/menu-select-1.ogg",
+    "sounds/menu-select-2.ogg",
+    "sounds/pause-in-2.ogg",
+    "sounds/pause-in-3.ogg",
+    "sounds/pause-in.ogg",
+    "sounds/pause-out.ogg",
+    "sounds/portal-1.ogg",
+    "sounds/portal-2.ogg",
+    "sounds/portal-3.ogg",
+    "sounds/portal-4.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/blip-1.ogg",
+      "sounds/blip-2.ogg",
+      "sounds/menu-select-1.ogg",
+      "sounds/menu-select-2.ogg"
+    ],
+    "permission": [
+      "sounds/door-open-1.ogg",
+      "sounds/door-open-2.ogg",
+      "sounds/door-open-3.ogg",
+      "sounds/pause-in.ogg"
+    ],
+    "complete": [
+      "sounds/portal-1.ogg",
+      "sounds/portal-2.ogg",
+      "sounds/portal-3.ogg",
+      "sounds/portal-4.ogg"
+    ],
+    "error": [
+      "sounds/pause-out.ogg",
+      "sounds/pause-in-2.ogg",
+      "sounds/pause-in-3.ogg"
+    ],
+    "blocked": [
+      "sounds/jump-1.ogg",
+      "sounds/jump-2.ogg",
+      "sounds/jump-3.ogg"
+    ]
+  }
+}

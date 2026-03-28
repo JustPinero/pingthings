@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.8.0
+
+### Added
+- CESP (Coding Event Sound Pack) format compatibility
+  - Reads `openpeon.json` alongside `manifest.json`
+  - Maps CESP's 9 events to our 5 events
+  - `cesp` command generates CESP manifests for all packs
+  - Our packs now work with PeonPing and other CESP-compatible tools
+- 6 new sound packs:
+  - `kenney-digital` — 18 digital/space tones (CC0)
+  - `kenney-rpg` — 18 fantasy RPG foley sounds (CC0)
+  - `kenney-impacts` — 18 material impact sounds (CC0)
+  - `kenney-fighter` — 18 female fighting announcer: "flawless victory!" (CC0)
+  - `retro-weapons` — 18 8-bit weapons, explosions, death screams (CC0)
+  - `retro-movement` — 18 8-bit portals, doors, jumps, bleeps (CC0)
+- Updated React site with all 19 packs and 95 audio samples
+
+### Changed
+- Total: 19 packs, 369 sounds
+- CESP manifests generated for all built-in packs
+- manifest.json takes priority over openpeon.json (richer metadata)
+
 ## 0.7.0
 
 ### Added

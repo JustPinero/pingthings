@@ -12,19 +12,76 @@ function getUserPacksDir() {
   return join(getConfigDir(), 'packs');
 }
 
-function readManifest(packDir) {
-  const manifestPath = join(packDir, 'manifest.json');
-  if (!existsSync(manifestPath)) return null;
-  try {
-    const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
-    if (!manifest.name) {
-      console.error(`Warning: manifest.json in ${packDir} is missing "name" field`);
-    }
-    return manifest;
-  } catch (err) {
-    console.error(`Warning: Failed to parse ${manifestPath}: ${err.message}`);
-    return null;
+// CESP event → pingthings event mapping
+const CESP_EVENT_MAP = {
+  'session.start': 'permission',
+  'task.acknowledge': 'done',
+  'task.complete': 'complete',
+  'task.error': 'error',
+  'input.required': 'permission',
+  'resource.limit': 'blocked',
+  'user.spam': 'blocked',
+  'session.end': 'complete',
+  'task.progress': 'done',
+};
+
+function convertCespManifest(cesp) {
+  const events = {};
+  for (const [cespEvent, sounds] of Object.entries(cesp.categories || {})) {
+    const pingEvent = CESP_EVENT_MAP[cespEvent];
+    if (!pingEvent) continue;
+    const files = (sounds.sounds || []).map(s => s.file);
+    if (!events[pingEvent]) events[pingEvent] = [];
+    events[pingEvent].push(...files);
   }
+
+  const allSounds = [];
+  for (const sounds of Object.values(cesp.categories || {})) {
+    for (const s of sounds.sounds || []) {
+      if (!allSounds.includes(s.file)) allSounds.push(s.file);
+    }
+  }
+
+  return {
+    name: cesp.name,
+    description: cesp.display_name || cesp.description || '',
+    version: cesp.version || '1.0.0',
+    license: cesp.license || 'Unknown',
+    credits: cesp.author?.name || '',
+    category: cesp.tags?.[0] || 'other',
+    sounds: allSounds,
+    events,
+    _cesp: true,
+  };
+}
+
+function readManifest(packDir) {
+  // Prefer manifest.json (our native format) — richer metadata
+  const manifestPath = join(packDir, 'manifest.json');
+  if (existsSync(manifestPath)) {
+    try {
+      const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+      if (!manifest.name) {
+        console.error(`Warning: manifest.json in ${packDir} is missing "name" field`);
+      }
+      return manifest;
+    } catch (err) {
+      console.error(`Warning: Failed to parse ${manifestPath}: ${err.message}`);
+    }
+  }
+
+  // Fall back to CESP format (openpeon.json) for community packs
+  const cespPath = join(packDir, 'openpeon.json');
+  if (existsSync(cespPath)) {
+    try {
+      const cesp = JSON.parse(readFileSync(cespPath, 'utf8'));
+      return convertCespManifest(cesp);
+    } catch (err) {
+      console.error(`Warning: Failed to parse ${cespPath}: ${err.message}`);
+    }
+  }
+
+  return null;
 }
 
 function discoverSounds(packDir) {

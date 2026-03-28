@@ -1,0 +1,137 @@
+{
+  "cesp_version": "1.0",
+  "name": "warzone2100-command",
+  "display_name": "Sci-fi military commander voice lines from Warzone 2100",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "author": {
+    "name": "Warzone 2100 Project (https://github.com/Warzone2100/warzone2100)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/research-completed.ogg",
+          "label": "research completed",
+          "sha256": "03ac42308bedb2dcf5e4674bd6500e6a586340df52ddacc0cf4c89395d322bc1"
+        },
+        {
+          "file": "sounds/construction-completed.ogg",
+          "label": "construction completed",
+          "sha256": "91009e61f3ba8c5f8fdfdaeae1f1c32bfc0506604de973dd8c54546a890a3ce4"
+        },
+        {
+          "file": "sounds/production-completed.ogg",
+          "label": "production completed",
+          "sha256": "f7d7d5fcb80db77da3ab1b4a8a85b3511b2e0de4b1ff63aa1047dbbb9b91dd73"
+        },
+        {
+          "file": "sounds/design-completed.ogg",
+          "label": "design completed",
+          "sha256": "09594de5033aab3f3106c33ec0ab24333bc5f8847e4fb8614e7b73e3ce244924"
+        },
+        {
+          "file": "sounds/unit-repaired.ogg",
+          "label": "unit repaired",
+          "sha256": "d5ec096f284e4f80f9d1a70e81762a8a1a1dffcc5018f82fc24f00928d048c84"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/incoming-transmission.ogg",
+          "label": "incoming transmission",
+          "sha256": "dbc29f1830f3b93f965617f5080e866f6f7297668bb2590a7f492d263e001fdd"
+        },
+        {
+          "file": "sounds/mission-objective.ogg",
+          "label": "mission objective",
+          "sha256": "14ca9d4cf25da6c4ce1cfea323e075c9c1c54318200dc47771bd80df01f3d073"
+        },
+        {
+          "file": "sounds/mission-update.ogg",
+          "label": "mission update",
+          "sha256": "b75c2f11c81c9a298770f35eedbe3757e60eb427ee7fee115e18d990c60c0327"
+        },
+        {
+          "file": "sounds/new-research-available.ogg",
+          "label": "new research available",
+          "sha256": "4341c4838796baf35c7e384ef8e10cb0d5fb9c4a909d10f98b927bd1510b2651"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/mission-successful.ogg",
+          "label": "mission successful",
+          "sha256": "a13c5e5606552b86e0e014e1f75cb36e2512f850c8d25807105bbeb166be304c"
+        },
+        {
+          "file": "sounds/major-research-completed.ogg",
+          "label": "major research completed",
+          "sha256": "54752f579b0d4f72a2931122ee4035184ec4e1f111cdb1baf3769a6c5e48d9f3"
+        },
+        {
+          "file": "sounds/reinforcements-available.ogg",
+          "label": "reinforcements available",
+          "sha256": "4e124cc7976132e836d589f9460531c485f1212402b16f4d2480537d2be52f29"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/structure-under-attack.ogg",
+          "label": "structure under attack",
+          "sha256": "56b214a7aaf7b1d025bbdd09511f30cdb437e409d52d68b41ba22692eb0a81ca"
+        },
+        {
+          "file": "sounds/power-low.ogg",
+          "label": "power low",
+          "sha256": "a86c2f8b5250251197ca548b33c5c9c4440ff845bd77f8bdad3007d3655f2e63"
+        },
+        {
+          "file": "sounds/mission-failed.ogg",
+          "label": "mission failed",
+          "sha256": "d2f30c1eff871fb25ba715bdc66c6f5aac28145a6ea12f1309026e8e622fd632"
+        },
+        {
+          "file": "sounds/production-cancelled.ogg",
+          "label": "production cancelled",
+          "sha256": "7b2df5b169a9dd22bf48409f42f14967505e1188f9073c451806cdadc47f59ce"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/enemy-detected.ogg",
+          "label": "enemy detected",
+          "sha256": "068870137275bc3f2abd75fa96a82d956235c5e368500cdce0c5dd8c2858fa3b"
+        },
+        {
+          "file": "sounds/incoming-enemy-transport.ogg",
+          "label": "incoming enemy transport",
+          "sha256": "16eb59edade6fedd849ec5964940df8ccf9cd3c343a897ca28f37798c6cf10fe"
+        },
+        {
+          "file": "sounds/retreat-heavy-damage.ogg",
+          "label": "retreat heavy damage",
+          "sha256": "245ef4b2fcf3caf363ad67401c4a1fa82f31b77a61b7c4f77540d25e103e2667"
+        },
+        {
+          "file": "sounds/nexus-laugh1.ogg",
+          "label": "nexus laugh1",
+          "sha256": "7ce6c273104306f29defbf1111ae98244b8ccbd19bf8086b791b931835bea4de"
+        },
+        {
+          "file": "sounds/nexus-laugh2.ogg",
+          "label": "nexus laugh2",
+          "sha256": "dd67aafdb6483c1c7d76b0680e1dc1990103beec4f6a312f55986d55457c99bc"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "cesp_version": "1.0",
+  "name": "freedoom-arsenal",
+  "display_name": "Retro FPS weapon and pickup sounds from Freedoom",
+  "version": "1.0.0",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Freedoom contributors (https://github.com/freedoom/freedoom)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/dsitemup.ogg",
+          "label": "dsitemup",
+          "sha256": "25556a3fde9ecb2c75ee3eba2e38c2f299e5f3df3b510b6ab46b5dfbb38e8a87"
+        },
+        {
+          "file": "sounds/dsswtchn.ogg",
+          "label": "dsswtchn",
+          "sha256": "e0a6d8cec8a9d42fcea9f6a4d29d4006ffa7abb04e5d77f0b4231f7223c99d03"
+        },
+        {
+          "file": "sounds/dspistol.ogg",
+          "label": "dspistol",
+          "sha256": "e2c037d6f4e40a1ec9de3aacc81c3ffdf219990d8dedc7a9468efa036ebf73ac"
+        },
+        {
+          "file": "sounds/dspunch.ogg",
+          "label": "dspunch",
+          "sha256": "890da5fef39d9ac144526c38c14dfdd01b5e66d134320ca11b90a678cafe4124"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/dssgcock.ogg",
+          "label": "dssgcock",
+          "sha256": "9eedbc9db767a5efe7a5edf0ce2f29d656acf9d3687363c71771ad47112d4dd5"
+        },
+        {
+          "file": "sounds/dssawup.ogg",
+          "label": "dssawup",
+          "sha256": "2a494947704433f995eb6e62eb597d8a8adad02dd78c96370e1a0d8988ccdbde"
+        },
+        {
+          "file": "sounds/dsdoropn.ogg",
+          "label": "dsdoropn",
+          "sha256": "702818a9217e34eb051bf4d4aeb2a74063cd5aa726f42f79edd55943e9c5dff3"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/dsgetpow.ogg",
+          "label": "dsgetpow",
+          "sha256": "4fdf8c8d8eaea7a749b47184f81c728364831a7bdd93f74ec1b0404fbb3adada"
+        },
+        {
+          "file": "sounds/dswpnup.ogg",
+          "label": "dswpnup",
+          "sha256": "b94cd097d0629adc98a239101c51a7c38800e982194d94435798e9808c40e1be"
+        },
+        {
+          "file": "sounds/dstelept.ogg",
+          "label": "dstelept",
+          "sha256": "26fe6de33d78f022b27373b862e589e10385d868a3c9106ef22a2b2109b93beb"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/dsoof.ogg",
+          "label": "dsoof",
+          "sha256": "b1ed9b1fe6b3ce4340d5305e8e9ab5e6ad5645b1f7d2db32390890d59c95ea4e"
+        },
+        {
+          "file": "sounds/dsbarexp.ogg",
+          "label": "dsbarexp",
+          "sha256": "fafabda045e88827c7aa51dc6b62da788dbe9d18496a26aeca6ae601ecf02e82"
+        },
+        {
+          "file": "sounds/dsrxplod.ogg",
+          "label": "dsrxplod",
+          "sha256": "cdd135bc6ecb2fc7e5d2ea722454c9cf197e3d5f523b7ca607a85488f426596d"
+        },
+        {
+          "file": "sounds/dspldeth.ogg",
+          "label": "dspldeth",
+          "sha256": "41a41959cadcead8ca3bdf9d232b43510c05dac6e5f5a294f9c7542af259f86d"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/dsbfg.ogg",
+          "label": "dsbfg",
+          "sha256": "49a9addaf5da3528ef0539b791ee9555b144d109fcbba4bfa96c1d8d119c12c0"
+        },
+        {
+          "file": "sounds/dsrlaunc.ogg",
+          "label": "dsrlaunc",
+          "sha256": "d0fb2a850c52bc61653fd651817104e95425d99f49ffce27cf5e5daacb7c253b"
+        },
+        {
+          "file": "sounds/dsdshtgn.ogg",
+          "label": "dsdshtgn",
+          "sha256": "d541ff4d07ee3bf178f3eace971b7f5e531823d4c72564469a837fd14b697380"
+        }
+      ]
+    }
+  }
+}

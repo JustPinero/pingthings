@@ -1,0 +1,58 @@
+{
+  "name": "kenney-digital",
+  "description": "Digital and space notification tones by Kenney",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "sci-fi",
+  "sounds": [
+    "sounds/high-up.ogg",
+    "sounds/low-down.ogg",
+    "sounds/pep-1.ogg",
+    "sounds/pep-2.ogg",
+    "sounds/phase-jump-1.ogg",
+    "sounds/phase-jump-2.ogg",
+    "sounds/phaser-down.ogg",
+    "sounds/phaser-up-1.ogg",
+    "sounds/phaser-up-2.ogg",
+    "sounds/power-up-1.ogg",
+    "sounds/power-up-2.ogg",
+    "sounds/power-up-3.ogg",
+    "sounds/space-trash.ogg",
+    "sounds/three-tone.ogg",
+    "sounds/tone.ogg",
+    "sounds/two-tone.ogg",
+    "sounds/zap-1.ogg",
+    "sounds/zap-2.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/power-up-1.ogg",
+      "sounds/power-up-2.ogg",
+      "sounds/pep-1.ogg",
+      "sounds/tone.ogg"
+    ],
+    "permission": [
+      "sounds/phaser-up-1.ogg",
+      "sounds/phaser-up-2.ogg",
+      "sounds/high-up.ogg",
+      "sounds/three-tone.ogg"
+    ],
+    "complete": [
+      "sounds/power-up-3.ogg",
+      "sounds/phase-jump-1.ogg",
+      "sounds/phase-jump-2.ogg",
+      "sounds/two-tone.ogg"
+    ],
+    "error": [
+      "sounds/low-down.ogg",
+      "sounds/phaser-down.ogg",
+      "sounds/zap-1.ogg",
+      "sounds/zap-2.ogg"
+    ],
+    "blocked": [
+      "sounds/space-trash.ogg",
+      "sounds/pep-2.ogg"
+    ]
+  }
+}

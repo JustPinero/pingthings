@@ -1,0 +1,217 @@
+{
+  "cesp_version": "1.0",
+  "name": "7kaa-soldiers",
+  "display_name": "Soldier acknowledgement voice lines from Seven Kingdoms: Ancient Adversaries",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "author": {
+    "name": "Enlight Software Ltd. / Seven Kingdoms: Ancient Adversaries (https://github.com/the3dfxdude/7kaa)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/00006-NO_V2.ogg",
+          "label": "00006 NO V2",
+          "sha256": "973f659fc68fd922729ab3043e09aec9f0aed758ee0ba253f995e36edd851401"
+        },
+        {
+          "file": "sounds/00008-MA_V1.ogg",
+          "label": "00008 MA V1",
+          "sha256": "1617d36e36bf60908b9b9a13c807d911934b9a4da1b3558ed1723ac1fd608275"
+        },
+        {
+          "file": "sounds/00009-GR_V2.ogg",
+          "label": "00009 GR V2",
+          "sha256": "63da7d26ad5e3d8b988fb5a67c9af4bd06a3ce0a1978911d93da5512764686e9"
+        },
+        {
+          "file": "sounds/00011-VI_V1.ogg",
+          "label": "00011 VI V1",
+          "sha256": "edcb02c04f254ea54dbd801078126362106ebb45828712c51760d87eb6b0e4b6"
+        },
+        {
+          "file": "sounds/00014-PE_V1.ogg",
+          "label": "00014 PE V1",
+          "sha256": "4c768af9743a2122e85fa064f0985a48ba62697f24cb54b52f2c9ba0cc2c87d2"
+        },
+        {
+          "file": "sounds/00021-CH_V1.ogg",
+          "label": "00021 CH V1",
+          "sha256": "4553e5c3cc137e622ba2ca114238ba33d3c674452c4aa189c5206c8bbf86fb88"
+        },
+        {
+          "file": "sounds/00026-JA_V1.ogg",
+          "label": "00026 JA V1",
+          "sha256": "400d5e70490466539b566a36fa211dc89cd340262256730ff2191f6318673dd7"
+        },
+        {
+          "file": "sounds/00084-NO_V1.ogg",
+          "label": "00084 NO V1",
+          "sha256": "f7f787dc5fc318fed03e63c2209ad823c2c950fbfddff19fc9f474796bb3e9fe"
+        },
+        {
+          "file": "sounds/00085-EG_V1.ogg",
+          "label": "00085 EG V1",
+          "sha256": "ae9466b11f0c5697414be3f986dbe935a12d04d887d1a8e534f2ddcc8d38355e"
+        },
+        {
+          "file": "sounds/00089-IN_V1.ogg",
+          "label": "00089 IN V1",
+          "sha256": "d3662e02acf3d815441a99fb1739ca49c97cf53264b9162fee13caf0a340c94a"
+        },
+        {
+          "file": "sounds/00093-ZU_V2.ogg",
+          "label": "00093 ZU V2",
+          "sha256": "cccf323afc677f17b98f7bf4195461dd6445d26ea1faf7c023fbdd882c591fbf"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/00083-READY.ogg",
+          "label": "00083 READY",
+          "sha256": "ef6890762506a4cd21143eddf67703d8d940644ac5f82c91dae2c316f187864c"
+        },
+        {
+          "file": "sounds/00013-GR_V1.ogg",
+          "label": "00013 GR V1",
+          "sha256": "532e345c369f9a55c5aa061db5e96887533b959042f26bf0b5e6a10696c5bf36"
+        },
+        {
+          "file": "sounds/00018-PE_V2.ogg",
+          "label": "00018 PE V2",
+          "sha256": "0011cf33392151eab82d46116a7b4d996223bfd07a85310e85feb65f2fe59e92"
+        },
+        {
+          "file": "sounds/00022-CH_V2.ogg",
+          "label": "00022 CH V2",
+          "sha256": "c64d5fce20db864cf1302672e2a663b4a8f499c20949b147f5b33e01e8650e3f"
+        },
+        {
+          "file": "sounds/00027-JA_V2.ogg",
+          "label": "00027 JA V2",
+          "sha256": "2974bd6e0b06f79b1432a208fa455a32a20b9eaf579cbd176e7e019dba4a3039"
+        },
+        {
+          "file": "sounds/00090-IN_V2.ogg",
+          "label": "00090 IN V2",
+          "sha256": "84ebfc04f21514bc164d5630bb73610c85b0a3c168aa2363fa14f0492d9a730f"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/00007-NO_V3.ogg",
+          "label": "00007 NO V3",
+          "sha256": "7232c5c6111b93cc46558d9ddf361c2157caf1239ae3340d135b5331893f2166"
+        },
+        {
+          "file": "sounds/00010-GR_V3.ogg",
+          "label": "00010 GR V3",
+          "sha256": "3f93ae464ffdec860464695f9e8bdfdbf5600b30f9db904e0b723bc8f1d2b84f"
+        },
+        {
+          "file": "sounds/00016-MA_V3.ogg",
+          "label": "00016 MA V3",
+          "sha256": "9d7ec71a552ca68e5bd8ad801a2bf3e4e1b6534efcd9feb6e18838684d86e98a"
+        },
+        {
+          "file": "sounds/00019-PE_V3.ogg",
+          "label": "00019 PE V3",
+          "sha256": "e54e3b6a0d8bb18abdb8dfec6e9f659432d8eff98de47a630c7cea5fc2abbb77"
+        },
+        {
+          "file": "sounds/00023-CH_V3.ogg",
+          "label": "00023 CH V3",
+          "sha256": "5949ef9a6dfd858c57aea606c3848c6a9e63c55e8ae957050aaa3e48914a16c0"
+        },
+        {
+          "file": "sounds/00028-JA_V3.ogg",
+          "label": "00028 JA V3",
+          "sha256": "b0ae3eed6848e1e7636f3cbc99ba3efa35e600e0a062b52dd6c39d122a7950d8"
+        },
+        {
+          "file": "sounds/00087-EG_V3.ogg",
+          "label": "00087 EG V3",
+          "sha256": "41a8d0d97f999534f78cb9eac3439a2816d30d645c108a07cf8a7674725a6c2e"
+        },
+        {
+          "file": "sounds/00091-IN_V3.ogg",
+          "label": "00091 IN V3",
+          "sha256": "83d3f644249a5ef602f128155ab63b9ca5f0e52fea2650ff707ad5b916c318d5"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/00001-CH_A2.ogg",
+          "label": "00001 CH A2",
+          "sha256": "e7fbd9aeadc9f855ae2e46d5fbdd9c4df44c7b7d2a437436ba3cba7b41b4a8f1"
+        },
+        {
+          "file": "sounds/00012-NO_A1.ogg",
+          "label": "00012 NO A1",
+          "sha256": "26c96842dc48f2c4613a547b4a3d54da466b0ebc8704463708971a6a4b6b7b0b"
+        },
+        {
+          "file": "sounds/00013-NO_A2.ogg",
+          "label": "00013 NO A2",
+          "sha256": "59c31f879d0da7662630ddd49f316a5e5322a1ba1d3a8e321f9cd145499ac0ab"
+        },
+        {
+          "file": "sounds/00014-MA_A1.ogg",
+          "label": "00014 MA A1",
+          "sha256": "8a0062b5ee085f6952bd70f731dee65282150f6c11e6672dab1ecfd18799d602"
+        },
+        {
+          "file": "sounds/00015-GR_A1.ogg",
+          "label": "00015 GR A1",
+          "sha256": "7023c9394fba412eb1197548b0a7e6664bacf2935debe9620dc750319ff31ce7"
+        },
+        {
+          "file": "sounds/00016-VI_A1.ogg",
+          "label": "00016 VI A1",
+          "sha256": "9d3c6b6a07ea1b1540d08e36654550f1f1a2209113996fc20258dd9259a2f5a0"
+        },
+        {
+          "file": "sounds/00018-PE_A2.ogg",
+          "label": "00018 PE A2",
+          "sha256": "44e73e7c3a9dcbaedd43740f5e7e8afc502b6b4e833a284d81ec83bd66e09952"
+        },
+        {
+          "file": "sounds/00021-CH_A1.ogg",
+          "label": "00021 CH A1",
+          "sha256": "44b8a7257f63761e6a86d2d6d55d0f8e4464d52f85a490e9e5f10c38479992e7"
+        },
+        {
+          "file": "sounds/00022-JA_A1.ogg",
+          "label": "00022 JA A1",
+          "sha256": "458092ba019c8369cc652e7e1154a74399b47d4fbd10d6a4f09d64426dfbe32e"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/00017-VI_A2.ogg",
+          "label": "00017 VI A2",
+          "sha256": "5e418e041ec59d8929a9d3a4a285a0b724cf8ba3c102f74a5664f7bf83a66386"
+        },
+        {
+          "file": "sounds/00020-PE_A1.ogg",
+          "label": "00020 PE A1",
+          "sha256": "63ac66cb26cfb3e6908bc7c72dc5ffb9f10c306aef40f334c4b245f077967c61"
+        },
+        {
+          "file": "sounds/00023-JA_A2.ogg",
+          "label": "00023 JA A2",
+          "sha256": "5e04345e07fe75e0833d8ebbb459af274ace7251299393c055eb8ef9b81a06c4"
+        }
+      ]
+    }
+  }
+}

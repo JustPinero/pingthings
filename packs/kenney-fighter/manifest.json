@@ -1,0 +1,58 @@
+{
+  "name": "kenney-fighter",
+  "description": "Female fighting game announcer — flawless victory, combo breaker, fight!",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "arena",
+  "sounds": [
+    "sounds/begin.ogg",
+    "sounds/combo-breaker.ogg",
+    "sounds/combo.ogg",
+    "sounds/fight.ogg",
+    "sounds/final-round.ogg",
+    "sounds/flawless-victory.ogg",
+    "sounds/game-over.ogg",
+    "sounds/loser.ogg",
+    "sounds/multi-kill.ogg",
+    "sounds/prepare-yourself.ogg",
+    "sounds/ready.ogg",
+    "sounds/round-1.ogg",
+    "sounds/sudden-death.ogg",
+    "sounds/tie-breaker.ogg",
+    "sounds/time.ogg",
+    "sounds/winner.ogg",
+    "sounds/you-lose.ogg",
+    "sounds/you-win.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/combo.ogg",
+      "sounds/multi-kill.ogg",
+      "sounds/winner.ogg"
+    ],
+    "permission": [
+      "sounds/fight.ogg",
+      "sounds/ready.ogg",
+      "sounds/begin.ogg",
+      "sounds/prepare-yourself.ogg",
+      "sounds/round-1.ogg"
+    ],
+    "complete": [
+      "sounds/flawless-victory.ogg",
+      "sounds/you-win.ogg",
+      "sounds/combo-breaker.ogg"
+    ],
+    "error": [
+      "sounds/game-over.ogg",
+      "sounds/you-lose.ogg",
+      "sounds/loser.ogg",
+      "sounds/time.ogg"
+    ],
+    "blocked": [
+      "sounds/sudden-death.ogg",
+      "sounds/final-round.ogg",
+      "sounds/tie-breaker.ogg"
+    ]
+  }
+}

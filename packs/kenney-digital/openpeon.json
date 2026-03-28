@@ -1,0 +1,122 @@
+{
+  "cesp_version": "1.0",
+  "name": "kenney-digital",
+  "display_name": "Digital and space notification tones by Kenney",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/power-up-1.ogg",
+          "label": "power up 1",
+          "sha256": "02ff014887a1b9914c8e8fd21e5d188694643d816dd78960106f596877b027b7"
+        },
+        {
+          "file": "sounds/power-up-2.ogg",
+          "label": "power up 2",
+          "sha256": "48ce9e982879e888757c73cd1cf117893ec7ee4fc0e3f452c20f7d6e2d396262"
+        },
+        {
+          "file": "sounds/pep-1.ogg",
+          "label": "pep 1",
+          "sha256": "99914d51bf7cd7fecbebc7dd4e6be4f1134cf0f88af4932194160e56d2fe9df1"
+        },
+        {
+          "file": "sounds/tone.ogg",
+          "label": "tone",
+          "sha256": "fc4ed435c8d01c4b0b189ae6f9e413ab7ba18fb2258bfcd4da3a53f41d6cd656"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/phaser-up-1.ogg",
+          "label": "phaser up 1",
+          "sha256": "45262120012e2603cd61c057b2debf669f74173d3120b6a0707f2777a61a25de"
+        },
+        {
+          "file": "sounds/phaser-up-2.ogg",
+          "label": "phaser up 2",
+          "sha256": "c2c8eb88f882b81a98087b1c039949434f264263fc057862efe0fa201a968c67"
+        },
+        {
+          "file": "sounds/high-up.ogg",
+          "label": "high up",
+          "sha256": "3328f013ecbc931b3e5e6071e6e25adbccc2103b72f2853964bd1556a5380d9a"
+        },
+        {
+          "file": "sounds/three-tone.ogg",
+          "label": "three tone",
+          "sha256": "10eecafc2f6fce9ce634e24fa85ea5ded04366ecf013b61a5648708d75c9c8ad"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/power-up-3.ogg",
+          "label": "power up 3",
+          "sha256": "b65e08fb90f3ee8a89f06d51b4ddb0836c9ec0026bf425abd46d7c805663805f"
+        },
+        {
+          "file": "sounds/phase-jump-1.ogg",
+          "label": "phase jump 1",
+          "sha256": "daba14b62f0d922bbdfd67b1d9c25b91f1f43da784bb6af07f7f1e9dc31e689c"
+        },
+        {
+          "file": "sounds/phase-jump-2.ogg",
+          "label": "phase jump 2",
+          "sha256": "3e9b96b5377a8b08e104c0efe5de37c40e7b1c6a950072289a860245c72fd4e3"
+        },
+        {
+          "file": "sounds/two-tone.ogg",
+          "label": "two tone",
+          "sha256": "3857296b06df48ba27827d5c303843a54de852b6d8f4d41afee384cab1feced6"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/low-down.ogg",
+          "label": "low down",
+          "sha256": "81ba1cb1c596470ed6f5fb0f3e2e9799e31be7c07a7177f04d5f93854b2bc886"
+        },
+        {
+          "file": "sounds/phaser-down.ogg",
+          "label": "phaser down",
+          "sha256": "b76c0e03c03c3f18a4cc48c568b7c18a83f2020b3a07285532de2238e685a3fa"
+        },
+        {
+          "file": "sounds/zap-1.ogg",
+          "label": "zap 1",
+          "sha256": "6b9d85e6876b7122c86fa9d594cf0060e1060df3c675c1320b52ae56911b273b"
+        },
+        {
+          "file": "sounds/zap-2.ogg",
+          "label": "zap 2",
+          "sha256": "9b7ace76eb88ad0762a29cf9a7a7ffae8b9c00d1f3de44193bda2dfb1cba7409"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/space-trash.ogg",
+          "label": "space trash",
+          "sha256": "1138edb88beff85e91d176b489b3b040d2bdda1bd5e2aa98704b0bb14682a2c7"
+        },
+        {
+          "file": "sounds/pep-2.ogg",
+          "label": "pep 2",
+          "sha256": "0add826e85c3736fbdb9d6c8dfe34fd10b56a30c768af6a3bad7a957ddd3bb4d"
+        }
+      ]
+    }
+  }
+}

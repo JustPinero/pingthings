@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "openarena-announcer",
+  "display_name": "Arena FPS announcer voice lines from OpenArena",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "author": {
+    "name": "OpenArena contributors (http://openarena.ws)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/excellent.ogg",
+          "label": "excellent",
+          "sha256": "36b5c13dd0745ef0dc0ac4ade72b2de7800aaade2906c9fba85a24818e985dde"
+        },
+        {
+          "file": "sounds/impressive.ogg",
+          "label": "impressive",
+          "sha256": "0d08f5a5a2b31780672211e8762056f121a26bb1444508853c783d98da5c34a1"
+        },
+        {
+          "file": "sounds/accuracy.ogg",
+          "label": "accuracy",
+          "sha256": "0b0ebe82d099cd574b90eb1877f79a16f706dc5d9d17cd0571e6f9f762535821"
+        },
+        {
+          "file": "sounds/assist.ogg",
+          "label": "assist",
+          "sha256": "e11e478de50a1de5179cc7fdb9c28546b8cb5d9fff6ddc6e4f36562dcff304c7"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/prepare.ogg",
+          "label": "prepare",
+          "sha256": "0337699d0bb22d5b0b0c059a76ada2f832abcfeb95ff5cc35c8732431c11826e"
+        },
+        {
+          "file": "sounds/fight.ogg",
+          "label": "fight",
+          "sha256": "b03868e7c7407df64238c59c4f55ff3e0b3f94efb05f77546ae91dcb4aeba0a4"
+        },
+        {
+          "file": "sounds/defense.ogg",
+          "label": "defense",
+          "sha256": "7bb5e9077f2bbeef142b6db2e75d005dc20cc3cab0222593e6643c349bfa2251"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/youwin.ogg",
+          "label": "youwin",
+          "sha256": "179abf10385b05279186570cedbf67bc72bc49f9692e898f55b54f8f5d97412b"
+        },
+        {
+          "file": "sounds/perfect.ogg",
+          "label": "perfect",
+          "sha256": "291407e5e955035ca8085045f51372d3c4c4eea12c5aa5b36f6682f68db8526b"
+        },
+        {
+          "file": "sounds/takenlead.ogg",
+          "label": "takenlead",
+          "sha256": "44e18a5530c96ff00d5e12bdea33a350627b2444add96072e0ca9589aad233f2"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/denied.ogg",
+          "label": "denied",
+          "sha256": "9a94045e231d7fb8d7a888bb3adb124405aec2ab3b51f2f18607afbcf7507542"
+        },
+        {
+          "file": "sounds/humiliation.ogg",
+          "label": "humiliation",
+          "sha256": "f63a8f597f98964cf3cae4a49384156bc6ff07bb90ebe4528ac8f2d8155bbe54"
+        },
+        {
+          "file": "sounds/sudden_death.ogg",
+          "label": "sudden death",
+          "sha256": "9d65ea6415ccdb5075d50d4dc2c92b186525fd35cfcc6857948290f5301d5aa8"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/voc_holyshit.ogg",
+          "label": "voc holyshit",
+          "sha256": "c93587823d6a98016105738446aff3c0346c98c7d3c70727a3fca95e24666afc"
+        },
+        {
+          "file": "sounds/gauntlet.ogg",
+          "label": "gauntlet",
+          "sha256": "9a96dd2388460fe410a1610278167a510b952eb65ddc6cd5d648975d3a4e2902"
+        }
+      ]
+    }
+  }
+}

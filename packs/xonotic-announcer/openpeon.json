@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "xonotic-announcer",
+  "display_name": "Arena FPS announcer voice lines from Xonotic",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "author": {
+    "name": "Xonotic Project (https://github.com/xonotic/xonotic-data.pk3dir)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/awesome.ogg",
+          "label": "awesome",
+          "sha256": "a75cf21a39d7faadffe3e2f17b2d0ca0149bab71a31561a7424a149419ca8565"
+        },
+        {
+          "file": "sounds/amazing.ogg",
+          "label": "amazing",
+          "sha256": "54bc110c31bfb8ea9323cdf9df47826672393aca967421debb601b4d551e20c6"
+        },
+        {
+          "file": "sounds/impressive.ogg",
+          "label": "impressive",
+          "sha256": "294cef5c449dec7592bc52054e203d5d85277361f7af6da1077a9c4fcd95d340"
+        },
+        {
+          "file": "sounds/airshot.ogg",
+          "label": "airshot",
+          "sha256": "c07e53928cd4a7e5ef2d56862a43da4f3fafe0b28ddf91554a24174b56e3d527"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/prepareforbattle.ogg",
+          "label": "prepareforbattle",
+          "sha256": "20651628c3edf90b414fa8aa063e7568819ff820506920b4a8e86c78c7a336ad"
+        },
+        {
+          "file": "sounds/begin.ogg",
+          "label": "begin",
+          "sha256": "8bce8664a5735a4df20a7a2667cfeee9d4723238b979db6e87a3f0887050b812"
+        },
+        {
+          "file": "sounds/1fragleft.ogg",
+          "label": "1fragleft",
+          "sha256": "e1522f8e929369ba4c6f8134598c22caccbbd61439e17ee3a23e165d754580e6"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/yoda.ogg",
+          "label": "yoda",
+          "sha256": "a8bef88c6f1813713f7c1de014b077975a6502f8d0eb87bd223577a299cdce9a"
+        },
+        {
+          "file": "sounds/botlike.ogg",
+          "label": "botlike",
+          "sha256": "2a05e921c609b5c6be9d74b10bb29e65ada70a89e4d448409bf17a09605dee38"
+        },
+        {
+          "file": "sounds/leadgained.ogg",
+          "label": "leadgained",
+          "sha256": "f9c1516d185020ca088f14b9ae38709a09f11fbc6acd80fbd610d7022fe5f0cc"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/terminated.ogg",
+          "label": "terminated",
+          "sha256": "823553d052e624aaa47f13235906cef52a9a4f74fdc3b323cc2f2a83c77b82bd"
+        },
+        {
+          "file": "sounds/headshot.ogg",
+          "label": "headshot",
+          "sha256": "571f39f1543a3bbd23d2712845ba7da6d782f24cd370ceffb9912f57a198ee92"
+        },
+        {
+          "file": "sounds/electrobitch.ogg",
+          "label": "electrobitch",
+          "sha256": "c562648da52d97b775a15610b8284aed6cf283bb7266f0d45f7c0063655cc7af"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/lastsecond.ogg",
+          "label": "lastsecond",
+          "sha256": "7a0c2f948af8f94bed17ff68a9eb3a45a16a0c75df25cb41ea5ab2106da0cb3b"
+        },
+        {
+          "file": "sounds/narrowly.ogg",
+          "label": "narrowly",
+          "sha256": "f8d42b5290e1ffd655fbce86c7b3a2021ac146d5afedd464f1d6568b4cc13a53"
+        }
+      ]
+    }
+  }
+}

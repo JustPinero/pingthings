@@ -1,0 +1,122 @@
+{
+  "cesp_version": "1.0",
+  "name": "retro-movement",
+  "display_name": "8-bit portals, doors, jumps, menus, and bleeps",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Juhani Junkala / SubspaceAudio (https://opengameart.org/content/512-sound-effects-8-bit-style)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/blip-1.ogg",
+          "label": "blip 1",
+          "sha256": "4d140971bc731c27057ee158b5879d58e50f5514d0cbc87a59860f2374627087"
+        },
+        {
+          "file": "sounds/blip-2.ogg",
+          "label": "blip 2",
+          "sha256": "2fbb5af874d8e34be7b7d97146c4f5fed0c5e3a7ddf501e4012008aeb2170658"
+        },
+        {
+          "file": "sounds/menu-select-1.ogg",
+          "label": "menu select 1",
+          "sha256": "da533662bd0b6996e0facfc3dd52446a4f7465c7e89b721036c06852c17ba002"
+        },
+        {
+          "file": "sounds/menu-select-2.ogg",
+          "label": "menu select 2",
+          "sha256": "605340c6ad7cc2a7d825de278610f9e52ea040b2521e11243c0ea034e26422f2"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/door-open-1.ogg",
+          "label": "door open 1",
+          "sha256": "a7fd320c37b83dea8aecf22f7e3eea8f9ae7b80a7435fbf479421c7388a5f327"
+        },
+        {
+          "file": "sounds/door-open-2.ogg",
+          "label": "door open 2",
+          "sha256": "f2f152797a410311b934689868c5177a256da2616b28701dc158ca09d2aa4232"
+        },
+        {
+          "file": "sounds/door-open-3.ogg",
+          "label": "door open 3",
+          "sha256": "e6372f50f7118f3d3831420879b1eff75821864146280e62dfce4a0153a0debe"
+        },
+        {
+          "file": "sounds/pause-in.ogg",
+          "label": "pause in",
+          "sha256": "b3f15614e85dc4bb92edccb424aff794377bc1b95d11f9739a2c41d425ca5f3e"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/portal-1.ogg",
+          "label": "portal 1",
+          "sha256": "6178ff32a997f9d7db8d325b16a2b9732607c32f10427a42fc7f971fd2b3b8a1"
+        },
+        {
+          "file": "sounds/portal-2.ogg",
+          "label": "portal 2",
+          "sha256": "8fc6bd091be40b0ce9366f3a5b033b4e184ab02595b04852ceec552a07fe1b6b"
+        },
+        {
+          "file": "sounds/portal-3.ogg",
+          "label": "portal 3",
+          "sha256": "cdb8386ca43267849b170f55d26b91496108ae6831f2ed8777c1a1cc6071a5d7"
+        },
+        {
+          "file": "sounds/portal-4.ogg",
+          "label": "portal 4",
+          "sha256": "8861deb4c2e6a0c7e4a8ac0affab3815059703e2709e8a0b822955e1df9058d6"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/pause-out.ogg",
+          "label": "pause out",
+          "sha256": "67b793cc00328f991e4b10f45fa617d05798d1e00c29894b75f755e518d7fc46"
+        },
+        {
+          "file": "sounds/pause-in-2.ogg",
+          "label": "pause in 2",
+          "sha256": "7d7d694d7884e560b09c139c7ad8c3dc59f37ac4114f48e52f4b8a8e5ad3f190"
+        },
+        {
+          "file": "sounds/pause-in-3.ogg",
+          "label": "pause in 3",
+          "sha256": "6190de159fa27fbe4ca92fea4356233d19355bd17c97684b80dfea2a0bec6a54"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/jump-1.ogg",
+          "label": "jump 1",
+          "sha256": "bebf358587fe0f270523888b720727b0e40f2dd0f128b8050f0e0e8e498b45e6"
+        },
+        {
+          "file": "sounds/jump-2.ogg",
+          "label": "jump 2",
+          "sha256": "b4ddb7a6ee59fd358b07908532d43303e1560bd18a898a844309cf0154d86c24"
+        },
+        {
+          "file": "sounds/jump-3.ogg",
+          "label": "jump 3",
+          "sha256": "b0baa26d92c968b682550fdca97a9ab280fdf3603c169b655c712fd07e202ea3"
+        }
+      ]
+    }
+  }
+}

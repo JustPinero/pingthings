@@ -1,0 +1,107 @@
+{
+  "cesp_version": "1.0",
+  "name": "droid-announcer",
+  "display_name": "Robotic AI announcer — objective complete, action required, mission complete",
+  "version": "1.0.0",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "VoiceBosch (https://opengameart.org/content/droid-video-game-announcer)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/objective-complete.ogg",
+          "label": "objective complete",
+          "sha256": "572b2119cf59001a4050cc13a3204fd79fcbfedbab03a2fe3df58eae733be26c"
+        },
+        {
+          "file": "sounds/target-neutralized.ogg",
+          "label": "target neutralized",
+          "sha256": "f34f1d3962dacba9962ab3f9605acff95b6008137a45f6fbcfef3e3a766e1a73"
+        },
+        {
+          "file": "sounds/system-optimal.ogg",
+          "label": "system optimal",
+          "sha256": "207aebc941d3b8bc40972c75cbaf4745413c1e75242f2ff155fbe1fd6849e038"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/action-required.ogg",
+          "label": "action required",
+          "sha256": "07ce09bba393b1da0c18f3404e0b9e9f0aafb9695e3e79fb86e44b2ebfbcf66d"
+        },
+        {
+          "file": "sounds/instruction-unclear.ogg",
+          "label": "instruction unclear",
+          "sha256": "626e862ebf49c38ecf56ffb6956650bd35aa46cb1fab42843df4d9d2cabc4cbf"
+        },
+        {
+          "file": "sounds/new-upgrades-available.ogg",
+          "label": "new upgrades available",
+          "sha256": "60e2bec212dff9bfded11506ee051ae1bfac83ef82116eebb09fead08a8ba035"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/mission-complete.ogg",
+          "label": "mission complete",
+          "sha256": "78dd6f720834a895b7fae406e7ff7119b2beb3c30bc08c8183c72cb8a75cada6"
+        },
+        {
+          "file": "sounds/achievement-unlocked.ogg",
+          "label": "achievement unlocked",
+          "sha256": "f3107281f15ebec96c4e0308da706e2d894396d49e315c4919cb85392739f373"
+        },
+        {
+          "file": "sounds/epic.ogg",
+          "label": "epic",
+          "sha256": "0ea479dc0ef702accabf536c11fa3cb64e17bb501c07ad475e146fc0d429ca1e"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/critical-damage.ogg",
+          "label": "critical damage",
+          "sha256": "afbbdf9dcf085a9c8983531c1287e2b61dc2336c9229798cbba0c70a9530cdf9"
+        },
+        {
+          "file": "sounds/ineffective-strategy.ogg",
+          "label": "ineffective strategy",
+          "sha256": "172498dd549c345a6117a60d3abe4fda94d1155a50b9e1c20cb5f4777245a0f0"
+        },
+        {
+          "file": "sounds/shields-activated.ogg",
+          "label": "shields activated",
+          "sha256": "094a8d83bff1254e34dfe8879b0bb0838932ce861ebf0b856b6ba215500f8a31"
+        },
+        {
+          "file": "sounds/self-repair.ogg",
+          "label": "self repair",
+          "sha256": "5952679f8c278e80c7775881699ca4112b6fa749e84c643f289f1da577786d68"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/hostile-units-inbound.ogg",
+          "label": "hostile units inbound",
+          "sha256": "1e34f1571a2cb06998dc655f48165e77e1ca28bad8e12a975696136b0d4ee1b7"
+        },
+        {
+          "file": "sounds/enemy-forces-detected.ogg",
+          "label": "enemy forces detected",
+          "sha256": "f44ef0362ad7a61b98038441aceceeffa5b7bd4b427c5fa6af2a5516ccbaab67"
+        }
+      ]
+    }
+  }
+}

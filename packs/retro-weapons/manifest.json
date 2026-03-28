@@ -1,0 +1,57 @@
+{
+  "name": "retro-weapons",
+  "description": "8-bit weapons, explosions, death screams, and impacts",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Juhani Junkala / SubspaceAudio (https://opengameart.org/content/512-sound-effects-8-bit-style)",
+  "category": "retro",
+  "sounds": [
+    "sounds/death-android-2.ogg",
+    "sounds/death-android.ogg",
+    "sounds/death-human-1.ogg",
+    "sounds/death-human-2.ogg",
+    "sounds/death-robot.ogg",
+    "sounds/explosion-1.ogg",
+    "sounds/explosion-2.ogg",
+    "sounds/explosion-long.ogg",
+    "sounds/explosion-soft.ogg",
+    "sounds/impact-1.ogg",
+    "sounds/impact-2.ogg",
+    "sounds/impact-3.ogg",
+    "sounds/interact-1.ogg",
+    "sounds/interact-2.ogg",
+    "sounds/interact-3.ogg",
+    "sounds/shot-1.ogg",
+    "sounds/shot-2.ogg",
+    "sounds/shot-3.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/interact-1.ogg",
+      "sounds/interact-2.ogg",
+      "sounds/interact-3.ogg",
+      "sounds/shot-1.ogg"
+    ],
+    "permission": [
+      "sounds/shot-2.ogg",
+      "sounds/shot-3.ogg",
+      "sounds/impact-1.ogg"
+    ],
+    "complete": [
+      "sounds/explosion-long.ogg",
+      "sounds/explosion-soft.ogg",
+      "sounds/impact-2.ogg"
+    ],
+    "error": [
+      "sounds/explosion-1.ogg",
+      "sounds/explosion-2.ogg",
+      "sounds/death-human-1.ogg",
+      "sounds/death-human-2.ogg"
+    ],
+    "blocked": [
+      "sounds/death-android.ogg",
+      "sounds/death-robot.ogg",
+      "sounds/impact-3.ogg"
+    ]
+  }
+}

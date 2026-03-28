@@ -1,0 +1,122 @@
+{
+  "cesp_version": "1.0",
+  "name": "kenney-scifi",
+  "display_name": "Futuristic sci-fi notification sounds by Kenney",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Kenney (https://kenney.nl)"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/computer-1.ogg",
+          "label": "computer 1",
+          "sha256": "fc2da38b2a381a6bea6db7ddc78bff49b069942ea094307b65d7f90d54399cc2"
+        },
+        {
+          "file": "sounds/computer-2.ogg",
+          "label": "computer 2",
+          "sha256": "432ec5aeb4bd7268d2d55dc69a89f3fa0d8990d1bed59da61ec405326105d68f"
+        },
+        {
+          "file": "sounds/computer-3.ogg",
+          "label": "computer 3",
+          "sha256": "3d78a81e23856f84073934ee5af3a9251cb44ec5d8da39ec0f51be7eae9afa77"
+        },
+        {
+          "file": "sounds/door-open.ogg",
+          "label": "door open",
+          "sha256": "0dd68a1ffd5ea65893a9a015e282c3375ea6ccd5a19168170e48251ea0ce36ba"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/forcefield-1.ogg",
+          "label": "forcefield 1",
+          "sha256": "e738c06b9e6b0154bf09f9117e791c92261dae08c7e502a8848bb6abc2d70d08"
+        },
+        {
+          "file": "sounds/forcefield-2.ogg",
+          "label": "forcefield 2",
+          "sha256": "8bbed0bcc34461e461956ec2d231978f39e6443bbe95211f02d07492efb3a8cb"
+        },
+        {
+          "file": "sounds/laser-retro.ogg",
+          "label": "laser retro",
+          "sha256": "eeaacb756d3cd4664e975d817cf7cb467e4bc423d5ec36ebad0e60fd6af51b46"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/thruster-1.ogg",
+          "label": "thruster 1",
+          "sha256": "1890832d4aa80d192c3e33b78dbbcf4caa3dccf2257074761685204beebc83ea"
+        },
+        {
+          "file": "sounds/thruster-2.ogg",
+          "label": "thruster 2",
+          "sha256": "b6ba5e14d60be257a149a9c15303d15eacdb4ccbaebd3353a8c33974f858b4a6"
+        },
+        {
+          "file": "sounds/engine-1.ogg",
+          "label": "engine 1",
+          "sha256": "dbfc06697ce0f139cf2d4dd8c5a8a610f7c96c707db08a7bf8ed47a055ee821e"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/explosion-1.ogg",
+          "label": "explosion 1",
+          "sha256": "74f8aac170d15365cd2dd0462d4baecb37984de23b4d03b70045cdcb93b69f64"
+        },
+        {
+          "file": "sounds/explosion-2.ogg",
+          "label": "explosion 2",
+          "sha256": "e6fd9601ed7487878e72324e4e0d5335651ebe17b7a71ea8e66c4c7c7a3a19ad"
+        },
+        {
+          "file": "sounds/low-explosion.ogg",
+          "label": "low explosion",
+          "sha256": "3fcf538cd0f3779f26f44b53764ed07273776e8954a9781a9b1a66ed7cb398d0"
+        },
+        {
+          "file": "sounds/impact-1.ogg",
+          "label": "impact 1",
+          "sha256": "5908253c30d987b67bf5b76d9fb140fa2cd78ccc399cb4c7fed592ba0762bad1"
+        },
+        {
+          "file": "sounds/impact-2.ogg",
+          "label": "impact 2",
+          "sha256": "d49a6de79aa464b04820561d437660a82695496c1f8a559ff932d3feb281f1f1"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/door-close.ogg",
+          "label": "door close",
+          "sha256": "1763cdf481c6fe26c264c456552531454930bcbedcbd22f17b243d8baa898154"
+        },
+        {
+          "file": "sounds/laser-large.ogg",
+          "label": "laser large",
+          "sha256": "ce636f0457a6062ce7d7e6d681cf85b90550fd496685cecd5faa84a63679b535"
+        },
+        {
+          "file": "sounds/slime.ogg",
+          "label": "slime",
+          "sha256": "025671987a26d3fca3b7e41cf181557046a0f748df26717cd2b51cc99ea6c0be"
+        }
+      ]
+    }
+  }
+}

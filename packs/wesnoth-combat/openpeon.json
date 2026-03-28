@@ -1,0 +1,122 @@
+{
+  "cesp_version": "1.0",
+  "name": "wesnoth-combat",
+  "display_name": "Fantasy combat and magic sounds from Battle for Wesnoth",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "author": {
+    "name": "Battle for Wesnoth contributors (https://github.com/wesnoth/wesnoth) — licensed under GPL v2+"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/gold.ogg",
+          "label": "gold",
+          "sha256": "f146dda0c8e176414d30131e5220e30fdaadda0373c172858f61a01f918656bf"
+        },
+        {
+          "file": "sounds/sword-1.ogg",
+          "label": "sword 1",
+          "sha256": "c5409ef75599e766b1ec451b25b4af838ca5de6c089a722dfa55fa3e18b49bfe"
+        },
+        {
+          "file": "sounds/bow.ogg",
+          "label": "bow",
+          "sha256": "ab7310f71e0751ac83a1d253e25a147195d61b1f2fac54dcb394ff300db17f80"
+        },
+        {
+          "file": "sounds/crossbow.ogg",
+          "label": "crossbow",
+          "sha256": "23d9dc768616e54cff1e6cbbed6ee149a46ca7f234951f178d60025ae97aaf33"
+        },
+        {
+          "file": "sounds/hatchet.ogg",
+          "label": "hatchet",
+          "sha256": "15d8dbc7624abdb0783e3bfa1ae19064f88df518337800deb48f76027b0e1960"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/open-chest.ogg",
+          "label": "open chest",
+          "sha256": "27a9ce6b8069cef3b01a99be358824604d836d7676b446ff13d18e34119ed542"
+        },
+        {
+          "file": "sounds/potion.ogg",
+          "label": "potion",
+          "sha256": "15db919af1b4e3403831cd6bbd7f53047be4b1f67759ccd39e87c5d1af4f4ffe"
+        },
+        {
+          "file": "sounds/magic-holy-1.ogg",
+          "label": "magic holy 1",
+          "sha256": "f97694eedfddf3a8e5d472e6736372b11350b69ef194fd39e248cd44c447e67b"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/fanfare-short.ogg",
+          "label": "fanfare short",
+          "sha256": "84ccd8dba30591e9783d739ad2cb48a121c3ceadb0fda55d797939a4ec186b18"
+        },
+        {
+          "file": "sounds/heal.ogg",
+          "label": "heal",
+          "sha256": "b97e5de5821226f01e7aec1b809c06024508584560fa91fb1010d03f5f05165b"
+        },
+        {
+          "file": "sounds/dwarf-laugh.ogg",
+          "label": "dwarf laugh",
+          "sha256": "4e2a253beb2775fc054f9ae1ebdb975d9e79b2ee6153f166ecc32a079f5e5897"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/explosion.ogg",
+          "label": "explosion",
+          "sha256": "47a393b24510a46b79938b07e244a43700ceb0bdd57024ac89d3f10c0d8477f9"
+        },
+        {
+          "file": "sounds/flame-big.ogg",
+          "label": "flame big",
+          "sha256": "1a053353cc5e97e560479c898856002392797e2d2c8682a3550bc2b3b6164074"
+        },
+        {
+          "file": "sounds/lightning.ogg",
+          "label": "lightning",
+          "sha256": "70de34b9df3625aad10ade1a285ffd34bd6d921c5c7c44d7ccf4d38cce15ab06"
+        },
+        {
+          "file": "sounds/magic-dark.ogg",
+          "label": "magic dark",
+          "sha256": "e0edc82604dca720365008c7a30ecf13042bbc7c42bf119ec9114572ce4c80cb"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/wolf-growl-1.ogg",
+          "label": "wolf growl 1",
+          "sha256": "dc5a84ff49593eac86fd0c82bb03cc3ed45407ebb330d36463e3e082e9d39c76"
+        },
+        {
+          "file": "sounds/gryphon-shriek-1.ogg",
+          "label": "gryphon shriek 1",
+          "sha256": "b31438b0d58956f413314d83947f091f90d30b4ff52e41c6ed753ccae0d6c4e3"
+        },
+        {
+          "file": "sounds/magic-missile-1.ogg",
+          "label": "magic missile 1",
+          "sha256": "2ae1b5d83509edfb67d051540e59d206f7eb8d9ce260e13e9a9d54365323a2f0"
+        }
+      ]
+    }
+  }
+}

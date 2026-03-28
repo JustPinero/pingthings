@@ -1,0 +1,57 @@
+{
+  "name": "kenney-rpg",
+  "description": "Fantasy RPG foley sounds — latches, books, leather, swords",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "fantasy",
+  "sounds": [
+    "sounds/belt-handle-2.ogg",
+    "sounds/belt-handle.ogg",
+    "sounds/book-close.ogg",
+    "sounds/book-flip.ogg",
+    "sounds/book-open.ogg",
+    "sounds/book-place.ogg",
+    "sounds/cloth-belt.ogg",
+    "sounds/creak.ogg",
+    "sounds/door-close.ogg",
+    "sounds/door-open.ogg",
+    "sounds/draw-knife.ogg",
+    "sounds/leather-drop.ogg",
+    "sounds/leather-handle.ogg",
+    "sounds/metal-click.ogg",
+    "sounds/metal-latch.ogg",
+    "sounds/metal-pot-2.ogg",
+    "sounds/metal-pot.ogg",
+    "sounds/sword-draw.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/metal-click.ogg",
+      "sounds/metal-latch.ogg",
+      "sounds/book-close.ogg",
+      "sounds/leather-handle.ogg"
+    ],
+    "permission": [
+      "sounds/book-open.ogg",
+      "sounds/door-open.ogg",
+      "sounds/creak.ogg"
+    ],
+    "complete": [
+      "sounds/sword-draw.ogg",
+      "sounds/draw-knife.ogg",
+      "sounds/book-flip.ogg",
+      "sounds/belt-handle.ogg"
+    ],
+    "error": [
+      "sounds/metal-pot.ogg",
+      "sounds/metal-pot-2.ogg",
+      "sounds/door-close.ogg",
+      "sounds/leather-drop.ogg"
+    ],
+    "blocked": [
+      "sounds/cloth-belt.ogg",
+      "sounds/book-place.ogg"
+    ]
+  }
+}

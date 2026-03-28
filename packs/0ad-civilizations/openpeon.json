@@ -1,0 +1,172 @@
+{
+  "cesp_version": "1.0",
+  "name": "0ad-civilizations",
+  "display_name": "Ancient civilization voice lines and alerts from 0 A.D.",
+  "version": "1.0.0",
+  "license": "CC-BY-SA-3.0",
+  "author": {
+    "name": "Wildfire Games / 0 A.D. (https://github.com/0ad/0ad) — audio licensed under CC-BY-SA 3.0"
+  },
+  "categories": {
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/greek-as-you-wish.ogg",
+          "label": "greek as you wish",
+          "sha256": "bfe016a022b6a70b3a27f9140cc679ea2165af6848195b519b2b331f385dab34"
+        },
+        {
+          "file": "sounds/greek-yes.ogg",
+          "label": "greek yes",
+          "sha256": "53b7adebc75ff4f63d63610a6f102d0007a27cdfeba795091c69636487e84a8e"
+        },
+        {
+          "file": "sounds/greek-build-1.ogg",
+          "label": "greek build 1",
+          "sha256": "11c43e4f1522750f46ed87a69f78dac7da265da6215fc661a31fe1f16b76a05e"
+        },
+        {
+          "file": "sounds/latin-build-1.ogg",
+          "label": "latin build 1",
+          "sha256": "164bcbe05802bba0b663e444dbf45c4ed0738d8dba3511c001b7ad7609f779e3"
+        },
+        {
+          "file": "sounds/persian-by-your-order.ogg",
+          "label": "persian by your order",
+          "sha256": "bf2dfcf217240483618db9f5687044244f0a05859741e6d25ccc60726a03f68b"
+        },
+        {
+          "file": "sounds/persian-i-will-go.ogg",
+          "label": "persian i will go",
+          "sha256": "67cf2716780278b3f6aa6b9671025cbf212c6c0c38de25d4b88558fd752fa531"
+        },
+        {
+          "file": "sounds/alarm-research-complete.ogg",
+          "label": "alarm research complete",
+          "sha256": "e8bc3b4f00a602986116bce638e732528b73d8011bc44a6c128ae130b9dad4fb"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/greek-my-lord-1.ogg",
+          "label": "greek my lord 1",
+          "sha256": "2b1b421067f2b0d3a96aae8752faebf4cdc06347a4e727305de4e768993d9aa7"
+        },
+        {
+          "file": "sounds/greek-my-lord-2.ogg",
+          "label": "greek my lord 2",
+          "sha256": "6d020677554788a8c3916c22855f7b0f8e32d499bd60b35f6134c40eee255d99"
+        },
+        {
+          "file": "sounds/greek-what-is-it-1.ogg",
+          "label": "greek what is it 1",
+          "sha256": "3d119beced9107de26a418df7d0c45abe47dc45bf5478c7d81f2a059d60c720a"
+        },
+        {
+          "file": "sounds/latin-my-lord-1.ogg",
+          "label": "latin my lord 1",
+          "sha256": "169ac6a0dc4d1416313aaf06f02c68574736485e066262f1f345f0fa3d136019"
+        },
+        {
+          "file": "sounds/latin-what-is-it.ogg",
+          "label": "latin what is it",
+          "sha256": "0ff0f1428cb02f8edf4cdfc763718051a2e111a0a405c24bd14c0310198de65e"
+        },
+        {
+          "file": "sounds/latin-hello-1.ogg",
+          "label": "latin hello 1",
+          "sha256": "b60fc042155339dd14851eb078374f03587e78edd7d9a187539c4ae3c8a2f60b"
+        },
+        {
+          "file": "sounds/alarm-objective.ogg",
+          "label": "alarm objective",
+          "sha256": "e8f38f3aae455fb330caeff6e2538e34bac9f04b61721c016df7830ae3844d9f"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/alarm-victory.ogg",
+          "label": "alarm victory",
+          "sha256": "8a1af7eeb59090248d868af571810b23528caf4974c5297aa99dbb67749fea4c"
+        },
+        {
+          "file": "sounds/greek-march-1.ogg",
+          "label": "greek march 1",
+          "sha256": "186f81e2d1722009696baf1b0833f1cd8cd9d41ebe6937756620481cada9c3f6"
+        },
+        {
+          "file": "sounds/greek-heal-1.ogg",
+          "label": "greek heal 1",
+          "sha256": "67943a9f8b8ea438f95b9b23d13e58fe299c7ee148613d9eb9be6277013cbaef"
+        },
+        {
+          "file": "sounds/latin-heal-1.ogg",
+          "label": "latin heal 1",
+          "sha256": "428f04da8ae46cad640e35e844fcff23e1ed5b374f783167e6430d758f097dd7"
+        },
+        {
+          "file": "sounds/persian-forward-1.ogg",
+          "label": "persian forward 1",
+          "sha256": "8f713b057cf2a009ae3cec902c99684f06a9e791519476e91efea3999d91c77e"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/alarm-attack.ogg",
+          "label": "alarm attack",
+          "sha256": "8ccc2c3234cf21dc4dabf014b594cfd061a877ae3b42e62a249adf1e9f5ce770"
+        },
+        {
+          "file": "sounds/alarm-defeat.ogg",
+          "label": "alarm defeat",
+          "sha256": "d52b318d43c0886a0f826ac9305e9bb6fe4ef675628d87053a80bf3935f10492"
+        },
+        {
+          "file": "sounds/alarm-no-resource.ogg",
+          "label": "alarm no resource",
+          "sha256": "1054c73330bbefed7373d07320aceb9cbe940a935b91a2dbda544757259aa4e6"
+        },
+        {
+          "file": "sounds/greek-attack-1.ogg",
+          "label": "greek attack 1",
+          "sha256": "43c004dacfc09b1147b9e760ead575f596b650c79afad1f3d3500f83f261427c"
+        },
+        {
+          "file": "sounds/latin-attack-1.ogg",
+          "label": "latin attack 1",
+          "sha256": "a4fa3d1c1f274e6f9a68019893d1fbf923172d11ff9e17f15f7608bff14527b5"
+        },
+        {
+          "file": "sounds/persian-attack-1.ogg",
+          "label": "persian attack 1",
+          "sha256": "b2c15c1777ad2c29e2b16437a51d5bcdc9a119860bfa0a80b0ece1f2f9fb3b15"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/alarm-alert.ogg",
+          "label": "alarm alert",
+          "sha256": "fac411b82c1e223e08df5a5d679d0afc6a44779c8d795687966e6c2e2f0914ac"
+        },
+        {
+          "file": "sounds/greek-retreat-1.ogg",
+          "label": "greek retreat 1",
+          "sha256": "931078c8ad11faebe57205d7473f416980ba07a5b97c170412f51b1a6b5fa84c"
+        },
+        {
+          "file": "sounds/latin-fight-1.ogg",
+          "label": "latin fight 1",
+          "sha256": "599ce72b079bf6896b1911277a4e0d92a10476cfd1598bdfae900bc54fba5b2d"
+        }
+      ]
+    }
+  }
+}

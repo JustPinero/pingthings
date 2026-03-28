@@ -1,0 +1,57 @@
+{
+  "name": "kenney-impacts",
+  "description": "Satisfying impact and material sounds — metal, wood, glass, bells",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "credits": "Kenney (https://kenney.nl)",
+  "category": "ui",
+  "sounds": [
+    "sounds/bell-heavy-2.ogg",
+    "sounds/bell-heavy.ogg",
+    "sounds/glass-heavy.ogg",
+    "sounds/glass-light.ogg",
+    "sounds/glass-medium.ogg",
+    "sounds/mining-1.ogg",
+    "sounds/mining-2.ogg",
+    "sounds/plate-heavy-2.ogg",
+    "sounds/plate-heavy.ogg",
+    "sounds/plate-light-1.ogg",
+    "sounds/plate-light-2.ogg",
+    "sounds/plate-medium.ogg",
+    "sounds/soft-heavy.ogg",
+    "sounds/soft-light.ogg",
+    "sounds/soft-medium.ogg",
+    "sounds/tin-medium.ogg",
+    "sounds/wood-heavy.ogg",
+    "sounds/wood-light.ogg"
+  ],
+  "events": {
+    "done": [
+      "sounds/plate-light-1.ogg",
+      "sounds/plate-light-2.ogg",
+      "sounds/soft-light.ogg",
+      "sounds/wood-light.ogg"
+    ],
+    "permission": [
+      "sounds/bell-heavy.ogg",
+      "sounds/bell-heavy-2.ogg",
+      "sounds/tin-medium.ogg"
+    ],
+    "complete": [
+      "sounds/plate-medium.ogg",
+      "sounds/mining-1.ogg",
+      "sounds/mining-2.ogg"
+    ],
+    "error": [
+      "sounds/glass-heavy.ogg",
+      "sounds/glass-medium.ogg",
+      "sounds/plate-heavy.ogg",
+      "sounds/plate-heavy-2.ogg"
+    ],
+    "blocked": [
+      "sounds/wood-heavy.ogg",
+      "sounds/soft-heavy.ogg",
+      "sounds/glass-light.ogg"
+    ]
+  }
+}

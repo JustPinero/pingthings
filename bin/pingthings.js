@@ -29,6 +29,7 @@ const commands = {
   'random-pack': () => import('../src/cli/random-pack.js'),
   doctor: () => import('../src/cli/doctor.js'),
   update: () => import('../src/cli/update.js'),
+  cesp: () => import('../src/cli/cesp.js'),
   completions: () => import('../src/cli/completions.js'),
 };
 
