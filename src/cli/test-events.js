@@ -1,6 +1,6 @@
 import { readConfig, VALID_EVENTS } from '../config.js';
 import { getEventSounds, getPackSounds, pickRandom, resolvePack } from '../packs.js';
-import { playSound } from '../player.js';
+import { playSoundSync } from '../player.js';
 import { basename } from 'node:path';
 
 function showHelp() {
@@ -15,10 +15,6 @@ Arguments:
 
 Events played: done, permission, complete, error, blocked
 `);
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 export default async function testEvents(args) {
@@ -48,10 +44,7 @@ export default async function testEvents(args) {
 
     const sound = pickRandom(sounds);
     console.log(`  ${event.padEnd(12)} ${basename(sound)}`);
-    playSound(sound);
-
-    // Wait between sounds so they don't overlap
-    await sleep(1500);
+    playSoundSync(sound, config.volume);
   }
 
   console.log('\nDone.\n');

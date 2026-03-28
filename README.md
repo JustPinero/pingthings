@@ -126,10 +126,15 @@ For different sounds based on what Claude is doing, set up multiple hooks:
 |---------|-------------|
 | `pingthings play [sound] [--event type]` | Play a sound (random, specific, or event-based) |
 | `pingthings list` | Show available sound packs |
+| `pingthings select` | Interactive pack selector |
 | `pingthings use <pack>` | Set the active sound pack |
 | `pingthings preview <pack>` | Preview a random sound from a pack |
+| `pingthings test-events [pack]` | Play all event sounds to hear each one |
+| `pingthings theme [name]` | Apply a sound theme |
 | `pingthings config [key] [val]` | Show or update configuration |
-| `pingthings install <pack>` | Install a sound pack (coming soon) |
+| `pingthings init` | Set up Claude Code hooks automatically |
+| `pingthings create <dir>` | Create a pack from audio files |
+| `pingthings install <source>` | Install a pack from GitHub or local path |
 
 ## Configuration
 
@@ -139,13 +144,17 @@ Config lives at `~/.config/pingthings/config.json`:
 {
   "activePack": "7kaa-soldiers",
   "mode": "random",
-  "specificSound": null
+  "specificSound": null,
+  "volume": 100,
+  "eventPacks": {}
 }
 ```
 
 - **activePack** — which sound pack to use
 - **mode** — `"random"` (default), `"specific"`, or `"informational"`
 - **specificSound** — sound name to always play when mode is `"specific"`
+- **volume** — playback volume, 0-100 (default: 100)
+- **eventPacks** — per-event pack overrides (e.g. `{"error": "freedoom-arsenal"}`)
 
 Set values via CLI:
 

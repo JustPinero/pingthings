@@ -128,5 +128,10 @@ export default function play(args) {
     soundFile = pickRandom(sounds);
   }
 
+  if (!soundFile) {
+    console.error(`No sounds available in pack: ${packName}`);
+    process.exit(1);
+  }
+
   playSound(soundFile, config.volume);
 }

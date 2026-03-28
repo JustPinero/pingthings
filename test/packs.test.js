@@ -83,8 +83,8 @@ describe('packs', () => {
     assert.ok(events.includes('blocked'));
   });
 
-  it('all 4 packs have event mappings', () => {
-    const packs = ['7kaa-soldiers', 'wesnoth-combat', 'openarena-announcer', 'freedoom-arsenal'];
+  it('all 6 packs have event mappings', () => {
+    const packs = ['7kaa-soldiers', 'wesnoth-combat', 'openarena-announcer', 'freedoom-arsenal', 'warzone2100-command', '0ad-civilizations'];
     for (const packName of packs) {
       const events = getPackEvents(packName);
       assert.ok(events.length === 5, `${packName} should have 5 event types, got ${events.length}`);

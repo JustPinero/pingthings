@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, writeFileSync, readdirSync } from 'node:fs';
+import { existsSync, mkdirSync, cpSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { getConfigDir } from '../config.js';
@@ -75,6 +75,10 @@ function installFromLocal(source) {
   }
 
   const packName = basename(source);
+  if (!packName) {
+    console.error('Could not determine pack name from path.');
+    process.exit(1);
+  }
   const packsDir = join(getConfigDir(), 'packs');
   const destDir = join(packsDir, packName);
 
@@ -87,7 +91,7 @@ function installFromLocal(source) {
   mkdirSync(packsDir, { recursive: true });
 
   try {
-    execFileSync('cp', ['-r', source, destDir], { stdio: 'inherit' });
+    cpSync(source, destDir, { recursive: true });
   } catch {
     console.error('Failed to copy pack.');
     process.exit(1);

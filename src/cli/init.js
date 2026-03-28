@@ -1,5 +1,5 @@
 import { createInterface } from 'node:readline';
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, renameSync } from 'node:fs';
 import { join } from 'node:path';
 import { homedir } from 'node:os';
 
@@ -59,7 +59,9 @@ function readSettings() {
 
 function writeSettings(settings) {
   const path = getSettingsPath();
-  writeFileSync(path, JSON.stringify(settings, null, 2) + '\n', 'utf8');
+  const tmpPath = path + '.tmp';
+  writeFileSync(tmpPath, JSON.stringify(settings, null, 2) + '\n', 'utf8');
+  renameSync(tmpPath, path);
 }
 
 function applyHooks(mode) {

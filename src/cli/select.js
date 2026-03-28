@@ -2,6 +2,7 @@ import { createInterface } from 'node:readline';
 import { readConfig, writeConfig } from '../config.js';
 import { listPacks, getPackSounds } from '../packs.js';
 import { playSound } from '../player.js';
+import { basename } from 'node:path';
 
 function showHelp() {
   console.log(`
@@ -68,7 +69,7 @@ export default async function select(args) {
       const sounds = getPackSounds(chosen.name);
       if (sounds.length > 0) {
         const sample = sounds[Math.floor(Math.random() * sounds.length)];
-        playSound(sample);
+        playSound(sample, config.volume);
       }
 
       console.log(`\nActive pack set to: ${chosen.name}`);

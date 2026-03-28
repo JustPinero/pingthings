@@ -6,6 +6,25 @@
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
-Audio assets are from Seven Kingdoms: Ancient Adversaries
-Copyright 1997,1998 Enlight Software Ltd.
-Licensed under GPL v2.
+This project is licensed under GPL v2. Audio assets are sourced from
+multiple open source projects under compatible licenses:
+
+7kaa-soldiers: Seven Kingdoms: Ancient Adversaries
+  Copyright 1997,1998 Enlight Software Ltd. — GPL v2
+
+wesnoth-combat: Battle for Wesnoth
+  Copyright Wesnoth contributors — GPL v2+
+
+openarena-announcer: OpenArena
+  Copyright OpenArena contributors — GPL v2
+
+freedoom-arsenal: Freedoom
+  Copyright Freedoom contributors — BSD-3-Clause
+
+warzone2100-command: Warzone 2100
+  Copyright Warzone 2100 Project — GPL v2
+
+0ad-civilizations: 0 A.D.
+  Copyright Wildfire Games — CC-BY-SA 3.0
+  Distributed as part of this aggregate work alongside GPL v2 code.
+  See packs/0ad-civilizations/manifest.json for full attribution.
