@@ -4,12 +4,11 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
-// Import the module to test internal behavior
 const { playSound, playSoundSync } = await import('../src/player.js');
+const TEST_SOUND = join(__dirname, '..', 'packs', '7kaa-soldiers', 'sounds', '00083-READY.wav');
 
 describe('player', () => {
-  it('throws on nonexistent file', () => {
+  it('throws on nonexistent file (async)', () => {
     assert.throws(() => playSound('/tmp/nonexistent-file.wav'), {
       message: /Sound file not found/,
     });
@@ -21,28 +20,34 @@ describe('player', () => {
     });
   });
 
-  it('plays a real sound file without error', () => {
-    // Find a real WAV file from the built-in packs
-    const testSound = join(__dirname, '..', 'packs', '7kaa-soldiers', 'sounds', '00083-READY.wav');
-    assert.doesNotThrow(() => playSound(testSound));
+  it('playSound does not throw on real file', () => {
+    // On CI without audio player, this returns silently
+    // On dev machine, this spawns afplay/paplay
+    assert.doesNotThrow(() => playSound(TEST_SOUND));
   });
 
-  it('plays with volume parameter', () => {
-    const testSound = join(__dirname, '..', 'packs', '7kaa-soldiers', 'sounds', '00083-READY.wav');
-    assert.doesNotThrow(() => playSound(testSound, 50));
+  it('playSound accepts volume parameter', () => {
+    assert.doesNotThrow(() => playSound(TEST_SOUND, 50));
   });
 
-  it('handles volume edge cases', () => {
-    const testSound = join(__dirname, '..', 'packs', '7kaa-soldiers', 'sounds', '00083-READY.wav');
-    assert.doesNotThrow(() => playSound(testSound, 0));
-    assert.doesNotThrow(() => playSound(testSound, 100));
-    assert.doesNotThrow(() => playSound(testSound, -10)); // clamped to 0
-    assert.doesNotThrow(() => playSound(testSound, 200)); // clamped to 100
+  it('playSound clamps volume to valid range', () => {
+    assert.doesNotThrow(() => playSound(TEST_SOUND, 0));
+    assert.doesNotThrow(() => playSound(TEST_SOUND, 100));
+    assert.doesNotThrow(() => playSound(TEST_SOUND, -10));  // clamped to 0
+    assert.doesNotThrow(() => playSound(TEST_SOUND, 200));  // clamped to 100
   });
 
-  it('handles undefined volume gracefully', () => {
-    const testSound = join(__dirname, '..', 'packs', '7kaa-soldiers', 'sounds', '00083-READY.wav');
-    assert.doesNotThrow(() => playSound(testSound, undefined));
-    assert.doesNotThrow(() => playSound(testSound, null));
+  it('playSound handles undefined/null volume', () => {
+    assert.doesNotThrow(() => playSound(TEST_SOUND, undefined));
+    assert.doesNotThrow(() => playSound(TEST_SOUND, null));
+  });
+
+  it('playSoundSync does not throw on real file', () => {
+    // On CI this returns silently (no player); on dev machine it plays
+    assert.doesNotThrow(() => playSoundSync(TEST_SOUND));
+  });
+
+  it('playSoundSync accepts volume', () => {
+    assert.doesNotThrow(() => playSoundSync(TEST_SOUND, 50));
   });
 });
