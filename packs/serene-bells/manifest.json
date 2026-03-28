@@ -11,8 +11,13 @@
     "sounds/crystal-3.ogg",
     "sounds/crystal-4.ogg",
     "sounds/crystal-5.ogg",
+    "sounds/glass-chime-1.ogg",
+    "sounds/glass-chime-2.ogg",
+    "sounds/glass-chime-3.ogg",
     "sounds/gong-1.ogg",
     "sounds/gong-2.ogg",
+    "sounds/metal-chime-1.ogg",
+    "sounds/metal-chime-2.ogg",
     "sounds/temple-bell-1.ogg",
     "sounds/temple-bell-2.ogg",
     "sounds/temple-bell-3.ogg",
@@ -29,21 +34,25 @@
     ],
     "permission": [
       "sounds/crystal-5.ogg",
-      "sounds/gong-1.ogg",
-      "sounds/gong-2.ogg"
+      "sounds/glass-chime-1.ogg",
+      "sounds/glass-chime-2.ogg",
+      "sounds/glass-chime-3.ogg"
     ],
     "complete": [
-      "sounds/temple-bell-1.ogg",
-      "sounds/temple-bell-2.ogg",
-      "sounds/temple-bell-3.ogg"
+      "sounds/gong-1.ogg",
+      "sounds/gong-2.ogg",
+      "sounds/metal-chime-1.ogg",
+      "sounds/metal-chime-2.ogg"
     ],
     "error": [
-      "sounds/wind-chime-1.ogg",
-      "sounds/wind-chime-2.ogg",
-      "sounds/wind-chime-3.ogg"
+      "sounds/temple-bell-1.ogg",
+      "sounds/temple-bell-2.ogg",
+      "sounds/temple-bell-3.ogg",
+      "sounds/wind-chime-1.ogg"
     ],
     "blocked": [
-      "sounds/crystal-1.ogg"
+      "sounds/wind-chime-2.ogg",
+      "sounds/wind-chime-3.ogg"
     ]
   }
 }

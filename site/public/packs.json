@@ -503,7 +503,7 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org)",
     "category": "forest",
-    "soundCount": 14,
+    "soundCount": 18,
     "sounds": [
       "bird-1.ogg",
       "bird-2.ogg",
@@ -514,18 +514,22 @@
       "leaf-rustle-1.ogg",
       "leaf-rustle-2.ogg",
       "leaf-rustle-3.ogg",
+      "pebbles-1.ogg",
+      "pebbles-2.ogg",
+      "pebbles-3.ogg",
       "songbird.ogg",
       "stream-splash-1.ogg",
       "stream-splash-2.ogg",
       "twig-snap-1.ogg",
-      "twig-snap-2.ogg"
+      "twig-snap-2.ogg",
+      "wood-creak-1.ogg"
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 3,
-      "blocked": 1
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
+      "blocked": 2
     }
   },
   {
@@ -565,8 +569,9 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "ocean",
-    "soundCount": 11,
+    "soundCount": 15,
     "sounds": [
+      "ambient-shore.ogg",
       "bubble-1.ogg",
       "bubble-2.ogg",
       "current.ogg",
@@ -574,17 +579,20 @@
       "deep-2.ogg",
       "shore-1.ogg",
       "shore-2.ogg",
+      "splash.ogg",
+      "tide-1.ogg",
+      "tide-2.ogg",
       "wave-1.ogg",
       "wave-2.ogg",
       "wind-1.ogg",
       "wind-2.ogg"
     ],
     "events": {
-      "done": 4,
+      "done": 3,
       "permission": 3,
       "complete": 3,
-      "error": 1,
-      "blocked": 1
+      "error": 3,
+      "blocked": 3
     }
   },
   {
@@ -593,12 +601,16 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "weather",
-    "soundCount": 12,
+    "soundCount": 16,
     "sounds": [
+      "breeze-1.ogg",
+      "breeze-2.ogg",
+      "breeze-3.ogg",
       "distant-thunder.ogg",
       "lightning-crack.ogg",
       "rain-drop-1.ogg",
       "rain-drop-2.ogg",
+      "real-thunder.ogg",
       "storm-1.ogg",
       "storm-2.ogg",
       "thunder-1.ogg",
@@ -610,9 +622,9 @@
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 2,
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
       "blocked": 1
     }
   },
@@ -622,15 +634,18 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "classic",
-    "soundCount": 15,
+    "soundCount": 18,
     "sounds": [
       "desk-knock.ogg",
       "door-close-1.ogg",
       "door-close-2.ogg",
       "door-open.ogg",
       "drawer-open.ogg",
+      "heavy-door.ogg",
+      "item-place.ogg",
       "key-turn-1.ogg",
       "key-turn-2.ogg",
+      "lock-open.ogg",
       "paper-1.ogg",
       "paper-2.ogg",
       "paper-3.ogg",
@@ -642,9 +657,9 @@
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 3,
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
       "blocked": 2
     }
   },
@@ -654,7 +669,7 @@
     "license": "CC0-1.0",
     "credits": "Kenney (https://kenney.nl)",
     "category": "digital",
-    "soundCount": 15,
+    "soundCount": 18,
     "sounds": [
       "alert-1.ogg",
       "alert-2.ogg",
@@ -669,14 +684,17 @@
       "ping-2.ogg",
       "ping-3.ogg",
       "random-tone.ogg",
+      "soft-switch-1.ogg",
+      "soft-switch-2.ogg",
+      "soft-switch-3.ogg",
       "up-tone.ogg",
       "zap-tone.ogg"
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 3,
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
       "blocked": 2
     }
   },
@@ -686,7 +704,7 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "mechanical",
-    "soundCount": 15,
+    "soundCount": 18,
     "sounds": [
       "clamp.ogg",
       "hum-1.ogg",
@@ -694,6 +712,7 @@
       "machine-1.ogg",
       "machine-2.ogg",
       "machine-3.ogg",
+      "power-switch.ogg",
       "ratchet.ogg",
       "stamp-1.ogg",
       "stamp-2.ogg",
@@ -702,13 +721,15 @@
       "tap-2.ogg",
       "tap-3.ogg",
       "tap-4.ogg",
+      "whir-1.ogg",
+      "whir-2.ogg",
       "wrench.ogg"
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 3,
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
       "blocked": 2
     }
   },
@@ -718,10 +739,13 @@
     "license": "CC0-1.0",
     "credits": "Kenney (https://kenney.nl)",
     "category": "minimal",
-    "soundCount": 15,
+    "soundCount": 18,
     "sounds": [
+      "click-soft-1.ogg",
+      "click-soft-2.ogg",
       "drop-1.ogg",
       "drop-2.ogg",
+      "mouse-click.ogg",
       "scroll-1.ogg",
       "scroll-2.ogg",
       "select-1.ogg",
@@ -738,9 +762,9 @@
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 3,
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
       "blocked": 2
     }
   },
@@ -890,15 +914,20 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "bells",
-    "soundCount": 13,
+    "soundCount": 18,
     "sounds": [
       "crystal-1.ogg",
       "crystal-2.ogg",
       "crystal-3.ogg",
       "crystal-4.ogg",
       "crystal-5.ogg",
+      "glass-chime-1.ogg",
+      "glass-chime-2.ogg",
+      "glass-chime-3.ogg",
       "gong-1.ogg",
       "gong-2.ogg",
+      "metal-chime-1.ogg",
+      "metal-chime-2.ogg",
       "temple-bell-1.ogg",
       "temple-bell-2.ogg",
       "temple-bell-3.ogg",
@@ -908,10 +937,10 @@
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 3,
-      "blocked": 1
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
+      "blocked": 2
     }
   },
   {
@@ -920,8 +949,11 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "tones",
-    "soundCount": 12,
+    "soundCount": 18,
     "sounds": [
+      "ambient-1.ogg",
+      "ambient-2.ogg",
+      "ambient-3.ogg",
       "chime-1.ogg",
       "chime-2.ogg",
       "chime-3.ogg",
@@ -929,6 +961,9 @@
       "resonance-2.ogg",
       "resonance-3.ogg",
       "resonance-4.ogg",
+      "soft-tone-1.ogg",
+      "soft-tone-2.ogg",
+      "soft-tone-3.ogg",
       "tone-1.ogg",
       "tone-2.ogg",
       "tone-3.ogg",
@@ -937,10 +972,10 @@
     ],
     "events": {
       "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 2,
-      "blocked": 1
+      "permission": 4,
+      "complete": 4,
+      "error": 4,
+      "blocked": 2
     }
   },
   {
@@ -949,7 +984,7 @@
     "license": "CC0-1.0",
     "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
     "category": "water",
-    "soundCount": 12,
+    "soundCount": 15,
     "sounds": [
       "bamboo-1.ogg",
       "bamboo-2.ogg",
@@ -959,17 +994,20 @@
       "bowl-4.ogg",
       "drip-1.ogg",
       "drip-2.ogg",
+      "flowing-1.ogg",
+      "flowing-2.ogg",
+      "flowing-3.ogg",
       "vessel-1.ogg",
       "vessel-2.ogg",
       "water-drop-1.ogg",
       "water-drop-2.ogg"
     ],
     "events": {
-      "done": 4,
+      "done": 3,
       "permission": 3,
       "complete": 3,
-      "error": 2,
-      "blocked": 1
+      "error": 3,
+      "blocked": 3
     }
   },
   {

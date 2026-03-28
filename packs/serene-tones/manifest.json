@@ -6,6 +6,9 @@
   "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
   "category": "tones",
   "sounds": [
+    "sounds/ambient-1.ogg",
+    "sounds/ambient-2.ogg",
+    "sounds/ambient-3.ogg",
     "sounds/chime-1.ogg",
     "sounds/chime-2.ogg",
     "sounds/chime-3.ogg",
@@ -13,6 +16,9 @@
     "sounds/resonance-2.ogg",
     "sounds/resonance-3.ogg",
     "sounds/resonance-4.ogg",
+    "sounds/soft-tone-1.ogg",
+    "sounds/soft-tone-2.ogg",
+    "sounds/soft-tone-3.ogg",
     "sounds/tone-1.ogg",
     "sounds/tone-2.ogg",
     "sounds/tone-3.ogg",
@@ -21,27 +27,32 @@
   ],
   "events": {
     "done": [
-      "sounds/chime-1.ogg",
-      "sounds/chime-2.ogg",
-      "sounds/chime-3.ogg",
-      "sounds/resonance-1.ogg"
+      "sounds/ambient-1.ogg",
+      "sounds/ambient-2.ogg",
+      "sounds/ambient-3.ogg",
+      "sounds/chime-1.ogg"
     ],
     "permission": [
-      "sounds/resonance-2.ogg",
-      "sounds/resonance-3.ogg",
-      "sounds/resonance-4.ogg"
+      "sounds/chime-2.ogg",
+      "sounds/chime-3.ogg",
+      "sounds/resonance-1.ogg",
+      "sounds/resonance-2.ogg"
     ],
     "complete": [
+      "sounds/resonance-3.ogg",
+      "sounds/resonance-4.ogg",
+      "sounds/soft-tone-1.ogg",
+      "sounds/soft-tone-2.ogg"
+    ],
+    "error": [
+      "sounds/soft-tone-3.ogg",
       "sounds/tone-1.ogg",
       "sounds/tone-2.ogg",
       "sounds/tone-3.ogg"
     ],
-    "error": [
+    "blocked": [
       "sounds/tone-4.ogg",
       "sounds/tone-5.ogg"
-    ],
-    "blocked": [
-      "sounds/chime-1.ogg"
     ]
   }
 }

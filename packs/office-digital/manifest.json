@@ -19,6 +19,9 @@
     "sounds/ping-2.ogg",
     "sounds/ping-3.ogg",
     "sounds/random-tone.ogg",
+    "sounds/soft-switch-1.ogg",
+    "sounds/soft-switch-2.ogg",
+    "sounds/soft-switch-3.ogg",
     "sounds/up-tone.ogg",
     "sounds/zap-tone.ogg"
   ],
@@ -32,17 +35,20 @@
     "permission": [
       "sounds/ascend-3.ogg",
       "sounds/chime.ogg",
-      "sounds/descend.ogg"
+      "sounds/descend.ogg",
+      "sounds/down-tone.ogg"
     ],
     "complete": [
-      "sounds/down-tone.ogg",
       "sounds/low-alert.ogg",
-      "sounds/ping-1.ogg"
+      "sounds/ping-1.ogg",
+      "sounds/ping-2.ogg",
+      "sounds/ping-3.ogg"
     ],
     "error": [
-      "sounds/ping-2.ogg",
-      "sounds/ping-3.ogg",
-      "sounds/random-tone.ogg"
+      "sounds/random-tone.ogg",
+      "sounds/soft-switch-1.ogg",
+      "sounds/soft-switch-2.ogg",
+      "sounds/soft-switch-3.ogg"
     ],
     "blocked": [
       "sounds/up-tone.ogg",

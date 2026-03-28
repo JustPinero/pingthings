@@ -12,6 +12,7 @@
     "sounds/machine-1.ogg",
     "sounds/machine-2.ogg",
     "sounds/machine-3.ogg",
+    "sounds/power-switch.ogg",
     "sounds/ratchet.ogg",
     "sounds/stamp-1.ogg",
     "sounds/stamp-2.ogg",
@@ -20,6 +21,8 @@
     "sounds/tap-2.ogg",
     "sounds/tap-3.ogg",
     "sounds/tap-4.ogg",
+    "sounds/whir-1.ogg",
+    "sounds/whir-2.ogg",
     "sounds/wrench.ogg"
   ],
   "events": {
@@ -32,20 +35,23 @@
     "permission": [
       "sounds/machine-2.ogg",
       "sounds/machine-3.ogg",
+      "sounds/power-switch.ogg",
       "sounds/ratchet.ogg"
     ],
     "complete": [
       "sounds/stamp-1.ogg",
       "sounds/stamp-2.ogg",
-      "sounds/stamp-3.ogg"
+      "sounds/stamp-3.ogg",
+      "sounds/tap-1.ogg"
     ],
     "error": [
-      "sounds/tap-1.ogg",
       "sounds/tap-2.ogg",
-      "sounds/tap-3.ogg"
+      "sounds/tap-3.ogg",
+      "sounds/tap-4.ogg",
+      "sounds/whir-1.ogg"
     ],
     "blocked": [
-      "sounds/tap-4.ogg",
+      "sounds/whir-2.ogg",
       "sounds/wrench.ogg"
     ]
   }

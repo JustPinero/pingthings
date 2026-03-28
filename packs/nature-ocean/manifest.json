@@ -6,6 +6,7 @@
   "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
   "category": "ocean",
   "sounds": [
+    "sounds/ambient-shore.ogg",
     "sounds/bubble-1.ogg",
     "sounds/bubble-2.ogg",
     "sounds/current.ogg",
@@ -13,6 +14,9 @@
     "sounds/deep-2.ogg",
     "sounds/shore-1.ogg",
     "sounds/shore-2.ogg",
+    "sounds/splash.ogg",
+    "sounds/tide-1.ogg",
+    "sounds/tide-2.ogg",
     "sounds/wave-1.ogg",
     "sounds/wave-2.ogg",
     "sounds/wind-1.ogg",
@@ -20,26 +24,29 @@
   ],
   "events": {
     "done": [
+      "sounds/ambient-shore.ogg",
       "sounds/bubble-1.ogg",
-      "sounds/bubble-2.ogg",
-      "sounds/current.ogg",
-      "sounds/deep-1.ogg"
+      "sounds/bubble-2.ogg"
     ],
     "permission": [
-      "sounds/deep-2.ogg",
-      "sounds/shore-1.ogg",
-      "sounds/shore-2.ogg"
+      "sounds/current.ogg",
+      "sounds/deep-1.ogg",
+      "sounds/deep-2.ogg"
     ],
     "complete": [
-      "sounds/wave-1.ogg",
-      "sounds/wave-2.ogg",
-      "sounds/wind-1.ogg"
+      "sounds/shore-1.ogg",
+      "sounds/shore-2.ogg",
+      "sounds/splash.ogg"
     ],
     "error": [
-      "sounds/wind-2.ogg"
+      "sounds/tide-1.ogg",
+      "sounds/tide-2.ogg",
+      "sounds/wave-1.ogg"
     ],
     "blocked": [
-      "sounds/bubble-1.ogg"
+      "sounds/wave-2.ogg",
+      "sounds/wind-1.ogg",
+      "sounds/wind-2.ogg"
     ]
   }
 }

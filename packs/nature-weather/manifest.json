@@ -6,10 +6,14 @@
   "credits": "rubberduck (https://opengameart.org/content/100-cc0-sfx)",
   "category": "weather",
   "sounds": [
+    "sounds/breeze-1.ogg",
+    "sounds/breeze-2.ogg",
+    "sounds/breeze-3.ogg",
     "sounds/distant-thunder.ogg",
     "sounds/lightning-crack.ogg",
     "sounds/rain-drop-1.ogg",
     "sounds/rain-drop-2.ogg",
+    "sounds/real-thunder.ogg",
     "sounds/storm-1.ogg",
     "sounds/storm-2.ogg",
     "sounds/thunder-1.ogg",
@@ -21,27 +25,31 @@
   ],
   "events": {
     "done": [
-      "sounds/distant-thunder.ogg",
-      "sounds/lightning-crack.ogg",
-      "sounds/rain-drop-1.ogg",
-      "sounds/rain-drop-2.ogg"
+      "sounds/breeze-1.ogg",
+      "sounds/breeze-2.ogg",
+      "sounds/breeze-3.ogg",
+      "sounds/distant-thunder.ogg"
     ],
     "permission": [
-      "sounds/storm-1.ogg",
-      "sounds/storm-2.ogg",
-      "sounds/thunder-1.ogg"
+      "sounds/lightning-crack.ogg",
+      "sounds/rain-drop-1.ogg",
+      "sounds/rain-drop-2.ogg",
+      "sounds/real-thunder.ogg"
     ],
     "complete": [
-      "sounds/thunder-2.ogg",
-      "sounds/thunder-3.ogg",
-      "sounds/thunder-rumble.ogg"
+      "sounds/storm-1.ogg",
+      "sounds/storm-2.ogg",
+      "sounds/thunder-1.ogg",
+      "sounds/thunder-2.ogg"
     ],
     "error": [
+      "sounds/thunder-3.ogg",
+      "sounds/thunder-rumble.ogg",
       "sounds/wind-gust-1.ogg",
       "sounds/wind-gust-2.ogg"
     ],
     "blocked": [
-      "sounds/distant-thunder.ogg"
+      "sounds/wind-gust-2.ogg"
     ]
   }
 }

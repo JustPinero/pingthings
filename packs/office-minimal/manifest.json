@@ -6,8 +6,11 @@
   "credits": "Kenney (https://kenney.nl)",
   "category": "minimal",
   "sounds": [
+    "sounds/click-soft-1.ogg",
+    "sounds/click-soft-2.ogg",
     "sounds/drop-1.ogg",
     "sounds/drop-2.ogg",
+    "sounds/mouse-click.ogg",
     "sounds/scroll-1.ogg",
     "sounds/scroll-2.ogg",
     "sounds/select-1.ogg",
@@ -24,22 +27,25 @@
   ],
   "events": {
     "done": [
+      "sounds/click-soft-1.ogg",
+      "sounds/click-soft-2.ogg",
       "sounds/drop-1.ogg",
-      "sounds/drop-2.ogg",
-      "sounds/scroll-1.ogg",
-      "sounds/scroll-2.ogg"
+      "sounds/drop-2.ogg"
     ],
     "permission": [
-      "sounds/select-1.ogg",
-      "sounds/select-2.ogg",
-      "sounds/select-3.ogg"
+      "sounds/mouse-click.ogg",
+      "sounds/scroll-1.ogg",
+      "sounds/scroll-2.ogg",
+      "sounds/select-1.ogg"
     ],
     "complete": [
+      "sounds/select-2.ogg",
+      "sounds/select-3.ogg",
       "sounds/switch-1.ogg",
-      "sounds/switch-2.ogg",
-      "sounds/tick-1.ogg"
+      "sounds/switch-2.ogg"
     ],
     "error": [
+      "sounds/tick-1.ogg",
       "sounds/tick-2.ogg",
       "sounds/tick-3.ogg",
       "sounds/toggle-1.ogg"

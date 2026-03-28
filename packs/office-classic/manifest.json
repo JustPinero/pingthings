@@ -11,8 +11,11 @@
     "sounds/door-close-2.ogg",
     "sounds/door-open.ogg",
     "sounds/drawer-open.ogg",
+    "sounds/heavy-door.ogg",
+    "sounds/item-place.ogg",
     "sounds/key-turn-1.ogg",
     "sounds/key-turn-2.ogg",
+    "sounds/lock-open.ogg",
     "sounds/paper-1.ogg",
     "sounds/paper-2.ogg",
     "sounds/paper-3.ogg",
@@ -31,15 +34,18 @@
     ],
     "permission": [
       "sounds/drawer-open.ogg",
-      "sounds/key-turn-1.ogg",
-      "sounds/key-turn-2.ogg"
+      "sounds/heavy-door.ogg",
+      "sounds/item-place.ogg",
+      "sounds/key-turn-1.ogg"
     ],
     "complete": [
+      "sounds/key-turn-2.ogg",
+      "sounds/lock-open.ogg",
       "sounds/paper-1.ogg",
-      "sounds/paper-2.ogg",
-      "sounds/paper-3.ogg"
+      "sounds/paper-2.ogg"
     ],
     "error": [
+      "sounds/paper-3.ogg",
       "sounds/paper-4.ogg",
       "sounds/pen-click.ogg",
       "sounds/stapler.ogg"

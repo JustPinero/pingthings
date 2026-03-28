@@ -15,11 +15,15 @@
     "sounds/leaf-rustle-1.ogg",
     "sounds/leaf-rustle-2.ogg",
     "sounds/leaf-rustle-3.ogg",
+    "sounds/pebbles-1.ogg",
+    "sounds/pebbles-2.ogg",
+    "sounds/pebbles-3.ogg",
     "sounds/songbird.ogg",
     "sounds/stream-splash-1.ogg",
     "sounds/stream-splash-2.ogg",
     "sounds/twig-snap-1.ogg",
-    "sounds/twig-snap-2.ogg"
+    "sounds/twig-snap-2.ogg",
+    "sounds/wood-creak-1.ogg"
   ],
   "events": {
     "done": [
@@ -31,20 +35,24 @@
     "permission": [
       "sounds/critter-1.ogg",
       "sounds/critter-2.ogg",
-      "sounds/leaf-rustle-1.ogg"
+      "sounds/leaf-rustle-1.ogg",
+      "sounds/leaf-rustle-2.ogg"
     ],
     "complete": [
-      "sounds/leaf-rustle-2.ogg",
       "sounds/leaf-rustle-3.ogg",
-      "sounds/songbird.ogg"
+      "sounds/pebbles-1.ogg",
+      "sounds/pebbles-2.ogg",
+      "sounds/pebbles-3.ogg"
     ],
     "error": [
+      "sounds/songbird.ogg",
       "sounds/stream-splash-1.ogg",
       "sounds/stream-splash-2.ogg",
       "sounds/twig-snap-1.ogg"
     ],
     "blocked": [
-      "sounds/twig-snap-2.ogg"
+      "sounds/twig-snap-2.ogg",
+      "sounds/wood-creak-1.ogg"
     ]
   }
 }

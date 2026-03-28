@@ -14,6 +14,9 @@
     "sounds/bowl-4.ogg",
     "sounds/drip-1.ogg",
     "sounds/drip-2.ogg",
+    "sounds/flowing-1.ogg",
+    "sounds/flowing-2.ogg",
+    "sounds/flowing-3.ogg",
     "sounds/vessel-1.ogg",
     "sounds/vessel-2.ogg",
     "sounds/water-drop-1.ogg",
@@ -23,25 +26,27 @@
     "done": [
       "sounds/bamboo-1.ogg",
       "sounds/bamboo-2.ogg",
-      "sounds/bowl-1.ogg",
-      "sounds/bowl-2.ogg"
+      "sounds/bowl-1.ogg"
     ],
     "permission": [
+      "sounds/bowl-2.ogg",
       "sounds/bowl-3.ogg",
-      "sounds/bowl-4.ogg",
-      "sounds/drip-1.ogg"
+      "sounds/bowl-4.ogg"
     ],
     "complete": [
+      "sounds/drip-1.ogg",
       "sounds/drip-2.ogg",
-      "sounds/vessel-1.ogg",
-      "sounds/vessel-2.ogg"
+      "sounds/flowing-1.ogg"
     ],
     "error": [
-      "sounds/water-drop-1.ogg",
-      "sounds/water-drop-2.ogg"
+      "sounds/flowing-2.ogg",
+      "sounds/flowing-3.ogg",
+      "sounds/vessel-1.ogg"
     ],
     "blocked": [
-      "sounds/bamboo-1.ogg"
+      "sounds/vessel-2.ogg",
+      "sounds/water-drop-1.ogg",
+      "sounds/water-drop-2.ogg"
     ]
   }
 }
