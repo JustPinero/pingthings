@@ -1,8 +1,31 @@
 # pingthings
 
-Notification sounds for Claude Code and other CLI tools. Like text tones for your terminal.
+<p align="center">
+  <img src="https://justpinero.github.io/pingthings/images/pingthings-hero.jpg" alt="pingthings" width="100%" />
+</p>
 
-Pick a sound pack, and pingthings plays a random sound whenever Claude Code needs your attention. Or use **informational mode** to hear different sounds for different events — know if a task is done, if something went wrong, or if Claude needs your input, all by ear.
+<p align="center">
+  <strong>Terminal sound effects for everyone.</strong><br>
+  33 sound packs · 662 sounds · 17 themes · 6 IDE adapters
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/pingthings"><img src="https://img.shields.io/npm/v/pingthings" alt="npm version" /></a>
+  <a href="https://github.com/JustPinero/pingthings/actions"><img src="https://github.com/JustPinero/pingthings/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://justpinero.github.io/pingthings/"><img src="https://img.shields.io/badge/demo-listen%20now-39ff14" alt="Demo" /></a>
+</p>
+
+<p align="center">
+  <a href="https://justpinero.github.io/pingthings/">Listen to all packs on the showcase site</a>
+</p>
+
+---
+
+Your AI finishes a task. You hear a sound. That's it. That's the app.
+
+But the sounds? The sounds are *really* good. Retro game soldiers acknowledging commands, arena announcers shouting "EXCELLENT!", zen singing bowls, forest birds, office clicks — pick your vibe.
+
+Works with **Claude Code**, **Cursor**, **Copilot**, **Codex**, **Windsurf**, and **Gemini CLI**.
 
 ## Install
 
