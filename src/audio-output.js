@@ -108,7 +108,7 @@ function detectWindows() {
   }
 }
 
-export function detectAudioOutput() {
+function detectUncached() {
   switch (platform()) {
     case 'darwin':
       return detectMacOS();
@@ -119,6 +119,28 @@ export function detectAudioOutput() {
     default:
       return 'unknown';
   }
+}
+
+// In-process cache. detectMacOS/Linux/Windows all spawn external
+// processes (system_profiler / pactl / powershell) which can take
+// 0.5–2s. The play hot-path can fire many times a minute (multi-pane
+// dispatch), so we cache the result for a short window.
+let _cache = { value: null, expiresAt: 0 };
+const DEFAULT_TTL_MS = 60_000;
+
+export function detectAudioOutput({ ttlMs = DEFAULT_TTL_MS, force = false } = {}) {
+  const now = Date.now();
+  if (!force && _cache.value !== null && now < _cache.expiresAt) {
+    return _cache.value;
+  }
+  const value = detectUncached();
+  _cache = { value, expiresAt: now + ttlMs };
+  return value;
+}
+
+/** Test-only: clear the cache so a forced re-detect runs cleanly. */
+export function _resetAudioOutputCache() {
+  _cache = { value: null, expiresAt: 0 };
 }
 
 /**

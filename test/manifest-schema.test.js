@@ -78,4 +78,29 @@ describe('effectiveVolume', () => {
     assert.equal(effectiveVolume(150, 200), 100);
     assert.equal(effectiveVolume(-10, 50), 0);
   });
+
+  // 1.6.1 — output scale (headphone-aware volume)
+  it('applies output scale (e.g. 0.7 for headphones)', () => {
+    assert.equal(effectiveVolume(100, 100, 0.7), 70);
+    assert.equal(effectiveVolume(80, 80, 0.5), 40);
+  });
+
+  it('default output scale is 1.0 (backwards compatible)', () => {
+    assert.equal(effectiveVolume(80, 100), 80);
+  });
+
+  it('rejects invalid scale and falls back to 1.0', () => {
+    assert.equal(effectiveVolume(80, 100, NaN), 80);
+    assert.equal(effectiveVolume(80, 100, -1), 80);
+  });
+
+  it('combines pack cap + scale (cap first, then scale)', () => {
+    // global 100, pack max 60, scale 0.5 → min(100,60)*0.5 = 30
+    assert.equal(effectiveVolume(100, 60, 0.5), 30);
+  });
+
+  it('clamps scaled result to [0, 100]', () => {
+    // scale > 1 with high cap should still clamp at 100
+    assert.equal(effectiveVolume(100, 100, 2.0), 100);
+  });
 });

@@ -22,6 +22,14 @@ const DEFAULTS = {
   // Hour-of-day pack overrides. Format: { "HH-HH": "pack-name" }.
   // First match wins. Wrap-around windows (e.g. "22-7") supported.
   timeProfiles: {},
+  // Auto-run loudnorm on freshly-installed packs (when ffmpeg is on
+  // PATH). Set to false for manual control. Defaults true: defends
+  // against the class of issue that prompted mduel-retro's removal.
+  autoNormalize: true,
+  // Volume scale applied when active audio output looks like
+  // headphones / AirPods / earbuds. 1.0 = no change, 0.7 = 70% of
+  // global volume. Detected via src/audio-output.js with a 60s cache.
+  headphoneVolumeScale: 1.0,
 };
 
 export function getConfigDir() {

@@ -60,6 +60,7 @@ function installFromGit(source) {
   console.log(`\nInstalled: ${repoName}`);
   console.log(`Location: ${destDir}`);
   console.log(`\nTo use: pingthings use ${repoName}`);
+  return repoName;
 }
 
 function installFromLocal(source) {
@@ -100,9 +101,69 @@ function installFromLocal(source) {
   console.log(`Installed: ${packName}`);
   console.log(`Location: ${destDir}`);
   console.log(`\nTo use: pingthings use ${packName}`);
+  return packName;
 }
 
-export default function install(args) {
+/**
+ * Run `pingthings normalize` on a freshly-installed pack so its
+ * loudness matches the rest of the library. Defends against the
+ * class of issue that prompted mduel-retro's removal in v1.5.0
+ * (uncalibrated peaks at default volume).
+ *
+ * No-ops cleanly when:
+ *   - --no-normalize flag is passed (caller opt-out)
+ *   - autoNormalize: false in config (global opt-out)
+ *   - ffmpeg is not on PATH (graceful skip with one-line note)
+ */
+async function maybeNormalize(packName, args) {
+  if (args.includes('--no-normalize')) return;
+
+  let autoNormalize = true;
+  try {
+    const { readConfig } = await import('../config.js');
+    const cfg = readConfig();
+    if (cfg.autoNormalize === false) autoNormalize = false;
+  } catch {
+    // If config can't be read, default to attempting normalization.
+  }
+  if (!autoNormalize) return;
+
+  // ffmpeg presence check — quiet skip if absent
+  try {
+    const { execFileSync } = await import('node:child_process');
+    execFileSync('ffmpeg', ['-version'], { stdio: 'pipe' });
+  } catch {
+    console.log('\nSkipping auto-normalize: ffmpeg not on PATH.');
+    console.log('  Run `pingthings normalize ' + packName + '` after installing ffmpeg if you want consistent loudness.');
+    return;
+  }
+
+  console.log('\nAuto-normalizing audio (--no-normalize to skip)…');
+  try {
+    // Spawn `pingthings normalize` as a child process so a non-zero
+    // exit there doesn't take down the install command. This matters
+    // for invalid-audio test fixtures and for any pack whose files
+    // ffmpeg can't read.
+    const { fileURLToPath } = await import('node:url');
+    const { dirname, join } = await import('node:path');
+    const { spawnSync } = await import('node:child_process');
+    const __dirname = dirname(fileURLToPath(import.meta.url));
+    const cli = join(__dirname, '..', '..', 'bin', 'pingthings.js');
+    const r = spawnSync('node', [cli, 'normalize', packName], {
+      stdio: 'inherit',
+    });
+    if (r.status !== 0) {
+      console.log(
+        `\nNormalize finished with errors. Pack is installed; run \`pingthings normalize ${packName}\` to retry.`,
+      );
+    }
+  } catch (err) {
+    console.log(`Auto-normalize encountered an issue: ${err.message}`);
+    console.log(`Pack is installed; run \`pingthings normalize ${packName}\` to retry.`);
+  }
+}
+
+export default async function install(args) {
   const source = args[0];
 
   if (!source || source === '--help' || source === '-h') {
@@ -111,11 +172,14 @@ export default function install(args) {
     return;
   }
 
+  let packName = source;
   // Determine if it's a git URL, shorthand, or local path
   if (source.startsWith('http') || source.startsWith('git@') ||
       (source.includes('/') && !source.startsWith('.') && !source.startsWith('/'))) {
-    installFromGit(source);
+    packName = installFromGit(source) || packName;
   } else {
-    installFromLocal(source);
+    packName = installFromLocal(source) || packName;
   }
+
+  await maybeNormalize(packName, args);
 }

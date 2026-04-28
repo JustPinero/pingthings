@@ -5,6 +5,7 @@ import { sendNotification } from '../notify.js';
 import { recordPlay } from './stats.js';
 import { effectiveVolume } from '../manifest-schema.js';
 import { isOnCall } from '../call-detector.js';
+import { isHeadphonesActive } from '../audio-output.js';
 import { basename } from 'node:path';
 
 function parseArgs(args) {
@@ -191,9 +192,14 @@ export default function play(args) {
   }
 
   setLastPlayed(soundFile);
-  // Apply per-pack volume cap from manifest.
+  // Apply per-pack volume cap from manifest, plus an output-device
+  // scale when headphones are detected and the user has configured
+  // a non-1.0 scale.
   const packMaxVolume = pack.manifest?.maxVolume;
-  const finalVolume = effectiveVolume(config.volume, packMaxVolume);
+  const headphoneScale = Number(config.headphoneVolumeScale ?? 1.0);
+  const outputScale =
+    headphoneScale !== 1.0 && isHeadphonesActive() ? headphoneScale : 1.0;
+  const finalVolume = effectiveVolume(config.volume, packMaxVolume, outputScale);
   playSound(soundFile, finalVolume);
   recordPlay(packName, parsed.event);
 

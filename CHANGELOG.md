@@ -1,5 +1,45 @@
 # Changelog
 
+## 1.6.1
+
+Patch release — finishes the three v1.6.0 deferrals.
+
+### Added
+
+- **Auto-normalize on install** (`src/cli/install.js`). When ffmpeg is
+  on PATH and `autoNormalize: true` (default), `pingthings install`
+  spawns `pingthings normalize <pack>` on the freshly-installed pack
+  via a child process so a normalize failure can never bring the
+  install down. `--no-normalize` opt-out, `autoNormalize: false`
+  config opt-out, graceful skip + one-line note when ffmpeg is
+  missing.
+- **Headphone-aware volume scaling**. New config field
+  `headphoneVolumeScale` (default `1.0`). When the active audio
+  output is detected as headphones-style and the scale is < 1.0,
+  `play.js` multiplies effective volume by it. Detection result is
+  cached in-process for 60s so the macOS `system_profiler` /
+  Linux `pactl` / Windows `powershell` shell-out doesn't run on
+  every play in a multi-pane dispatch burst.
+  - `src/manifest-schema.js#effectiveVolume` now takes an optional
+    third arg `outputScale`. Cap-then-scale order; backwards
+    compatible with existing 2-arg callers.
+  - `src/audio-output.js#detectAudioOutput()` accepts
+    `{ ttlMs, force }` options for cache control. Test-only
+    `_resetAudioOutputCache()` exported.
+
+### Changed
+
+- **Site catalog (`site/public/packs.json`) synced with manifest
+  schema.** Every entry now includes `sourceUrl`, `tone`,
+  `maxVolume` matching the canonical pack manifests. New test
+  `test/site-catalog.test.js` enforces the catalog and filesystem
+  stay in sync (no orphans either direction).
+
+### Tests
+
+- 176 → **187** (+11). Added: scaling tests in `manifest-schema`,
+  cache tests in `audio-output`, and the new `site-catalog` suite.
+
 ## 1.6.0
 
 Big release. Audio hygiene + metadata, user control, cross-platform

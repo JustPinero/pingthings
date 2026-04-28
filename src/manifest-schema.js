@@ -84,12 +84,14 @@ export function validatePackManifest(manifest) {
  * Compute effective playback volume given the global config volume and a
  * pack's maxVolume cap. Returns an integer 0–100.
  */
-export function effectiveVolume(globalVolume, packMaxVolume) {
+export function effectiveVolume(globalVolume, packMaxVolume, outputScale = 1.0) {
   const g = Number.isFinite(globalVolume)
     ? Math.max(0, Math.min(100, globalVolume))
     : 100;
   const p = Number.isFinite(packMaxVolume)
     ? Math.max(0, Math.min(100, packMaxVolume))
     : 100;
-  return Math.min(g, p);
+  const s = Number.isFinite(outputScale) && outputScale >= 0 ? outputScale : 1.0;
+  const capped = Math.min(g, p);
+  return Math.max(0, Math.min(100, Math.round(capped * s)));
 }

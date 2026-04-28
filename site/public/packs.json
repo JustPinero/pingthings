@@ -42,7 +42,10 @@
       "complete": 5,
       "error": 6,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://github.com/0ad/0ad",
+    "tone": "aggressive",
+    "maxVolume": 100
   },
   {
     "name": "7kaa-soldiers",
@@ -112,7 +115,10 @@
       "complete": 8,
       "error": 9,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://github.com/the3dfxdude/7kaa",
+    "tone": "aggressive",
+    "maxVolume": 100
   },
   {
     "name": "droid-announcer",
@@ -144,7 +150,10 @@
       "complete": 3,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/droid-video-game-announcer",
+    "tone": "mixed",
+    "maxVolume": 100
   },
   {
     "name": "fighting-announcer",
@@ -181,7 +190,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/voice-pack%E2%94%82fighting-game-announcer",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "freedoom-arsenal",
@@ -217,7 +229,10 @@
       "complete": 3,
       "error": 4,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://github.com/freedoom/freedoom",
+    "tone": "aggressive",
+    "maxVolume": 100
   },
   {
     "name": "kenney-digital",
@@ -252,7 +267,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "kenney-fighter",
@@ -287,7 +305,10 @@
       "complete": 3,
       "error": 4,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "kenney-impacts",
@@ -322,7 +343,10 @@
       "complete": 3,
       "error": 4,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "kenney-interface",
@@ -357,7 +381,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "kenney-rpg",
@@ -392,7 +419,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "kenney-scifi",
@@ -427,7 +457,10 @@
       "complete": 3,
       "error": 5,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "kenney-voiceover",
@@ -463,7 +496,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "nature-animals",
@@ -497,7 +533,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 1
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/80-cc0-creature-sfx",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "nature-forest",
@@ -543,7 +582,10 @@
       "complete": 6,
       "error": 6,
       "blocked": 5
-    }
+    },
+    "sourceUrl": "https://opengameart.org",
+    "tone": "peaceful",
+    "maxVolume": 100
   },
   {
     "name": "nature-night",
@@ -578,7 +620,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/80-cc0-creature-sfx",
+    "tone": "peaceful",
+    "maxVolume": 100
   },
   {
     "name": "nature-ocean",
@@ -616,7 +661,10 @@
       "complete": 5,
       "error": 5,
       "blocked": 1
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+    "tone": "peaceful",
+    "maxVolume": 100
   },
   {
     "name": "nature-weather",
@@ -656,7 +704,10 @@
       "complete": 5,
       "error": 5,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+    "tone": "peaceful",
+    "maxVolume": 100
   },
   {
     "name": "office-classic",
@@ -692,7 +743,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "office-digital",
@@ -727,7 +781,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "office-mechanical",
@@ -762,7 +819,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "office-minimal",
@@ -797,7 +857,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://kenney.nl",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "openarena-announcer",
@@ -832,7 +895,10 @@
       "complete": 3,
       "error": 3,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "http://openarena.ws",
+    "tone": "mixed",
+    "maxVolume": 100
   },
   {
     "name": "retro-8bit",
@@ -867,7 +933,10 @@
       "complete": 5,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "retro-movement",
@@ -902,7 +971,10 @@
       "complete": 4,
       "error": 3,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "retro-weapons",
@@ -937,7 +1009,10 @@
       "complete": 3,
       "error": 4,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+    "tone": "playful",
+    "maxVolume": 100
   },
   {
     "name": "serene-bells",
@@ -972,7 +1047,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+    "tone": "peaceful",
+    "maxVolume": 100
   },
   {
     "name": "serene-tones",
@@ -1007,7 +1085,10 @@
       "complete": 4,
       "error": 4,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+    "tone": "professional",
+    "maxVolume": 100
   },
   {
     "name": "serene-water",
@@ -1047,7 +1128,10 @@
       "complete": 5,
       "error": 5,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+    "tone": "peaceful",
+    "maxVolume": 100
   },
   {
     "name": "serene-wind",
@@ -1079,7 +1163,10 @@
       "complete": 3,
       "error": 3,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://opengameart.org/content/wind-chimes",
+    "tone": "peaceful",
+    "maxVolume": 100
   },
   {
     "name": "warzone2100-command",
@@ -1117,7 +1204,10 @@
       "complete": 3,
       "error": 4,
       "blocked": 5
-    }
+    },
+    "sourceUrl": "https://github.com/Warzone2100/warzone2100",
+    "tone": "aggressive",
+    "maxVolume": 100
   },
   {
     "name": "wesnoth-combat",
@@ -1153,7 +1243,10 @@
       "complete": 3,
       "error": 4,
       "blocked": 3
-    }
+    },
+    "sourceUrl": "https://github.com/wesnoth/wesnoth",
+    "tone": "aggressive",
+    "maxVolume": 100
   },
   {
     "name": "xonotic-announcer",
@@ -1185,6 +1278,9 @@
       "complete": 3,
       "error": 3,
       "blocked": 2
-    }
+    },
+    "sourceUrl": "https://github.com/xonotic/xonotic-data.pk3dir",
+    "tone": "mixed",
+    "maxVolume": 100
   }
 ]
