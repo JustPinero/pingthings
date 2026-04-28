@@ -1,4 +1,4 @@
-import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours } from '../config.js';
+import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours, getLastPlayTimeMs, setLastPlayTimeMs } from '../config.js';
 import { getPackSounds, getEventSounds, pickRandom, resolvePack } from '../packs.js';
 import { playSound } from '../player.js';
 import { sendNotification } from '../notify.js';
@@ -157,6 +157,26 @@ export default function play(args) {
         soundFile = pickRandom(alternatives);
       }
     }
+  }
+
+  // Cross-process debounce — coalesce near-simultaneous invocations
+  // (e.g. multi-pane Claude Code dispatch finishing in lockstep) into a
+  // single audible play. The sentinel file is shared across all pingthings
+  // processes, so the FIFO race among parallel invocations is naturally
+  // resolved by whoever stamps it first. `--silent` and explicit named
+  // sound plays bypass debounce — those are intentional, not background
+  // hook noise. Set `debounceMs: 0` in config to disable entirely.
+  const debounceMs = Number(config.debounceMs ?? 0);
+  if (debounceMs > 0 && !parsed.sound) {
+    const now = Date.now();
+    const last = getLastPlayTimeMs();
+    if (now - last < debounceMs) {
+      // Coalesced — another invocation just played within the window.
+      // Still record the event for stats so usage data isn't skewed.
+      recordPlay(packName, parsed.event);
+      return;
+    }
+    setLastPlayTimeMs(now);
   }
 
   setLastPlayed(soundFile);

@@ -63,7 +63,7 @@ Commands:
   install <source>   Install a pack from GitHub or URL
   uninstall <pack>   Remove a user-installed pack
   doctor             Diagnose audio setup and configuration
-  update             Check for new versions
+  update [--all]     Check for and install updates
   completions <shell> Generate shell completions (bash/zsh/fish)
 
 Options:

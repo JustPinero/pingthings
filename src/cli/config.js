@@ -1,6 +1,6 @@
 import { readConfig, writeConfig, VALID_MODES, VALID_EVENTS } from '../config.js';
 
-const VALID_KEYS = ['activePack', 'mode', 'specificSound', 'volume', 'eventPacks', 'cooldown', 'quietHours', 'notifications'];
+const VALID_KEYS = ['activePack', 'mode', 'specificSound', 'volume', 'eventPacks', 'cooldown', 'quietHours', 'notifications', 'debounceMs'];
 
 function showHelp() {
   console.log(`
@@ -20,6 +20,7 @@ Keys:
   cooldown        Avoid repeating the same sound (true/false)
   quietHours      Mute during hours, e.g. "22-7" (10pm-7am)
   eventPacks      Per-event pack overrides (use "pingthings config eventPacks.<event> <pack>")
+  debounceMs      Coalesce parallel invocations within N ms (default 1500, 0 to disable)
 
 Examples:
   pingthings config                          Show full config
@@ -28,6 +29,8 @@ Examples:
   pingthings config quietHours 22-7         Mute 10pm to 7am
   pingthings config quietHours null         Disable quiet hours
   pingthings config eventPacks.error openarena-announcer
+  pingthings config debounceMs 1500         1.5s debounce window
+  pingthings config debounceMs 0            Disable debounce entirely
 `);
 }
 
@@ -122,6 +125,20 @@ export default function config(args) {
     cfg[key] = value === 'true';
     writeConfig(cfg);
     console.log(`${key} set to: ${cfg[key]}`);
+    return;
+  }
+
+  // Validate debounceMs (non-negative integer)
+  if (key === 'debounceMs') {
+    const ms = parseInt(value, 10);
+    if (isNaN(ms) || ms < 0) {
+      console.error('debounceMs must be a non-negative integer (milliseconds).');
+      process.exit(1);
+    }
+    const cfg = readConfig();
+    cfg.debounceMs = ms;
+    writeConfig(cfg);
+    console.log(`debounceMs set to: ${ms}`);
     return;
   }
 

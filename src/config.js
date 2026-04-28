@@ -11,6 +11,11 @@ const DEFAULTS = {
   cooldown: true,
   quietHours: null,
   notifications: false,
+  // Cross-process debounce window in ms. When multiple `pingthings play`
+  // invocations fire within this window (e.g. multi-pane Claude Code
+  // sessions ending simultaneously), only the first one plays a sound;
+  // subsequent invocations are silently dropped. Set to 0 to disable.
+  debounceMs: 1500,
 };
 
 export function getConfigDir() {
@@ -65,6 +70,27 @@ export function setLastPlayed(soundPath) {
   const path = join(getConfigDir(), '.last-played');
   try {
     writeFileSync(path, soundPath, 'utf8');
+  } catch {}
+}
+
+// Cross-process debounce sentinel — used by `pingthings play` to coalesce
+// near-simultaneous invocations (e.g. multi-pane dispatch finishing in
+// lockstep) into a single audible play.
+export function getLastPlayTimeMs() {
+  const path = join(getConfigDir(), '.last-play-time');
+  try {
+    const raw = readFileSync(path, 'utf8').trim();
+    const n = parseInt(raw, 10);
+    return Number.isFinite(n) ? n : 0;
+  } catch {
+    return 0;
+  }
+}
+
+export function setLastPlayTimeMs(timeMs) {
+  const path = join(getConfigDir(), '.last-play-time');
+  try {
+    writeFileSync(path, String(timeMs), 'utf8');
   } catch {}
 }
 

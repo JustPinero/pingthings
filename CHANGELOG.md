@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.5.0
+
+### Added
+- **Cross-process debounce** — new `debounceMs` config field (default
+  `1500`) coalesces near-simultaneous `pingthings play` invocations
+  into a single audible play. Solves the multi-pane Claude Code
+  dispatch case where N sessions ending in lockstep would previously
+  fire N overlapping sounds. Set `debounceMs: 0` to disable.
+  Sentinel: `~/.config/pingthings/.last-play-time`.
+- `pingthings config debounceMs <ms>` to tune the window.
+
+### Removed
+- **`mduel-retro` pack** removed from the registry, the website's
+  `packs.json`, and the test suite. Some sounds in this pack had
+  uncalibrated peaks that could damage speakers at default volume.
+  Users who had it as their active pack will fall back to the default
+  `7kaa-soldiers`. If you really want it back, install separately via
+  `pingthings install <github-url>`.
+
+### Notes
+- `cooldown` (existing flag) and `debounceMs` (new) solve different
+  problems and stack: `cooldown` prevents picking the same sound
+  twice in a row, `debounceMs` prevents ANY sound from playing if
+  one was played in the last N ms regardless of which.
+
 ## 1.1.0
 
 ### Added

@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "mkdir -p \"$PWD/.claude/sessions\" && if [ -f \"$PWD/.claude/handoff.md\" ]; then cp \"$PWD/.claude/handoff.md\" \"$PWD/.claude/sessions/$(date +%Y-%m-%dT%H-%M-%S).md\"; fi && curl -s -X POST http://localhost:3000/api/webhook/session-complete -H 'Content-Type: application/json' -d \"{\\\"projectPath\\\":\\\"$PWD\\\"}\" > /dev/null 2>&1 &",
+            "description": "Cascade: save session log and notify dashboard"
+          }
+        ]
+      }
+    ]
+  }
+}

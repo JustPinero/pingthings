@@ -6,7 +6,7 @@ const { listPacks, resolvePack, getPackSounds, getEventSounds, getPackEvents, pi
 const ALL_PACKS = [
   '0ad-civilizations', '7kaa-soldiers', 'droid-announcer', 'fighting-announcer', 'freedoom-arsenal',
   'kenney-digital', 'kenney-fighter', 'kenney-impacts', 'kenney-interface', 'kenney-rpg',
-  'kenney-scifi', 'kenney-voiceover', 'mduel-retro', 'nature-animals', 'nature-forest',
+  'kenney-scifi', 'kenney-voiceover', 'nature-animals', 'nature-forest',
   'nature-night', 'nature-ocean', 'nature-weather', 'office-classic', 'office-digital',
   'office-mechanical', 'office-minimal', 'openarena-announcer', 'retro-8bit', 'retro-movement',
   'retro-weapons', 'serene-bells', 'serene-tones', 'serene-water', 'serene-wind',

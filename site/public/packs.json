@@ -466,41 +466,6 @@
     }
   },
   {
-    "name": "mduel-retro",
-    "description": "Marshmallow Duel — retro combat, pickups, explosions, and teleports",
-    "license": "GPL-2.0",
-    "credits": "Liam Alexander / pospi (https://github.com/pospi/mduel-ds) — Marshmallow Duel DS",
-    "category": "retro",
-    "soundCount": 18,
-    "sounds": [
-      "boots.ogg",
-      "bullet-reflect.ogg",
-      "explosion.ogg",
-      "hook-hit.ogg",
-      "lightning.ogg",
-      "menu-cancel.ogg",
-      "menu-move.ogg",
-      "menu-ok.ogg",
-      "mine-drop.ogg",
-      "pickup.ogg",
-      "platform-explode.ogg",
-      "skull-pickup.ogg",
-      "skull.ogg",
-      "spawn.ogg",
-      "splash-big.ogg",
-      "splash-small.ogg",
-      "teleport.ogg",
-      "throw.ogg"
-    ],
-    "events": {
-      "done": 4,
-      "permission": 3,
-      "complete": 3,
-      "error": 4,
-      "blocked": 4
-    }
-  },
-  {
     "name": "nature-animals",
     "description": "Barks, chirps, howls, and creature calls",
     "license": "CC0-1.0",
