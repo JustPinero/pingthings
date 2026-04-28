@@ -2,8 +2,10 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { platform, homedir } from 'node:os';
-import { readConfig, getConfigDir } from '../config.js';
+import { readConfig, getConfigDir, findScheduleProfile } from '../config.js';
 import { listPacks } from '../packs.js';
+import { detectAudioOutput } from '../audio-output.js';
+import { getCallProcessAllowlist } from '../call-detector.js';
 
 function showHelp() {
   console.log(`
@@ -129,6 +131,42 @@ export default function doctor(args) {
     }
   } else {
     check('settings.json found', () => { throw new Error('Run "pingthings init" to set up'); });
+  }
+
+  // Phase 1.7 — surfaces for new 1.6 features
+  console.log('\nv1.6+ feature surfaces:');
+
+  // ffmpeg presence (drives normalize + auto-normalize)
+  check('ffmpeg available (for normalize)', () => commandExists('ffmpeg'));
+
+  // Audio output detector — invokes the platform-specific shell-out;
+  // result feeds into headphone-aware volume scaling.
+  check('Audio output detection', () => detectAudioOutput());
+
+  // Call detector — show whether allowlist is non-empty for this platform.
+  check('Call-detection allowlist', () => {
+    const list = getCallProcessAllowlist();
+    return list.length > 0 ? `${list.length} app(s) tracked` : 'none for this platform';
+  });
+
+  check('muteOnCall config', () => (config.muteOnCall ? 'enabled' : 'disabled'));
+  check('autoNormalize config', () => (config.autoNormalize !== false ? 'enabled' : 'disabled'));
+  check('headphoneVolumeScale', () =>
+    Number.isFinite(config.headphoneVolumeScale)
+      ? config.headphoneVolumeScale.toString()
+      : '1.0',
+  );
+  check('debounceMs', () => `${Number(config.debounceMs ?? 1500)}ms`);
+
+  // Schedule profiles
+  const profiles = config.timeProfiles || {};
+  const profileCount = Object.keys(profiles).length;
+  check('Schedule profiles', () =>
+    profileCount === 0 ? 'none' : `${profileCount} window(s)`,
+  );
+  if (profileCount > 0) {
+    const active = findScheduleProfile(profiles, new Date().getHours());
+    check('Active right now', () => active || '(none — global default)');
   }
 
   console.log('');

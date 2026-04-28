@@ -1,5 +1,41 @@
 # Changelog
 
+## 1.7.0
+
+Usability layer for the v1.6 features. Schedule rotations get a CLI;
+`pingthings doctor` reports on every new surface.
+
+### Added
+
+- **`pingthings schedule` subcommand** (`src/cli/schedule.js`) for
+  managing the `timeProfiles` config landed in 1.6.0:
+  - `pingthings schedule list` — show all windows + which one is
+    active right now
+  - `pingthings schedule add <window> <pack>` — set or replace a
+    profile (e.g. `9-17 office-minimal`, `22-7 serene-bells`)
+  - `pingthings schedule remove <window>` — drop one
+  - `pingthings schedule clear` — drop all
+  - `pingthings schedule current` — print the active pack right
+    now (or `(no schedule active)` when none match)
+  - Wrap-around windows supported. Window validation rejects
+    malformed forms with a clear message.
+
+### Changed
+
+- **`pingthings doctor` extended** with a new "v1.6+ feature
+  surfaces" section that reports on every knob added in 1.6.x:
+  - ffmpeg presence (drives normalize + auto-normalize)
+  - Audio output detection result (headphones/speakers/unknown)
+  - Call-detection allowlist size for the current platform
+  - `muteOnCall`, `autoNormalize`, `headphoneVolumeScale`,
+    `debounceMs` config values
+  - Schedule profiles count + active-right-now lookup
+
+### Tests
+
+- 187 → **204** (+17). New suites: `schedule` (10 tests covering
+  CRUD + edge cases), `doctor` (7 tests for the new section).
+
 ## 1.6.1
 
 Patch release — finishes the three v1.6.0 deferrals.

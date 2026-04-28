@@ -38,6 +38,7 @@ const commands = {
   unmute: () => import('../src/cli/mute.js'),
   normalize: () => import('../src/cli/normalize.js'),
   serve: () => import('../src/cli/serve.js'),
+  schedule: () => import('../src/cli/schedule.js'),
 };
 
 function showHelp() {
