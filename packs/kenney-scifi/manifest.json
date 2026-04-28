@@ -54,5 +54,8 @@
       "sounds/laser-large.ogg",
       "sounds/slime.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "playful",
+  "maxVolume": 100
 }

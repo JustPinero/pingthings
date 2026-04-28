@@ -54,5 +54,8 @@
       "sounds/up-tone.ogg",
       "sounds/zap-tone.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "professional",
+  "maxVolume": 100
 }

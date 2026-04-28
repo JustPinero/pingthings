@@ -55,5 +55,8 @@
       "sounds/gryphon-shriek-1.ogg",
       "sounds/magic-missile-1.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://github.com/wesnoth/wesnoth",
+  "tone": "aggressive",
+  "maxVolume": 100
 }

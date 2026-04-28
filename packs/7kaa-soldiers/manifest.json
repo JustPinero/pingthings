@@ -108,5 +108,8 @@
       "sounds/00020-PE_A1.ogg",
       "sounds/00023-JA_A2.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://github.com/the3dfxdude/7kaa",
+  "tone": "aggressive",
+  "maxVolume": 100
 }

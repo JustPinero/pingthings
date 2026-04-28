@@ -54,5 +54,8 @@
       "sounds/space-trash.ogg",
       "sounds/pep-2.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "professional",
+  "maxVolume": 100
 }

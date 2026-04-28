@@ -34,6 +34,10 @@ const commands = {
   update: () => import('../src/cli/update.js'),
   cesp: () => import('../src/cli/cesp.js'),
   completions: () => import('../src/cli/completions.js'),
+  mute: () => import('../src/cli/mute.js'),
+  unmute: () => import('../src/cli/mute.js'),
+  normalize: () => import('../src/cli/normalize.js'),
+  serve: () => import('../src/cli/serve.js'),
 };
 
 function showHelp() {
@@ -113,9 +117,15 @@ if (process.stdin.isTTY && command !== 'play' && command !== 'completions' && co
   }
 }
 
+// Aliases — `unmute` is shorthand for `mute off`
+let dispatchArgs = args;
+if (command === 'unmute') {
+  dispatchArgs = ['off', ...args];
+}
+
 try {
   const mod = await commands[command]();
-  await mod.default(args);
+  await mod.default(dispatchArgs);
 } catch (err) {
   console.error(`Error: ${err.message}`);
   process.exit(1);

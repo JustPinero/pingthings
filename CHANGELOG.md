@@ -1,5 +1,96 @@
 # Changelog
 
+## 1.6.0
+
+Big release. Audio hygiene + metadata, user control, cross-platform
+detection, on-demand HTTP server. 176 tests across 39 suites.
+
+### Added — Audio hygiene & metadata
+
+- **Manifest schema extensions** (`src/manifest-schema.js`):
+  - `sourceUrl` — canonical URL to the pack's origin (download / project
+    page). Backfilled across all 32 existing packs.
+  - `maxVolume` — 0–100 cap on effective playback volume for this pack;
+    player applies `min(globalVolume, maxVolume)`. Default 100. Defends
+    against the class of issue that prompted mduel-retro's removal.
+  - `tone` — one of `peaceful | professional | playful | aggressive |
+    mixed`. Inferred from category for backfill.
+  - `validatePackManifest()` for soft validation (returns
+    `{ ok, errors }`); does not break legacy packs missing optional
+    fields.
+- **`pingthings normalize <pack>`** (`src/cli/normalize.js`) — runs
+  ffmpeg's loudnorm filter (default -23 LUFS / -2 dB true peak) on
+  every sound in a pack. Includes `--target-lufs`, `--peak-db`, and
+  `--dry-run`. Exits cleanly with install instructions if ffmpeg
+  isn't on PATH.
+
+### Added — User control
+
+- **`pingthings mute <duration>`** (`src/cli/mute.js`) — manual
+  suppression of all playback for a fixed window. Accepts numeric
+  minutes, or `s`/`m`/`h` suffixes (e.g. `30`, `90s`, `2h`).
+  `pingthings mute off` cancels. `pingthings unmute` works as an
+  alias. Sentinel file at `~/.config/pingthings/.muted-until`
+  (Unix-ms expiration), respected by every `play` invocation.
+- **Per-project pack override** — when a project has
+  `.claude/settings.json` with `pingthings.activePack: "name"`,
+  `pingthings play` invocations from that cwd use the project's
+  pack instead of the global default. Layers with the new resolution
+  priority: env (`PINGTHINGS_PACK`) > project override > schedule
+  profile > global default.
+- **Schedule profiles** — new `timeProfiles` config field. Map
+  `{ "9-17": "office-minimal", "22-7": "serene-bells" }` rotates
+  packs by hour-of-day. Wrap-around windows (overnight) supported.
+- **Mute on call** — when `muteOnCall: true` in config, every play
+  is suppressed if a known video-call client is detected as running
+  (Zoom, Teams, Webex, BlueJeans, Skype). Process-allowlist
+  detection in `src/call-detector.js`; cross-platform on macOS,
+  Linux, Windows. Slack/Discord intentionally NOT in the allowlist
+  to avoid false positives (their presence ≠ on-a-call).
+
+### Added — Cross-platform detection libraries
+
+- **`src/call-detector.js`** — `isOnCall()` returns true when a
+  known video-call process is running. Uses `ps -A -o comm=` on
+  macOS/Linux and `tasklist /FO CSV` on Windows.
+  `getCallProcessAllowlist()` exposes the per-platform list for
+  `pingthings doctor` and tests.
+- **`src/audio-output.js`** — `detectAudioOutput()` returns
+  `headphones | speakers | unknown`. macOS via `system_profiler`,
+  Linux via `pactl info`, Windows via PowerShell + AudioDeviceCmdlets
+  (or WMI fallback). Library available for future
+  headphone-aware volume scaling.
+
+### Added — Webhook server
+
+- **`pingthings serve [--port N] [--host H] [--token T]`**
+  (`src/cli/serve.js`) — on-demand HTTP server. Localhost-only
+  default. Refuses to bind non-localhost without a `--token`.
+  Endpoints:
+  - `GET /healthz` → 200 OK with version info
+  - `POST /play` → 202; spawns a random play
+  - `POST /play/event/<event>` → 202; spawns a play for the named
+    event (`done | permission | complete | error | blocked`)
+  - Optional `X-Pingthings-Token` header authentication when
+    `--token` is set
+- Useful for CI alerts, GitHub Actions, deploy scripts, or any
+  external trigger that should ring pingthings.
+
+### Pack catalog
+
+- `requests/phase-2-pack-expansion/2.1-source-30-packs.md` — request
+  file scoping the addition of 30 new packs (5 each from Freesound,
+  Mixkit, NASA, OpenGameArt, YouTube Audio Library, Internet
+  Archive). Manifest templates, search queries, license expectations,
+  and acceptance criteria documented; actual audio sourcing is a
+  follow-up that needs browser access.
+
+### Tests
+
+- Baseline 130 → **176** (+46). New suites: `manifest-schema`,
+  `config-extras` (mute + schedule + resolveActivePack),
+  `call-detector`, `audio-output`, `serve`, `mute`.
+
 ## 1.5.0
 
 ### Added

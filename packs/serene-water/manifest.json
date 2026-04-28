@@ -64,5 +64,8 @@
       "sounds/water-drop-1.ogg",
       "sounds/water-drop-2.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+  "tone": "peaceful",
+  "maxVolume": 100
 }

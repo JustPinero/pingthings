@@ -58,5 +58,8 @@
       "sounds/final-round.ogg",
       "sounds/no-contest.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/voice-pack%E2%94%82fighting-game-announcer",
+  "tone": "playful",
+  "maxVolume": 100
 }

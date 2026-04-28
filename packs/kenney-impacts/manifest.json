@@ -53,5 +53,8 @@
       "sounds/soft-heavy.ogg",
       "sounds/glass-light.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "playful",
+  "maxVolume": 100
 }

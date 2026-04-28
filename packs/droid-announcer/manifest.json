@@ -48,5 +48,8 @@
       "sounds/hostile-units-inbound.ogg",
       "sounds/enemy-forces-detected.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/droid-video-game-announcer",
+  "tone": "mixed",
+  "maxVolume": 100
 }

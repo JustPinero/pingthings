@@ -51,5 +51,8 @@
       "sounds/voc_holyshit.ogg",
       "sounds/gauntlet.ogg"
     ]
-  }
+  },
+  "sourceUrl": "http://openarena.ws",
+  "tone": "mixed",
+  "maxVolume": 100
 }

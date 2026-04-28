@@ -48,5 +48,8 @@
       "sounds/lastsecond.ogg",
       "sounds/narrowly.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://github.com/xonotic/xonotic-data.pk3dir",
+  "tone": "mixed",
+  "maxVolume": 100
 }

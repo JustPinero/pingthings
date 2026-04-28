@@ -54,5 +54,8 @@
       "sounds/final-round.ogg",
       "sounds/tie-breaker.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "playful",
+  "maxVolume": 100
 }

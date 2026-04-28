@@ -1,8 +1,10 @@
-import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours, getLastPlayTimeMs, setLastPlayTimeMs } from '../config.js';
+import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours, getLastPlayTimeMs, setLastPlayTimeMs, isMuteActive, resolveActivePack } from '../config.js';
 import { getPackSounds, getEventSounds, pickRandom, resolvePack } from '../packs.js';
 import { playSound } from '../player.js';
 import { sendNotification } from '../notify.js';
 import { recordPlay } from './stats.js';
+import { effectiveVolume } from '../manifest-schema.js';
+import { isOnCall } from '../call-detector.js';
 import { basename } from 'node:path';
 
 function parseArgs(args) {
@@ -62,7 +64,9 @@ Examples:
 
 export default function play(args) {
   const config = readConfig();
-  const packName = config.activePack;
+  // Per-project / scheduled / global pack resolution lives in
+  // resolveActivePack so play.js stays focused on playback flow.
+  const packName = resolveActivePack(config, process.cwd(), new Date());
   const pack = resolvePack(packName);
 
   if (!pack) {
@@ -139,8 +143,15 @@ export default function play(args) {
     process.exit(1);
   }
 
-  // Quiet hours or silent mode — skip playback
-  if (isQuietHours(config) || parsed.silent) {
+  // Quiet hours, --silent, manual mute (`pingthings mute`), or active
+  // call → skip playback. Stats still recorded so usage data isn't
+  // skewed by silent intervals.
+  if (
+    isQuietHours(config) ||
+    parsed.silent ||
+    isMuteActive() ||
+    (config.muteOnCall && isOnCall())
+  ) {
     recordPlay(packName, parsed.event);
     return;
   }
@@ -180,7 +191,10 @@ export default function play(args) {
   }
 
   setLastPlayed(soundFile);
-  playSound(soundFile, config.volume);
+  // Apply per-pack volume cap from manifest.
+  const packMaxVolume = pack.manifest?.maxVolume;
+  const finalVolume = effectiveVolume(config.volume, packMaxVolume);
+  playSound(soundFile, finalVolume);
   recordPlay(packName, parsed.event);
 
   // Desktop notification

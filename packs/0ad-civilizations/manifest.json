@@ -74,5 +74,8 @@
       "sounds/greek-retreat-1.ogg",
       "sounds/latin-fight-1.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://github.com/0ad/0ad",
+  "tone": "aggressive",
+  "maxVolume": 100
 }

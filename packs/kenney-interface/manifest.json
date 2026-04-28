@@ -54,5 +54,8 @@
       "sounds/close-1.ogg",
       "sounds/back-1.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "professional",
+  "maxVolume": 100
 }

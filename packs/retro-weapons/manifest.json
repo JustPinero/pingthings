@@ -53,5 +53,8 @@
       "sounds/death-robot.ogg",
       "sounds/impact-3.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+  "tone": "playful",
+  "maxVolume": 100
 }

@@ -54,5 +54,8 @@
       "sounds/toggle-2.ogg",
       "sounds/toggle-3.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "professional",
+  "maxVolume": 100
 }

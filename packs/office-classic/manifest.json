@@ -56,5 +56,8 @@
       "sounds/switch-1.ogg",
       "sounds/switch-2.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+  "tone": "professional",
+  "maxVolume": 100
 }

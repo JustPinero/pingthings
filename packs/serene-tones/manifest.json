@@ -54,5 +54,8 @@
       "sounds/tone-4.ogg",
       "sounds/tone-5.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+  "tone": "professional",
+  "maxVolume": 100
 }

@@ -52,5 +52,8 @@
     "blocked": [
       "sounds/snort.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/80-cc0-creature-sfx",
+  "tone": "playful",
+  "maxVolume": 100
 }

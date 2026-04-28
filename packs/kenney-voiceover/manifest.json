@@ -56,5 +56,8 @@
       "sounds/final-round.ogg",
       "sounds/look-out.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "professional",
+  "maxVolume": 100
 }

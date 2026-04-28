@@ -53,5 +53,8 @@
       "sounds/cloth-belt.ogg",
       "sounds/book-place.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://kenney.nl",
+  "tone": "playful",
+  "maxVolume": 100
 }

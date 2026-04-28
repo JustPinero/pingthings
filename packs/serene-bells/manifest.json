@@ -54,5 +54,8 @@
       "sounds/wind-chime-2.ogg",
       "sounds/wind-chime-3.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+  "tone": "peaceful",
+  "maxVolume": 100
 }

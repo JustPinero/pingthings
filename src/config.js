@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync, renameSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync, renameSync, unlinkSync } from 'node:fs';
 import { join } from 'node:path';
 import { homedir } from 'node:os';
 
@@ -16,6 +16,12 @@ const DEFAULTS = {
   // sessions ending simultaneously), only the first one plays a sound;
   // subsequent invocations are silently dropped. Set to 0 to disable.
   debounceMs: 1500,
+  // Suppress sound playback while a video-call client is active.
+  // See src/call-detector.js for cross-platform detection.
+  muteOnCall: false,
+  // Hour-of-day pack overrides. Format: { "HH-HH": "pack-name" }.
+  // First match wins. Wrap-around windows (e.g. "22-7") supported.
+  timeProfiles: {},
 };
 
 export function getConfigDir() {
@@ -109,3 +115,100 @@ export function isQuietHours(config) {
 export const VALID_MODES = ['random', 'specific', 'informational'];
 
 export const VALID_EVENTS = ['done', 'permission', 'complete', 'error', 'blocked'];
+
+// ----------------------------------------------------------------------------
+// Manual mute (`pingthings mute <minutes>`). Sentinel file holds the unix-ms
+// expiration timestamp; isMuteActive() compares against now.
+// ----------------------------------------------------------------------------
+
+export function getMutePath() {
+  return join(getConfigDir(), '.muted-until');
+}
+
+export function setMuteUntilMs(expiresAtMs) {
+  try {
+    writeFileSync(getMutePath(), String(expiresAtMs), 'utf8');
+  } catch {}
+}
+
+export function clearMute() {
+  try {
+    if (existsSync(getMutePath())) {
+      unlinkSync(getMutePath());
+    }
+  } catch {}
+}
+
+export function getMuteUntilMs() {
+  try {
+    const raw = readFileSync(getMutePath(), 'utf8').trim();
+    const n = parseInt(raw, 10);
+    return Number.isFinite(n) ? n : 0;
+  } catch {
+    return 0;
+  }
+}
+
+export function isMuteActive(now = Date.now()) {
+  return getMuteUntilMs() > now;
+}
+
+// ----------------------------------------------------------------------------
+// Active-pack resolution. Priority order (highest wins):
+//   1. PINGTHINGS_PACK env var (one-shot override)
+//   2. Per-project: <cwd>/.claude/settings.json -> pingthings.activePack
+//   3. Schedule profile: config.timeProfiles entry matching current hour
+//   4. config.activePack (the global default)
+// ----------------------------------------------------------------------------
+
+function readProjectPackOverride(cwd) {
+  if (!cwd) return null;
+  const path = join(cwd, '.claude', 'settings.json');
+  if (!existsSync(path)) return null;
+  try {
+    const raw = readFileSync(path, 'utf8');
+    const parsed = JSON.parse(raw);
+    const pack = parsed?.pingthings?.activePack;
+    return typeof pack === 'string' && pack.trim() !== '' ? pack : null;
+  } catch {
+    return null;
+  }
+}
+
+export function findScheduleProfile(timeProfiles, hour) {
+  if (!timeProfiles || typeof timeProfiles !== 'object') return null;
+  for (const [window, pack] of Object.entries(timeProfiles)) {
+    if (typeof pack !== 'string' || pack.trim() === '') continue;
+    const m = window.match(/^(\d{1,2})-(\d{1,2})$/);
+    if (!m) continue;
+    const start = Number(m[1]);
+    const end = Number(m[2]);
+    if (Number.isNaN(start) || Number.isNaN(end)) continue;
+    let match;
+    if (start < end) {
+      match = hour >= start && hour < end;
+    } else {
+      // Wrap-around (e.g. 22-7)
+      match = hour >= start || hour < end;
+    }
+    if (match) return pack;
+  }
+  return null;
+}
+
+export function resolveActivePack(config, cwd, now = new Date()) {
+  // 1. env override
+  const env = process.env.PINGTHINGS_PACK;
+  if (env && env.trim() !== '') return env.trim();
+
+  // 2. per-project override
+  const projectOverride = readProjectPackOverride(cwd);
+  if (projectOverride) return projectOverride;
+
+  // 3. schedule profile
+  const sched = findScheduleProfile(config.timeProfiles, now.getHours());
+  if (sched) return sched;
+
+  // 4. global default
+  return config.activePack;
+}

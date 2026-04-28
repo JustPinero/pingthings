@@ -54,5 +54,8 @@
       "sounds/whir-2.ogg",
       "sounds/wrench.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/100-cc0-sfx",
+  "tone": "professional",
+  "maxVolume": 100
 }

@@ -54,5 +54,8 @@
       "sounds/dsrlaunc.ogg",
       "sounds/dsdshtgn.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://github.com/freedoom/freedoom",
+  "tone": "aggressive",
+  "maxVolume": 100
 }

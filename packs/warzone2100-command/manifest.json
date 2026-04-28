@@ -60,5 +60,8 @@
       "sounds/nexus-laugh1.ogg",
       "sounds/nexus-laugh2.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://github.com/Warzone2100/warzone2100",
+  "tone": "aggressive",
+  "maxVolume": 100
 }

@@ -48,5 +48,8 @@
       "sounds/wind-chime-2-70s.ogg",
       "sounds/wind-chime-3-70s.ogg"
     ]
-  }
+  },
+  "sourceUrl": "https://opengameart.org/content/wind-chimes",
+  "tone": "peaceful",
+  "maxVolume": 100
 }
