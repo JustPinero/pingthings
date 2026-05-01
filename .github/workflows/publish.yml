@@ -16,22 +16,20 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      # Node 24 ships with npm 11.x. The Trusted Publisher token exchange
+      # that authorizes the registry write requires npm 11.5.1+; with
+      # Node 22's bundled npm 10, provenance signing succeeds but the
+      # actual `PUT /<pkg>` registry write returns 404. Self-upgrading
+      # npm in-place (`npm i -g npm@latest`) collides with the running
+      # npm process and breaks transitive module loading, so we just use
+      # a Node version that ships with the right npm.
       - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
           registry-url: "https://registry.npmjs.org"
 
-      # Node 22 ships with npm 10.x, but Trusted Publisher token exchange
-      # for the registry write requires npm 11.5.1+. Without this step the
-      # publish silently fails with `404 PUT /<pkg>` even though OIDC is
-      # otherwise wired up correctly (provenance signing succeeds, but the
-      # actual write is rejected). See npm changelog for v11.5.1.
-      - name: Upgrade npm to support OIDC trusted publisher
-        # --force works around a known npm self-upgrade bug: when npm 10
-        # installs npm@latest, transitive modules (e.g. promise-retry) get
-        # deleted mid-install and the new npm can't load them. --force
-        # tells npm to overwrite without the integrity check.
-        run: npm install -g --force npm@latest && npm --version
+      - name: Show npm version
+        run: npm --version
 
       - name: Run tests
         run: npm test
