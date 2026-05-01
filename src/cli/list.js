@@ -1,4 +1,4 @@
-import { readConfig } from '../config.js';
+import { readConfig, getFavorites } from '../config.js';
 import { listPacks } from '../packs.js';
 
 function showHelp() {
@@ -6,7 +6,7 @@ function showHelp() {
 Usage: pingthings list
 
 Show all available sound packs with their sound count and source.
-The active pack is marked with *.
+The active pack is marked with *. Favorites are marked with ★.
 `);
 }
 
@@ -17,6 +17,7 @@ export default function list(args) {
   }
 
   const config = readConfig();
+  const favorites = new Set(getFavorites(config));
   const packs = listPacks();
 
   if (packs.length === 0) {
@@ -28,12 +29,13 @@ export default function list(args) {
 
   for (const pack of packs) {
     const active = pack.name === config.activePack ? ' *' : '  ';
+    const star = favorites.has(pack.name) ? ' ★' : '';
     const source = pack.isBuiltIn ? 'built-in' : 'user';
-    console.log(`${active} ${pack.name}  (${pack.soundCount} sounds, ${source})`);
+    console.log(`${active} ${pack.name}${star}  (${pack.soundCount} sounds, ${source})`);
     if (pack.description) {
       console.log(`     ${pack.description}`);
     }
   }
 
-  console.log('\n  * = active pack\n');
+  console.log('\n  * = active pack    ★ = favorite\n');
 }

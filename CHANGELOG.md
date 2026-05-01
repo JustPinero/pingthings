@@ -1,5 +1,92 @@
 # Changelog
 
+## 1.9.0
+
+User-curated favorites. With 32 built-in packs, `random-pack` was a
+firehose; favorites narrow it to "the ones I actually like."
+
+### Added
+
+- **`pingthings fav` subcommand** (`src/cli/fav.js`):
+  - `pingthings fav` / `fav list` — show favorites
+  - `pingthings fav add <pack>` — mark (validates the pack exists)
+  - `pingthings fav remove <pack>` — unmark
+- **`favorites: []`** field in `config.json`. Helpers
+  `getFavorites` / `isFavorite` / `addFavorite` / `removeFavorite`
+  exported from `src/config.js`.
+- **★ marker** in `pingthings list` and `pingthings browse` output
+  alongside the existing `*` active-pack marker.
+
+### Changed
+
+- **`pingthings random-pack`** now narrows its candidate pool to
+  favorites when the list is non-empty; falls back to the full catalog
+  when favorites is empty (or when the only favorite is already
+  active). The user has explicitly told us which packs they like —
+  respect that over surprise variety.
+
+### Tests
+
+- 205 → **217** (+12). New `test/fav.test.js` covers the CRUD path,
+  ★ surfacing in `list` and `browse`, and `random-pack`'s
+  favorites-narrowed pool.
+
+## 1.8.0
+
+Honest pruning. Two features added in 1.5/1.6 turned out to actively
+fight what pingthings is *for* (signaling that a Claude instance just
+finished). Both removed; one new ergonomic affordance added on the
+mute path.
+
+### Removed (breaking)
+
+- **Cross-process debouncer (`debounceMs`).** Coalescing simultaneous
+  invocations is exactly the wrong default for a tool whose purpose is
+  "tell me which of my parallel Claude panes finished." If three
+  instances finish in lockstep, you should hear three pings, not one.
+  - `debounceMs` config key removed (rejected with "Unknown config
+    key").
+  - `getLastPlayTimeMs` / `setLastPlayTimeMs` exports removed from
+    `src/config.js`.
+  - `~/.config/pingthings/.last-play-time` sentinel no longer written;
+    safe to delete on existing installs.
+- **Quiet hours (`quietHours`).** Scheduled silencing windows were
+  unpopular, and they conflate "I want quiet right now" with
+  "configure my night schedule" — different decisions, different
+  cadences. The dedicated `pingthings mute` command is the on/off
+  control. It's a ping, not a ringtone.
+  - `quietHours` config key removed (rejected with "Unknown config
+    key"). Existing values in `config.json` are silently dropped on
+    next read.
+  - `isQuietHours` export removed from `src/config.js`.
+  - `pingthings doctor` no longer surfaces a "Quiet hours" line.
+
+### Added
+
+- **`pingthings mute on`** — indefinite mute (until
+  `pingthings mute off`). Pairs with the existing `pingthings mute
+  <duration>` form. `on` writes a far-future expiration timestamp so
+  the same `.muted-until` sentinel handles both bounded and unbounded
+  cases without a special code path.
+
+### Fixed
+
+- **Legacy hook installs that pass the event as a positional arg now
+  work.** `pingthings play permission` (without `--event`) is now
+  treated as `--event permission` when the bare arg matches a known
+  event name. Previously it fell through to substring sound-name
+  matching and exited non-zero on most packs, producing the
+  "pings a couple times then stops" symptom in older `~/.claude/
+  settings.json` configurations. The `--event` flag remains the
+  canonical form; this is purely a forgiveness path for existing
+  setups.
+
+### Tests
+
+- 204 → **205**. Removed 3 quietHours tests + 1 debounceMs assertion.
+  Added a positional-event test covering all 5 valid events and a
+  `mute on` round-trip test.
+
 ## 1.7.0
 
 Usability layer for the v1.6 features. Schedule rotations get a CLI;

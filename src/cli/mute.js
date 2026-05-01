@@ -7,24 +7,25 @@ import {
 
 function showHelp() {
   console.log(`
-Usage: pingthings mute [duration|off]
+Usage: pingthings mute [on|off|duration]
 
-Manually suppress all pingthings playback for a fixed duration.
-
-Useful when joining a call you didn't catch with --mute-on-call, when
-you need focus, or when you just want quiet without changing your
-quietHours config.
+Manually suppress all pingthings playback. The simple on/off path
+(\`pingthings mute on\` / \`pingthings mute off\`) is the canonical way to
+silence pingthings — there is no scheduled quiet-hours window. It's a
+ping, not a ringtone.
 
 Arguments:
+  on          Mute indefinitely (until \`pingthings mute off\`).
+  off         Cancel the active mute.
   <minutes>   Mute for N minutes. Examples: 30, 60.
   <duration>  Human-friendly form: 30m, 2h, 90s.
-  off         Cancel the active mute.
   (no arg)    Show remaining mute time, if any.
 
 Examples:
+  pingthings mute on        Mute indefinitely
+  pingthings mute off       Cancel mute now
   pingthings mute 30        Mute for 30 minutes
   pingthings mute 2h        Mute for 2 hours
-  pingthings mute off       Cancel mute now
   pingthings mute           Show status
 
 The mute is stored as an expiration timestamp at
@@ -32,6 +33,11 @@ The mute is stored as an expiration timestamp at
 and respected by every \`pingthings play\` invocation.
 `);
 }
+
+// "Indefinite" mute — far-future timestamp (~100 years out). Stays well
+// within Number.MAX_SAFE_INTEGER and parses as a finite int from the
+// sentinel file.
+const INDEFINITE_MUTE_MS = 100 * 365 * 24 * 60 * 60 * 1000;
 
 function parseDuration(arg) {
   if (typeof arg !== 'string') return NaN;
@@ -81,9 +87,16 @@ export default function mute(args) {
     return;
   }
 
+  if (arg === 'on') {
+    const expiresAt = Date.now() + INDEFINITE_MUTE_MS;
+    setMuteUntilMs(expiresAt);
+    console.log('Muted. Run "pingthings mute off" to unmute.');
+    return;
+  }
+
   const ms = parseDuration(arg);
   if (!Number.isFinite(ms) || ms <= 0) {
-    console.error(`Invalid duration: "${arg}". Try: 30, 30m, 2h, 90s, or off.`);
+    console.error(`Invalid duration: "${arg}". Try: on, off, 30, 30m, 2h, 90s.`);
     process.exit(1);
   }
 

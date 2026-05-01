@@ -57,10 +57,22 @@ describe('CLI core', () => {
     const { stdout } = run(['--help']);
     const expected = ['play', 'list', 'select', 'browse', 'search', 'sounds',
       'use', 'preview', 'test-events', 'theme', 'config', 'init',
-      'create', 'install', 'uninstall'];
+      'create', 'install', 'uninstall', 'mute', 'fav', 'schedule',
+      'doctor', 'serve', 'normalize', 'random-pack', 'demo', 'setup',
+      'completions', 'stats', 'update', 'cesp'];
     for (const cmd of expected) {
       assert.ok(stdout.includes(cmd), `--help should mention "${cmd}"`);
     }
+  });
+
+  it('--help groups commands and mentions first-time on-ramp', () => {
+    const { stdout } = run(['--help']);
+    // Grouping headers — guards against a future flat-listing regression.
+    for (const heading of ['Setup & diagnostics', 'Play & silence',
+      'Browse & preview', 'Customize', 'Pack management', 'Activity']) {
+      assert.ok(stdout.includes(heading), `--help should have "${heading}" group`);
+    }
+    assert.match(stdout, /First time\?/);
   });
 
   it('unknown command exits 1 with message', () => {
@@ -97,6 +109,17 @@ describe('play', () => {
   it('-e shorthand works', () => {
     const { exitCode } = run(['play', '-e', 'done']);
     assert.equal(exitCode, 0);
+  });
+
+  it('positional event name works (legacy hook form)', () => {
+    // Older `pingthings init` and hand-written hook configs invoke
+    // pingthings as `pingthings play permission` rather than
+    // `pingthings play --event permission`. The bare positional form
+    // must resolve to the event, not be treated as a sound name.
+    for (const event of ['done', 'permission', 'complete', 'error', 'blocked']) {
+      const { exitCode } = run(['play', event]);
+      assert.equal(exitCode, 0, `Positional event "${event}" should work`);
+    }
   });
 
   it('rejects invalid event', () => {
@@ -669,21 +692,16 @@ describe('config new keys', () => {
     assert.equal(exitCode, 1);
   });
 
-  it('sets quietHours', () => {
-    const { exitCode, stdout } = run(['config', 'quietHours', '22-7']);
-    assert.equal(exitCode, 0);
-    assert.ok(stdout.includes('22-7'));
-  });
-
-  it('disables quietHours with null', () => {
-    const { exitCode, stdout } = run(['config', 'quietHours', 'null']);
-    assert.equal(exitCode, 0);
-    assert.ok(stdout.includes('disabled'));
-  });
-
-  it('rejects invalid quietHours format', () => {
-    const { exitCode } = run(['config', 'quietHours', 'midnight']);
+  it('rejects removed quietHours key', () => {
+    const { exitCode, stderr } = run(['config', 'quietHours', '22-7']);
     assert.equal(exitCode, 1);
+    assert.ok(stderr.includes('Unknown config key'));
+  });
+
+  it('rejects removed debounceMs key', () => {
+    const { exitCode, stderr } = run(['config', 'debounceMs', '1500']);
+    assert.equal(exitCode, 1);
+    assert.ok(stderr.includes('Unknown config key'));
   });
 
   it('uninstall rejects path traversal', () => {

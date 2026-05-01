@@ -39,6 +39,8 @@ const commands = {
   normalize: () => import('../src/cli/normalize.js'),
   serve: () => import('../src/cli/serve.js'),
   schedule: () => import('../src/cli/schedule.js'),
+  fav: () => import('../src/cli/fav.js'),
+  favorites: () => import('../src/cli/fav.js'),
 };
 
 function showHelp() {
@@ -47,49 +49,63 @@ pingthings v${pkg.version} — ${pkg.description}
 
 Usage: pingthings <command> [options]
 
-Commands:
-  play [sound]       Play a sound from the active pack (random by default)
-  list               Show available sound packs
-  select             Interactive pack selector
-  browse [category]  Browse packs by category
-  search <term>      Search packs and sounds
-  sounds [pack]      List individual sounds in a pack
-  use <pack>         Set the active sound pack
-  preview <pack>     Preview a random sound from a pack
-  test-events [pack] Play all event sounds to hear what each one sounds like
-  theme [name]       Apply a sound theme (maps events across packs)
-  config [key] [val] Show or update configuration
-  demo               Play one sound from every pack — showroom tour
-  stats              Show usage statistics
-  init               Set up Claude Code hooks automatically
-  setup <ide>        Configure hooks for any IDE (cursor, copilot, codex, etc.)
-  random-pack        Switch to a random pack
-  create <dir>       Create a new pack from a folder of audio files
-  install <source>   Install a pack from GitHub or URL
-  uninstall <pack>   Remove a user-installed pack
-  doctor             Diagnose audio setup and configuration
-  update [--all]     Check for and install updates
-  completions <shell> Generate shell completions (bash/zsh/fish)
+First time? Run "pingthings init" to wire up Claude Code hooks, then
+"pingthings select" to pick a pack you like. Every command supports
+--help for details (e.g. "pingthings play --help").
+
+Setup & diagnostics:
+  init                  Set up Claude Code hooks automatically
+  setup <ide>           Configure hooks for any IDE (cursor, copilot, codex, etc.)
+  doctor                Diagnose audio setup and hook configuration
+  completions <shell>   Generate shell completions (bash/zsh/fish)
+  serve [--port N]      Run an HTTP webhook server for remote triggers
+
+Play & silence:
+  play [sound|event]    Play a sound (random, by name, or by event)
+  mute [on|off|<dur>]   Silence pingthings (indefinitely, until off, or for N min)
+
+Browse & preview:
+  list                  Show all sound packs (★ favorites, * active)
+  browse [category]     Browse packs by category
+  search <term>         Search packs and sounds
+  sounds [pack]         List individual sounds in a pack
+  preview <pack>        Preview a random sound from a pack
+  test-events [pack]    Play all event sounds to hear what each one sounds like
+  demo                  Play one sound from every pack — showroom tour
+
+Customize:
+  use <pack>            Set the active sound pack
+  select                Interactive pack selector
+  fav <add|remove|list> [pack]   Manage favorite packs
+  schedule <list|add|remove|clear|current> [args]   Hour-of-day pack rotations
+  theme [name]          Apply a sound theme (maps events across packs)
+  config [key] [val]    Show or update configuration
+  random-pack           Switch to a random pack (or random from favorites)
+
+Pack management:
+  install <source>      Install a pack from GitHub or URL
+  uninstall <pack>      Remove a user-installed pack
+  create <dir>          Create a new pack from a folder of audio files
+  normalize [pack]      Run loudnorm on a pack's sounds (requires ffmpeg)
+  cesp [pack|--all]     Generate CESP-compatible manifests
+
+Activity:
+  stats                 Show usage statistics
+  update [--all]        Check for and install updates
 
 Options:
-  --help, -h         Show this help message
-  --version, -v      Show version number
-
-Modes:
-  random             Play any random sound (default)
-  specific           Always play the same configured sound
-  informational      Play sounds mapped to event types
+  --help, -h            Show this help message (works on every subcommand)
+  --version, -v         Show version number
 
 Examples:
-  pingthings play                  Play a random sound
-  pingthings play 00083-READY     Play a specific sound
-  pingthings play --event done    Play a "task done" sound
-  pingthings play -e error        Play an "error" sound
-  pingthings select               Choose a pack interactively
-  pingthings test-events           Hear all event sounds
-  pingthings theme retro           Apply the retro theme
-  pingthings init                  Set up Claude Code hooks
-  pingthings config volume 50     Set volume to 50%
+  pingthings init                       Set up Claude Code hooks
+  pingthings select                     Pick a pack interactively
+  pingthings play --event done          Play a "task done" sound
+  pingthings mute on                    Silence pingthings until you say stop
+  pingthings mute off                   Unmute
+  pingthings fav add office-classic     Star a pack you love
+  pingthings random-pack                Rotate (favorites first, if any)
+  pingthings doctor                     Check your setup
 `);
 }
 

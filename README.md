@@ -166,6 +166,9 @@ For different sounds based on what Claude is doing, set up multiple hooks:
 | `pingthings demo` | Play one sound from every pack — showroom tour |
 | `pingthings stats` | Show usage statistics |
 | `pingthings setup <ide>` | Configure hooks for any IDE (cursor, copilot, codex, etc.) |
+| `pingthings mute [on\|off\|duration]` | Silence pingthings indefinitely, until a deadline, or cancel a mute |
+| `pingthings fav [add\|remove\|list] [pack]` | Manage favorite packs (★ marker, drives random-pack) |
+| `pingthings schedule <list\|add\|remove\|clear\|current>` | Manage hour-of-day pack rotations |
 | `pingthings doctor` | Diagnose audio setup and configuration |
 | `pingthings update` | Check for new versions on npm |
 | `pingthings cesp [pack\|--all]` | Generate CESP-compatible manifests |
@@ -183,8 +186,8 @@ Config lives at `~/.config/pingthings/config.json`:
   "volume": 100,
   "eventPacks": {},
   "cooldown": true,
-  "quietHours": null,
-  "notifications": false
+  "notifications": false,
+  "favorites": []
 }
 ```
 
@@ -194,8 +197,12 @@ Config lives at `~/.config/pingthings/config.json`:
 - **volume** — playback volume, 0-100 (default: 100)
 - **eventPacks** — per-event pack overrides (e.g. `{"error": "freedoom-arsenal"}`)
 - **cooldown** — avoid repeating the same sound twice in a row (default: true)
-- **quietHours** — mute during hours, e.g. `"22-7"` for 10pm-7am (default: null)
 - **notifications** — show desktop notifications alongside sound (default: false)
+- **favorites** — pack names you've starred. Managed via `pingthings fav add/remove/list`. When non-empty, `pingthings random-pack` picks from this list instead of the full catalog.
+
+To silence pingthings temporarily, use `pingthings mute on` /
+`pingthings mute off` (or `pingthings mute 30m` for a fixed window).
+There's no scheduled quiet-hours window — it's a ping, not a ringtone.
 
 Set values via CLI:
 

@@ -1,4 +1,4 @@
-import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isQuietHours, getLastPlayTimeMs, setLastPlayTimeMs, isMuteActive, resolveActivePack } from '../config.js';
+import { readConfig, VALID_EVENTS, getLastPlayed, setLastPlayed, isMuteActive, resolveActivePack } from '../config.js';
 import { getPackSounds, getEventSounds, pickRandom, resolvePack } from '../packs.js';
 import { playSound } from '../player.js';
 import { sendNotification } from '../notify.js';
@@ -23,7 +23,14 @@ function parseArgs(args) {
       showHelp();
       process.exit(0);
     } else if (!args[i].startsWith('-')) {
-      result.sound = args[i];
+      // Bare event name (e.g. `pingthings play permission`) — accepted as
+      // a shorthand for `--event permission`. Lets older hook installs that
+      // pre-date the `--event` flag keep working.
+      if (!result.event && VALID_EVENTS.includes(args[i])) {
+        result.event = args[i];
+      } else {
+        result.sound = args[i];
+      }
     }
   }
 
@@ -144,11 +151,10 @@ export default function play(args) {
     process.exit(1);
   }
 
-  // Quiet hours, --silent, manual mute (`pingthings mute`), or active
-  // call → skip playback. Stats still recorded so usage data isn't
-  // skewed by silent intervals.
+  // --silent flag, manual mute (`pingthings mute`), or active call →
+  // skip playback. Stats still recorded so usage data isn't skewed by
+  // silent intervals.
   if (
-    isQuietHours(config) ||
     parsed.silent ||
     isMuteActive() ||
     (config.muteOnCall && isOnCall())
@@ -169,26 +175,6 @@ export default function play(args) {
         soundFile = pickRandom(alternatives);
       }
     }
-  }
-
-  // Cross-process debounce — coalesce near-simultaneous invocations
-  // (e.g. multi-pane Claude Code dispatch finishing in lockstep) into a
-  // single audible play. The sentinel file is shared across all pingthings
-  // processes, so the FIFO race among parallel invocations is naturally
-  // resolved by whoever stamps it first. `--silent` and explicit named
-  // sound plays bypass debounce — those are intentional, not background
-  // hook noise. Set `debounceMs: 0` in config to disable entirely.
-  const debounceMs = Number(config.debounceMs ?? 0);
-  if (debounceMs > 0 && !parsed.sound) {
-    const now = Date.now();
-    const last = getLastPlayTimeMs();
-    if (now - last < debounceMs) {
-      // Coalesced — another invocation just played within the window.
-      // Still record the event for stats so usage data isn't skewed.
-      recordPlay(packName, parsed.event);
-      return;
-    }
-    setLastPlayTimeMs(now);
   }
 
   setLastPlayed(soundFile);

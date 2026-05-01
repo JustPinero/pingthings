@@ -75,4 +75,18 @@ describe('pingthings mute', () => {
     assert.equal(r.status, 0);
     assert.match(r.stdout, /cancelled/i);
   });
+
+  it('mute on enables indefinite mute, mute off cancels', () => {
+    const on = cli(['mute', 'on']);
+    assert.equal(on.status, 0);
+    assert.match(on.stdout, /Muted/);
+
+    const status = cli(['mute']);
+    assert.equal(status.status, 0);
+    assert.match(status.stdout, /Muted for/);
+
+    const off = cli(['mute', 'off']);
+    assert.equal(off.status, 0);
+    assert.match(off.stdout, /cancelled/i);
+  });
 });

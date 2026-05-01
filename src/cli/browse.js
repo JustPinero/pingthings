@@ -1,4 +1,4 @@
-import { readConfig } from '../config.js';
+import { readConfig, getFavorites } from '../config.js';
 import { listPacks } from '../packs.js';
 
 function showHelp() {
@@ -29,6 +29,7 @@ export default function browse(args) {
   }
 
   const config = readConfig();
+  const favorites = new Set(getFavorites(config));
   const packs = listPacks();
   const category = args[0];
 
@@ -47,10 +48,11 @@ export default function browse(args) {
       console.log(`  ${cat.padEnd(14)} ${catPacks.length} pack${catPacks.length === 1 ? '' : 's'}, ${totalSounds} sounds`);
       for (const p of catPacks) {
         const active = p.name === config.activePack ? ' *' : '  ';
-        console.log(`  ${active} └ ${p.name}`);
+        const star = favorites.has(p.name) ? ' ★' : '';
+        console.log(`  ${active} └ ${p.name}${star}`);
       }
     }
-    console.log('\n  * = active pack');
+    console.log('\n  * = active pack    ★ = favorite');
     console.log('  Run "pingthings browse <category>" to see details.\n');
     return;
   }
@@ -68,11 +70,12 @@ export default function browse(args) {
   console.log(`\n${category} packs:\n`);
   for (const pack of filtered) {
     const active = pack.name === config.activePack ? ' *' : '  ';
-    console.log(`${active} ${pack.name}  (${pack.soundCount} sounds)`);
+    const star = favorites.has(pack.name) ? ' ★' : '';
+    console.log(`${active} ${pack.name}${star}  (${pack.soundCount} sounds)`);
     if (pack.description) {
       console.log(`     ${pack.description}`);
     }
     console.log(`     License: ${pack.license}`);
   }
-  console.log('\n  * = active pack\n');
+  console.log('\n  * = active pack    ★ = favorite\n');
 }

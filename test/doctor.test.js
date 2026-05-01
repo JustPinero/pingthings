@@ -57,12 +57,11 @@ describe('pingthings doctor — v1.7 surface', () => {
     assert.match(r.stdout, /Call-detection allowlist/);
   });
 
-  it('reports new config knobs (muteOnCall, autoNormalize, headphoneVolumeScale, debounceMs)', () => {
+  it('reports new config knobs (muteOnCall, autoNormalize, headphoneVolumeScale)', () => {
     const r = cli(['doctor']);
     assert.match(r.stdout, /muteOnCall config/);
     assert.match(r.stdout, /autoNormalize config/);
     assert.match(r.stdout, /headphoneVolumeScale/);
-    assert.match(r.stdout, /debounceMs/);
   });
 
   it('reports schedule profiles section', () => {

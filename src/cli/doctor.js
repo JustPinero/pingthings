@@ -86,9 +86,6 @@ export default function doctor(args) {
   check('Active pack', () => config.activePack);
   check('Mode', () => config.mode);
   check('Volume', () => `${config.volume}%`);
-  if (config.quietHours) {
-    check('Quiet hours', () => config.quietHours);
-  }
 
   // Packs
   console.log('\nPacks:');
@@ -156,8 +153,6 @@ export default function doctor(args) {
       ? config.headphoneVolumeScale.toString()
       : '1.0',
   );
-  check('debounceMs', () => `${Number(config.debounceMs ?? 1500)}ms`);
-
   // Schedule profiles
   const profiles = config.timeProfiles || {};
   const profileCount = Object.keys(profiles).length;

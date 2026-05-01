@@ -9,13 +9,11 @@ const DEFAULTS = {
   volume: 100,
   eventPacks: {},
   cooldown: true,
-  quietHours: null,
   notifications: false,
-  // Cross-process debounce window in ms. When multiple `pingthings play`
-  // invocations fire within this window (e.g. multi-pane Claude Code
-  // sessions ending simultaneously), only the first one plays a sound;
-  // subsequent invocations are silently dropped. Set to 0 to disable.
-  debounceMs: 1500,
+  // Pack names the user has marked as favorites. Surfaced with ★ in
+  // `pingthings list` / `browse`, and used as the candidate pool for
+  // `pingthings random-pack` when non-empty.
+  favorites: [],
   // Suppress sound playback while a video-call client is active.
   // See src/call-detector.js for cross-platform detection.
   muteOnCall: false,
@@ -87,37 +85,37 @@ export function setLastPlayed(soundPath) {
   } catch {}
 }
 
-// Cross-process debounce sentinel — used by `pingthings play` to coalesce
-// near-simultaneous invocations (e.g. multi-pane dispatch finishing in
-// lockstep) into a single audible play.
-export function getLastPlayTimeMs() {
-  const path = join(getConfigDir(), '.last-play-time');
-  try {
-    const raw = readFileSync(path, 'utf8').trim();
-    const n = parseInt(raw, 10);
-    return Number.isFinite(n) ? n : 0;
-  } catch {
-    return 0;
-  }
+// ----------------------------------------------------------------------------
+// Favorites — pure-data helpers over config.favorites. The CLI layer is
+// responsible for validating that pack names actually exist; these helpers
+// just keep the array consistent (deduped, no falsy entries).
+// ----------------------------------------------------------------------------
+
+export function getFavorites(config = readConfig()) {
+  const list = config.favorites;
+  return Array.isArray(list) ? list.filter(Boolean) : [];
 }
 
-export function setLastPlayTimeMs(timeMs) {
-  const path = join(getConfigDir(), '.last-play-time');
-  try {
-    writeFileSync(path, String(timeMs), 'utf8');
-  } catch {}
+export function isFavorite(packName, config = readConfig()) {
+  return getFavorites(config).includes(packName);
 }
 
-export function isQuietHours(config) {
-  if (!config.quietHours) return false;
-  const [start, end] = config.quietHours.split('-').map(Number);
-  if (isNaN(start) || isNaN(end)) return false;
-  const hour = new Date().getHours();
-  if (start < end) {
-    return hour >= start && hour < end;
-  }
-  // Wraps midnight (e.g., 22-7)
-  return hour >= start || hour < end;
+export function addFavorite(packName) {
+  const cfg = readConfig();
+  const current = getFavorites(cfg);
+  if (current.includes(packName)) return false;
+  cfg.favorites = [...current, packName];
+  writeConfig(cfg);
+  return true;
+}
+
+export function removeFavorite(packName) {
+  const cfg = readConfig();
+  const current = getFavorites(cfg);
+  if (!current.includes(packName)) return false;
+  cfg.favorites = current.filter(n => n !== packName);
+  writeConfig(cfg);
+  return true;
 }
 
 export const VALID_MODES = ['random', 'specific', 'informational'];
