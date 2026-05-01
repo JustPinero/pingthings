@@ -27,7 +27,11 @@ jobs:
       # otherwise wired up correctly (provenance signing succeeds, but the
       # actual write is rejected). See npm changelog for v11.5.1.
       - name: Upgrade npm to support OIDC trusted publisher
-        run: npm install -g npm@latest
+        # --force works around a known npm self-upgrade bug: when npm 10
+        # installs npm@latest, transitive modules (e.g. promise-retry) get
+        # deleted mid-install and the new npm can't load them. --force
+        # tells npm to overwrite without the integrity check.
+        run: npm install -g --force npm@latest && npm --version
 
       - name: Run tests
         run: npm test
